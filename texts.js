@@ -69,108 +69,20 @@ const eraEvents = [
 
 
 
-const districts = ["canal quarter", "hill district", "old harbor", "north workshops", "orchard belt", "station ward", "river terraces", "market square", "glassmakers lane", "southern mills"];
-const groups = ["teachers", "carpenters", "midwives", "nurses", "millers", "surveyors", "scribes", "gardeners", "apprentices", "ferrymen"];
-const actions = ["published detailed maintenance logs", "opened public training sessions", "shared bilingual safety bulletins", "tested redesigned tools in field conditions", "mapped supply bottlenecks street by street", "audited contracts for hidden penalties", "ran evening literacy workshops", "coordinated emergency drills with neighbors", "tracked seasonal disease patterns", "documented repair costs with receipts"];
-const outcomes = ["which reduced preventable accidents during winter shifts", "so smaller households could plan expenses with confidence", "and trust improved between guilds and new migrants", "allowing delayed projects to recover without overtime abuse", "which helped local councils budget repairs before crises", "and young workers gained faster access to skilled mentors", "so disputes were settled with evidence rather than rumor", "which strengthened food distribution during storm disruptions", "and families reported clearer communication across generations", "so public meetings moved from blame toward practical coordination"];
-
-function toFrenchDistrict(value) {
-  const map = {
-    "canal quarter": "quartier du canal",
-    "hill district": "quartier de la colline",
-    "old harbor": "vieux port",
-    "north workshops": "ateliers du nord",
-    "orchard belt": "ceinture des vergers",
-    "station ward": "quartier de la gare",
-    "river terraces": "terrasses du fleuve",
-    "market square": "place du marché",
-    "glassmakers lane": "rue des verriers",
-    "southern mills": "moulins du sud",
-  };
-  return map[value] ?? value;
-}
-
-function toFrenchGroup(value) {
-  const map = {
-    teachers: "des enseignants",
-    carpenters: "des charpentiers",
-    midwives: "des sages-femmes",
-    nurses: "des infirmières",
-    millers: "des meuniers",
-    surveyors: "des arpenteurs",
-    scribes: "des scribes",
-    gardeners: "des jardiniers",
-    apprentices: "des apprentis",
-    ferrymen: "des passeurs",
-  };
-  return map[value] ?? value;
-}
-
-function toFrenchAction(value) {
-  const map = {
-    "published detailed maintenance logs": "publièrent des registres d'entretien détaillés",
-    "opened public training sessions": "ouvrirent des sessions de formation publiques",
-    "shared bilingual safety bulletins": "partagèrent des bulletins de sécurité bilingues",
-    "tested redesigned tools in field conditions": "testèrent des outils redessinés en conditions réelles",
-    "mapped supply bottlenecks street by street": "cartographièrent les goulets d'approvisionnement rue par rue",
-    "audited contracts for hidden penalties": "auditèrent des contrats pour repérer des pénalités cachées",
-    "ran evening literacy workshops": "animèrent des ateliers d'alphabétisation du soir",
-    "coordinated emergency drills with neighbors": "coordonnèrent des exercices d'urgence avec les voisins",
-    "tracked seasonal disease patterns": "suivirent les schémas saisonniers des maladies",
-    "documented repair costs with receipts": "documentèrent les coûts de réparation avec des reçus",
-  };
-  return map[value] ?? value;
-}
-
-function toFrenchOutcome(value) {
-  const map = {
-    "which reduced preventable accidents during winter shifts": "ce qui réduisit les accidents évitables pendant les services d'hiver",
-    "so smaller households could plan expenses with confidence": "afin que les ménages modestes puissent planifier leurs dépenses avec confiance",
-    "and trust improved between guilds and new migrants": "et la confiance s'améliora entre les guildes et les nouveaux migrants",
-    "allowing delayed projects to recover without overtime abuse": "permettant aux projets en retard de reprendre sans abus d'heures supplémentaires",
-    "which helped local councils budget repairs before crises": "ce qui aida les conseils locaux à budgéter les réparations avant les crises",
-    "and young workers gained faster access to skilled mentors": "et les jeunes travailleurs obtinrent un accès plus rapide à des mentors qualifiés",
-    "so disputes were settled with evidence rather than rumor": "de sorte que les conflits furent réglés par des preuves plutôt que par des rumeurs",
-    "which strengthened food distribution during storm disruptions": "ce qui renforça la distribution alimentaire pendant les perturbations causées par les tempêtes",
-    "and families reported clearer communication across generations": "et les familles signalèrent une communication plus claire entre les générations",
-    "so public meetings moved from blame toward practical coordination": "de sorte que les réunions publiques passèrent du reproche à une coordination pratique",
-  };
-  return map[value] ?? value;
-}
-
-function generateAdditionalPairs(targetCount) {
-  const pairs = [];
-  let i = 0;
-  while (pairs.length < targetCount) {
-    const district = districts[i % districts.length];
-    const group = groups[(i * 3) % groups.length];
-    const action = actions[(i * 5) % actions.length];
-    const outcome = outcomes[(i * 7) % outcomes.length];
-
-    const en = `In the ${district}, ${group} ${action}, ${outcome}, while rotating volunteers documented lessons learned for the next planning cycle ${i + 1}.`;
-    const fr = `Dans le ${toFrenchDistrict(district)}, ${toFrenchGroup(group)} ${toFrenchAction(action)}, ${toFrenchOutcome(outcome)}, tandis que des volontaires tournants documentaient les leçons apprises pour le cycle de planification ${i + 1}.`;
-    pairs.push([en, fr]);
-    i += 1;
-  }
-  return pairs;
-}
-
 function countWords(text) {
   return text.match(/[A-Za-zÀ-ÖØ-öø-ÿ'-]+/g)?.length ?? 0;
 }
 
-const additionalPairs = generateAdditionalPairs(80);
-const allPairs = [...eraEvents, ...additionalPairs];
-const totalEnglishWords = allPairs.reduce((sum, [en]) => sum + countWords(en), 0);
+const totalEnglishWords = eraEvents.reduce((sum, [en]) => sum + countWords(en), 0);
 
 export const texts = [
   {
     id: "civic-chronicle",
     title: "Civic Chronicle (extended bilingual excerpt)",
     description:
-      "A non-repeating bilingual civic chronicle designed for progressive Franglais blending.",
+      "A bilingual narrative excerpt designed for progressive Franglais blending with semantic mapping.",
     source:
       `Curated original excerpt for language practice. Total English words: ${totalEnglishWords}.`,
-    pairs: allPairs.map(([en, fr]) => ({ en, fr })),
+    pairs: eraEvents.map(([en, fr]) => ({ en, fr })),
   },
 ];
