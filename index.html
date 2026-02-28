@@ -12,6 +12,8 @@
       <header>
         <h1>Franglais Gradient Reader</h1>
         <p>
+          Start reading in English, then advance sentence-by-sentence as French words and
+          eventually full French sentences appear.
           Read a public-domain bilingual text that starts in English and gradually blends into
           French. Hover any French token to see its English equivalent.
         </p>
@@ -21,6 +23,14 @@
         <label for="text-select">Text</label>
         <select id="text-select"></select>
         <p id="text-meta" class="muted"></p>
+      </section>
+
+      <section class="panel controls">
+        <button id="start-btn" type="button">Start text</button>
+        <button id="next-btn" type="button">Next sentence</button>
+        <button id="next-five-btn" type="button">Next 5 sentences</button>
+        <button id="reset-btn" type="button">Reset</button>
+        <p id="progress" class="muted"></p>
       </section>
 
       <section class="panel">
