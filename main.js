@@ -1,39 +1,19 @@
 import { texts } from "./texts.js";
 
 const PHASES = [
-  { start: 0, type: "token", probability: 0, label: "Phase 1: 100% English" },
-  { start: 300, type: "token", probability: 0.1, label: "Phase 2: 10% noun/verb French" },
-  { start: 600, type: "token", probability: 0.2, label: "Phase 2: 20% noun/verb French" },
-  { start: 800, type: "token", probability: 0.3, label: "Phase 3: 30% noun/verb French" },
-  { start: 900, type: "token", probability: 0.4, label: "Phase 4: 40% noun/verb French" },
-  { start: 1000, type: "token", probability: 0.5, label: "Phase 5: 50% noun/verb French" },
-  {
-    start: 1100,
-    type: "sentence",
-    sentenceProbability: 0.2,
-    tokenProbability: 0.5,
-    label: "Phase 6: 20% full French sentences",
-  },
-  {
-    start: 1300,
-    type: "sentence",
-    sentenceProbability: 0.3,
-    tokenProbability: 0.5,
-    label: "Phase 7: 30% full French sentences",
-  },
+  { start: 0, type: "token", probability: 0 },
+  { start: 300, type: "token", probability: 0.1 },
+  { start: 600, type: "token", probability: 0.2 },
+  { start: 800, type: "token", probability: 0.3 },
+  { start: 900, type: "token", probability: 0.4 },
+  { start: 1000, type: "token", probability: 0.5 },
+  { start: 1100, type: "sentence", sentenceProbability: 0.2, tokenProbability: 0.5 },
+  { start: 1300, type: "sentence", sentenceProbability: 0.3, tokenProbability: 0.5 },
 ];
 
 const select = document.querySelector("#text-select");
 const reader = document.querySelector("#reader");
 const textMeta = document.querySelector("#text-meta");
-const startBtn = document.querySelector("#start-btn");
-const nextBtn = document.querySelector("#next-btn");
-const nextFiveBtn = document.querySelector("#next-five-btn");
-const resetBtn = document.querySelector("#reset-btn");
-const progress = document.querySelector("#progress");
-
-let activeText = texts[0];
-let shownSentenceCount = 0;
 
 function wordTokens(text) {
   return text.match(/[A-Za-zÀ-ÖØ-öø-ÿ'-]+/g) ?? [];
@@ -124,51 +104,18 @@ function blendSentence(pair, sentenceIndex, startWordIndex) {
   return `<span class="sentence">${blended.join("")}</span>`;
 }
 
-function sentenceWordPrefixCount(text, sentenceCount) {
-  let words = 0;
-  for (let i = 0; i < sentenceCount; i += 1) {
-    words += wordTokens(text.pairs[i].en).length;
-  }
-  return words;
-}
+function renderText(text) {
+  textMeta.textContent = `${text.description} ${text.source}`;
+  let wordsSoFar = 0;
+  const html = [];
 
-function updateProgress() {
-  const wordsRead = sentenceWordPrefixCount(activeText, shownSentenceCount);
-  const phase = getPhase(wordsRead);
-  progress.textContent = `Showing ${shownSentenceCount}/${activeText.pairs.length} sentences · ${wordsRead} words read · ${phase.label}`;
-}
+  text.pairs.forEach((pair, sentenceIndex) => {
+    html.push(blendSentence(pair, sentenceIndex, wordsSoFar));
+    html.push(" ");
+    wordsSoFar += wordTokens(pair.en).length;
+  });
 
-function renderCurrent() {
-  if (shownSentenceCount === 0) {
-    reader.innerHTML = "<em>Click \"Start text\" to begin from 100% English.</em>";
-  } else {
-    let wordsSoFar = 0;
-    const html = [];
-    activeText.pairs.slice(0, shownSentenceCount).forEach((pair, sentenceIndex) => {
-      html.push(blendSentence(pair, sentenceIndex, wordsSoFar));
-      html.push(" ");
-      wordsSoFar += wordTokens(pair.en).length;
-    });
-    reader.innerHTML = html.join("");
-  }
-
-  const atEnd = shownSentenceCount >= activeText.pairs.length;
-  startBtn.disabled = shownSentenceCount > 0;
-  nextBtn.disabled = atEnd || shownSentenceCount === 0;
-  nextFiveBtn.disabled = atEnd || shownSentenceCount === 0;
-  resetBtn.disabled = shownSentenceCount === 0;
-  updateProgress();
-}
-
-function resetText() {
-  shownSentenceCount = 0;
-  textMeta.textContent = `${activeText.description} ${activeText.source}`;
-  renderCurrent();
-}
-
-function advanceBy(count) {
-  shownSentenceCount = Math.min(activeText.pairs.length, shownSentenceCount + count);
-  renderCurrent();
+  reader.innerHTML = html.join("");
 }
 
 for (const text of texts) {
@@ -180,19 +127,8 @@ for (const text of texts) {
 
 select.addEventListener("change", () => {
   const chosen = texts.find((t) => t.id === select.value);
-  if (chosen) {
-    activeText = chosen;
-    resetText();
-  }
+  if (chosen) renderText(chosen);
 });
 
-startBtn.addEventListener("click", () => {
-  if (shownSentenceCount === 0) advanceBy(1);
-});
-
-nextBtn.addEventListener("click", () => advanceBy(1));
-nextFiveBtn.addEventListener("click", () => advanceBy(5));
-resetBtn.addEventListener("click", resetText);
-
-select.value = activeText.id;
-resetText();
+select.value = texts[0].id;
+renderText(texts[0]);

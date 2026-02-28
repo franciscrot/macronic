@@ -42,31 +42,9 @@ select {
   font-size: 1rem;
 }
 
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  align-items: center;
-}
-
-button {
-  padding: 0.5rem 0.8rem;
-  font-size: 0.95rem;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  background: #f9fafb;
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 .muted {
   color: #4b5563;
   margin-top: 0.6rem;
-  width: 100%;
 }
 
 .reader {
@@ -75,7 +53,6 @@ button:disabled {
   border-radius: 10px;
   padding: 1.5rem;
   font-size: 1.15rem;
-  min-height: 200px;
 }
 
 .sentence {
