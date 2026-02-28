@@ -1,5 +1,6 @@
 import { texts } from "./texts.js";
 
+const WORDS_PER_CHUNK = 500;
 const PHASES = [
   { start: 0, type: "token", probability: 0 },
   { start: 300, type: "token", probability: 0.1 },
@@ -14,6 +15,18 @@ const PHASES = [
 const select = document.querySelector("#text-select");
 const reader = document.querySelector("#reader");
 const textMeta = document.querySelector("#text-meta");
+const progress = document.querySelector("#progress");
+const startBtn = document.querySelector("#start-btn");
+const nextBtn = document.querySelector("#next-btn");
+const nextFiveBtn = document.querySelector("#next-five-btn");
+const resetBtn = document.querySelector("#reset-btn");
+
+const state = {
+  text: null,
+  sentenceWordCounts: [],
+  sentenceEndsByChunk: [],
+  renderedSentenceCount: 0,
+};
 
 function wordTokens(text) {
   return text.match(/[A-Za-zÀ-ÖØ-öø-ÿ'-]+/g) ?? [];
@@ -58,15 +71,25 @@ function buildFrenchLookup(english, french) {
 }
 
 function targetPartsOfSpeech(sentence) {
-  const doc = window.nlp(sentence);
-  const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
   const words = new Set();
-  for (const term of termData) {
-    const tags = term.tags ?? [];
-    if (tags.includes("Noun") || tags.includes("Verb")) {
-      words.add(term.text.toLowerCase());
+
+  if (typeof window.nlp === "function") {
+    const doc = window.nlp(sentence);
+    const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
+    for (const term of termData) {
+      const tags = term.tags ?? [];
+      if (tags.includes("Noun") || tags.includes("Verb")) {
+        words.add(term.text.toLowerCase());
+      }
     }
   }
+
+  if (words.size === 0) {
+    for (const token of wordTokens(sentence)) {
+      words.add(token.toLowerCase());
+    }
+  }
+
   return words;
 }
 
@@ -104,19 +127,104 @@ function blendSentence(pair, sentenceIndex, startWordIndex) {
   return `<span class="sentence">${blended.join("")}</span>`;
 }
 
-function renderText(text) {
-  textMeta.textContent = `${text.description} ${text.source}`;
+function buildChunkEnds(wordCounts, minWordsPerChunk) {
+  const ends = [];
+  let i = 0;
+  while (i < wordCounts.length) {
+    let words = 0;
+    let j = i;
+    while (j < wordCounts.length && words < minWordsPerChunk) {
+      words += wordCounts[j];
+      j += 1;
+    }
+    ends.push(j);
+    i = j;
+  }
+  return ends;
+}
+
+function renderVisibleSentences() {
+  if (!state.text) {
+    reader.innerHTML = "";
+    return;
+  }
+
   let wordsSoFar = 0;
   const html = [];
-
-  text.pairs.forEach((pair, sentenceIndex) => {
-    html.push(blendSentence(pair, sentenceIndex, wordsSoFar));
+  for (let i = 0; i < state.renderedSentenceCount; i += 1) {
+    const pair = state.text.pairs[i];
+    html.push(blendSentence(pair, i, wordsSoFar));
     html.push(" ");
-    wordsSoFar += wordTokens(pair.en).length;
-  });
+    wordsSoFar += state.sentenceWordCounts[i];
+  }
 
-  reader.innerHTML = html.join("");
+  reader.innerHTML = html.join("").trim();
+
+  const renderedWordCount = state.sentenceWordCounts
+    .slice(0, state.renderedSentenceCount)
+    .reduce((sum, n) => sum + n, 0);
+  const totalWords = state.sentenceWordCounts.reduce((sum, n) => sum + n, 0);
+  progress.textContent = `Showing ${renderedWordCount.toLocaleString()} / ${totalWords.toLocaleString()} words (${state.renderedSentenceCount}/${state.text.pairs.length} sentences).`;
+
+  const atEnd = state.renderedSentenceCount >= state.text.pairs.length;
+  nextBtn.disabled = atEnd;
+  nextFiveBtn.disabled = atEnd;
 }
+
+function loadText(text) {
+  state.text = text;
+  state.sentenceWordCounts = text.pairs.map((pair) => wordTokens(pair.en).length);
+  state.sentenceEndsByChunk = buildChunkEnds(state.sentenceWordCounts, WORDS_PER_CHUNK);
+  state.renderedSentenceCount = 0;
+
+  textMeta.textContent = `${text.description} ${text.source}`;
+  reader.textContent = `Press “Start text” to begin. The reader reveals at least ${WORDS_PER_CHUNK} words per chunk.`;
+  progress.textContent = `Ready: ${text.pairs.length} sentences, ${state.sentenceWordCounts
+    .reduce((sum, n) => sum + n, 0)
+    .toLocaleString()} words total.`;
+  nextBtn.disabled = true;
+  nextFiveBtn.disabled = true;
+}
+
+function advanceChunks(chunkCount) {
+  if (!state.text || state.sentenceEndsByChunk.length === 0) return;
+
+  const currentChunkIndex = state.sentenceEndsByChunk.findIndex(
+    (end) => end > state.renderedSentenceCount,
+  );
+
+  const baseIndex =
+    currentChunkIndex === -1
+      ? state.sentenceEndsByChunk.length - 1
+      : Math.max(0, currentChunkIndex);
+  const targetChunkIndex = Math.min(baseIndex + chunkCount - 1, state.sentenceEndsByChunk.length - 1);
+  state.renderedSentenceCount = Math.max(
+    state.renderedSentenceCount,
+    state.sentenceEndsByChunk[targetChunkIndex],
+  );
+
+  renderVisibleSentences();
+}
+
+startBtn.addEventListener("click", () => {
+  if (!state.text) return;
+  if (state.renderedSentenceCount === 0) {
+    advanceChunks(1);
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  advanceChunks(1);
+});
+
+nextFiveBtn.addEventListener("click", () => {
+  advanceChunks(5);
+});
+
+resetBtn.addEventListener("click", () => {
+  if (!state.text) return;
+  loadText(state.text);
+});
 
 for (const text of texts) {
   const option = document.createElement("option");
@@ -127,8 +235,8 @@ for (const text of texts) {
 
 select.addEventListener("change", () => {
   const chosen = texts.find((t) => t.id === select.value);
-  if (chosen) renderText(chosen);
+  if (chosen) loadText(chosen);
 });
 
 select.value = texts[0].id;
-renderText(texts[0]);
+loadText(texts[0]);
