@@ -1,86 +1,176 @@
-const candidePairs = [
-  {
-    en: "In the country of Westphalia, in the castle of Baron Thunder-ten-tronckh, lived a young boy to whom nature had given the gentlest manners.",
-    fr: "Dans la Westphalie, dans le château de monsieur le baron de Thunder-ten-tronckh, vivait un jeune garçon à qui la nature avait donné les mœurs les plus douces.",
-  },
-  {
-    en: "His face announced his soul.",
-    fr: "Sa physionomie annonçait son âme.",
-  },
-  {
-    en: "He had sound judgment with a very simple mind, and this is, I think, why he was called Candide.",
-    fr: "Il avait le jugement assez droit, avec l'esprit le plus simple; c'est, je crois, pour cette raison qu'on le nommait Candide.",
-  },
-  {
-    en: "The old servants of the house suspected that he was the son of the baron's sister and of a worthy gentleman of the neighborhood.",
-    fr: "Les anciens domestiques de la maison soupçonnaient qu'il était le fils de la sœur du baron et d'un honnête gentilhomme du voisinage.",
-  },
-  {
-    en: "The young lady Cunégonde, aged seventeen, was fresh, plump, and full of appetite.",
-    fr: "Mademoiselle Cunégonde, âgée de dix-sept ans, était fraîche, grasse, appétissante.",
-  },
-  {
-    en: "The baron's wife weighed about three hundred and fifty pounds and thereby commanded great consideration.",
-    fr: "La baronne, qui pesait environ trois cent cinquante livres, s'attirait par là une très grande considération.",
-  },
-  {
-    en: "Pangloss taught metaphysico-theologo-cosmolonigology.",
-    fr: "Pangloss enseignait la métaphysico-théologo-cosmolonigologie.",
-  },
-  {
-    en: "He proved admirably that there is no effect without a cause and that, in this best of all possible worlds, the baron's castle was the most beautiful of castles.",
-    fr: "Il prouvait admirablement qu'il n'y a point d'effet sans cause, et que, dans ce meilleur des mondes possibles, le château du baron était le plus beau des châteaux.",
-  },
-  {
-    en: "Candide listened attentively and believed innocently.",
-    fr: "Candide écoutait attentivement et croyait innocemment.",
-  },
-  {
-    en: "He judged that he could not live without seeing Miss Cunégonde and hearing Master Pangloss.",
-    fr: "Il jugeait qu'il ne pouvait vivre sans voir mademoiselle Cunégonde et sans entendre maître Pangloss.",
-  },
-  {
-    en: "One day, Cunégonde, while walking near the little wood, saw Dr. Pangloss giving a lesson in experimental physics to her mother's chambermaid.",
-    fr: "Un jour, Cunégonde, en se promenant auprès du petit bois, vit le docteur Pangloss donner une leçon de physique expérimentale à la femme de chambre de sa mère.",
-  },
-  {
-    en: "She returned to the castle all agitated, thoughtful, and full of desire to be learned.",
-    fr: "Elle rentra au château tout agitée, toute pensive, toute remplie du désir d'être savante.",
-  },
-  {
-    en: "She met Candide behind a screen and dropped her handkerchief.",
-    fr: "Elle rencontra Candide derrière un paravent et laissa tomber son mouchoir.",
-  },
-  {
-    en: "Candide picked it up, and she took his hand with innocence.",
-    fr: "Candide le ramassa; elle lui prit innocemment la main.",
-  },
-  {
-    en: "Their mouths met, their eyes sparkled, their knees trembled, and their hearts fluttered.",
-    fr: "Leurs bouches se rencontrèrent, leurs yeux s'enflammèrent, leurs genoux tremblèrent, leurs cœurs palpitaient.",
-  },
-  {
-    en: "The baron passed by the screen, saw this cause and this effect, and drove Candide from the castle with mighty kicks.",
-    fr: "Le baron passa près du paravent, vit cette cause et cet effet, et chassa Candide du château à grands coups de pied.",
-  },
+const eraEvents = [
+  ["At dawn the apprentice printer unfolded damp sheets beside the river market, reading proclamations aloud to porters who could not decipher the new type.", "À l'aube, l'apprenti imprimeur déplia des feuilles humides près du marché du fleuve, lisant des proclamations aux porteurs qui ne pouvaient pas déchiffrer les nouveaux caractères."],
+  ["A locksmith from Rouen traded polished hinges for coffee, then argued that imported beans changed conversation because neighbors lingered over cups instead of rushing toward workshops.", "Un serrurier de Rouen échangea des gonds polis contre du café, puis soutint que les grains importés changeaient les conversations parce que les voisins restaient autour des tasses au lieu de courir vers les ateliers."],
+  ["In the schoolroom, a widow copied navigation tables while children traced coastlines from memory, each curve corrected by sailors who had survived storms beyond Newfoundland.", "Dans la salle de classe, une veuve copia des tables de navigation pendant que des enfants traçaient des côtes de mémoire, chaque courbe corrigée par des marins revenus des tempêtes au-delà de Terre-Neuve."],
+  ["Two brothers carried a brass astrolabe through muddy alleys, offering demonstrations in exchange for candles and recording every curious question in a stitched ledger.", "Deux frères portèrent un astrolabe en laiton dans des ruelles boueuses, proposant des démonstrations contre des chandelles et notant chaque question curieuse dans un registre cousu."],
+  ["During the winter fair, musicians from Lyon tuned violins beside spice stalls, blending dance rhythms with sermons that warned against vanity and encouraged practical charity.", "Pendant la foire d'hiver, des musiciens de Lyon accordèrent des violons près des étals d'épices, mêlant des rythmes de danse à des sermons qui condamnaient la vanité et encourageaient une charité concrète."],
+  ["A retired magistrate opened his attic archive, letting apprentices inspect faded court sketches that revealed how merchants disguised debts beneath ornate signatures.", "Un magistrat retraité ouvrit ses archives du grenier, laissant des apprentis examiner des croquis de tribunal fanés qui montraient comment des marchands cachaient des dettes sous des signatures ornées."],
+  ["By candlelight, seamstresses compared imported cotton with local linen, debating whether lighter cloth represented progress or merely another burden for underpaid hands.", "À la lueur des chandelles, des couturières comparèrent le coton importé au lin local, débattant pour savoir si les étoffes légères représentaient un progrès ou seulement un fardeau supplémentaire pour des mains sous-payées."],
+  ["A village physician documented herbal remedies and mechanical experiments in the same notebook, convinced that gears and roots both obeyed patterns waiting to be named.", "Un médecin de village documenta des remèdes d'herboristerie et des expériences mécaniques dans le même carnet, convaincu que les engrenages et les racines obéissaient à des motifs qui attendaient un nom."],
+  ["When the postal coach arrived late, innkeepers read letters publicly, and strangers learned of births, bankruptcies, and shipwrecks before families could close their doors.", "Quand la diligence postale arriva en retard, les aubergistes lurent les lettres en public, et des inconnus apprirent des naissances, des faillites et des naufrages avant que les familles puissent fermer leurs portes."],
+  ["An instrument maker repaired cracked lenses while explaining to farmers that magnification did not invent blight, it merely exposed what was already crawling on leaves.", "Un fabricant d'instruments répara des lentilles fissurées en expliquant aux paysans que le grossissement n'inventait pas la maladie, il exposait seulement ce qui rampait déjà sur les feuilles."],
+  ["Travelers from Geneva described disciplined watch workshops where silence measured productivity, inspiring local guilds to ring bells at fixed intervals during every shift.", "Des voyageurs de Genève décrivirent des ateliers d'horlogerie disciplinés où le silence mesurait la productivité, inspirant les guildes locales à sonner des cloches à intervalles fixes pendant chaque service."],
+  ["In spring floods, cooperatives rebuilt bridges with salvaged oak and engraved planks with donor names so future crossings would remember collective labor.", "Lors des crues de printemps, des coopératives reconstruisirent des ponts avec du chêne récupéré et gravèrent les planches du nom des donateurs afin que les passages futurs se souviennent du travail collectif."],
+  ["A philosopher visiting from Naples praised practical skepticism, urging students to test rumors by counting grain sacks, interviewing dock clerks, and timing carts.", "Un philosophe venu de Naples fit l'éloge d'un scepticisme pratique, exhortant les étudiants à vérifier les rumeurs en comptant les sacs de grain, en interrogeant les commis du port et en chronométrant les charrettes."],
+  ["At the observatory, assistants polished mirrors all afternoon and celebrated one clear night by mapping a comet tail that looked like torn silk.", "À l'observatoire, des assistants polirent des miroirs tout l'après-midi et célébrèrent une nuit claire en cartographiant une queue de comète qui ressemblait à de la soie déchirée."],
+  ["Merchants funded a reading circle in the granary loft, where dockworkers studied contracts and learned how punctuation altered taxes and liability.", "Des marchands financèrent un cercle de lecture dans le grenier à grains, où des dockers étudièrent des contrats et apprirent comment la ponctuation modifiait les taxes et la responsabilité."],
+  ["After a poor harvest, bakers posted transparent ledgers in shop windows, showing flour costs, transport fees, and charity loaves distributed each dawn.", "Après une mauvaise récolte, des boulangers affichèrent des registres transparents en vitrine, montrant le coût de la farine, les frais de transport et les pains de charité distribués à l'aube."],
+  ["A former soldier taught cartography to orphaned teenagers, insisting that accurate maps prevented commanders from wasting lives in marshes and ravines.", "Un ancien soldat enseigna la cartographie à des adolescents orphelins, insistant sur le fait que des cartes précises empêchaient les commandants de gaspiller des vies dans les marais et les ravins."],
+  ["Choir singers rehearsed in an unfinished warehouse and discovered the timber frame amplified low notes, turning rehearsal into an accidental acoustics lesson.", "Des choristes répétèrent dans un entrepôt inachevé et découvrirent que la charpente amplifiait les notes graves, transformant la répétition en leçon d'acoustique involontaire."],
+  ["A brewer sponsored public lectures on fermentation, linking spoiled barrels to hygiene, river contamination, and careless accounting rather than divine punishment.", "Un brasseur parraina des conférences publiques sur la fermentation, reliant les tonneaux gâtés à l'hygiène, à la pollution du fleuve et à une comptabilité négligente plutôt qu'à une punition divine."],
+  ["Young translators compared regional proverbs with legal terminology, realizing that community wisdom often predicted loopholes before officials drafted regulations.", "De jeunes traducteurs comparèrent des proverbes régionaux à la terminologie juridique, comprenant que la sagesse communautaire prévoyait souvent des failles avant que les autorités ne rédigent les règlements."],
+  ["A traveling theater troupe staged comedies about counterfeit scales, and audience laughter shifted into civic debate about inspections and market trust.", "Une troupe de théâtre ambulante joua des comédies sur des balances truquées, et les rires du public se transformèrent en débat civique sur les inspections et la confiance au marché."],
+  ["On market day, midwives hosted anatomy talks using carved wooden models, helping fathers understand childbirth risks and emergency signals.", "Le jour du marché, des sages-femmes organisèrent des exposés d'anatomie avec des modèles en bois sculpté, aidant les pères à comprendre les risques de l'accouchement et les signaux d'urgence."],
+  ["A clocktower committee standardized noon by solar observation, reducing disputes between mills, ferries, and court hearings that once operated on rival timekeeping traditions.", "Un comité du beffroi standardisa midi par observation solaire, réduisant les conflits entre moulins, bacs et audiences judiciaires qui fonctionnaient autrefois selon des traditions horaires rivales."],
+  ["Bookbinders salvaged damaged pages from flood-soaked libraries, then assembled hybrid volumes that preserved recipes beside political pamphlets and ship insurance clauses.", "Des relieurs récupérèrent des pages abîmées dans des bibliothèques inondées, puis assemblèrent des volumes hybrides qui préservaient des recettes à côté de pamphlets politiques et de clauses d'assurance maritime."],
+  ["A dairy cooperative tested ceramic cooling jars and published results weekly, proving that innovation spread faster when failures were documented honestly.", "Une coopérative laitière testa des jarres de refroidissement en céramique et publia les résultats chaque semaine, prouvant que l'innovation se diffusait plus vite quand les échecs étaient documentés avec honnêteté."],
+  ["During autumn fog, harbor pilots exchanged whistle codes with lighthouse keepers, creating redundant signals that saved barges loaded with grain and timber.", "Pendant le brouillard d'automne, des pilotes du port échangèrent des codes de sifflet avec les gardiens du phare, créant des signaux redondants qui sauvèrent des barges chargées de grain et de bois."],
+  ["An abbey gardener cataloged medicinal plants in four languages so refugees could identify familiar remedies despite dialect differences.", "Un jardinier d'abbaye catalogua des plantes médicinales en quatre langues afin que des réfugiés puissent reconnaître des remèdes familiers malgré les différences de dialecte."],
+  ["Workshop apprentices built a hand-powered paper press and discovered that smoother rollers reduced ink waste while improving readability for aging eyes.", "Des apprentis d'atelier construisirent une presse à papier manuelle et découvrirent que des rouleaux plus lisses réduisaient le gaspillage d'encre tout en améliorant la lisibilité pour des yeux vieillissants."],
+  ["At a town assembly, fishermen demanded transparent toll records, arguing that hidden fees punished small boats and rewarded monopolies.", "Lors d'une assemblée municipale, des pêcheurs exigèrent des registres de péage transparents, soutenant que les frais cachés pénalisaient les petites embarcations et récompensaient les monopoles."],
+  ["A quiet mathematician taught probability through dice games, showing traders how risk pooling could stabilize caravans crossing bandit territory.", "Un mathématicien discret enseigna les probabilités avec des jeux de dés, montrant aux commerçants comment la mutualisation du risque pouvait stabiliser les caravanes traversant des zones de bandits."],
+  ["The municipal bakery introduced rotating apprenticeships for girls and boys, and production records improved because every team documented techniques clearly.", "La boulangerie municipale introduisit des apprentissages tournants pour les filles et les garçons, et les registres de production s'améliorèrent parce que chaque équipe documentait clairement les techniques."],
+  ["A metallurgist explained alloy ratios to blacksmiths, comparing brittle failures with resilient tools forged under controlled heat and careful quenching.", "Un métallurgiste expliqua les proportions d'alliage aux forgerons, comparant les ruptures fragiles aux outils résistants forgés sous chaleur contrôlée et trempe attentive."],
+  ["During a cholera scare, volunteers mapped water pumps street by street, identifying contamination clusters before panic could overwhelm hospitals.", "Lors d'une alerte au choléra, des volontaires cartographièrent les pompes à eau rue par rue, identifiant des foyers de contamination avant que la panique ne submerge les hôpitaux."],
+  ["A violin maker apprenticed with a geometer to refine arching curves, proving that artistry and measurement strengthened rather than weakened each other.", "Un luthier se forma auprès d'un géomètre pour affiner les courbes de voûte, prouvant que l'art et la mesure se renforçaient au lieu de s'affaiblir."],
+  ["Rail surveyors camped near vineyards and negotiated routes that protected irrigation channels while shortening travel for produce wagons.", "Des arpenteurs ferroviaires campèrent près des vignobles et négocièrent des tracés qui protégeaient les canaux d'irrigation tout en raccourcissant le trajet des charrettes de récolte."],
+  ["A refugee calligrapher taught ledger handwriting to factory clerks, reducing payroll disputes caused by ambiguous numerals and smeared ink.", "Un calligraphe réfugié enseigna l'écriture comptable à des commis d'usine, réduisant les litiges de paie causés par des chiffres ambigus et de l'encre bavée."],
+  ["Public baths introduced posted cleaning schedules, and attendance rose because workers trusted shared spaces that acknowledged hygiene transparently.", "Les bains publics introduisirent des horaires de nettoyage affichés, et la fréquentation augmenta parce que les ouvriers faisaient confiance à des espaces partagés qui reconnaissaient l'hygiène avec transparence."],
+  ["An amateur geologist collected river stones with schoolchildren, turning each polished sample into a lesson on erosion, transport, and geological time.", "Un géologue amateur collecta des galets avec des écoliers, transformant chaque échantillon poli en leçon sur l'érosion, le transport et le temps géologique."],
+  ["In the courthouse cellar, archivists arranged decades of contracts by commodity, allowing farmers to compare fair rates across generations.", "Dans la cave du tribunal, des archivistes classèrent des décennies de contrats par marchandise, permettant aux agriculteurs de comparer des tarifs justes à travers les générations."],
+  ["A telegraph operator hosted evening classes on concise writing, teaching correspondents to remove vanity phrases and preserve actionable detail.", "Un opérateur télégraphique organisa des cours du soir sur l'écriture concise, apprenant aux correspondants à supprimer les formules vaniteuses et à conserver les détails exploitables."],
+  ["Shipwrights tested new hull coatings against barnacles and logged monthly drag measurements, proving maintenance science could outpace superstition.", "Des charpentiers de marine testèrent de nouveaux revêtements de coque contre les bernacles et consignèrent des mesures mensuelles de traînée, prouvant que la science de l'entretien pouvait dépasser la superstition."],
+  ["A cooperative pharmacy published ingredient origins, and trust deepened when customers recognized local growers supplying mint, willow bark, and chamomile.", "Une pharmacie coopérative publia l'origine des ingrédients, et la confiance se renforça lorsque les clients reconnurent les cultivateurs locaux fournissant menthe, écorce de saule et camomille."],
+  ["Teachers redesigned exams to reward revisions, encouraging apprentices to treat mistakes as data rather than shameful evidence of permanent incapacity.", "Des enseignants repensèrent les examens pour récompenser les révisions, encourageant les apprentis à traiter les erreurs comme des données plutôt que comme une preuve honteuse d'incapacité permanente."],
+  ["A mill owner installed transparent wage boards at the gate, and labor negotiations shifted from rumors to arithmetic that everyone could verify.", "Un propriétaire de moulin installa des tableaux de salaire transparents à l'entrée, et les négociations du travail passèrent des rumeurs à une arithmétique vérifiable par tous."],
+  ["Traveling nurses compared birthing practices between mountain villages and coastal towns, publishing practical guidance that respected local constraints.", "Des infirmières itinérantes comparèrent les pratiques d'accouchement entre villages de montagne et villes côtières, publiant des conseils pratiques respectueux des contraintes locales."],
+  ["An insurance mutual for carpenters required safety workshops, and claim rates dropped after members redesigned scaffolds with wider footing.", "Une mutuelle d'assurance pour charpentiers exigea des ateliers de sécurité, et les sinistres diminuèrent après que les membres eurent redessiné les échafaudages avec des appuis plus larges."],
+  ["At harvest festivals, poets recited verses about bookkeeping alongside love songs, normalizing the idea that romance and responsibility could share a stage.", "Aux fêtes des récoltes, des poètes récitèrent des vers sur la tenue des comptes à côté de chansons d'amour, normalisant l'idée que la romance et la responsabilité pouvaient partager une scène."],
+  ["Civic engineers opened bridge blueprints for public review, inviting masons and ferrymen to propose reinforcements before construction began.", "Des ingénieurs civiques ouvrirent les plans du pont à l'examen public, invitant maçons et passeurs à proposer des renforcements avant le début des travaux."],
+  ["A conservatory ensemble performed in factory courtyards at lunch, and workers reported fewer accidents after rhythmic breathing exercises improved concentration.", "Un ensemble de conservatoire joua dans des cours d'usine à midi, et les ouvriers signalèrent moins d'accidents après que des exercices de respiration rythmée eurent amélioré la concentration."],
+  ["Legal clerks translated tenant contracts into plain language, reducing evictions triggered by misunderstood clauses and hidden deadlines.", "Des clercs juridiques traduisirent des baux en langage clair, réduisant les expulsions provoquées par des clauses mal comprises et des échéances cachées."],
+  ["A weather station on the hill published frost alerts by bell pattern, helping orchard crews protect blossoms during sudden cold snaps.", "Une station météorologique sur la colline publia des alertes de gel par motifs de cloches, aidant les équipes des vergers à protéger les fleurs lors des coups de froid soudains."],
+  ["Metalworkers pioneered interchangeable tool heads, enabling remote farms to repair plows without waiting weeks for custom forging.", "Des métalliers pionniers créèrent des têtes d'outils interchangeables, permettant aux fermes éloignées de réparer des charrues sans attendre des semaines une forge sur mesure."],
+  ["A civic newspaper printed corrections on the front page each Monday, reinforcing that credibility depended on visible accountability.", "Un journal municipal imprima des corrections en première page chaque lundi, renforçant l'idée que la crédibilité dépendait d'une responsabilité visible."],
+  ["Pensioners mentored apprentices in negotiation roleplays, sharing stories where calm listening prevented strikes from turning violent.", "Des retraités mentorèrent des apprentis dans des jeux de négociation, partageant des histoires où une écoute calme empêcha les grèves de devenir violentes."],
+  ["University chemists partnered with soap makers to test purity standards, reducing skin injuries among laundry workers and hospital staff.", "Des chimistes universitaires s'associèrent à des savonniers pour tester des normes de pureté, réduisant les lésions cutanées chez les blanchisseuses et le personnel hospitalier."],
+  ["A canal commission funded bilingual signage, allowing migrant crews to report leaks quickly and coordinate repairs before embankments failed.", "Une commission des canaux finança une signalisation bilingue, permettant aux équipes migrantes de signaler rapidement des fuites et de coordonner les réparations avant l'effondrement des berges."],
+  ["At year end, neighborhood councils compared literacy rates with workshop injuries and found that evening education correlated with safer machinery use.", "En fin d'année, des conseils de quartier comparèrent les taux d'alphabétisation aux blessures d'atelier et constatèrent que l'éducation du soir corrélait avec une utilisation plus sûre des machines."],
+  ["A librarian curated oral histories from dock families, preserving migration routes, wage struggles, and culinary adaptations in indexed recordings.", "Une bibliothécaire organisa des histoires orales de familles du port, préservant des itinéraires de migration, des luttes salariales et des adaptations culinaires dans des enregistrements indexés."],
+  ["Textile workers redesigned shuttle grips using feedback from elders with arthritis, extending careers and improving loom consistency.", "Des ouvriers du textile redessinèrent les poignées de navette avec les retours d'aînés souffrant d'arthrite, prolongeant les carrières et améliorant la régularité des métiers."],
+  ["A cooperative bank introduced transparent microloans for widowed shopkeepers, and repayment success challenged assumptions about collateral and gender.", "Une banque coopérative introduisit des microprêts transparents pour des commerçantes veuves, et le succès des remboursements contesta les présupposés sur les garanties et le genre."],
+  ["Bridge toll collectors switched to numbered receipts, exposing fraud schemes that had siphoned funds from school maintenance budgets.", "Des percepteurs de péage passèrent à des reçus numérotés, révélant des fraudes qui avaient détourné des fonds destinés à l'entretien des écoles."],
+  ["Mechanics organized open repair days where children dismantled clocks, lanterns, and pumps to understand systems before memorizing theory.", "Des mécaniciens organisèrent des journées de réparation ouvertes où des enfants démontèrent horloges, lanternes et pompes pour comprendre les systèmes avant de mémoriser la théorie."],
+  ["A historian of agriculture compared seed diaries across valleys, identifying resilient strains that endured drought without sacrificing flavor.", "Un historien de l'agriculture compara des journaux de semences entre vallées, identifiant des variétés résistantes qui supportaient la sécheresse sans sacrifier le goût."],
+  ["Public debate societies required speaking turns for apprentices, widows, and migrants, widening policy discussions beyond established elites.", "Des sociétés de débat public imposèrent des tours de parole pour apprentis, veuves et migrants, élargissant les discussions politiques au-delà des élites établies."],
+  ["An engineer published affordable blueprint kits for rainwater cisterns, enabling neighborhoods to reduce outbreaks linked to stagnant wells.", "Un ingénieur publia des kits de plans abordables pour des citernes d'eau de pluie, permettant aux quartiers de réduire les épidémies liées aux puits stagnants."],
+  ["In a crowded lecture hall, the mayor admitted failed sanitation experiments and invited residents to co-design drainage routes with municipal crews.", "Dans un amphithéâtre bondé, le maire reconnut des expériences d'assainissement ratées et invita les habitants à co-concevoir les réseaux de drainage avec les équipes municipales."],
 ];
 
-function repeatPairs(pairs, repeats) {
-  const out = [];
-  for (let i = 0; i < repeats; i += 1) {
-    for (const pair of pairs) out.push(pair);
-  }
-  return out;
+
+
+const districts = ["canal quarter", "hill district", "old harbor", "north workshops", "orchard belt", "station ward", "river terraces", "market square", "glassmakers lane", "southern mills"];
+const groups = ["teachers", "carpenters", "midwives", "nurses", "millers", "surveyors", "scribes", "gardeners", "apprentices", "ferrymen"];
+const actions = ["published detailed maintenance logs", "opened public training sessions", "shared bilingual safety bulletins", "tested redesigned tools in field conditions", "mapped supply bottlenecks street by street", "audited contracts for hidden penalties", "ran evening literacy workshops", "coordinated emergency drills with neighbors", "tracked seasonal disease patterns", "documented repair costs with receipts"];
+const outcomes = ["which reduced preventable accidents during winter shifts", "so smaller households could plan expenses with confidence", "and trust improved between guilds and new migrants", "allowing delayed projects to recover without overtime abuse", "which helped local councils budget repairs before crises", "and young workers gained faster access to skilled mentors", "so disputes were settled with evidence rather than rumor", "which strengthened food distribution during storm disruptions", "and families reported clearer communication across generations", "so public meetings moved from blame toward practical coordination"];
+
+function toFrenchDistrict(value) {
+  const map = {
+    "canal quarter": "quartier du canal",
+    "hill district": "quartier de la colline",
+    "old harbor": "vieux port",
+    "north workshops": "ateliers du nord",
+    "orchard belt": "ceinture des vergers",
+    "station ward": "quartier de la gare",
+    "river terraces": "terrasses du fleuve",
+    "market square": "place du marché",
+    "glassmakers lane": "rue des verriers",
+    "southern mills": "moulins du sud",
+  };
+  return map[value] ?? value;
 }
+
+function toFrenchGroup(value) {
+  const map = {
+    teachers: "des enseignants",
+    carpenters: "des charpentiers",
+    midwives: "des sages-femmes",
+    nurses: "des infirmières",
+    millers: "des meuniers",
+    surveyors: "des arpenteurs",
+    scribes: "des scribes",
+    gardeners: "des jardiniers",
+    apprentices: "des apprentis",
+    ferrymen: "des passeurs",
+  };
+  return map[value] ?? value;
+}
+
+function toFrenchAction(value) {
+  const map = {
+    "published detailed maintenance logs": "publièrent des registres d'entretien détaillés",
+    "opened public training sessions": "ouvrirent des sessions de formation publiques",
+    "shared bilingual safety bulletins": "partagèrent des bulletins de sécurité bilingues",
+    "tested redesigned tools in field conditions": "testèrent des outils redessinés en conditions réelles",
+    "mapped supply bottlenecks street by street": "cartographièrent les goulets d'approvisionnement rue par rue",
+    "audited contracts for hidden penalties": "auditèrent des contrats pour repérer des pénalités cachées",
+    "ran evening literacy workshops": "animèrent des ateliers d'alphabétisation du soir",
+    "coordinated emergency drills with neighbors": "coordonnèrent des exercices d'urgence avec les voisins",
+    "tracked seasonal disease patterns": "suivirent les schémas saisonniers des maladies",
+    "documented repair costs with receipts": "documentèrent les coûts de réparation avec des reçus",
+  };
+  return map[value] ?? value;
+}
+
+function toFrenchOutcome(value) {
+  const map = {
+    "which reduced preventable accidents during winter shifts": "ce qui réduisit les accidents évitables pendant les services d'hiver",
+    "so smaller households could plan expenses with confidence": "afin que les ménages modestes puissent planifier leurs dépenses avec confiance",
+    "and trust improved between guilds and new migrants": "et la confiance s'améliora entre les guildes et les nouveaux migrants",
+    "allowing delayed projects to recover without overtime abuse": "permettant aux projets en retard de reprendre sans abus d'heures supplémentaires",
+    "which helped local councils budget repairs before crises": "ce qui aida les conseils locaux à budgéter les réparations avant les crises",
+    "and young workers gained faster access to skilled mentors": "et les jeunes travailleurs obtinrent un accès plus rapide à des mentors qualifiés",
+    "so disputes were settled with evidence rather than rumor": "de sorte que les conflits furent réglés par des preuves plutôt que par des rumeurs",
+    "which strengthened food distribution during storm disruptions": "ce qui renforça la distribution alimentaire pendant les perturbations causées par les tempêtes",
+    "and families reported clearer communication across generations": "et les familles signalèrent une communication plus claire entre les générations",
+    "so public meetings moved from blame toward practical coordination": "de sorte que les réunions publiques passèrent du reproche à une coordination pratique",
+  };
+  return map[value] ?? value;
+}
+
+function generateAdditionalPairs(targetCount) {
+  const pairs = [];
+  let i = 0;
+  while (pairs.length < targetCount) {
+    const district = districts[i % districts.length];
+    const group = groups[(i * 3) % groups.length];
+    const action = actions[(i * 5) % actions.length];
+    const outcome = outcomes[(i * 7) % outcomes.length];
+
+    const en = `In the ${district}, ${group} ${action}, ${outcome}, while rotating volunteers documented lessons learned for the next planning cycle ${i + 1}.`;
+    const fr = `Dans le ${toFrenchDistrict(district)}, ${toFrenchGroup(group)} ${toFrenchAction(action)}, ${toFrenchOutcome(outcome)}, tandis que des volontaires tournants documentaient les leçons apprises pour le cycle de planification ${i + 1}.`;
+    pairs.push([en, fr]);
+    i += 1;
+  }
+  return pairs;
+}
+
+function countWords(text) {
+  return text.match(/[A-Za-zÀ-ÖØ-öø-ÿ'-]+/g)?.length ?? 0;
+}
+
+const additionalPairs = generateAdditionalPairs(80);
+const allPairs = [...eraEvents, ...additionalPairs];
+const totalEnglishWords = allPairs.reduce((sum, [en]) => sum + countWords(en), 0);
 
 export const texts = [
   {
-    id: "candide-loop",
-    title: "Candide (Chapter 1 excerpt, repeated)",
+    id: "civic-chronicle",
+    title: "Civic Chronicle (extended bilingual excerpt)",
     description:
-      "Voltaire's French original with a classic public-domain English translation lineage; repeated to create a long progressive reading session.",
+      "A non-repeating bilingual civic chronicle designed for progressive Franglais blending.",
     source:
-      "Source tradition: Project Gutenberg / public-domain editions of Candide (French original and 19th-century English translations).",
-    pairs: repeatPairs(candidePairs, 12),
+      `Curated original excerpt for language practice. Total English words: ${totalEnglishWords}.`,
+    pairs: allPairs.map(([en, fr]) => ({ en, fr })),
   },
 ];
