@@ -3,8 +3,8 @@ import { texts } from "./texts.js";
 const WORDS_PER_CHUNK = 500;
 const PHASES = [
   { start: 0, type: "token", probability: 0 },
-  { start: 300, type: "token", probability: 0.1 },
-  { start: 600, type: "token", probability: 0.2 },
+  { start: 50, type: "token", probability: 0.1 },
+  { start: 250, type: "token", probability: 0.2 },
   { start: 800, type: "token", probability: 0.3 },
   { start: 900, type: "token", probability: 0.4 },
   { start: 1000, type: "token", probability: 0.5 },
