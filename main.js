@@ -1,6 +1,47 @@
 import { texts } from "./texts.js";
 
 const WORDS_PER_CHUNK = 500;
+const LEXICON_CONFIG = {
+  minimumConfidence: 0.6,
+  minimumCooccurrencePairs: 3,
+  minimumForwardDominance: 0.7,
+  minimumReverseDominance: 0.55,
+  unsafeFrenchFanInLimit: 3,
+};
+
+const LOCKED_SEED_DICTIONARY = Object.freeze({
+  time: "temps",
+  year: "annee",
+  day: "jour",
+  night: "nuit",
+  people: "gens",
+  man: "homme",
+  woman: "femme",
+  child: "enfant",
+  work: "travail",
+  school: "ecole",
+  city: "ville",
+  village: "village",
+  house: "maison",
+  family: "famille",
+  market: "marche",
+  money: "argent",
+  food: "nourriture",
+  water: "eau",
+  read: "lire",
+  write: "ecrire",
+  learn: "apprendre",
+  know: "savoir",
+  see: "voir",
+  make: "faire",
+  build: "construire",
+  give: "donner",
+  take: "prendre",
+  come: "venir",
+  go: "aller",
+  say: "dire",
+});
+
 const PHASES = [
   { start: 0, type: "token", probability: 0 },
   { start: 50, type: "token", probability: 0.1 },
@@ -16,6 +57,7 @@ const select = document.querySelector("#text-select");
 const reader = document.querySelector("#reader");
 const textMeta = document.querySelector("#text-meta");
 const progress = document.querySelector("#progress");
+const lexiconInspector = document.querySelector("#lexicon-inspector");
 const startBtn = document.querySelector("#start-btn");
 const nextBtn = document.querySelector("#next-btn");
 const nextFiveBtn = document.querySelector("#next-five-btn");
@@ -27,6 +69,7 @@ const state = {
   sentenceEndsByChunk: [],
   renderedSentenceCount: 0,
   bilingualLexicon: new Map(),
+  lexiconReport: null,
 };
 
 function wordTokens(text) {
@@ -91,29 +134,45 @@ function hasNounOrVerbTag(tags = []) {
 }
 
 function extractContentWords(sentence, language) {
+  if (typeof window.nlp !== "function") return [];
+
   const words = [];
-
-  if (typeof window.nlp === "function") {
-    const doc = window.nlp(sentence);
-    const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
-    for (const term of termData) {
-      if (!hasNounOrVerbTag(term.tags)) continue;
-      const text = term.normal || term.text;
-      const lemma = toSimpleLemma(text, language);
-      if (lemma) {
-        words.push({ lemma, original: term.text });
-      }
-    }
-  }
-
-  if (words.length === 0) {
-    for (const token of wordTokens(sentence)) {
-      const lemma = toSimpleLemma(token, language);
-      if (lemma) words.push({ lemma, original: token });
+  const doc = window.nlp(sentence);
+  const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
+  for (const term of termData) {
+    if (!hasNounOrVerbTag(term.tags)) continue;
+    const text = term.normal || term.text;
+    const lemma = toSimpleLemma(text, language);
+    if (lemma) {
+      words.push({ lemma, original: term.text });
     }
   }
 
   return words;
+}
+
+function generateLexiconCode(lockedMappings, learnedMappings) {
+  const lines = [
+    "// Generated lexicon proposal (review/edit before freezing):",
+    "const LOCKED_SEED_DICTIONARY = Object.freeze({",
+  ];
+
+  const lockedEntries = Array.from(lockedMappings.entries()).sort(([a], [b]) => a.localeCompare(b));
+  for (const [enLemma, frLemma] of lockedEntries) {
+    lines.push(`  ${JSON.stringify(enLemma)}: ${JSON.stringify(frLemma)},`);
+  }
+  lines.push("});");
+  lines.push("");
+  lines.push("const LEARNED_LEXICON_OVERRIDES = Object.freeze({");
+
+  for (const mapping of [...learnedMappings].sort((a, b) => a.enLemma.localeCompare(b.enLemma))) {
+    lines.push(
+      `  ${JSON.stringify(mapping.enLemma)}: ${JSON.stringify(mapping.frLemma)}, // conf=${mapping.confidence} pairs=${mapping.cooccurrence}`,
+    );
+  }
+  lines.push("});");
+
+  return lines.join("\n");
 }
 
 function buildSemanticLexicon(pairs) {
@@ -141,46 +200,99 @@ function buildSemanticLexicon(pairs) {
     }
   }
 
-  const lexicon = new Map();
+  const manualLocks = new Map(Object.entries(LOCKED_SEED_DICTIONARY));
+  const lexicon = new Map(manualLocks);
+  const proposedMappings = [];
+
   for (const [enLemma, candidates] of enToFr.entries()) {
+    if (manualLocks.has(enLemma)) continue;
+
     let bestFr = null;
     let bestScore = -1;
+    let bestCooccurrence = 0;
+    let runnerUpScore = -1;
+
     for (const [frLemma, cooccurrence] of candidates.entries()) {
       const enFreq = enTotals.get(enLemma) ?? 1;
       const frFreq = frTotals.get(frLemma) ?? 1;
       const score = (2 * cooccurrence) / (enFreq + frFreq);
+
       if (score > bestScore) {
+        runnerUpScore = bestScore;
+        bestCooccurrence = cooccurrence;
         bestScore = score;
         bestFr = frLemma;
+      } else if (score > runnerUpScore) {
+        runnerUpScore = score;
       }
     }
 
-    if (bestFr) lexicon.set(enLemma, bestFr);
+    if (!bestFr) continue;
+
+    const enFreq = enTotals.get(enLemma) ?? 1;
+    const forwardDominance = bestCooccurrence / enFreq;
+    const reverseDominance = bestCooccurrence / (frTotals.get(bestFr) ?? 1);
+    const margin = bestScore - Math.max(0, runnerUpScore);
+
+    if (
+      bestScore < LEXICON_CONFIG.minimumConfidence ||
+      bestCooccurrence < LEXICON_CONFIG.minimumCooccurrencePairs ||
+      forwardDominance < LEXICON_CONFIG.minimumForwardDominance ||
+      reverseDominance < LEXICON_CONFIG.minimumReverseDominance ||
+      margin <= 0
+    ) {
+      continue;
+    }
+
+    proposedMappings.push({
+      enLemma,
+      frLemma: bestFr,
+      confidence: Number(bestScore.toFixed(3)),
+      cooccurrence: bestCooccurrence,
+      forwardDominance: Number(forwardDominance.toFixed(3)),
+      reverseDominance: Number(reverseDominance.toFixed(3)),
+    });
   }
 
-  return lexicon;
+  const frenchFanIn = new Map();
+  for (const mapping of proposedMappings) {
+    const current = frenchFanIn.get(mapping.frLemma) ?? 0;
+    frenchFanIn.set(mapping.frLemma, current + 1);
+  }
+
+  const acceptedLearned = [];
+  const rejectedUnsafe = [];
+  for (const mapping of proposedMappings) {
+    if ((frenchFanIn.get(mapping.frLemma) ?? 0) > LEXICON_CONFIG.unsafeFrenchFanInLimit) {
+      rejectedUnsafe.push(mapping);
+      continue;
+    }
+    acceptedLearned.push(mapping);
+    lexicon.set(mapping.enLemma, mapping.frLemma);
+  }
+
+  const report = {
+    config: LEXICON_CONFIG,
+    lockedSeeds: Array.from(manualLocks.entries()).map(([enLemma, frLemma]) => ({ enLemma, frLemma })),
+    acceptedLearned,
+    rejectedUnsafe,
+    generatedCode: generateLexiconCode(manualLocks, acceptedLearned),
+  };
+
+  return { lexicon, report };
 }
 
 function targetPartsOfSpeech(sentence) {
   const words = new Set();
 
-  if (typeof window.nlp === "function") {
-    const doc = window.nlp(sentence);
-    const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
-    for (const term of termData) {
-      const tags = term.tags ?? [];
-      if (tags.includes("Noun") || tags.includes("Verb")) {
-        const lemma = toSimpleLemma(term.text, "en");
-        if (lemma) words.add(lemma);
-      }
-    }
-  }
+  if (typeof window.nlp !== "function") return words;
 
-  if (words.size === 0) {
-    for (const token of wordTokens(sentence)) {
-      const lemma = toSimpleLemma(token, "en");
-      if (lemma) words.add(lemma);
-    }
+  const doc = window.nlp(sentence);
+  const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
+  for (const term of termData) {
+    if (!hasNounOrVerbTag(term.tags)) continue;
+    const lemma = toSimpleLemma(term.text, "en");
+    if (lemma) words.add(lemma);
   }
 
   return words;
@@ -200,6 +312,8 @@ function blendSentence(pair, sentenceIndex, startWordIndex) {
   if (tokenProbability <= 0) return `<span class="sentence">${escapeHtml(pair.en)}</span>`;
 
   const posTargets = targetPartsOfSpeech(pair.en);
+  if (posTargets.size === 0) return `<span class="sentence">${escapeHtml(pair.en)}</span>`;
+
   const tokenized = pair.en.split(/(\b[\wÀ-ÖØ-öø-ÿ'-]+\b)/g);
 
   const blended = tokenized.map((piece, tokenIndex) => {
@@ -217,6 +331,23 @@ function blendSentence(pair, sentenceIndex, startWordIndex) {
   });
 
   return `<span class="sentence">${blended.join("")}</span>`;
+}
+
+function renderLexiconInspector() {
+  if (!lexiconInspector) return;
+  if (!state.lexiconReport) {
+    lexiconInspector.textContent = "";
+    return;
+  }
+
+  const { lockedSeeds, acceptedLearned, rejectedUnsafe, generatedCode } = state.lexiconReport;
+  lexiconInspector.textContent = [
+    `Locked seed mappings: ${lockedSeeds.length}`,
+    `Accepted learned mappings: ${acceptedLearned.length}`,
+    `Rejected by unsafe substitution detector: ${rejectedUnsafe.length}`,
+    "",
+    generatedCode,
+  ].join("\n");
 }
 
 function buildChunkEnds(wordCounts, minWordsPerChunk) {
@@ -265,7 +396,9 @@ function renderVisibleSentences() {
 
 function loadText(text) {
   state.text = text;
-  state.bilingualLexicon = buildSemanticLexicon(text.pairs);
+  const { lexicon, report } = buildSemanticLexicon(text.pairs);
+  state.bilingualLexicon = lexicon;
+  state.lexiconReport = report;
   state.sentenceWordCounts = text.pairs.map((pair) => wordTokens(pair.en).length);
   state.sentenceEndsByChunk = buildChunkEnds(state.sentenceWordCounts, WORDS_PER_CHUNK);
   state.renderedSentenceCount = 0;
@@ -275,6 +408,7 @@ function loadText(text) {
   progress.textContent = `Ready: ${text.pairs.length} sentences, ${state.sentenceWordCounts
     .reduce((sum, n) => sum + n, 0)
     .toLocaleString()} words total.`;
+  renderLexiconInspector();
   nextBtn.disabled = true;
   nextFiveBtn.disabled = true;
 }
