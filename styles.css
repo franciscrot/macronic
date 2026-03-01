@@ -66,3 +66,14 @@ select {
   text-decoration: underline dotted;
   cursor: help;
 }
+
+.lexicon-inspector {
+  max-height: 16rem;
+  overflow: auto;
+  white-space: pre;
+  font-size: 0.85rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
