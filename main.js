@@ -26,6 +26,7 @@ const state = {
   sentenceWordCounts: [],
   sentenceEndsByChunk: [],
   renderedSentenceCount: 0,
+  bilingualLexicon: new Map(),
 };
 
 function wordTokens(text) {
@@ -58,16 +59,154 @@ function escapeHtml(text) {
     .replaceAll("'", "&#39;");
 }
 
-function buildFrenchLookup(english, french) {
-  const enWords = wordTokens(english);
-  const frWords = wordTokens(french);
-  const lookup = new Map();
-  for (let i = 0; i < enWords.length; i += 1) {
-    const en = enWords[i]?.toLowerCase();
-    const fr = frWords[i];
-    if (en && fr && !lookup.has(en)) lookup.set(en, fr);
+function normalizeToken(token) {
+  return token
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z'-]/g, "");
+}
+
+function toSimpleLemma(token, language) {
+  let lemma = normalizeToken(token);
+  if (!lemma) return "";
+
+  const suffixes =
+    language === "en"
+      ? ["ingly", "ation", "ments", "ement", "ingly", "lessly", "ed", "ing", "es", "s"]
+      : ["ements", "ement", "ations", "ation", "aient", "ions", "ait", "ent", "es", "s"];
+
+  for (const suffix of suffixes) {
+    if (lemma.length > suffix.length + 2 && lemma.endsWith(suffix)) {
+      lemma = lemma.slice(0, -suffix.length);
+      break;
+    }
   }
-  return lookup;
+
+  return lemma;
+}
+
+function hasNounOrVerbTag(tags = []) {
+  return tags.includes("Noun") || tags.includes("Verb") || tags.includes("Infinitive") || tags.includes("Gerund");
+}
+
+function extractContentWords(sentence, language) {
+  const words = [];
+
+  if (typeof window.nlp === "function") {
+    const doc = window.nlp(sentence);
+    const termData = doc.terms().json({ offset: false })[0]?.terms ?? [];
+    for (const term of termData) {
+      if (!hasNounOrVerbTag(term.tags)) continue;
+      const text = term.normal || term.text;
+      const lemma = toSimpleLemma(text, language);
+      if (lemma) {
+        words.push({ lemma, original: term.text });
+      }
+    }
+  }
+
+  if (words.length === 0) {
+    for (const token of wordTokens(sentence)) {
+      const lemma = toSimpleLemma(token, language);
+      if (lemma) words.push({ lemma, original: token });
+    }
+  }
+
+  return words;
+}
+
+function buildSemanticLexicon(pairs) {
+  const preparedPairs = pairs
+    .map((pair) => {
+      const enLemmas = [...new Set(extractContentWords(pair.en, "en").map((word) => word.lemma))];
+      const frLemmas = [...new Set(extractContentWords(pair.fr, "fr").map((word) => word.lemma))];
+      return { enLemmas, frLemmas };
+    })
+    .filter((pair) => pair.enLemmas.length > 0 && pair.frLemmas.length > 0);
+
+  const frVocabulary = new Set();
+  for (const pair of preparedPairs) {
+    for (const frLemma of pair.frLemmas) {
+      frVocabulary.add(frLemma);
+    }
+  }
+
+  const uniform = 1 / Math.max(frVocabulary.size, 1);
+  const translationProbabilities = new Map();
+
+  for (const pair of preparedPairs) {
+    for (const enLemma of pair.enLemmas) {
+      if (!translationProbabilities.has(enLemma)) {
+        const candidates = new Map();
+        for (const frLemma of pair.frLemmas) {
+          candidates.set(frLemma, uniform);
+        }
+        translationProbabilities.set(enLemma, candidates);
+        continue;
+      }
+
+      const candidates = translationProbabilities.get(enLemma);
+      for (const frLemma of pair.frLemmas) {
+        if (!candidates.has(frLemma)) candidates.set(frLemma, uniform);
+      }
+    }
+  }
+
+  const ITERATIONS = 8;
+  for (let step = 0; step < ITERATIONS; step += 1) {
+    const expectedCounts = new Map();
+    const totalsByEnglish = new Map();
+
+    for (const pair of preparedPairs) {
+      for (const frLemma of pair.frLemmas) {
+        let normalization = 0;
+        for (const enLemma of pair.enLemmas) {
+          normalization += translationProbabilities.get(enLemma)?.get(frLemma) ?? 0;
+        }
+
+        if (normalization <= 0) continue;
+
+        for (const enLemma of pair.enLemmas) {
+          const probability = translationProbabilities.get(enLemma)?.get(frLemma) ?? 0;
+          if (probability <= 0) continue;
+          const posterior = probability / normalization;
+
+          if (!expectedCounts.has(enLemma)) expectedCounts.set(enLemma, new Map());
+          const bucket = expectedCounts.get(enLemma);
+          bucket.set(frLemma, (bucket.get(frLemma) ?? 0) + posterior);
+          totalsByEnglish.set(enLemma, (totalsByEnglish.get(enLemma) ?? 0) + posterior);
+        }
+      }
+    }
+
+    for (const [enLemma, frCounts] of expectedCounts.entries()) {
+      const total = totalsByEnglish.get(enLemma) ?? 0;
+      if (total <= 0) continue;
+      const probs = translationProbabilities.get(enLemma);
+      for (const [frLemma, count] of frCounts.entries()) {
+        probs.set(frLemma, count / total);
+      }
+    }
+  }
+
+  const lexicon = new Map();
+  for (const [enLemma, frProbs] of translationProbabilities.entries()) {
+    let bestFr = null;
+    let bestProbability = 0;
+    for (const [frLemma, probability] of frProbs.entries()) {
+      if (probability > bestProbability) {
+        bestProbability = probability;
+        bestFr = frLemma;
+      }
+    }
+
+    if (bestFr && bestProbability > 0) {
+      lexicon.set(enLemma, bestFr);
+    }
+  }
+
+  return lexicon;
 }
 
 function targetPartsOfSpeech(sentence) {
@@ -79,14 +218,16 @@ function targetPartsOfSpeech(sentence) {
     for (const term of termData) {
       const tags = term.tags ?? [];
       if (tags.includes("Noun") || tags.includes("Verb")) {
-        words.add(term.text.toLowerCase());
+        const lemma = toSimpleLemma(term.text, "en");
+        if (lemma) words.add(lemma);
       }
     }
   }
 
   if (words.size === 0) {
     for (const token of wordTokens(sentence)) {
-      words.add(token.toLowerCase());
+      const lemma = toSimpleLemma(token, "en");
+      if (lemma) words.add(lemma);
     }
   }
 
@@ -107,15 +248,14 @@ function blendSentence(pair, sentenceIndex, startWordIndex) {
   if (tokenProbability <= 0) return `<span class="sentence">${escapeHtml(pair.en)}</span>`;
 
   const posTargets = targetPartsOfSpeech(pair.en);
-  const frLookup = buildFrenchLookup(pair.en, pair.fr);
   const tokenized = pair.en.split(/(\b[\wÀ-ÖØ-öø-ÿ'-]+\b)/g);
 
   const blended = tokenized.map((piece, tokenIndex) => {
     if (!/^[\wÀ-ÖØ-öø-ÿ'-]+$/.test(piece)) return escapeHtml(piece);
-    const lower = piece.toLowerCase();
-    if (!posTargets.has(lower)) return escapeHtml(piece);
+    const lemma = toSimpleLemma(piece, "en");
+    if (!posTargets.has(lemma)) return escapeHtml(piece);
 
-    const frenchWord = frLookup.get(lower);
+    const frenchWord = state.bilingualLexicon.get(lemma);
     if (!frenchWord) return escapeHtml(piece);
 
     const roll = hashToUnit(`w:${sentenceIndex}:${tokenIndex}:${piece}`);
@@ -173,6 +313,7 @@ function renderVisibleSentences() {
 
 function loadText(text) {
   state.text = text;
+  state.bilingualLexicon = buildSemanticLexicon(text.pairs);
   state.sentenceWordCounts = text.pairs.map((pair) => wordTokens(pair.en).length);
   state.sentenceEndsByChunk = buildChunkEnds(state.sentenceWordCounts, WORDS_PER_CHUNK);
   state.renderedSentenceCount = 0;
