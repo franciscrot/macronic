@@ -117,93 +117,45 @@ function extractContentWords(sentence, language) {
 }
 
 function buildSemanticLexicon(pairs) {
-  const preparedPairs = pairs
-    .map((pair) => {
-      const enLemmas = [...new Set(extractContentWords(pair.en, "en").map((word) => word.lemma))];
-      const frLemmas = [...new Set(extractContentWords(pair.fr, "fr").map((word) => word.lemma))];
-      return { enLemmas, frLemmas };
-    })
-    .filter((pair) => pair.enLemmas.length > 0 && pair.frLemmas.length > 0);
+  const enToFr = new Map();
+  const enTotals = new Map();
+  const frTotals = new Map();
 
-  const frVocabulary = new Set();
-  for (const pair of preparedPairs) {
-    for (const frLemma of pair.frLemmas) {
-      frVocabulary.add(frLemma);
-    }
-  }
+  for (const pair of pairs) {
+    const enContent = extractContentWords(pair.en, "en");
+    const frContent = extractContentWords(pair.fr, "fr");
+    const enSet = new Set(enContent.map((word) => word.lemma));
+    const frSet = new Set(frContent.map((word) => word.lemma));
 
-  const uniform = 1 / Math.max(frVocabulary.size, 1);
-  const translationProbabilities = new Map();
-
-  for (const pair of preparedPairs) {
-    for (const enLemma of pair.enLemmas) {
-      if (!translationProbabilities.has(enLemma)) {
-        const candidates = new Map();
-        for (const frLemma of pair.frLemmas) {
-          candidates.set(frLemma, uniform);
-        }
-        translationProbabilities.set(enLemma, candidates);
-        continue;
-      }
-
-      const candidates = translationProbabilities.get(enLemma);
-      for (const frLemma of pair.frLemmas) {
-        if (!candidates.has(frLemma)) candidates.set(frLemma, uniform);
-      }
-    }
-  }
-
-  const ITERATIONS = 8;
-  for (let step = 0; step < ITERATIONS; step += 1) {
-    const expectedCounts = new Map();
-    const totalsByEnglish = new Map();
-
-    for (const pair of preparedPairs) {
-      for (const frLemma of pair.frLemmas) {
-        let normalization = 0;
-        for (const enLemma of pair.enLemmas) {
-          normalization += translationProbabilities.get(enLemma)?.get(frLemma) ?? 0;
-        }
-
-        if (normalization <= 0) continue;
-
-        for (const enLemma of pair.enLemmas) {
-          const probability = translationProbabilities.get(enLemma)?.get(frLemma) ?? 0;
-          if (probability <= 0) continue;
-          const posterior = probability / normalization;
-
-          if (!expectedCounts.has(enLemma)) expectedCounts.set(enLemma, new Map());
-          const bucket = expectedCounts.get(enLemma);
-          bucket.set(frLemma, (bucket.get(frLemma) ?? 0) + posterior);
-          totalsByEnglish.set(enLemma, (totalsByEnglish.get(enLemma) ?? 0) + posterior);
-        }
+    for (const enLemma of enSet) {
+      enTotals.set(enLemma, (enTotals.get(enLemma) ?? 0) + 1);
+      if (!enToFr.has(enLemma)) enToFr.set(enLemma, new Map());
+      const candidates = enToFr.get(enLemma);
+      for (const frLemma of frSet) {
+        candidates.set(frLemma, (candidates.get(frLemma) ?? 0) + 1);
       }
     }
 
-    for (const [enLemma, frCounts] of expectedCounts.entries()) {
-      const total = totalsByEnglish.get(enLemma) ?? 0;
-      if (total <= 0) continue;
-      const probs = translationProbabilities.get(enLemma);
-      for (const [frLemma, count] of frCounts.entries()) {
-        probs.set(frLemma, count / total);
-      }
+    for (const frLemma of frSet) {
+      frTotals.set(frLemma, (frTotals.get(frLemma) ?? 0) + 1);
     }
   }
 
   const lexicon = new Map();
-  for (const [enLemma, frProbs] of translationProbabilities.entries()) {
+  for (const [enLemma, candidates] of enToFr.entries()) {
     let bestFr = null;
-    let bestProbability = 0;
-    for (const [frLemma, probability] of frProbs.entries()) {
-      if (probability > bestProbability) {
-        bestProbability = probability;
+    let bestScore = -1;
+    for (const [frLemma, cooccurrence] of candidates.entries()) {
+      const enFreq = enTotals.get(enLemma) ?? 1;
+      const frFreq = frTotals.get(frLemma) ?? 1;
+      const score = (2 * cooccurrence) / (enFreq + frFreq);
+      if (score > bestScore) {
+        bestScore = score;
         bestFr = frLemma;
       }
     }
 
-    if (bestFr && bestProbability > 0) {
-      lexicon.set(enLemma, bestFr);
-    }
+    if (bestFr) lexicon.set(enLemma, bestFr);
   }
 
   return lexicon;
