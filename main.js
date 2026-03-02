@@ -1,18 +1,18 @@
-const WORDS_PER_CHUNK = 120;
+const WORDS_PER_PAGE = 120;
 
 const reader = document.querySelector('#reader');
 const progress = document.querySelector('#progress');
 const startBtn = document.querySelector('#start-btn');
+const previousBtn = document.querySelector('#previous-btn');
 const nextBtn = document.querySelector('#next-btn');
-const nextFiveBtn = document.querySelector('#next-five-btn');
 const resetBtn = document.querySelector('#reset-btn');
 const textMeta = document.querySelector('#text-meta');
 
 const state = {
   pairs: [],
   sentenceWordCounts: [],
-  chunkEnds: [],
-  renderedSentenceCount: 0,
+  pageEnds: [],
+  currentPageIndex: -1,
 };
 
 function hashToUnit(str) {
@@ -66,13 +66,13 @@ function englishWordCount(pair) {
   return pair.en_units.filter((unit) => isWord(unit)).length;
 }
 
-function buildChunkEnds(wordCounts, minWordsPerChunk) {
+function buildPageEnds(wordCounts, minWordsPerPage) {
   const ends = [];
   let i = 0;
   while (i < wordCounts.length) {
     let words = 0;
     let j = i;
-    while (j < wordCounts.length && words < minWordsPerChunk) {
+    while (j < wordCounts.length && words < minWordsPerPage) {
       words += wordCounts[j];
       j += 1;
     }
@@ -132,45 +132,51 @@ function blendedSentence(pair, sentenceIndex, sentenceStartWordNumber) {
   return `<span class="sentence">${joinUnits(outputUnits)}</span>`;
 }
 
-function render() {
-  const html = [];
-  let wordsSoFar = 0;
+function pageBounds(pageIndex) {
+  const end = state.pageEnds[pageIndex];
+  const start = pageIndex === 0 ? 0 : state.pageEnds[pageIndex - 1];
+  return { start, end };
+}
 
-  for (let i = 0; i < state.renderedSentenceCount; i += 1) {
+function render() {
+  if (state.currentPageIndex < 0) {
+    reader.textContent = `Press “Start text” to begin. Each page shows at least ${WORDS_PER_PAGE} words.`;
+    progress.textContent = 'Ready to read.';
+    previousBtn.disabled = true;
+    nextBtn.disabled = state.pageEnds.length === 0;
+    return;
+  }
+
+  const { start, end } = pageBounds(state.currentPageIndex);
+  const html = [];
+  let wordsSoFar = state.sentenceWordCounts.slice(0, start).reduce((sum, n) => sum + n, 0);
+  let pageWords = 0;
+
+  for (let i = start; i < end; i += 1) {
     const pair = state.pairs[i];
     html.push(blendedSentence(pair, i, wordsSoFar + 1));
     html.push(' ');
     wordsSoFar += state.sentenceWordCounts[i];
+    pageWords += state.sentenceWordCounts[i];
   }
 
   reader.innerHTML = html.join('').trim();
 
-  const totalWords = state.sentenceWordCounts.reduce((sum, n) => sum + n, 0);
-  progress.textContent = `Showing ${wordsSoFar.toLocaleString()} / ${totalWords.toLocaleString()} words (${state.renderedSentenceCount}/${state.pairs.length} sentences).`;
+  progress.textContent = `Page ${state.currentPageIndex + 1} of ${state.pageEnds.length} · ${pageWords.toLocaleString()} words on this page.`;
 
-  const atEnd = state.renderedSentenceCount >= state.pairs.length;
-  nextBtn.disabled = atEnd;
-  nextFiveBtn.disabled = atEnd;
+  previousBtn.disabled = state.currentPageIndex <= 0;
+  nextBtn.disabled = state.currentPageIndex >= state.pageEnds.length - 1;
 }
 
-function advanceChunks(chunkCount) {
-  if (state.chunkEnds.length === 0) return;
-
-  const currentChunkIndex = state.chunkEnds.findIndex((end) => end > state.renderedSentenceCount);
-  const baseIndex = currentChunkIndex === -1 ? state.chunkEnds.length - 1 : Math.max(0, currentChunkIndex);
-  const targetChunkIndex = Math.min(baseIndex + chunkCount - 1, state.chunkEnds.length - 1);
-  state.renderedSentenceCount = Math.max(state.renderedSentenceCount, state.chunkEnds[targetChunkIndex]);
-
+function goToPage(pageIndex) {
+  if (state.pageEnds.length === 0) return;
+  state.currentPageIndex = Math.max(0, Math.min(pageIndex, state.pageEnds.length - 1));
   render();
 }
 
 function reset() {
-  state.renderedSentenceCount = 0;
-  reader.textContent = `Press “Start text” to begin. The reader reveals at least ${WORDS_PER_CHUNK} words per chunk.`;
-  const totalWords = state.sentenceWordCounts.reduce((sum, n) => sum + n, 0);
-  progress.textContent = `Ready: ${state.pairs.length} sentences, ${totalWords.toLocaleString()} words total.`;
-  nextBtn.disabled = true;
-  nextFiveBtn.disabled = true;
+  state.currentPageIndex = -1;
+  render();
 }
 
 async function init() {
@@ -178,16 +184,14 @@ async function init() {
   const pairs = await response.json();
   state.pairs = pairs;
   state.sentenceWordCounts = pairs.map(englishWordCount);
-  state.chunkEnds = buildChunkEnds(state.sentenceWordCounts, WORDS_PER_CHUNK);
-  textMeta.textContent = 'Candide, Chapter 1 aligned English/French sentence pairs.';
+  state.pageEnds = buildPageEnds(state.sentenceWordCounts, WORDS_PER_PAGE);
+  textMeta.textContent = 'Candide in Franglais. A macaronic experiment in language-learning.';
   reset();
 }
 
-startBtn.addEventListener('click', () => {
-  if (state.renderedSentenceCount === 0) advanceChunks(1);
-});
-nextBtn.addEventListener('click', () => advanceChunks(1));
-nextFiveBtn.addEventListener('click', () => advanceChunks(5));
+startBtn.addEventListener('click', () => goToPage(0));
+previousBtn.addEventListener('click', () => goToPage(state.currentPageIndex - 1));
+nextBtn.addEventListener('click', () => goToPage(state.currentPageIndex + 1));
 resetBtn.addEventListener('click', reset);
 
 init();
