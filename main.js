@@ -2,10 +2,8 @@ const WORDS_PER_PAGE = 120;
 
 const reader = document.querySelector('#reader');
 const progress = document.querySelector('#progress');
-const startBtn = document.querySelector('#start-btn');
 const previousBtn = document.querySelector('#previous-btn');
 const nextBtn = document.querySelector('#next-btn');
-const resetBtn = document.querySelector('#reset-btn');
 const textMeta = document.querySelector('#text-meta');
 
 const state = {
@@ -242,10 +240,10 @@ function pageBounds(pageIndex) {
 
 function render() {
   if (state.currentPageIndex < 0) {
-    reader.textContent = `Press “Start text” to begin. Each page shows at least ${WORDS_PER_PAGE} words.`;
-    progress.textContent = 'Ready to read.';
+    reader.textContent = 'No text available.';
+    progress.textContent = 'Page 0 of 0.';
     previousBtn.disabled = true;
-    nextBtn.disabled = state.pageEnds.length === 0;
+    nextBtn.disabled = true;
     return;
   }
 
@@ -276,11 +274,6 @@ function goToPage(pageIndex) {
   render();
 }
 
-function reset() {
-  state.currentPageIndex = -1;
-  render();
-}
-
 async function init() {
   const response = await fetch('./candide_ch1_aligned.json');
   const pairs = await response.json();
@@ -288,12 +281,11 @@ async function init() {
   state.sentenceWordCounts = pairs.map(englishWordCount);
   state.pageEnds = buildPageEnds(state.sentenceWordCounts, WORDS_PER_PAGE);
   textMeta.textContent = 'Candide in Franglais. A macaronic experiment in language-learning.';
-  reset();
+  state.currentPageIndex = state.pageEnds.length > 0 ? 0 : -1;
+  render();
 }
 
-startBtn.addEventListener('click', () => goToPage(0));
 previousBtn.addEventListener('click', () => goToPage(state.currentPageIndex - 1));
 nextBtn.addEventListener('click', () => goToPage(state.currentPageIndex + 1));
-resetBtn.addEventListener('click', reset);
 
 init();
