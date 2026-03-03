@@ -96,14 +96,116 @@ function phaseForWord(wordNumber) {
 }
 
 function mappedFrenchToken(pair, englishIndex) {
+  const englishPos = pair.en_pos[englishIndex] ?? 'O';
+  const directToken = mappedFrenchTokenFromAlignment(pair, englishIndex, englishPos);
+  if (directToken) return directToken;
+
+  return mappedFrenchTokenByProjection(pair, englishIndex, englishPos);
+}
+
+function mappedFrenchTokenFromAlignment(pair, englishIndex, englishPos) {
   const alignment = pair.align?.[String(englishIndex + 1)] ?? [];
+  let fallback = null;
+
   for (const frIndex1 of alignment) {
     const frIndex = frIndex1 - 1;
     if (frIndex < 0 || frIndex >= pair.fr_units.length) continue;
+
     const token = pair.fr_units[frIndex];
-    if (isWord(token)) return token;
+    if (!isWord(token)) continue;
+
+    const frenchPos = pair.fr_pos[frIndex] ?? 'O';
+    if (frenchPos === englishPos) return token;
+    if (!fallback) fallback = token;
   }
-  return null;
+
+  return fallback;
+}
+
+function mappedFrenchTokenByProjection(pair, englishIndex, englishPos) {
+  const anchors = [];
+
+  for (const [enIndex1, frIndexes1] of Object.entries(pair.align ?? {})) {
+    const enIndex = Number(enIndex1) - 1;
+    for (const frIndex1 of frIndexes1) {
+      const frIndex = frIndex1 - 1;
+      if (enIndex < 0 || frIndex < 0 || frIndex >= pair.fr_units.length) continue;
+      if (!isWord(pair.fr_units[frIndex])) continue;
+      anchors.push({ enIndex, frIndex });
+      break;
+    }
+  }
+
+  if (anchors.length === 0) return null;
+  anchors.sort((a, b) => a.enIndex - b.enIndex);
+
+  let left = null;
+  let right = null;
+  for (const anchor of anchors) {
+    if (anchor.enIndex <= englishIndex) {
+      left = anchor;
+      continue;
+    }
+    right = anchor;
+    break;
+  }
+
+  let projectedFrIndex;
+  if (left && right && right.enIndex !== left.enIndex) {
+    const ratio = (englishIndex - left.enIndex) / (right.enIndex - left.enIndex);
+    projectedFrIndex = Math.round(left.frIndex + ratio * (right.frIndex - left.frIndex));
+  } else if (left) {
+    projectedFrIndex = left.frIndex + (englishIndex - left.enIndex);
+  } else {
+    projectedFrIndex = right.frIndex - (right.enIndex - englishIndex);
+  }
+
+  const maxRadius = Math.max(5, Math.ceil(pair.fr_units.length / 8));
+  let nearestFallback = null;
+
+  for (let radius = 0; radius <= maxRadius; radius += 1) {
+    for (const offset of [0, -radius, radius]) {
+      const frIndex = projectedFrIndex + offset;
+      if (frIndex < 0 || frIndex >= pair.fr_units.length) continue;
+
+      const token = pair.fr_units[frIndex];
+      if (!isWord(token)) continue;
+
+      const frenchPos = pair.fr_pos[frIndex] ?? 'O';
+      if (frenchPos === englishPos) return token;
+      if (!nearestFallback) nearestFallback = token;
+    }
+  }
+
+  return nearestFallback;
+}
+
+function buildAlignmentReport(pairs) {
+  let contentWords = 0;
+  let directHits = 0;
+  let projectedHits = 0;
+
+  for (const pair of pairs) {
+    for (let index = 0; index < pair.en_units.length; index += 1) {
+      const token = pair.en_units[index];
+      const pos = pair.en_pos[index] ?? 'O';
+      if (!isWord(token) || !isContentPos(pos)) continue;
+
+      contentWords += 1;
+      if (mappedFrenchTokenFromAlignment(pair, index, pos)) {
+        directHits += 1;
+      } else if (mappedFrenchTokenByProjection(pair, index, pos)) {
+        projectedHits += 1;
+      }
+    }
+  }
+
+  return {
+    contentWords,
+    directHits,
+    projectedHits,
+    totalHits: directHits + projectedHits,
+  };
 }
 
 function blendedSentence(pair, sentenceIndex, sentenceStartWordNumber) {
