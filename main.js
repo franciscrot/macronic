@@ -39,6 +39,28 @@ function isContentPos(posTag) {
   return posTag === 'N' || posTag === 'V';
 }
 
+const ENGLISH_FUNCTION_WORDS = new Set([
+  'a', 'an', 'and', 'are', 'as', 'at', 'be', 'been', 'being', 'but', 'by', 'for', 'from', 'had', 'has', 'have', 'he', 'her', 'hers', 'him', 'his', 'i', 'if', 'in', 'into', 'is', 'it', 'its', 'me', 'my', 'no', 'not', 'of', 'on', 'or', 'our', 'she', 'so', 'than', 'that', 'the', 'their', 'them', 'then', 'there', 'these', 'they', 'this', 'those', 'to', 'up', 'us', 'was', 'we', 'were', 'with', 'you', 'your',
+]);
+
+const FRENCH_FUNCTION_WORDS = new Set([
+  'a', 'ai', 'au', 'aux', 'ce', 'ces', 'cet', 'cette', 'd', 'de', 'des', 'du', 'elle', 'en', 'est', 'et', 'il', 'ils', 'je', 'la', 'le', 'les', 'leur', 'lui', 'ma', 'mais', 'me', 'mes', 'moi', 'mon', 'ne', 'nos', 'nous', 'on', 'ou', 'par', 'pas', 'pour', 'que', 'qui', 'sa', 'se', 'ses', 'son', 'sur', 'ta', 'te', 'tes', 'toi', 'ton', 'tu', 'un', 'une', 'vos', 'votre', 'vous', 'y',
+]);
+
+function normalizeToken(token) {
+  return token.toLowerCase().replace(/^['’]+|['’]+$/g, '');
+}
+
+function isEligibleEnglishContentToken(token, posTag) {
+  if (!isWord(token) || !isContentPos(posTag)) return false;
+  return !ENGLISH_FUNCTION_WORDS.has(normalizeToken(token));
+}
+
+function isEligibleFrenchMappedToken(token) {
+  if (!isWord(token)) return false;
+  return !FRENCH_FUNCTION_WORDS.has(normalizeToken(token));
+}
+
 function joinUnits(units) {
   let result = '';
   for (const unit of units) {
@@ -110,7 +132,7 @@ function mappedFrenchTokenFromAlignment(pair, englishIndex, englishPos) {
     if (frIndex < 0 || frIndex >= pair.fr_units.length) continue;
 
     const token = pair.fr_units[frIndex];
-    if (!isWord(token)) continue;
+    if (!isEligibleFrenchMappedToken(token)) continue;
 
     const frenchPos = pair.fr_pos[frIndex] ?? 'O';
     if (frenchPos === englishPos) return token;
@@ -128,7 +150,7 @@ function mappedFrenchTokenByProjection(pair, englishIndex, englishPos) {
     for (const frIndex1 of frIndexes1) {
       const frIndex = frIndex1 - 1;
       if (enIndex < 0 || frIndex < 0 || frIndex >= pair.fr_units.length) continue;
-      if (!isWord(pair.fr_units[frIndex])) continue;
+      if (!isEligibleFrenchMappedToken(pair.fr_units[frIndex])) continue;
       anchors.push({ enIndex, frIndex });
       break;
     }
@@ -167,7 +189,7 @@ function mappedFrenchTokenByProjection(pair, englishIndex, englishPos) {
       if (frIndex < 0 || frIndex >= pair.fr_units.length) continue;
 
       const token = pair.fr_units[frIndex];
-      if (!isWord(token)) continue;
+      if (!isEligibleFrenchMappedToken(token)) continue;
 
       const frenchPos = pair.fr_pos[frIndex] ?? 'O';
       if (frenchPos === englishPos) return token;
@@ -180,6 +202,7 @@ function mappedFrenchTokenByProjection(pair, englishIndex, englishPos) {
 
 function buildAlignmentReport(pairs) {
   let contentWords = 0;
+  let filteredFunctionWords = 0;
   let directHits = 0;
   let projectedHits = 0;
 
@@ -188,6 +211,11 @@ function buildAlignmentReport(pairs) {
       const token = pair.en_units[index];
       const pos = pair.en_pos[index] ?? 'O';
       if (!isWord(token) || !isContentPos(pos)) continue;
+
+      if (!isEligibleEnglishContentToken(token, pos)) {
+        filteredFunctionWords += 1;
+        continue;
+      }
 
       contentWords += 1;
       if (mappedFrenchTokenFromAlignment(pair, index, pos)) {
@@ -200,6 +228,7 @@ function buildAlignmentReport(pairs) {
 
   return {
     contentWords,
+    filteredFunctionWords,
     directHits,
     projectedHits,
     totalHits: directHits + projectedHits,
@@ -218,7 +247,7 @@ function blendedSentence(pair, sentenceIndex, sentenceStartWordNumber) {
 
   const outputUnits = pair.en_units.map((unit, index) => {
     const pos = pair.en_pos[index] ?? 'O';
-    if (!isWord(unit) || !isContentPos(pos)) return escapeHtml(unit);
+    if (!isEligibleEnglishContentToken(unit, pos)) return escapeHtml(unit);
 
     const frenchToken = mappedFrenchToken(pair, index);
     if (!frenchToken) return escapeHtml(unit);
@@ -277,10 +306,11 @@ function goToPage(pageIndex) {
 async function init() {
   const response = await fetch('./candide_ch1_aligned.json');
   const pairs = await response.json();
+  const report = buildAlignmentReport(pairs);
   state.pairs = pairs;
   state.sentenceWordCounts = pairs.map(englishWordCount);
   state.pageEnds = buildPageEnds(state.sentenceWordCounts, WORDS_PER_PAGE);
-  textMeta.textContent = 'Candide in Franglais. A macaronic experiment in language-learning.';
+  textMeta.textContent = `Candide in Franglais. A macaronic experiment in language-learning. Mapping report: ${report.totalHits}/${report.contentWords} content words mapped (${report.directHits} direct, ${report.projectedHits} projected, ${report.filteredFunctionWords} mis-tagged function words filtered).`;
   state.currentPageIndex = state.pageEnds.length > 0 ? 0 : -1;
   render();
 }
