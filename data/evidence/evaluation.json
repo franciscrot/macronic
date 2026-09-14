@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "457a6feaf20b600912fd44a4fe07b3dea1c4338a6824d53e19ae2bba278b4e3a",
+  "reference_origin": "ai_diagnostic",
+  "independent_human_evaluation": false,
+  "passage_groups_checked": 24,
+  "exact_group_matches": 24,
+  "word_cases_checked": 36,
+  "diagnostic_word_precision": 0.9459459459459459,
+  "diagnostic_word_recall": 0.9722222222222222,
+  "scope": "Only explicitly labelled diagnostic token occurrences; not whole-corpus accuracy or held-out validation",
+  "cases": [
+    {
+      "en": "p001-en-t002",
+      "expected": [
+        "p001-fr-t008"
+      ],
+      "actual": [
+        "p001-fr-t008"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p001-en-t019",
+      "expected": [
+        "p001-fr-t022"
+      ],
+      "actual": [
+        "p001-fr-t021"
+      ],
+      "correct": false
+    },
+    {
+      "en": "p001-en-t022",
+      "expected": [
+        "p001-fr-t026"
+      ],
+      "actual": [
+        "p001-fr-t026"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p001-en-t029",
+      "expected": [
+        "p001-fr-t030"
+      ],
+      "actual": [
+        "p001-fr-t030",
+        "p001-fr-t033"
+      ],
+      "correct": false
+    },
+    {
+      "en": "p002-en-t001",
+      "expected": [
+        "p002-fr-t001"
+      ],
+      "actual": [
+        "p002-fr-t001"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p002-en-t008",
+      "expected": [
+        "p002-fr-t004"
+      ],
+      "actual": [
+        "p002-fr-t004"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p003-en-t004",
+      "expected": [
+        "p003-fr-t003"
+      ],
+      "actual": [
+        "p003-fr-t003"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p003-en-t008",
+      "expected": [
+        "p003-fr-t009"
+      ],
+      "actual": [
+        "p003-fr-t009"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p003-en-t013",
+      "expected": [
+        "p003-fr-t022"
+      ],
+      "actual": [
+        "p003-fr-t022"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t002",
+      "expected": [
+        "p004-fr-t002"
+      ],
+      "actual": [
+        "p004-fr-t002"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t012",
+      "expected": [
+        "p004-fr-t010"
+      ],
+      "actual": [
+        "p004-fr-t010"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t017",
+      "expected": [
+        "p004-fr-t013"
+      ],
+      "actual": [
+        "p004-fr-t013"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t024",
+      "expected": [
+        "p004-fr-t024"
+      ],
+      "actual": [
+        "p004-fr-t024"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t047",
+      "expected": [
+        "p004-fr-t046"
+      ],
+      "actual": [
+        "p004-fr-t046"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t054",
+      "expected": [
+        "p004-fr-t054"
+      ],
+      "actual": [
+        "p004-fr-t054"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p004-en-t062",
+      "expected": [
+        "p004-fr-t063"
+      ],
+      "actual": [
+        "p004-fr-t063"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p005-en-t008",
+      "expected": [
+        "p005-fr-t008"
+      ],
+      "actual": [
+        "p005-fr-t008"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p005-en-t014",
+      "expected": [
+        "p005-fr-t015"
+      ],
+      "actual": [
+        "p005-fr-t015"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p005-en-t019",
+      "expected": [
+        "p005-fr-t018"
+      ],
+      "actual": [
+        "p005-fr-t018"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p005-en-t022",
+      "expected": [
+        "p005-fr-t021"
+      ],
+      "actual": [
+        "p005-fr-t021"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p006-en-t002",
+      "expected": [
+        "p006-fr-t002"
+      ],
+      "actual": [
+        "p006-fr-t002"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p006-en-t009",
+      "expected": [
+        "p006-fr-t008"
+      ],
+      "actual": [
+        "p006-fr-t008"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p007-en-t002",
+      "expected": [
+        "p007-fr-t002"
+      ],
+      "actual": [
+        "p007-fr-t002"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p007-en-t010",
+      "expected": [
+        "p007-fr-t008"
+      ],
+      "actual": [
+        "p007-fr-t008"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p007-en-t017",
+      "expected": [
+        "p007-fr-t014"
+      ],
+      "actual": [
+        "p007-fr-t014"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p007-en-t020",
+      "expected": [
+        "p007-fr-t017"
+      ],
+      "actual": [
+        "p007-fr-t017"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p007-en-t024",
+      "expected": [
+        "p007-fr-t020"
+      ],
+      "actual": [
+        "p007-fr-t020"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p007-en-t027",
+      "expected": [
+        "p007-fr-t022"
+      ],
+      "actual": [
+        "p007-fr-t022"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p008-en-t013",
+      "expected": [
+        "p008-fr-t013"
+      ],
+      "actual": [
+        "p008-fr-t013"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p009-en-t010",
+      "expected": [
+        "p009-fr-t010"
+      ],
+      "actual": [
+        "p009-fr-t010"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p009-en-t019",
+      "expected": [
+        "p009-fr-t019"
+      ],
+      "actual": [
+        "p009-fr-t019"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p009-en-t025",
+      "expected": [
+        "p009-fr-t024"
+      ],
+      "actual": [
+        "p009-fr-t024"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p009-en-t028",
+      "expected": [
+        "p009-fr-t027"
+      ],
+      "actual": [
+        "p009-fr-t027"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p009-en-t031",
+      "expected": [
+        "p009-fr-t030"
+      ],
+      "actual": [
+        "p009-fr-t030"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p010-en-t001",
+      "expected": [
+        "p010-fr-t001"
+      ],
+      "actual": [
+        "p010-fr-t001"
+      ],
+      "correct": true
+    },
+    {
+      "en": "p010-en-t005",
+      "expected": [
+        "p010-fr-t007"
+      ],
+      "actual": [
+        "p010-fr-t007"
+      ],
+      "correct": true
+    }
+  ],
+  "automatic": {
+    "raw_word_links": 746,
+    "passage_groups": 24,
+    "chapter_eligible_insertions": 50,
+    "demo_insertions": 15,
+    "corrected_demo_insertions": 15,
+    "demo_distribution": [
+      {
+        "id": "p001",
+        "count": 1,
+        "insertions": [
+          [
+            "castle",
+            "château"
+          ]
+        ]
+      },
+      {
+        "id": "p002",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p003",
+        "count": 1,
+        "insertions": [
+          [
+            "reason",
+            "raison"
+          ]
+        ]
+      },
+      {
+        "id": "p004",
+        "count": 4,
+        "insertions": [
+          [
+            "son",
+            "fils"
+          ],
+          [
+            "rest",
+            "reste"
+          ],
+          [
+            "tree",
+            "arbre"
+          ],
+          [
+            "time",
+            "temps"
+          ]
+        ]
+      },
+      {
+        "id": "p005",
+        "count": 2,
+        "insertions": [
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "windows",
+            "fenêtres"
+          ]
+        ]
+      },
+      {
+        "id": "p006",
+        "count": 1,
+        "insertions": [
+          [
+            "tapestry",
+            "tapisserie"
+          ]
+        ]
+      },
+      {
+        "id": "p007",
+        "count": 1,
+        "insertions": [
+          [
+            "dogs",
+            "chiens"
+          ]
+        ]
+      },
+      {
+        "id": "p008",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p009",
+        "count": 3,
+        "insertions": [
+          [
+            "honours",
+            "honneurs"
+          ],
+          [
+            "house",
+            "maison"
+          ],
+          [
+            "dignity",
+            "dignité"
+          ]
+        ]
+      },
+      {
+        "id": "p010",
+        "count": 2,
+        "insertions": [
+          [
+            "daughter",
+            "fille"
+          ],
+          [
+            "years",
+            "ans"
+          ]
+        ]
+      }
+    ],
+    "exclusion_reasons": {
+      "part_of_speech": 631,
+      "number": 517,
+      "dictionary_missing": 405,
+      "not_simple_words": 121,
+      "same_surface": 122,
+      "compound": 30,
+      "competing_link": 38,
+      "low_passage_similarity": 6,
+      "passage_not_eligible": 67,
+      "large_group": 61
+    }
+  },
+  "correction_time_per_passage": null,
+  "limitation": "Reference is AI-authored after inspecting the output; not independent, not held out. No human accuracy claim or release approval is implied."
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Candide · Macronic</title>
+    <link rel="stylesheet" href="./shared/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Macronic · A reading experiment</div>
+        <h1>Candide</h1>
+        <p class="muted">Voltaire · English, with a little French</p>
+      </header>
+      <nav aria-label="Reading stage">
+        <button data-stage="0" aria-pressed="true">English</button
+        ><button data-stage="1" aria-pressed="false">A little French</button
+        ><button data-stage="2" aria-pressed="false">More French</button>
+      </nav>
+      <p id="status" class="status" role="status">Loading the text…</p>
+      <article id="reading" class="reading" aria-label="Reading text"></article>
+      <footer>
+        <p>
+          Touch or focus a French word to see its English counterpart. The
+          amount of French depends on the available alignments.
+        </p>
+        <p>
+          Sources:
+          <a href="https://www.gutenberg.org/ebooks/19942"
+            >English edition, 1918</a
+          >
+          · <a href="https://www.gutenberg.org/ebooks/4650">French text</a>.
+          Prepared alignments; no model runs while you read.
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="./reader.js"></script>
+  </body>
+</html>

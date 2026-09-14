@@ -1,0 +1,139 @@
+{
+  "raw_word_links": 746,
+  "passage_groups": 24,
+  "chapter_eligible_insertions": 50,
+  "demo_insertions": 15,
+  "corrected_demo_insertions": 15,
+  "demo_distribution": [
+    {
+      "id": "p001",
+      "count": 1,
+      "insertions": [
+        [
+          "castle",
+          "château"
+        ]
+      ]
+    },
+    {
+      "id": "p002",
+      "count": 0,
+      "insertions": []
+    },
+    {
+      "id": "p003",
+      "count": 1,
+      "insertions": [
+        [
+          "reason",
+          "raison"
+        ]
+      ]
+    },
+    {
+      "id": "p004",
+      "count": 4,
+      "insertions": [
+        [
+          "son",
+          "fils"
+        ],
+        [
+          "rest",
+          "reste"
+        ],
+        [
+          "tree",
+          "arbre"
+        ],
+        [
+          "time",
+          "temps"
+        ]
+      ]
+    },
+    {
+      "id": "p005",
+      "count": 2,
+      "insertions": [
+        [
+          "castle",
+          "château"
+        ],
+        [
+          "windows",
+          "fenêtres"
+        ]
+      ]
+    },
+    {
+      "id": "p006",
+      "count": 1,
+      "insertions": [
+        [
+          "tapestry",
+          "tapisserie"
+        ]
+      ]
+    },
+    {
+      "id": "p007",
+      "count": 1,
+      "insertions": [
+        [
+          "dogs",
+          "chiens"
+        ]
+      ]
+    },
+    {
+      "id": "p008",
+      "count": 0,
+      "insertions": []
+    },
+    {
+      "id": "p009",
+      "count": 3,
+      "insertions": [
+        [
+          "honours",
+          "honneurs"
+        ],
+        [
+          "house",
+          "maison"
+        ],
+        [
+          "dignity",
+          "dignité"
+        ]
+      ]
+    },
+    {
+      "id": "p010",
+      "count": 2,
+      "insertions": [
+        [
+          "daughter",
+          "fille"
+        ],
+        [
+          "years",
+          "ans"
+        ]
+      ]
+    }
+  ],
+  "exclusion_reasons": {
+    "part_of_speech": 631,
+    "number": 517,
+    "dictionary_missing": 405,
+    "not_simple_words": 121,
+    "same_surface": 122,
+    "compound": 30,
+    "competing_link": 38,
+    "low_passage_similarity": 6,
+    "passage_not_eligible": 67,
+    "large_group": 61
+  }
+}

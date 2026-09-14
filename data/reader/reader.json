@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "457a6feaf20b600912fd44a4fe07b3dea1c4338a6824d53e19ae2bba278b4e3a",
+  "title": "Candide",
+  "stages": [
+    "English",
+    "A little French",
+    "More French"
+  ],
+  "passages": [
+    {
+      "id": "p001",
+      "text": "In a castle of Westphalia, belonging to the Baron of\nThunder-ten-Tronckh, lived a youth, whom nature had endowed with the\nmost gentle manners.",
+      "paragraph_id": "en-p001",
+      "replacements": [
+        {
+          "id": "p001-l002",
+          "start": 5,
+          "end": 11,
+          "english": "castle",
+          "french": "château",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p002",
+      "text": "His countenance was a true picture of his soul.",
+      "paragraph_id": "en-p001",
+      "replacements": []
+    },
+    {
+      "id": "p003",
+      "text": "He\ncombined a true judgment with simplicity of spirit, which was the\nreason, I apprehend, of his being called Candide.",
+      "paragraph_id": "en-p001",
+      "replacements": [
+        {
+          "id": "p003-l008",
+          "start": 69,
+          "end": 75,
+          "english": "reason",
+          "french": "raison",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6786-sense-2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p004",
+      "text": "The old servants of\nthe family suspected him to have been the son of the Baron's sister, by\na good, honest gentleman of the neighborhood, whom that young lady would\nnever marry because he had been able to prove only seventy-one\nquarterings, the rest of his genealogical tree having been lost through\nthe injuries of time.",
+      "paragraph_id": "en-p001",
+      "replacements": [
+        {
+          "id": "p004-l009",
+          "start": 62,
+          "end": 65,
+          "english": "son",
+          "french": "fils",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7519-sense-0"
+            ]
+          }
+        },
+        {
+          "id": "p004-l037",
+          "start": 245,
+          "end": 249,
+          "english": "rest",
+          "french": "reste",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6954-sense-0"
+            ]
+          }
+        },
+        {
+          "id": "p004-l041",
+          "start": 270,
+          "end": 274,
+          "english": "tree",
+          "french": "arbre",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8250-sense-0"
+            ]
+          }
+        },
+        {
+          "id": "p004-l048",
+          "start": 316,
+          "end": 320,
+          "english": "time",
+          "french": "temps",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8133-sense-2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p005",
+      "text": "The Baron was one of the most powerful lords in Westphalia, for his\ncastle had not only a gate, but windows.",
+      "paragraph_id": "en-p002",
+      "replacements": [
+        {
+          "id": "p005-l013",
+          "start": 68,
+          "end": 74,
+          "english": "castle",
+          "french": "château",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ]
+          }
+        },
+        {
+          "id": "p005-l018",
+          "start": 100,
+          "end": 107,
+          "english": "windows",
+          "french": "fenêtres",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8671-sense-0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p006",
+      "text": "His great hall, even, was hung\nwith tapestry.",
+      "paragraph_id": "en-p002",
+      "replacements": [
+        {
+          "id": "p006-l007",
+          "start": 36,
+          "end": 44,
+          "english": "tapestry",
+          "french": "tapisserie",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7949-sense-0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p007",
+      "text": "All the dogs of his farm-yards formed a pack of hounds at\nneed; his grooms were his huntsmen; and the curate of the village was\nhis grand almoner.",
+      "paragraph_id": "en-p002",
+      "replacements": [
+        {
+          "id": "p007-l002",
+          "start": 8,
+          "end": 12,
+          "english": "dogs",
+          "french": "chiens",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3659-sense-0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p008",
+      "text": "They called him \"My Lord,\" and laughed at all his\nstories.",
+      "paragraph_id": "en-p002",
+      "replacements": []
+    },
+    {
+      "id": "p009",
+      "text": "The Baron's lady weighed about three hundred and fifty pounds, and was\ntherefore a person of great consideration, and she did the honours of\nthe house with a dignity that commanded still greater respect.",
+      "paragraph_id": "en-p003",
+      "replacements": [
+        {
+          "id": "p009-l018",
+          "start": 130,
+          "end": 137,
+          "english": "honours",
+          "french": "honneurs",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4782-sense-1"
+            ]
+          }
+        },
+        {
+          "id": "p009-l021",
+          "start": 145,
+          "end": 150,
+          "english": "house",
+          "french": "maison",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4816-sense-0"
+            ]
+          }
+        },
+        {
+          "id": "p009-l024",
+          "start": 158,
+          "end": 165,
+          "english": "dignity",
+          "french": "dignité",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3566-sense-0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p010",
+      "text": "Her\ndaughter Cunegonde was seventeen years of age, fresh-coloured, comely,\nplump, and desirable.",
+      "paragraph_id": "en-p003",
+      "replacements": [
+        {
+          "id": "p010-l001",
+          "start": 4,
+          "end": 12,
+          "english": "daughter",
+          "french": "fille",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3410-sense-0"
+            ]
+          }
+        },
+        {
+          "id": "p010-l005",
+          "start": 37,
+          "end": 42,
+          "english": "years",
+          "french": "ans",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v1",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8764-sense-0"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

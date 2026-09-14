@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Alignment workshop · Macronic</title>
+    <link rel="stylesheet" href="../shared/style.css" />
+  </head>
+  <body class="workshop">
+    <main>
+      <header>
+        <div class="eyebrow">Macronic · Alignment workshop</div>
+        <h1>Read between the lines.</h1>
+        <p class="muted">
+          Inspect Bertalign passages and SimAlign word links. Correct only what
+          needs changing.
+        </p>
+      </header>
+      <div id="message" class="status" role="status">Loading alignments…</div>
+      <div class="toolbar">
+        <button id="previous">← Previous</button
+        ><select id="passage" aria-label="Passage"></select
+        ><button id="next">Next →</button
+        ><label
+          ><input id="uncertain" type="checkbox" /> Uncertain links only</label
+        ><button id="undo">Undo edit</button
+        ><button id="export" class="primary">Export corrections</button
+        ><label
+          >Import corrections
+          <input id="import" type="file" accept="application/json,.json"
+        /></label>
+      </div>
+      <p id="diagnostics" class="muted"></p>
+      <button id="approve-passage">Confirm passage pairing</button
+      ><button id="reject-passage">Reject passage pairing</button>
+      <div class="pair">
+        <section class="panel">
+          <h2>English</h2>
+          <div id="en" class="tokens"></div>
+        </section>
+        <section class="panel">
+          <h2>French</h2>
+          <div id="fr" class="tokens" lang="fr"></div>
+        </section>
+      </div>
+      <div class="pair">
+        <section class="panel">
+          <h2>Correspondences</h2>
+          <p class="muted">
+            Choose a link, or select words on both sides to add one. Multiple
+            selections preserve phrase relationships.
+          </p>
+          <div id="links" class="links"></div>
+        </section>
+        <section class="panel">
+          <h2>Edit a correspondence</h2>
+          <p id="selection" class="muted">Select a link or tokens.</p>
+          <label
+            >Your name
+            <input
+              id="editor"
+              autocomplete="name"
+              placeholder="Editor name" /></label
+          ><label
+            >Reason
+            <textarea
+              id="note"
+              placeholder="What does this correction resolve?"
+            ></textarea></label
+          ><label
+            >Decision
+            <select id="decision">
+              <option value="needs_review">Needs review</option>
+              <option value="approved">Approved correspondence</option>
+              <option value="rejected">Rejected</option>
+            </select></label
+          ><label
+            ><input id="safe" type="checkbox" /> Suitable for isolated
+            substitution</label
+          ><button id="save" class="primary">Save session correction</button
+          ><button id="clear">Clear selection</button>
+          <details>
+            <summary>Alignment evidence</summary>
+            <pre id="evidence">Select a link.</pre>
+          </details>
+        </section>
+      </div>
+      <details class="panel">
+        <summary>Correct passage boundaries</summary>
+        <p>
+          Merge with the next passage, split at sentence boundaries, or mark an
+          unmatched sentence. Edit the grouping below using the existing
+          sentence IDs. Every sentence must appear once, in its original order.
+          Boundary edits require a new word-alignment run.
+        </p>
+        <button id="merge">Include next passage</button
+        ><label
+          >Replacement groups (JSON)<textarea id="groups"></textarea></label
+        ><button id="regroup">Save boundary correction</button>
+        <pre id="sentences"></pre>
+      </details>
+      <section class="panel">
+        <h2>Blended preview</h2>
+        <select id="stage" aria-label="Preview stage">
+          <option value="0">English</option>
+          <option value="1">A little French</option>
+          <option value="2" selected>More French</option>
+        </select>
+        <div id="preview" class="reading"></div>
+      </section>
+      <footer>
+        Export saves a file. Import it into the preparation pipeline to retain
+        changes in Git. The reader is published separately.
+        <a href="../reader/">Open reader</a>
+      </footer>
+    </main>
+    <script type="module" src="./review.js"></script>
+  </body>
+</html>
