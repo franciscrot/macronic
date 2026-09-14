@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "language": "en",
+      "file": "pg19942.txt",
+      "url": "https://www.gutenberg.org/ebooks/19942",
+      "download_url": "https://www.gutenberg.org/cache/epub/19942/pg19942.txt",
+      "sha256": "fb3943df826f375c4ab78d21f2d30bc95a0b2cb448e8812447a807d678eb0b5c",
+      "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+      "retrieved": "2026-09-14",
+      "rights": "Public-domain text; Gutenberg terms retained in source snapshot. Translator unspecified; no attribution invented.",
+      "transforms": [
+        "CRLF to LF for source offsets",
+        "Chapter I narrative only; standalone editorial footnote paragraphs omitted; wording and embedded note markers retained"
+      ]
+    },
+    {
+      "language": "fr",
+      "file": "pg4650.txt",
+      "url": "https://www.gutenberg.org/ebooks/4650",
+      "download_url": "https://www.gutenberg.org/cache/epub/4650/pg4650.txt",
+      "sha256": "1cc10ab3268a76aa01bd3f9722ae2ae0e5e36b869a18b0bb0832b75bc0327806",
+      "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+      "retrieved": "2026-09-14",
+      "rights": "Public-domain text; Gutenberg terms retained in source snapshot. Translator unspecified; no attribution invented.",
+      "transforms": [
+        "CRLF to LF for source offsets",
+        "Chapter I narrative only; standalone editorial footnote paragraphs omitted; wording and embedded note markers retained"
+      ]
+    }
+  ]
+}

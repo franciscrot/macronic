@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "457a6feaf20b600912fd44a4fe07b3dea1c4338a6824d53e19ae2bba278b4e3a",
+  "origin": "ai_diagnostic",
+  "author": "Codex (AI)",
+  "note": "Explicit source comparison after model output inspection. Selected noun cases only; not independent or held-out gold. No policy tuning based on these labels.",
+  "passage_groups": [
+    {
+      "en": [
+        "en-s001"
+      ],
+      "fr": [
+        "fr-s001"
+      ]
+    },
+    {
+      "en": [
+        "en-s002"
+      ],
+      "fr": [
+        "fr-s002"
+      ]
+    },
+    {
+      "en": [
+        "en-s003"
+      ],
+      "fr": [
+        "fr-s003"
+      ]
+    },
+    {
+      "en": [
+        "en-s004"
+      ],
+      "fr": [
+        "fr-s004"
+      ]
+    },
+    {
+      "en": [
+        "en-s005"
+      ],
+      "fr": [
+        "fr-s005"
+      ]
+    },
+    {
+      "en": [
+        "en-s006"
+      ],
+      "fr": [
+        "fr-s006"
+      ]
+    },
+    {
+      "en": [
+        "en-s007"
+      ],
+      "fr": [
+        "fr-s007"
+      ]
+    },
+    {
+      "en": [
+        "en-s008"
+      ],
+      "fr": [
+        "fr-s008"
+      ]
+    },
+    {
+      "en": [
+        "en-s009"
+      ],
+      "fr": [
+        "fr-s009"
+      ]
+    },
+    {
+      "en": [
+        "en-s010"
+      ],
+      "fr": [
+        "fr-s010"
+      ]
+    },
+    {
+      "en": [
+        "en-s011"
+      ],
+      "fr": [
+        "fr-s011"
+      ]
+    },
+    {
+      "en": [
+        "en-s012"
+      ],
+      "fr": [
+        "fr-s012"
+      ]
+    },
+    {
+      "en": [
+        "en-s013"
+      ],
+      "fr": [
+        "fr-s013"
+      ]
+    },
+    {
+      "en": [
+        "en-s014"
+      ],
+      "fr": [
+        "fr-s014"
+      ]
+    },
+    {
+      "en": [
+        "en-s015"
+      ],
+      "fr": [
+        "fr-s015"
+      ]
+    },
+    {
+      "en": [
+        "en-s016",
+        "en-s017"
+      ],
+      "fr": [
+        "fr-s016"
+      ]
+    },
+    {
+      "en": [
+        "en-s018",
+        "en-s019",
+        "en-s020"
+      ],
+      "fr": [
+        "fr-s017"
+      ]
+    },
+    {
+      "en": [
+        "en-s021"
+      ],
+      "fr": [
+        "fr-s018"
+      ]
+    },
+    {
+      "en": [
+        "en-s022"
+      ],
+      "fr": [
+        "fr-s019"
+      ]
+    },
+    {
+      "en": [
+        "en-s023"
+      ],
+      "fr": [
+        "fr-s020"
+      ]
+    },
+    {
+      "en": [
+        "en-s024"
+      ],
+      "fr": [
+        "fr-s021"
+      ]
+    },
+    {
+      "en": [
+        "en-s025"
+      ],
+      "fr": [
+        "fr-s022",
+        "fr-s023"
+      ]
+    },
+    {
+      "en": [
+        "en-s026"
+      ],
+      "fr": [
+        "fr-s024"
+      ]
+    },
+    {
+      "en": [
+        "en-s027"
+      ],
+      "fr": [
+        "fr-s025",
+        "fr-s026"
+      ]
+    }
+  ],
+  "word_cases": [
+    {
+      "passage_id": "p001",
+      "en": "p001-en-t002",
+      "fr": [
+        "p001-fr-t008"
+      ],
+      "english": "castle",
+      "french": "château"
+    },
+    {
+      "passage_id": "p001",
+      "en": "p001-en-t019",
+      "fr": [
+        "p001-fr-t022"
+      ],
+      "english": "youth",
+      "french": "garçon"
+    },
+    {
+      "passage_id": "p001",
+      "en": "p001-en-t022",
+      "fr": [
+        "p001-fr-t026"
+      ],
+      "english": "nature",
+      "french": "nature"
+    },
+    {
+      "passage_id": "p001",
+      "en": "p001-en-t029",
+      "fr": [
+        "p001-fr-t030"
+      ],
+      "english": "manners",
+      "french": "moeurs"
+    },
+    {
+      "passage_id": "p002",
+      "en": "p002-en-t001",
+      "fr": [
+        "p002-fr-t001"
+      ],
+      "english": "countenance",
+      "french": "physionomie"
+    },
+    {
+      "passage_id": "p002",
+      "en": "p002-en-t008",
+      "fr": [
+        "p002-fr-t004"
+      ],
+      "english": "soul",
+      "french": "âme"
+    },
+    {
+      "passage_id": "p003",
+      "en": "p003-en-t004",
+      "fr": [
+        "p003-fr-t003"
+      ],
+      "english": "judgment",
+      "french": "jugement"
+    },
+    {
+      "passage_id": "p003",
+      "en": "p003-en-t008",
+      "fr": [
+        "p003-fr-t009"
+      ],
+      "english": "spirit",
+      "french": "esprit"
+    },
+    {
+      "passage_id": "p003",
+      "en": "p003-en-t013",
+      "fr": [
+        "p003-fr-t022"
+      ],
+      "english": "reason",
+      "french": "raison"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t002",
+      "fr": [
+        "p004-fr-t002"
+      ],
+      "english": "servants",
+      "french": "domestiques"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t012",
+      "fr": [
+        "p004-fr-t010"
+      ],
+      "english": "son",
+      "french": "fils"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t017",
+      "fr": [
+        "p004-fr-t013"
+      ],
+      "english": "sister",
+      "french": "soeur"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t024",
+      "fr": [
+        "p004-fr-t024"
+      ],
+      "english": "gentleman",
+      "french": "gentilhomme"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t047",
+      "fr": [
+        "p004-fr-t046"
+      ],
+      "english": "quarterings",
+      "french": "quartiers"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t054",
+      "fr": [
+        "p004-fr-t054"
+      ],
+      "english": "tree",
+      "french": "arbre"
+    },
+    {
+      "passage_id": "p004",
+      "en": "p004-en-t062",
+      "fr": [
+        "p004-fr-t063"
+      ],
+      "english": "time",
+      "french": "temps"
+    },
+    {
+      "passage_id": "p005",
+      "en": "p005-en-t008",
+      "fr": [
+        "p005-fr-t008"
+      ],
+      "english": "lords",
+      "french": "seigneurs"
+    },
+    {
+      "passage_id": "p005",
+      "en": "p005-en-t014",
+      "fr": [
+        "p005-fr-t015"
+      ],
+      "english": "castle",
+      "french": "château"
+    },
+    {
+      "passage_id": "p005",
+      "en": "p005-en-t019",
+      "fr": [
+        "p005-fr-t018"
+      ],
+      "english": "gate",
+      "french": "porte"
+    },
+    {
+      "passage_id": "p005",
+      "en": "p005-en-t022",
+      "fr": [
+        "p005-fr-t021"
+      ],
+      "english": "windows",
+      "french": "fenêtres"
+    },
+    {
+      "passage_id": "p006",
+      "en": "p006-en-t002",
+      "fr": [
+        "p006-fr-t002"
+      ],
+      "english": "hall",
+      "french": "salle"
+    },
+    {
+      "passage_id": "p006",
+      "en": "p006-en-t009",
+      "fr": [
+        "p006-fr-t008"
+      ],
+      "english": "tapestry",
+      "french": "tapisserie"
+    },
+    {
+      "passage_id": "p007",
+      "en": "p007-en-t002",
+      "fr": [
+        "p007-fr-t002"
+      ],
+      "english": "dogs",
+      "french": "chiens"
+    },
+    {
+      "passage_id": "p007",
+      "en": "p007-en-t010",
+      "fr": [
+        "p007-fr-t008"
+      ],
+      "english": "pack",
+      "french": "meute"
+    },
+    {
+      "passage_id": "p007",
+      "en": "p007-en-t017",
+      "fr": [
+        "p007-fr-t014"
+      ],
+      "english": "grooms",
+      "french": "palefreniers"
+    },
+    {
+      "passage_id": "p007",
+      "en": "p007-en-t020",
+      "fr": [
+        "p007-fr-t017"
+      ],
+      "english": "huntsmen",
+      "french": "piqueurs"
+    },
+    {
+      "passage_id": "p007",
+      "en": "p007-en-t024",
+      "fr": [
+        "p007-fr-t020"
+      ],
+      "english": "curate",
+      "french": "vicaire"
+    },
+    {
+      "passage_id": "p007",
+      "en": "p007-en-t027",
+      "fr": [
+        "p007-fr-t022"
+      ],
+      "english": "village",
+      "french": "village"
+    },
+    {
+      "passage_id": "p008",
+      "en": "p008-en-t013",
+      "fr": [
+        "p008-fr-t013"
+      ],
+      "english": "stories",
+      "french": "contes"
+    },
+    {
+      "passage_id": "p009",
+      "en": "p009-en-t010",
+      "fr": [
+        "p009-fr-t010"
+      ],
+      "english": "pounds",
+      "french": "livres"
+    },
+    {
+      "passage_id": "p009",
+      "en": "p009-en-t019",
+      "fr": [
+        "p009-fr-t019"
+      ],
+      "english": "consideration",
+      "french": "considération"
+    },
+    {
+      "passage_id": "p009",
+      "en": "p009-en-t025",
+      "fr": [
+        "p009-fr-t024"
+      ],
+      "english": "honours",
+      "french": "honneurs"
+    },
+    {
+      "passage_id": "p009",
+      "en": "p009-en-t028",
+      "fr": [
+        "p009-fr-t027"
+      ],
+      "english": "house",
+      "french": "maison"
+    },
+    {
+      "passage_id": "p009",
+      "en": "p009-en-t031",
+      "fr": [
+        "p009-fr-t030"
+      ],
+      "english": "dignity",
+      "french": "dignité"
+    },
+    {
+      "passage_id": "p010",
+      "en": "p010-en-t001",
+      "fr": [
+        "p010-fr-t001"
+      ],
+      "english": "daughter",
+      "french": "fille"
+    },
+    {
+      "passage_id": "p010",
+      "en": "p010-en-t005",
+      "fr": [
+        "p010-fr-t007"
+      ],
+      "english": "years",
+      "french": "ans"
+    }
+  ]
+}
