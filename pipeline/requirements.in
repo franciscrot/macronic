@@ -1,0 +1,9 @@
+# Install torch from the CPU index first; use requirements.lock.txt thereafter.
+torch==2.8.0+cpu
+sentence-transformers==3.2.1
+transformers==4.46.3
+numpy==2.0.2
+numba==0.60.0
+faiss-cpu==1.9.0.post1
+simalign==0.4
+spacy==3.8.7

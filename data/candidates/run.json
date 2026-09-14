@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "bertalign_commit": "df8c63f51aa203faed9f2fe45ae39e6fca75e667",
+  "models": {
+    "sentence-transformers/LaBSE": "836121a0533e5664b21c7aacc5d22951f2b8b25b",
+    "google-bert/bert-base-multilingual-cased": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8"
+  },
+  "max_align": 5,
+  "device": "cpu",
+  "threads": 4,
+  "simalign": {
+    "method": "inter",
+    "layer": 8,
+    "token_type": "bpe",
+    "distortion": 0
+  },
+  "spacy_models": {
+    "en": "3.8.0",
+    "fr": "3.8.0"
+  },
+  "source_hashes": {
+    "en": "fb3943df826f375c4ab78d21f2d30bc95a0b2cb448e8812447a807d678eb0b5c",
+    "fr": "1cc10ab3268a76aa01bd3f9722ae2ae0e5e36b869a18b0bb0832b75bc0327806"
+  },
+  "seconds": 28.07,
+  "pipeline_hash": "119737cf305deeca35e5b2e426f0beb7e0bb4322fe0deab523920314b2fd0b06",
+  "policy_hash": "9b1b259226c50e4bf787d3c89c282bc283dd8df63138e846023b40b595305961",
+  "recovery": {
+    "from_dataset_fingerprint": "6806c01dd37aca38a93daa077bb587098b52fea822c791fc957c54791c548a9a",
+    "note": "Recovered earlier completed model output after workspace rollback. Source parts verified byte-equivalent after LF normalization; token annotations, similarity scores and model links preserved. Adapter hardening restored without rerunning inference. Original pipeline_hash above identifies the original run; restored adapter hash below controls future staleness checks.",
+    "restored_adapter_hash": "3608924d6d935b41cbc0d9c994fbc9db521521ea153a4016ac270104d7e6a21a"
+  }
+}

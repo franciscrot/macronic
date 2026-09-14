@@ -1,0 +1,20 @@
+{
+  "name": "macronic-prototype",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/tasks.mjs validate",
+    "generate": "node scripts/tasks.mjs generate",
+    "build": "node scripts/tasks.mjs build",
+    "test": "node --test tests/*.test.mjs",
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs --built",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.0"
+  }
+}
