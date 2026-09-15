@@ -1,4 +1,4 @@
-import { segments } from "./data.js";
+import { segments, languageDirection } from "./data.js";
 export function renderPassage(container, passage, stage) {
   for (const part of segments(passage, stage)) {
     if (!part.replacement) {
@@ -6,10 +6,12 @@ export function renderPassage(container, passage, stage) {
       continue;
     }
     const wrapper = document.createElement("span");
-    wrapper.className = "insertion";
+    wrapper.className =
+      "insertion" + (part.replacement.kind === "sentence" ? " sentence" : "");
     const button = document.createElement("button");
     button.className = "word";
-    button.lang = "fr";
+    button.lang = passage.languages?.learning || "fr";
+    button.dir = languageDirection(button.lang);
     button.textContent = part.text;
     button.setAttribute("aria-expanded", "false");
     const gloss = document.createElement("span");
@@ -17,7 +19,8 @@ export function renderPassage(container, passage, stage) {
     gloss.id = `gloss-${passage.id}-${part.replacement.id}`;
     gloss.hidden = true;
     gloss.textContent = part.replacement.english;
-    gloss.lang = "en";
+    gloss.lang = passage.languages?.base || "en";
+    gloss.dir = languageDirection(gloss.lang);
     gloss.setAttribute("role", "tooltip");
     button.setAttribute("aria-describedby", gloss.id);
     const show = (on) => {

@@ -85,17 +85,18 @@ test("chapter navigation reaches ending and retains selected density", async ({
   page,
 }) => {
   await page.goto("/src/reader/");
-  await expect(page.locator("#page-status")).toContainText("Page 1 of 6");
+  await expect(page.locator("#page-status")).toContainText("Passage 1 of 24");
   await expect(page.locator("#previous")).toBeDisabled();
   await page.getByRole("button", { name: "More French", exact: true }).click();
-  for (let i = 0; i < 5; i++) await page.locator("#next").click();
+  await page.locator("#gradual").uncheck();
+  for (let i = 0; i < 23; i++) await page.locator("#next").click();
   await expect(page.locator("#reading")).toContainText("all possible");
   await expect(page.locator("#next")).toBeDisabled();
   await expect(
     page.getByRole("button", { name: "More French", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await page.locator("#previous").click();
-  await expect(page.locator("#page-status")).toContainText("Page 5 of 6");
+  await expect(page.locator("#page-status")).toContainText("Passage 23 of 24");
 });
 test("workshop reading export opens in separate reader", async ({ page }) => {
   await page.goto("/src/review/");
@@ -110,5 +111,98 @@ test("workshop reading export opens in separate reader", async ({ page }) => {
   await expect(page.locator("#import-status")).toContainText(
     "Reading file opened",
   );
-  await expect(page.locator("#page-status")).toContainText("Page 1 of 6");
+  await expect(page.locator("#page-status")).toContainText("Passage 1 of 24");
+});
+
+test("phone controls stay inside viewport after scrolling, progression caps and toggle works", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 360, height: 640 });
+  await page.goto("/src/reader/");
+  await expect(page.locator("#levels button")).toHaveCount(6);
+  const visible = async () => {
+    for (const id of ["previous", "next"]) {
+      const b = await page.locator("#" + id).boundingBox();
+      expect(b.x).toBeGreaterThanOrEqual(0);
+      expect(b.y).toBeGreaterThanOrEqual(0);
+      expect(b.x + b.width).toBeLessThanOrEqual(360);
+      expect(b.y + b.height).toBeLessThanOrEqual(640);
+    }
+  };
+  await visible();
+  for (let i = 0; i < 3; i++) await page.locator("#next").click();
+  await expect(page.locator('[data-stage="1"]')).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await visible();
+  await page.locator("#gradual").uncheck();
+  for (let i = 0; i < 3; i++) await page.locator("#next").click();
+  await expect(page.locator('[data-stage="1"]')).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await page.locator("#gradual").check();
+  for (let i = 0; i < 12; i++) await page.locator("#next").click();
+  await expect(page.locator('[data-stage="4"]')).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await visible();
+  await page.locator('[data-stage="5"]').click();
+  await expect(page.locator("#reading p")).toHaveAttribute("lang", "fr");
+  await page.locator("#next").click();
+  await expect(page.locator('[data-stage="5"]')).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+});
+test("Yiddish file uses language-aware labels, checkbox and RTL text", async ({
+  page,
+}) => {
+  const fs = await import("node:fs/promises");
+  const r = JSON.parse(await fs.readFile("data/reader/reader.json", "utf8"));
+  r.languages = { base: "en", learning: "yi" };
+  r.title = "RTL fixture";
+  r.passages = [
+    {
+      id: "yi1",
+      text: "Test",
+      translation: "טעסט",
+      replacements: [],
+      sentences: [],
+    },
+  ];
+  await page.goto("/src/reader/");
+  await page
+    .locator("#import-reader")
+    .setInputFiles({
+      name: "yiddish.reader.json",
+      mimeType: "application/json",
+      buffer: Buffer.from(JSON.stringify(r)),
+    });
+  await expect(
+    page.getByRole("button", { name: "Even more Yiddish", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator("#gradual-label")).toContainText(
+    "Gradually add more Yiddish",
+  );
+  await page.getByRole("button", { name: "Yiddish", exact: true }).click();
+  await expect(page.locator("#reading p")).toHaveAttribute("dir", "rtl");
+  await expect(page.locator("#reading")).toContainText("טעסט");
+});
+test("whole sentence appears only from So much and can be excluded in workshop", async ({
+  page,
+}) => {
+  await page.goto("/src/review/");
+  await page.locator("#passage").selectOption("17");
+  await page.locator("#stage").selectOption("3");
+  await expect(page.locator("#preview .sentence")).toHaveCount(0);
+  await page.locator("#stage").selectOption("4");
+  await expect(page.locator("#preview .sentence")).toHaveCount(1);
+  await page.locator("#editor").fill("Browser tester");
+  await page.locator("#note").fill("Checking exclusion round trip");
+  await page.getByText("Whole sentence at “So much”", { exact: true }).click();
+  await page.locator("#sentence-reject").click();
+  await expect(page.locator("#preview .sentence")).toHaveCount(0);
 });
