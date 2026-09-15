@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "457a6feaf20b600912fd44a4fe07b3dea1c4338a6824d53e19ae2bba278b4e3a",
+  "entries": [
+    {
+      "id": "chapter1-evidence-p004-l013",
+      "en": "sister",
+      "fr": [
+        "soeur"
+      ],
+      "link_id": "p004-l013",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "note": "FreeDict entry 7396 gives sœur. This source uses the unligated spelling soeur; the text identifies the Baron’s sister.",
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-09-15",
+      "min_stage": 2
+    },
+    {
+      "id": "chapter1-evidence-p019-l005",
+      "en": "happiness",
+      "fr": [
+        "bonheur"
+      ],
+      "link_id": "p019-l005",
+      "source": "https://www.larousse.fr/dictionnaires/francais-anglais/bonheur/10029",
+      "note": "Contentment sense; happiness of being born a baron.",
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-09-15",
+      "min_stage": 2
+    },
+    {
+      "id": "chapter1-evidence-p019-l021",
+      "en": "happiness",
+      "fr": [
+        "bonheur"
+      ],
+      "link_id": "p019-l021",
+      "source": "https://www.larousse.fr/dictionnaires/francais-anglais/bonheur/10029",
+      "note": "Contentment sense; the second degree of happiness.",
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-09-15",
+      "min_stage": 2
+    },
+    {
+      "id": "chapter1-evidence-p019-l048",
+      "en": "philosopher",
+      "fr": [
+        "philosophe"
+      ],
+      "link_id": "p019-l048",
+      "source": "https://www.larousse.fr/dictionnaires/francais-anglais/philosophe/59892",
+      "note": "Noun sense describing Pangloss.",
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-09-15",
+      "min_stage": 2
+    },
+    {
+      "id": "chapter1-evidence-p023-l015",
+      "en": "screen",
+      "fr": [
+        "paravent"
+      ],
+      "link_id": "p023-l015",
+      "source": "https://www.larousse.fr/dictionnaires/anglais-francais/screen/609875",
+      "note": "Furniture/privacy sense: the characters stand behind a screen.",
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-09-15",
+      "min_stage": 2
+    },
+    {
+      "id": "chapter1-evidence-p024-l009",
+      "en": "screen",
+      "fr": [
+        "paravent"
+      ],
+      "link_id": "p024-l009",
+      "source": "https://www.larousse.fr/dictionnaires/anglais-francais/screen/609875",
+      "note": "The same physical screen as the preceding passage.",
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-09-15",
+      "min_stage": 2
+    }
+  ]
+}

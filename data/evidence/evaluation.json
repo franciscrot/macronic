@@ -375,9 +375,9 @@
   "automatic": {
     "raw_word_links": 746,
     "passage_groups": 24,
-    "chapter_eligible_insertions": 50,
-    "demo_insertions": 15,
-    "corrected_demo_insertions": 15,
+    "chapter_eligible_insertions": 56,
+    "demo_insertions": 56,
+    "corrected_demo_insertions": 56,
     "demo_distribution": [
       {
         "id": "p001",
@@ -406,11 +406,15 @@
       },
       {
         "id": "p004",
-        "count": 4,
+        "count": 5,
         "insertions": [
           [
             "son",
             "fils"
+          ],
+          [
+            "sister",
+            "soeur"
           ],
           [
             "rest",
@@ -496,12 +500,252 @@
             "ans"
           ]
         ]
+      },
+      {
+        "id": "p011",
+        "count": 2,
+        "insertions": [
+          [
+            "son",
+            "fils"
+          ],
+          [
+            "father",
+            "père"
+          ]
+        ]
+      },
+      {
+        "id": "p012",
+        "count": 4,
+        "insertions": [
+          [
+            "lessons",
+            "leçons"
+          ],
+          [
+            "faith",
+            "foi"
+          ],
+          [
+            "age",
+            "âge"
+          ],
+          [
+            "character",
+            "caractère"
+          ]
+        ]
+      },
+      {
+        "id": "p013",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p014",
+        "count": 5,
+        "insertions": [
+          [
+            "effect",
+            "effet"
+          ],
+          [
+            "worlds",
+            "mondes"
+          ],
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "castles",
+            "châteaux"
+          ],
+          [
+            "Baronesses",
+            "baronnes"
+          ]
+        ]
+      },
+      {
+        "id": "p015",
+        "count": 3,
+        "insertions": [
+          [
+            "things",
+            "choses"
+          ],
+          [
+            "end",
+            "fin"
+          ],
+          [
+            "end",
+            "fin"
+          ]
+        ]
+      },
+      {
+        "id": "p016",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p017",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p018",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p019",
+        "count": 3,
+        "insertions": [
+          [
+            "happiness",
+            "bonheur"
+          ],
+          [
+            "happiness",
+            "bonheur"
+          ],
+          [
+            "philosopher",
+            "philosophe"
+          ]
+        ]
+      },
+      {
+        "id": "p020",
+        "count": 6,
+        "insertions": [
+          [
+            "day",
+            "jour"
+          ],
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "wood",
+            "bois"
+          ],
+          [
+            "park",
+            "parc"
+          ],
+          [
+            "lesson",
+            "leçon"
+          ],
+          [
+            "mother",
+            "mère"
+          ]
+        ]
+      },
+      {
+        "id": "p021",
+        "count": 5,
+        "insertions": [
+          [
+            "experiments",
+            "expériences"
+          ],
+          [
+            "witness",
+            "témoin"
+          ],
+          [
+            "effects",
+            "effets"
+          ],
+          [
+            "desire",
+            "désir"
+          ],
+          [
+            "reason",
+            "raison"
+          ]
+        ]
+      },
+      {
+        "id": "p022",
+        "count": 1,
+        "insertions": [
+          [
+            "castle",
+            "château"
+          ]
+        ]
+      },
+      {
+        "id": "p023",
+        "count": 6,
+        "insertions": [
+          [
+            "dinner",
+            "dîner"
+          ],
+          [
+            "screen",
+            "paravent"
+          ],
+          [
+            "handkerchief",
+            "mouchoir"
+          ],
+          [
+            "hand",
+            "main"
+          ],
+          [
+            "hand",
+            "main"
+          ],
+          [
+            "hands",
+            "mains"
+          ]
+        ]
+      },
+      {
+        "id": "p024",
+        "count": 5,
+        "insertions": [
+          [
+            "screen",
+            "paravent"
+          ],
+          [
+            "effect",
+            "effet"
+          ],
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "backside",
+            "derrière"
+          ],
+          [
+            "castles",
+            "châteaux"
+          ]
+        ]
       }
     ],
     "exclusion_reasons": {
       "part_of_speech": 631,
       "number": 517,
-      "dictionary_missing": 405,
+      "dictionary_missing": 399,
       "not_simple_words": 121,
       "same_surface": 122,
       "compound": 30,

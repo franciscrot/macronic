@@ -1,1 +1,12 @@
-{"schema_version":1,"id":"noun-pilot-v1","calibration":"pilot; independent human evaluation pending","passage_similarity_min":0.70,"allowed_upos":["NOUN"],"dictionary_required":true,"max_stage":2,"note":"Conservative initial policy, not a calibrated probability. Release requires an explicit dataset-level check."}
+{
+  "schema_version": 1,
+  "id": "noun-pilot-v2",
+  "calibration": "pilot; independent human evaluation pending",
+  "passage_similarity_min": 0.7,
+  "allowed_upos": [
+    "NOUN"
+  ],
+  "dictionary_required": true,
+  "max_stage": 2,
+  "note": "Same linguistic and similarity gates as v1. Six occurrence-bound supplemental evidence checks are admitted only at stage 2; these are AI checks, not human approvals."
+}
