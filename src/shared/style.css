@@ -331,3 +331,22 @@ pre {
     padding: 8px;
   }
 }
+#prepare fieldset {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid #d4dacd;
+  padding: 1rem;
+}
+#prepare label {
+  display: grid;
+  gap: 0.35rem;
+}
+#prepare input,
+#prepare select {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+#result pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

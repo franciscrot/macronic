@@ -124,6 +124,7 @@ test("phone controls stay inside viewport after scrolling, progression caps and 
   );
   bundle.passages.forEach((p) => {
     p.text += " Context".repeat(170);
+    p.sentences = [];
   });
   await page.route("**/reader.json", (route) =>
     route.fulfill({ json: bundle }),
@@ -217,4 +218,21 @@ test("whole sentence appears only from So much and can be excluded in workshop",
   await page.getByText("Whole sentence at “So much”", { exact: true }).click();
   await page.locator("#sentence-reject").click();
   await expect(page.locator("#preview .sentence")).toHaveCount(0);
+});
+
+test("guide is linked from reader and hosted preparation explains local worker", async ({
+  page,
+}) => {
+  await page.goto("/src/reader/");
+  await page
+    .getByRole("link", { name: "How Macronic works · Beginner’s guide" })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "From two texts to a bilingual reader" }),
+  ).toBeVisible();
+  await page.goto("/src/prepare/");
+  await expect(page.locator("#connection")).toContainText(
+    "This hosted page cannot run the Python models",
+  );
+  await expect(page.locator("#inputs")).toBeDisabled();
 });

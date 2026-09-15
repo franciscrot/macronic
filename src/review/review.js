@@ -344,7 +344,7 @@ $("export-reader").onclick = () => {
     );
     const a = document.createElement("a");
     a.href = url;
-    a.download = "candide-chapter-1.reader.json";
+    a.download = "macronic.reader.json";
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     message(

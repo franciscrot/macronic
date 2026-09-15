@@ -24,6 +24,8 @@ http
         if (pathname === "/") pathname = "/src/reader/";
         if (pathname.startsWith("/src/reader/shared/"))
           pathname = pathname.replace("/src/reader/shared/", "/src/shared/");
+        if (pathname === "/src/reader/guide.html")
+          pathname = "/src/guide/index.html";
         if (pathname === "/src/reader/reader.json")
           pathname = "/data/reader/reader.json";
       }

@@ -89,3 +89,21 @@ The separate reader accepts that exported JSON through Open a reading file. It v
 This reading-file contract is the boundary for a future phone-native consumer app. Keep authoring, model execution and evidence review in the developer tool; implement offline file storage, reading position, touch interaction and reading preferences in the consumer app. No native phone app or automatic phrase substitutions are claimed in this phase.
 
 See [AUTHORING_WORKFLOW.md](AUTHORING_WORKFLOW.md) for the proposed two-text import and corpus workflow.
+
+
+## Prepare another text pair
+
+The reader links to a beginner's guide explaining hosting, local preparation, browser corrections and saving. Its maintained source is `src/guide/index.html`.
+
+After installing the Python model environment above:
+
+```sh
+python -m pipeline.project create english.txt french.txt --output corpus/my-book --title "My book" --english-edition "Unknown" --target-edition "Unknown" --target-language fr
+python -m pipeline.worker --projects corpus
+```
+
+Open http://127.0.0.1:8765/ on the computer running the worker to upload another pair, view job status, open completed projects and download backups. Files stay on that computer. The equivalent hosted page explains local setup; it cannot run Python. Add `--sources-only` to the create command to import without models, then use `python -m pipeline.project run corpus/my-book` later. Run `node scripts/project.mjs export corpus/my-book downloaded-corrections.json` to validate and persist exported workshop amendments and rebuild that project's reader. Original and normalized source hashes, ordered sentence coverage and correction fingerprints are checked.
+
+New projects reuse the limited lexical dictionary, but never Candide's occurrence-specific supplements. New adjectives and whole sentences require their own evidence or explicit editor decisions. Current preparation supports English/French only. Completed projects cannot be overwritten; create a new project to rerun models. Browser edits still need exporting; project backups include saved disk state only. Generic-project boundary recomputation remains a follow-up.
+
+Current verification includes project import, failed-job recovery, local HTTP handler validation, chapter export/correction round trips and stale-source rejection. Full model execution requires a suitably installed environment and was not rerun during this change. Browser automation was blocked by this session's socket restrictions.
