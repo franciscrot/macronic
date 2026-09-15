@@ -1,3 +1,4 @@
+import { readingSections } from "./shared/sections.js";
 import { renderPassage } from "./shared/render.js";
 import {
   validateReader,
@@ -14,9 +15,11 @@ import {
 const $ = (id) => document.getElementById(id),
   reading = $("reading");
 let data,
+  sections,
   state = newProgress();
 function install(bundle) {
   data = validateReader(bundle);
+  sections = readingSections(data.passages);
   state = newProgress();
   data.languages ||= { base: "en", learning: "fr" };
   if (data.schema_version === 1) state.automatic = false;
@@ -43,18 +46,25 @@ function install(bundle) {
   render();
 }
 function render() {
-  const p = { ...data.passages[state.index], languages: data.languages };
   reading.replaceChildren();
-  const paragraph = document.createElement("p");
-  paragraph.lang =
-    state.stage === 5 ? data.languages.learning : data.languages.base;
-  paragraph.dir = languageDirection(paragraph.lang);
-  reading.append(paragraph);
-  renderPassage(paragraph, p, state.stage);
+  let paragraph, previousParagraph;
+  for (const item of sections[state.index]) {
+    const p = { ...item, languages: data.languages };
+    const key = state.stage === 5 ? p.target_paragraph_id : p.paragraph_id;
+    if (!paragraph || !key || key !== previousParagraph) {
+      paragraph = document.createElement("p");
+      paragraph.lang =
+        state.stage === 5 ? data.languages.learning : data.languages.base;
+      paragraph.dir = languageDirection(paragraph.lang);
+      reading.append(paragraph);
+    } else paragraph.append(document.createTextNode(" "));
+    renderPassage(paragraph, p, state.stage);
+    previousParagraph = key;
+  }
   $("page-status").textContent =
-    `Passage ${state.index + 1} of ${data.passages.length}`;
+    `Section ${state.index + 1} of ${sections.length}`;
   $("previous").disabled = state.index === 0;
-  $("next").disabled = state.index === data.passages.length - 1;
+  $("next").disabled = state.index === sections.length - 1;
   $("status").textContent =
     `${data.chapter || ""} · ${(data.schema_version === 2 ? levelNames(data.languages) : data.stages)[state.stage]}${state.stage === 5 ? "" : " · Tap an insertion for its original meaning."}`;
   $("levels")
@@ -75,7 +85,7 @@ for (const [id, delta] of [
     if (!data) return;
     state = moveProgress(
       state,
-      Math.max(0, Math.min(data.passages.length - 1, state.index + delta)),
+      Math.max(0, Math.min(sections.length - 1, state.index + delta)),
     );
     render();
     reading.scrollIntoView({ block: "start" });

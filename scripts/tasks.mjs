@@ -97,6 +97,7 @@ export async function releaseFingerprint(d) {
     "src/shared/data.js",
     "src/shared/render.js",
     "src/shared/progression.js",
+    "src/shared/sections.js",
     "src/shared/style.css",
     "src/reader/index.html",
     "src/reader/reader.js",
