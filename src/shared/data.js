@@ -412,8 +412,8 @@ export function makeReader(
   return {
     schema_version: 2,
     base_fingerprint: data.fingerprint,
-    title: "Candide",
-    chapter: "Chapter I",
+    title: data.title || "Candide",
+    chapter: data.chapter ?? "Chapter I",
     languages,
     provenance: {
       policy_id: policy.id,

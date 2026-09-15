@@ -146,6 +146,9 @@ export async function build() {
   for (const [source, target] of [
     ["src/reader/index.html", "prototype/index.html"],
     ["src/reader/reader.js", "prototype/reader.js"],
+    ["src/guide/index.html", "prototype/guide.html"],
+    ["src/guide", "prototype/guide"],
+    ["src/prepare", "prototype/prepare"],
     ["src/shared", "prototype/shared"],
     ["data/reader/reader.json", "prototype/reader.json"],
   ])

@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beginner’s guide · Macronic</title><style>body{background:#faf9f2;color:#243832;font:18px/1.65 system-ui,sans-serif;margin:0}main{max-width:760px;margin:auto;padding:28px 20px 80px}h1,h2{line-height:1.2}h2{margin-top:2em}a{color:#087068}code,pre{background:#ecefe6;font-size:.85em}pre{padding:16px;white-space:pre-wrap;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:.9em}td,th{padding:10px;border-bottom:1px solid #ccd4ca;text-align:left;vertical-align:top}.note{padding:16px;border-left:3px solid #748f76;background:#f0f2e9}</style></head><body><main>
+<p>Macronic · Beginner’s guide · Updated 15 September 2026</p><h1>From two texts to a bilingual reader</h1>
+<p>Macronic takes an English text and an existing translation, works out which parts correspond, and uses those correspondences to introduce another language as you read. The saved result contains both texts, the links between them, and the evidence for the substitutions.</p>
+<p class="note"><strong>You do not need to return to Codex for every text.</strong> Once the preparation software is installed on your computer, you can open its local upload page and prepare texts there. Codex can help install it, improve it, troubleshoot it, and prepare batches for you.</p>
+<h2>What is sitting where?</h2>
+<table><thead><tr><th>Part</th><th>Where it lives</th><th>What it does</th></tr></thead><tbody>
+<tr><td>Hosted test site</td><td>Online, currently on private Sites hosting</td><td>The reader opens prepared reading files. The hosted workshop edits the bundled Candide project. New projects have their own local workshop. This site cannot run the Python models.</td></tr>
+<tr><td>Local preparation app</td><td>On your computer, at <code>http://127.0.0.1:8765/</code> while the worker is running</td><td>Accepts two text files, starts preparation, shows progress, and opens each completed project in its own workshop and reader.</td></tr>
+<tr><td>Python worker</td><td>A program running on the same computer</td><td>Calls Bertalign to align sentences, then SimAlign and linguistic checks to propose word substitutions. The models run here, not on GitHub Pages.</td></tr>
+<tr><td>Project folder</td><td>A folder such as <code>corpus/my-book</code> on that computer</td><td>Stores original texts, editions, model results, evidence, corrections and reading exports. Back this folder up.</td></tr>
+<tr><td>GitHub repository</td><td><a href="https://github.com/franciscrot/macronic">franciscrot/macronic</a></td><td>Stores versioned code and the corpus files we choose to commit. Uploading to the local app does not automatically send anything to GitHub.</td></tr>
+</tbody></table>
+<p>A <strong>static site</strong> serves files that your browser can display and run. A <strong>worker</strong> is a separate program that performs the heavier preparation. <strong>JSON</strong> is a structured text-file format for storing the results; it is not a model or a special kind of translation.</p>
+<p>GitHub Pages remains a possible public hosting route, behind the existing release review. The test link you have been using is privately hosted with Sites. Neither host currently supplies an online Python worker.</p>
+<h2>The everyday workflow</h2>
+<ol><li><strong>Find two matching texts.</strong> Start with the same chapter in English and French. Save each as UTF-8 plain text (.txt), with paragraph breaks. Record the edition and translator, or “Unknown”. This tool does not create a translation. It does not yet clean PDFs, OCR or whole-book front matter for you.</li>
+<li><strong>Start the local app.</strong> Open a terminal in the project folder, activate the installed Python environment, and run <code>python -m pipeline.worker --projects corpus</code>. Leave that terminal open. Open <code>http://127.0.0.1:8765/</code> in your browser on the same computer.</li>
+<li><strong>Upload both files.</strong> Enter the title, editions and source details. Click Create project. You can instead choose “Save sources only” if the models are not installed yet. Files are saved locally, not sent to a hosted model API.</li>
+<li><strong>Review the result.</strong> When preparation finishes, use Open review workshop. Sentence groups may contain several sentences, or an unmatched side. Those are alignment units. The reader combines them into longer sections so you can learn from context.</li>
+<li><strong>Correct and save.</strong> The workshop already lets you approve or reject links, select words to correct a link, and approve or exclude whole sentences. Supply your name and a reason. Changes initially live only in that browser tab. Use <strong>Export corrections</strong> before closing it.</li>
+<li><strong>Keep the editable project up to date.</strong> Import the downloaded corrections into the saved project with the command below. This validates them and rebuilds its reader. A previous corrections file is retained. If you alter sentence-group boundaries, affected substitutions remain blocked until recomputed; automated boundary recomputation for these new projects is a later step.</li>
+<li><strong>Export and test.</strong> Export reading file makes a smaller JSON file for the reader. “Open a reading file” expects this prepared JSON, not your original .txt files. Save both corrections and reading exports. Download saved project backup on the local app backs up what is already saved to disk; it cannot include unsaved edits in another tab.</li>
+<li><strong>Add it to the corpus.</strong> Keep a backup, then ask Codex to help review and commit the project’s sources, evidence and amendments to GitHub. This is an explicit step. Over time these projects form the corpus for a later consumer-facing phone app.</li></ol>
+<pre>node scripts/project.mjs export corpus/PROJECT_ID /path/to/downloaded-corrections.json</pre>
+<h2>First-time setup</h2>
+<p>The reader and workshop do not need the models. Preparing new texts does. The preparation environment needs Node 24, Python 3.12, several GB of disk and memory, and the pinned dependencies and models. Ask Codex to help with setup if these commands are unfamiliar. In a terminal opened in the downloaded GitHub project:</p>
+<pre>npm ci
+python3.12 -m venv .venv
+# macOS / Linux:
+. .venv/bin/activate
+# Windows PowerShell instead:
+# .venv\Scripts\Activate.ps1
+pip install --extra-index-url https://download.pytorch.org/whl/cpu -r pipeline/requirements.lock.txt
+python -m pipeline.download_models
+python -m pipeline.worker --projects corpus</pre>
+<p>Model downloading needs an internet connection. Preparation then uses the cached, pinned models. Keep the environment active when you start the worker. Closing the terminal stops the service. A stopped preparation is marked as failed on restart; its sources remain saved. You can retry with <code>python -m pipeline.project run corpus/PROJECT_ID</code>.</p>
+<h2>The two-file command</h2>
+<p>The upload page calls the same preparation code as this command. You can use it directly, or ask Codex to run it in a suitable environment:</p>
+<pre>python -m pipeline.project create english.txt french.txt --output corpus/my-book --title "My book, chapter 1" --english-edition "Edition or Unknown" --target-edition "Edition or Unknown" --target-language fr</pre>
+<p>Add <code>--sources-only</code> to save and check the inputs without running models. Later use <code>python -m pipeline.project run corpus/my-book</code>. A completed project is never silently overwritten. Use a new folder for a fresh model run.</p>
+<h2>What works now, and what comes later?</h2>
+<p><strong>Now:</strong> English/French preparation code, a local upload interface, editable browser alignment review, correction exports, reading exports, six levels, and longer reading sections. The full new model path still needs a run in an environment with the inference dependencies installed; the current development session checked import, validation and failure handling without claiming a fresh model run.</p>
+<p>New texts use the existing limited dictionary subset. Their word substitutions may therefore be sparse. Uncertain words stay English. Candide’s individually checked adjectives and whole sentence are not copied into new works. You can add reviewed decisions in the workshop.</p>
+<p><strong>Later:</strong> a broader lexical evidence collection, validated Yiddish preparation, simpler project saving and boundary recomputation, and the consumer-facing phone app. Yiddish labels and right-to-left display already work, but reliable preparation is a separate task. The future phone app will consume the reading exports without needing the preparation models.</p>
+<p>This guide is kept with the app’s code and should be updated whenever the workflow changes. The source of truth for your work is the saved project and its version history, rather than the conversation with Codex.</p>
+</main></body></html>
