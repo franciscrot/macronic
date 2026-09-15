@@ -240,3 +240,59 @@ test("passage confirmation resolves similarity warnings but never structural fai
     0,
   );
 });
+
+test("supplemental evidence is occurrence-bound, stale-safe and highest-stage only", async () => {
+  const { withSupplement, validateReader } = await import(
+    "../src/shared/data.js"
+  );
+  const d = fixture(),
+    s = {
+      schema_version: 1,
+      base_fingerprint: d.fingerprint,
+      entries: [
+        {
+          id: "extra",
+          en: "castle",
+          fr: ["château"],
+          link_id: "l",
+          source: "https://example.org/dictionary",
+          note: "Fixture evidence",
+          check_origin: "ai_context_check",
+          min_stage: 2,
+        },
+      ],
+    };
+  const r = makeReader(
+    d,
+    emptyCorrections(d),
+    withSupplement(d, { entries: [] }, s),
+    policy,
+  );
+  assert.equal(r.passages[0].replacements[0].stage, 2);
+  validateReader(JSON.parse(JSON.stringify(r)));
+  s.base_fingerprint = "stale";
+  assert.throws(() => withSupplement(d, { entries: [] }, s), /Stale/);
+  r.passages[0].replacements[0].start = 99;
+  assert.throws(() => validateReader(r), /range/);
+});
+test("whole-chapter export contains every passage and preserves lower-stage baseline", async () => {
+  const { load } = await import("../scripts/tasks.mjs");
+  const { data, dictionary, policy, corrections } = await load();
+  const full = makeReader(data, corrections, dictionary, policy),
+    base = makeReader(
+      data,
+      corrections,
+      { entries: dictionary.entries.filter((e) => !e.link_id) },
+      policy,
+    );
+  assert.equal(full.passages.length, 24);
+  assert.equal(
+    full.passages.reduce((n, p) => n + p.replacements.length, 0),
+    56,
+  );
+  const low = (r) =>
+    r.passages.flatMap((p) =>
+      p.replacements.filter((x) => x.stage === 1).map((x) => x.id),
+    );
+  assert.deepEqual(low(full), low(base));
+});

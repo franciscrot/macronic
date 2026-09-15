@@ -5,6 +5,7 @@ import {
   effectivePassages,
   assess,
   makeReader,
+  withSupplement,
 } from "../shared/data.js";
 import { renderPassage } from "../shared/render.js";
 const $ = (id) => document.getElementById(id);
@@ -286,6 +287,11 @@ try {
     }),
   );
   [data, dictionary, policy, corrections, sentences] = values;
+  dictionary = withSupplement(
+    data,
+    dictionary,
+    await (await fetch("../../data/evidence/supplement.json")).json(),
+  );
   validateDataset(data);
   validateCorrections(data, corrections);
   data.passages.forEach((p, i) => {
@@ -302,3 +308,24 @@ try {
   message(e.message, true);
   document.querySelectorAll("button").forEach((b) => (b.disabled = true));
 }
+
+$("export-reader").onclick = () => {
+  try {
+    const file = makeReader(data, corrections, dictionary, policy);
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(file, null, 2) + "\n"], {
+        type: "application/json",
+      }),
+    );
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "candide-chapter-1.reader.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    message(
+      "Reading file exported. Export corrections separately to preserve your editable work.",
+    );
+  } catch (e) {
+    message(e.message, true);
+  }
+};

@@ -18,7 +18,7 @@ The original app remains at the project root. The prototype has three nested sta
 
 ## Actual output and limits
 
-Chapter I produces 24 Bertalign passage groups and 746 SimAlign word links. The noun pilot admits 50 chapter insertions and 15 across the first ten demo passages. The policy requires compatible noun/number annotations, dictionary lemma support, distinct noncompeting occurrence links, simple nonidentical words, and an eligible passage. Phrase links remain inspectable but cannot become single-word replacements. Dictionary evidence corroborates model links; it never invents them or projects unmatched words.
+Chapter I produces 24 Bertalign passage groups and 746 SimAlign word links. The noun pilot admits 56 chapter insertions across all 24 passage groups, displayed on six pages. The policy requires compatible noun/number annotations, dictionary lemma support, distinct noncompeting occurrence links, simple nonidentical words, and an eligible passage. Phrase links remain inspectable but cannot become single-word replacements. Dictionary evidence corroborates model links; it never invents them or projects unmatched words.
 
 `data/evidence/evaluation.json` compares the output against an AI-authored diagnostic reference: 24/24 passage groups and 36 selected word cases. This reference was written after inspecting model output. It is neither held out nor independent human evaluation; its scores do not establish corpus accuracy. The similarity threshold 0.70 is an uncalibrated pilot setting, not a probability. Human correction time and release review remain unmeasured/pending.
 
@@ -73,3 +73,13 @@ Pages uploads only `dist`, containing the legacy app and the generated reader. T
 English: Project Gutenberg 19942, Boni and Liveright 1918, introduction Philip Littell; translator unspecified in the ebook. French: Gutenberg 4650. Full downloaded notices and source hashes are retained. Narrative extraction normalizes line endings and omits standalone editorial-note paragraphs while retaining wording and embedded note markers.
 
 The relevant FreeDict English–French TEI entries and original header are preserved in `data/evidence/freedict-subset.tei`; evidence records source commit/version/license. FreeDict is GPL-2.0-or-later. Bertalign and its Python integration are GPL-3.0 (see `pipeline/vendor/BERTALIGN_LICENSE`). New browser/build/test code is MIT under `LICENSE-PROTOTYPE`; no relicensing of legacy files or third-party models/data is implied. Model usage remains subject to each model's own license.
+
+## Whole-chapter review and reading workflow
+
+The reader now includes all of Chapter I, with previous/next navigation across six pages. A little French uses the original sparse selection; More French includes all 50 baseline insertions plus six evidence-backed additions (12% more occurrences). The threshold, POS, number and conflict gates are unchanged. `data/evidence/supplement.json` records each added occurrence, source URL, contextual reason and AI check origin. These additions are bound to the exact dataset fingerprint and appear only at stage 2. Changed datasets require renewed supplemental checks; a stale supplement fails validation rather than silently moving to new occurrences.
+
+The workshop is the authoring app. Export corrections saves editable amendments. Export reading file produces the whole chapter with effective corrections and per-insertion provenance. Exporting the reader does not save the correction file, and browser edits remain in-session until exported. Import corrections via the CLI to preserve them in Git.
+
+The separate reader accepts that exported JSON through Open a reading file. It validates ranges, approval/safety fields and stages, and needs no raw alignment data or Python dependencies. Imported files are untrusted text, rendered with DOM text nodes, and remain in the browser session. Schema checks establish structural validity, not independent linguistic quality or authenticity.
+
+This reading-file contract is the boundary for a future phone-native consumer app. Keep authoring, model execution and evidence review in the developer tool; implement offline file storage, reading position, touch interaction and later phrase/sentence progression in the consumer app. No native phone app or automatic phrase substitutions are claimed in this phase.

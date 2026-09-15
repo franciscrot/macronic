@@ -57,19 +57,17 @@ test("workshop exports rejection, imports it and rejects stale files", async ({
   const file = await (await download).path();
   await page.locator("#import").setInputFiles(file);
   await expect(page.locator("#message")).toContainText("imported");
-  await page
-    .locator("#import")
-    .setInputFiles({
-      name: "bad.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(
-        JSON.stringify({
-          schema_version: 1,
-          base_fingerprint: "stale",
-          operations: [],
-        }),
-      ),
-    });
+  await page.locator("#import").setInputFiles({
+    name: "bad.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(
+      JSON.stringify({
+        schema_version: 1,
+        base_fingerprint: "stale",
+        operations: [],
+      }),
+    ),
+  });
   await expect(page.locator("#message")).toContainText("Stale");
 });
 test("mobile reader fits viewport", async ({ page }) => {
@@ -81,4 +79,36 @@ test("mobile reader fits viewport", async ({ page }) => {
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
+});
+
+test("chapter navigation reaches ending and retains selected density", async ({
+  page,
+}) => {
+  await page.goto("/src/reader/");
+  await expect(page.locator("#page-status")).toContainText("Page 1 of 6");
+  await expect(page.locator("#previous")).toBeDisabled();
+  await page.getByRole("button", { name: "More French", exact: true }).click();
+  for (let i = 0; i < 5; i++) await page.locator("#next").click();
+  await expect(page.locator("#reading")).toContainText("all possible");
+  await expect(page.locator("#next")).toBeDisabled();
+  await expect(
+    page.getByRole("button", { name: "More French", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await page.locator("#previous").click();
+  await expect(page.locator("#page-status")).toContainText("Page 5 of 6");
+});
+test("workshop reading export opens in separate reader", async ({ page }) => {
+  await page.goto("/src/review/");
+  await expect(page.locator("#message")).toContainText(
+    "Automatic alignments loaded",
+  );
+  const pending = page.waitForEvent("download");
+  await page.locator("#export-reader").click();
+  const file = await (await pending).path();
+  await page.goto("/src/reader/");
+  await page.locator("#import-reader").setInputFiles(file);
+  await expect(page.locator("#import-status")).toContainText(
+    "Reading file opened",
+  );
+  await expect(page.locator("#page-status")).toContainText("Page 1 of 6");
 });

@@ -2,6 +2,104 @@
   "schema_version": 1,
   "base_fingerprint": "457a6feaf20b600912fd44a4fe07b3dea1c4338a6824d53e19ae2bba278b4e3a",
   "title": "Candide",
+  "chapter": "Chapter I",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "noun-pilot-v2",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "457a6feaf20b600912fd44a4fe07b3dea1c4338a6824d53e19ae2bba278b4e3a",
+      "entries": [
+        {
+          "id": "chapter1-evidence-p004-l013",
+          "en": "sister",
+          "fr": [
+            "soeur"
+          ],
+          "link_id": "p004-l013",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "note": "FreeDict entry 7396 gives sœur. This source uses the unligated spelling soeur; the text identifies the Baron’s sister.",
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-09-15",
+          "min_stage": 2
+        },
+        {
+          "id": "chapter1-evidence-p019-l005",
+          "en": "happiness",
+          "fr": [
+            "bonheur"
+          ],
+          "link_id": "p019-l005",
+          "source": "https://www.larousse.fr/dictionnaires/francais-anglais/bonheur/10029",
+          "note": "Contentment sense; happiness of being born a baron.",
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-09-15",
+          "min_stage": 2
+        },
+        {
+          "id": "chapter1-evidence-p019-l021",
+          "en": "happiness",
+          "fr": [
+            "bonheur"
+          ],
+          "link_id": "p019-l021",
+          "source": "https://www.larousse.fr/dictionnaires/francais-anglais/bonheur/10029",
+          "note": "Contentment sense; the second degree of happiness.",
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-09-15",
+          "min_stage": 2
+        },
+        {
+          "id": "chapter1-evidence-p019-l048",
+          "en": "philosopher",
+          "fr": [
+            "philosophe"
+          ],
+          "link_id": "p019-l048",
+          "source": "https://www.larousse.fr/dictionnaires/francais-anglais/philosophe/59892",
+          "note": "Noun sense describing Pangloss.",
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-09-15",
+          "min_stage": 2
+        },
+        {
+          "id": "chapter1-evidence-p023-l015",
+          "en": "screen",
+          "fr": [
+            "paravent"
+          ],
+          "link_id": "p023-l015",
+          "source": "https://www.larousse.fr/dictionnaires/anglais-francais/screen/609875",
+          "note": "Furniture/privacy sense: the characters stand behind a screen.",
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-09-15",
+          "min_stage": 2
+        },
+        {
+          "id": "chapter1-evidence-p024-l009",
+          "en": "screen",
+          "fr": [
+            "paravent"
+          ],
+          "link_id": "p024-l009",
+          "source": "https://www.larousse.fr/dictionnaires/anglais-francais/screen/609875",
+          "note": "The same physical screen as the preceding passage.",
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-09-15",
+          "min_stage": 2
+        }
+      ]
+    }
+  },
   "stages": [
     "English",
     "A little French",
@@ -24,11 +122,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-2814-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -55,11 +155,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-6786-sense-2"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -80,11 +182,48 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-7519-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p004-l013",
+          "start": 81,
+          "end": 87,
+          "english": "sister",
+          "french": "soeur",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "chapter1-evidence-p004-l013"
+            ],
+            "evidence": [
+              {
+                "id": "chapter1-evidence-p004-l013",
+                "en": "sister",
+                "fr": [
+                  "soeur"
+                ],
+                "link_id": "p004-l013",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "note": "FreeDict entry 7396 gives sœur. This source uses the unligated spelling soeur; the text identifies the Baron’s sister.",
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-09-15",
+                "min_stage": 2
+              }
+            ],
+            "min_stage": 2
           }
         },
         {
@@ -98,11 +237,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-6954-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         },
         {
@@ -116,11 +257,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-8250-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         },
         {
@@ -134,11 +277,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-8133-sense-2"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -159,11 +304,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-2814-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         },
         {
@@ -177,11 +324,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-8671-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -202,11 +351,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-7949-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -227,11 +378,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-3659-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -258,11 +411,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-4782-sense-1"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         },
         {
@@ -276,11 +431,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-4816-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         },
         {
@@ -294,11 +451,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-3566-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]
@@ -319,11 +478,13 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-3410-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         },
         {
@@ -337,11 +498,982 @@
             "status": "approved",
             "safe_for_substitution": true,
             "decision_origin": "automatic",
-            "policy_id": "noun-pilot-v1",
+            "policy_id": "noun-pilot-v2",
             "reasons": [],
             "dictionary_ids": [
               "freedict-eng-fra-entry-8764-sense-0"
-            ]
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p011",
+      "text": "The Baron's son seemed to be in every respect\nworthy of his father.",
+      "paragraph_id": "en-p003",
+      "replacements": [
+        {
+          "id": "p011-l002",
+          "start": 12,
+          "end": 15,
+          "english": "son",
+          "french": "fils",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7519-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p011-l009",
+          "start": 60,
+          "end": 66,
+          "english": "father",
+          "french": "père",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4050-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p012",
+      "text": "The Preceptor Pangloss[1] was the oracle of the\nfamily, and little Candide heard his lessons with all the good faith of\nhis age and character.",
+      "paragraph_id": "en-p003",
+      "replacements": [
+        {
+          "id": "p012-l016",
+          "start": 85,
+          "end": 92,
+          "english": "lessons",
+          "french": "leçons",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5300-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p012-l021",
+          "start": 111,
+          "end": 116,
+          "english": "faith",
+          "french": "foi",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4019-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p012-l024",
+          "start": 124,
+          "end": 127,
+          "english": "age",
+          "french": "âge",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1563-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p012-l026",
+          "start": 132,
+          "end": 141,
+          "english": "character",
+          "french": "caractère",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2880-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p013",
+      "text": "Pangloss was professor of metaphysico-theologico-cosmolo-nigology.",
+      "paragraph_id": "en-p004",
+      "replacements": []
+    },
+    {
+      "id": "p014",
+      "text": "He\nproved admirably that there is no effect without a cause, and that, in\nthis best of all possible worlds, the Baron's castle was the most\nmagnificent of castles, and his lady the best of all possible\nBaronesses.",
+      "paragraph_id": "en-p004",
+      "replacements": [
+        {
+          "id": "p014-l006",
+          "start": 37,
+          "end": 43,
+          "english": "effect",
+          "french": "effet",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3792-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p014-l018",
+          "start": 100,
+          "end": 106,
+          "english": "worlds",
+          "french": "mondes",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p014-l022",
+          "start": 120,
+          "end": 126,
+          "english": "castle",
+          "french": "château",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p014-l028",
+          "start": 155,
+          "end": 162,
+          "english": "castles",
+          "french": "châteaux",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p014-l034",
+          "start": 202,
+          "end": 212,
+          "english": "Baronesses",
+          "french": "baronnes",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2288-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p015",
+      "text": "\"It is demonstrable,\" said he, \"that things cannot be otherwise than as\nthey are; for all being created for an end, all is necessarily for the\nbest end.",
+      "paragraph_id": "en-p005",
+      "replacements": [
+        {
+          "id": "p015-l008",
+          "start": 37,
+          "end": 43,
+          "english": "things",
+          "french": "choses",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8070-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p015-l020",
+          "start": 111,
+          "end": 114,
+          "english": "end",
+          "french": "fin",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3849-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p015-l028",
+          "start": 148,
+          "end": 151,
+          "english": "end",
+          "french": "fin",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3849-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p016",
+      "text": "Observe, that the nose has been formed to bear\nspectacles--thus we have spectacles. Legs are visibly designed for\nstockings--and we have stockings.",
+      "paragraph_id": "en-p005",
+      "replacements": []
+    },
+    {
+      "id": "p017",
+      "text": "Stones were made to be hewn, and to\nconstruct castles--therefore my lord has a magnificent castle; for the\ngreatest baron in the province ought to be the best lodged. Pigs were\nmade to be eaten--therefore we eat pork all the year round. Consequently\nthey who assert that all is well have said a foolish thing, they should\nhave said all is for the best.\"",
+      "paragraph_id": "en-p005",
+      "replacements": []
+    },
+    {
+      "id": "p018",
+      "text": "Candide listened attentively and believed innocently; for he thought\nMiss Cunegonde extremely beautiful, though he never had the courage to\ntell her so.",
+      "paragraph_id": "en-p006",
+      "replacements": []
+    },
+    {
+      "id": "p019",
+      "text": "He concluded that after the happiness of being born of\nBaron of Thunder-ten-Tronckh, the second degree of happiness was to be\nMiss Cunegonde, the third that of seeing her every day, and the fourth\nthat of hearing Master Pangloss, the greatest philosopher of the whole\nprovince, and consequently of the whole world.",
+      "paragraph_id": "en-p006",
+      "replacements": [
+        {
+          "id": "p019-l005",
+          "start": 28,
+          "end": 37,
+          "english": "happiness",
+          "french": "bonheur",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "chapter1-evidence-p019-l005"
+            ],
+            "evidence": [
+              {
+                "id": "chapter1-evidence-p019-l005",
+                "en": "happiness",
+                "fr": [
+                  "bonheur"
+                ],
+                "link_id": "p019-l005",
+                "source": "https://www.larousse.fr/dictionnaires/francais-anglais/bonheur/10029",
+                "note": "Contentment sense; happiness of being born a baron.",
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-09-15",
+                "min_stage": 2
+              }
+            ],
+            "min_stage": 2
+          }
+        },
+        {
+          "id": "p019-l021",
+          "start": 106,
+          "end": 115,
+          "english": "happiness",
+          "french": "bonheur",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "chapter1-evidence-p019-l021"
+            ],
+            "evidence": [
+              {
+                "id": "chapter1-evidence-p019-l021",
+                "en": "happiness",
+                "fr": [
+                  "bonheur"
+                ],
+                "link_id": "p019-l021",
+                "source": "https://www.larousse.fr/dictionnaires/francais-anglais/bonheur/10029",
+                "note": "Contentment sense; the second degree of happiness.",
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-09-15",
+                "min_stage": 2
+              }
+            ],
+            "min_stage": 2
+          }
+        },
+        {
+          "id": "p019-l048",
+          "start": 243,
+          "end": 254,
+          "english": "philosopher",
+          "french": "philosophe",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "chapter1-evidence-p019-l048"
+            ],
+            "evidence": [
+              {
+                "id": "chapter1-evidence-p019-l048",
+                "en": "philosopher",
+                "fr": [
+                  "philosophe"
+                ],
+                "link_id": "p019-l048",
+                "source": "https://www.larousse.fr/dictionnaires/francais-anglais/philosophe/59892",
+                "note": "Noun sense describing Pangloss.",
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-09-15",
+                "min_stage": 2
+              }
+            ],
+            "min_stage": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "p020",
+      "text": "One day Cunegonde, while walking near the castle, in a little wood which\nthey called a park, saw between the bushes, Dr. Pangloss giving a lesson\nin experimental natural philosophy to her mother's chamber-maid, a\nlittle brown wench, very pretty and very docile.",
+      "paragraph_id": "en-p007",
+      "replacements": [
+        {
+          "id": "p020-l001",
+          "start": 4,
+          "end": 7,
+          "english": "day",
+          "french": "jour",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3412-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p020-l008",
+          "start": 42,
+          "end": 48,
+          "english": "castle",
+          "french": "château",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p020-l013",
+          "start": 62,
+          "end": 66,
+          "english": "wood",
+          "french": "bois",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8716-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p020-l016",
+          "start": 87,
+          "end": 91,
+          "english": "park",
+          "french": "parc",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6173-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p020-l027",
+          "start": 139,
+          "end": 145,
+          "english": "lesson",
+          "french": "leçon",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5300-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p020-l032",
+          "start": 188,
+          "end": 194,
+          "english": "mother",
+          "french": "mère",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5722-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p021",
+      "text": "As Miss Cunegonde had a\ngreat disposition for the sciences, she breathlessly observed the\nrepeated experiments of which she was a witness; she clearly perceived\nthe force of the Doctor's reasons, the effects, and the causes; she\nturned back greatly flurried, quite pensive, and filled with the desire\nto be learned; dreaming that she might well be a _sufficient reason_ for\nyoung Candide, and he for her.",
+      "paragraph_id": "en-p007",
+      "replacements": [
+        {
+          "id": "p021-l015",
+          "start": 99,
+          "end": 110,
+          "english": "experiments",
+          "french": "expériences",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3978-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p021-l019",
+          "start": 130,
+          "end": 137,
+          "english": "witness",
+          "french": "témoin",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8705-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p021-l028",
+          "start": 200,
+          "end": 207,
+          "english": "effects",
+          "french": "effets",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3792-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p021-l039",
+          "start": 294,
+          "end": 300,
+          "english": "desire",
+          "french": "désir",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3522-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p021-l051",
+          "start": 362,
+          "end": 368,
+          "english": "reason",
+          "french": "raison",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6786-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p022",
+      "text": "She met Candide on reaching the castle and blushed; Candide blushed\nalso; she wished him good morrow in a faltering tone, and Candide spoke\nto her without knowing what he said.",
+      "paragraph_id": "en-p008",
+      "replacements": [
+        {
+          "id": "p022-l006",
+          "start": 32,
+          "end": 38,
+          "english": "castle",
+          "french": "château",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p023",
+      "text": "The next day after dinner, as they\nwent from table, Cunegonde and Candide found themselves behind a screen;\nCunegonde let fall her handkerchief, Candide picked it up, she took him\ninnocently by the hand, the youth as innocently kissed the young lady's\nhand with particular vivacity, sensibility, and grace; their lips met,\ntheir eyes sparkled, their knees trembled, their hands strayed.",
+      "paragraph_id": "en-p008",
+      "replacements": [
+        {
+          "id": "p023-l002",
+          "start": 19,
+          "end": 25,
+          "english": "dinner",
+          "french": "dîner",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3575-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p023-l015",
+          "start": 100,
+          "end": 106,
+          "english": "screen",
+          "french": "paravent",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "chapter1-evidence-p023-l015"
+            ],
+            "evidence": [
+              {
+                "id": "chapter1-evidence-p023-l015",
+                "en": "screen",
+                "fr": [
+                  "paravent"
+                ],
+                "link_id": "p023-l015",
+                "source": "https://www.larousse.fr/dictionnaires/anglais-francais/screen/609875",
+                "note": "Furniture/privacy sense: the characters stand behind a screen.",
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-09-15",
+                "min_stage": 2
+              }
+            ],
+            "min_stage": 2
+          }
+        },
+        {
+          "id": "p023-l021",
+          "start": 131,
+          "end": 143,
+          "english": "handkerchief",
+          "french": "mouchoir",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4630-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p023-l029",
+          "start": 198,
+          "end": 202,
+          "english": "hand",
+          "french": "main",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4626-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p023-l036",
+          "start": 252,
+          "end": 256,
+          "english": "hand",
+          "french": "main",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4626-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p023-l055",
+          "start": 372,
+          "end": 377,
+          "english": "hands",
+          "french": "mains",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4626-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p024",
+      "text": "Baron\nThunder-ten-Tronckh passed near the screen and beholding this cause and\neffect chased Candide from the castle with great kicks on the backside;\nCunegonde fainted away; she was boxed on the ears by the Baroness, as\nsoon as she came to herself; and all was consternation in this most\nmagnificent and most agreeable of all possible castles.",
+      "paragraph_id": "en-p008",
+      "replacements": [
+        {
+          "id": "p024-l009",
+          "start": 42,
+          "end": 48,
+          "english": "screen",
+          "french": "paravent",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "chapter1-evidence-p024-l009"
+            ],
+            "evidence": [
+              {
+                "id": "chapter1-evidence-p024-l009",
+                "en": "screen",
+                "fr": [
+                  "paravent"
+                ],
+                "link_id": "p024-l009",
+                "source": "https://www.larousse.fr/dictionnaires/anglais-francais/screen/609875",
+                "note": "The same physical screen as the preceding passage.",
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-09-15",
+                "min_stage": 2
+              }
+            ],
+            "min_stage": 2
+          }
+        },
+        {
+          "id": "p024-l015",
+          "start": 78,
+          "end": 84,
+          "english": "effect",
+          "french": "effet",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3792-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p024-l019",
+          "start": 109,
+          "end": 115,
+          "english": "castle",
+          "french": "château",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p024-l025",
+          "start": 140,
+          "end": 148,
+          "english": "backside",
+          "french": "derrière",
+          "stage": 1,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2206-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p024-l058",
+          "start": 335,
+          "end": 342,
+          "english": "castles",
+          "french": "châteaux",
+          "stage": 2,
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "noun-pilot-v2",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
           }
         }
       ]

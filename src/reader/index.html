@@ -19,7 +19,20 @@
         ><button data-stage="2" aria-pressed="false">More French</button>
       </nav>
       <p id="status" class="status" role="status">Loading the text…</p>
+      <nav aria-label="Chapter navigation">
+        <button id="previous" disabled>← Previous</button
+        ><span id="page-status" aria-live="polite"></span
+        ><button id="next" disabled>Next →</button>
+      </nav>
       <article id="reading" class="reading" aria-label="Reading text"></article>
+      <details>
+        <summary>Open a reading file</summary>
+        <label
+          >Reading file
+          <input id="import-reader" type="file" accept=".json,application/json"
+        /></label>
+        <p id="import-status" role="status"></p>
+      </details>
       <footer>
         <p>
           Touch or focus a French word to see its English counterpart. The

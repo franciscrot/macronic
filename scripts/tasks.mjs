@@ -7,6 +7,7 @@ import {
   validateCorrections,
   makeReader,
   canonical,
+  withSupplement,
 } from "../src/shared/data.js";
 export const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -43,7 +44,11 @@ export async function load() {
     throw new Error("Inference inputs changed; rerun preparation");
   const corrections = await json("data/reviewed/corrections.json");
   validateCorrections(data, corrections);
-  const dictionary = await json("data/evidence/dictionary.json"),
+  const dictionary = withSupplement(
+      data,
+      await json("data/evidence/dictionary.json"),
+      await json("data/evidence/supplement.json"),
+    ),
     policy = await json("data/evidence/policy.json");
   const sources = await json("data/sources/provenance.json");
   for (const s of sources.sources)

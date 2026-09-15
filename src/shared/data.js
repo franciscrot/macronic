@@ -294,9 +294,17 @@ export function assess(p, link, dictionary, policy) {
   result.dictionary_ids = dictionary.entries
     .filter(
       (e) =>
-        e.en === en?.lemma && e.fr.some((f) => f.toLowerCase() === fr?.lemma),
+        (!e.link_id || e.link_id === link.id) &&
+        e.en === en?.lemma &&
+        e.fr.some((f) => f.toLowerCase() === fr?.lemma),
     )
     .map((e) => e.id);
+  const evidence = dictionary.entries.filter((e) =>
+    result.dictionary_ids.includes(e.id),
+  );
+  result.evidence = evidence.filter((e) => e.link_id);
+  result.min_stage =
+    evidence.length && evidence.every((e) => e.min_stage === 2) ? 2 : 1;
   if (!result.dictionary_ids.length) result.reasons.push("dictionary_missing");
   if (!result.reasons.length) {
     result.status = "approved";
@@ -304,7 +312,13 @@ export function assess(p, link, dictionary, policy) {
   }
   return result;
 }
-export function makeReader(data, corrections, dictionary, policy, limit = 10) {
+export function makeReader(
+  data,
+  corrections,
+  dictionary,
+  policy,
+  limit = Infinity,
+) {
   const passages = effectivePassages(data, corrections)
     .filter((p) => p.en.text)
     .slice(0, limit);
@@ -313,6 +327,17 @@ export function makeReader(data, corrections, dictionary, policy, limit = 10) {
     schema_version: 1,
     base_fingerprint: data.fingerprint,
     title: "Candide",
+    chapter: "Chapter I",
+    languages: { base: "en", learning: "fr" },
+    provenance: {
+      policy_id: policy.id,
+      corrections: corrections.operations.map((o) => ({
+        id: o.id,
+        editor: o.editor,
+        note: o.note,
+      })),
+      supplement: dictionary.supplement || null,
+    },
     stages: ["English", "A little French", "More French"],
     passages: passages.map((p) => ({
       id: p.id,
@@ -334,7 +359,7 @@ export function makeReader(data, corrections, dictionary, policy, limit = 10) {
             end: en.end,
             english: en.surface,
             french: fr.surface,
-            stage: rank++ % 3 === 0 ? 1 : 2,
+            stage: decision.min_stage === 2 ? 2 : rank++ % 3 === 0 ? 1 : 2,
             decision,
           };
         })
@@ -353,4 +378,78 @@ export function segments(p, stage) {
   }
   parts.push({ text: cpSlice(p.text, end) });
   return parts;
+}
+
+export function withSupplement(data, dictionary, supplement) {
+  fail(
+    supplement?.schema_version === 1 &&
+      supplement.base_fingerprint === data.fingerprint &&
+      Array.isArray(supplement.entries),
+    "Stale or invalid supplemental evidence",
+  );
+  for (const e of supplement.entries) {
+    fail(
+      e.min_stage === 2 &&
+        e.check_origin === "ai_context_check" &&
+        typeof e.note === "string" &&
+        e.note.length &&
+        typeof e.source === "string",
+      "Invalid supplemental evidence",
+    );
+    fail(
+      data.passages.some((p) => p.links.some((l) => l.id === e.link_id)),
+      "Unknown supplemental link",
+    );
+  }
+  return {
+    ...dictionary,
+    supplement: {
+      base_fingerprint: supplement.base_fingerprint,
+      entries: supplement.entries,
+    },
+    entries: [...dictionary.entries, ...supplement.entries],
+  };
+}
+export function validateReader(bundle) {
+  fail(
+    bundle?.schema_version === 1 &&
+      Array.isArray(bundle.passages) &&
+      bundle.passages.length > 0 &&
+      Array.isArray(bundle.stages) &&
+      bundle.stages.length === 3,
+    "Invalid reading file",
+  );
+  const ids = new Set();
+  for (const p of bundle.passages) {
+    fail(
+      typeof p.id === "string" &&
+        !ids.has(p.id) &&
+        typeof p.text === "string" &&
+        Array.isArray(p.replacements),
+      "Invalid reading passage",
+    );
+    ids.add(p.id);
+    let end = 0;
+    for (const r of p.replacements) {
+      fail(
+        Number.isInteger(r.start) &&
+          Number.isInteger(r.end) &&
+          r.start >= end &&
+          r.end > r.start &&
+          r.end <= Array.from(p.text).length &&
+          cpSlice(p.text, r.start, r.end) === r.english,
+        "Invalid replacement range",
+      );
+      fail(
+        typeof r.french === "string" &&
+          r.french.length > 0 &&
+          [1, 2].includes(r.stage) &&
+          r.decision?.status === "approved" &&
+          r.decision.safe_for_substitution === true,
+        "Unsafe reading replacement",
+      );
+      end = r.end;
+    }
+  }
+  return bundle;
 }
