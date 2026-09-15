@@ -85,18 +85,18 @@ test("chapter navigation reaches ending and retains selected density", async ({
   page,
 }) => {
   await page.goto("/src/reader/");
-  await expect(page.locator("#page-status")).toContainText("Passage 1 of 24");
+  await expect(page.locator("#page-status")).toContainText("Section 1 of 4");
   await expect(page.locator("#previous")).toBeDisabled();
   await page.getByRole("button", { name: "More French", exact: true }).click();
   await page.locator("#gradual").uncheck();
-  for (let i = 0; i < 23; i++) await page.locator("#next").click();
+  for (let i = 0; i < 3; i++) await page.locator("#next").click();
   await expect(page.locator("#reading")).toContainText("all possible");
   await expect(page.locator("#next")).toBeDisabled();
   await expect(
     page.getByRole("button", { name: "More French", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await page.locator("#previous").click();
-  await expect(page.locator("#page-status")).toContainText("Passage 23 of 24");
+  await expect(page.locator("#page-status")).toContainText("Section 3 of 4");
 });
 test("workshop reading export opens in separate reader", async ({ page }) => {
   await page.goto("/src/review/");
@@ -111,12 +111,23 @@ test("workshop reading export opens in separate reader", async ({ page }) => {
   await expect(page.locator("#import-status")).toContainText(
     "Reading file opened",
   );
-  await expect(page.locator("#page-status")).toContainText("Passage 1 of 24");
+  await expect(page.locator("#page-status")).toContainText("Section 1 of 4");
 });
 
 test("phone controls stay inside viewport after scrolling, progression caps and toggle works", async ({
   page,
 }) => {
+  // A long reading fixture exercises the cap beyond this short chapter's four sections.
+  const fs = await import("node:fs/promises");
+  const bundle = JSON.parse(
+    await fs.readFile("data/reader/reader.json", "utf8"),
+  );
+  bundle.passages.forEach((p) => {
+    p.text += " Context".repeat(170);
+  });
+  await page.route("**/reader.json", (route) =>
+    route.fulfill({ json: bundle }),
+  );
   await page.setViewportSize({ width: 360, height: 640 });
   await page.goto("/src/reader/");
   await expect(page.locator("#levels button")).toHaveCount(6);
@@ -150,7 +161,10 @@ test("phone controls stay inside viewport after scrolling, progression caps and 
   );
   await visible();
   await page.locator('[data-stage="5"]').click();
-  await expect(page.locator("#reading p")).toHaveAttribute("lang", "fr");
+  await expect(page.locator("#reading p").first()).toHaveAttribute(
+    "lang",
+    "fr",
+  );
   await page.locator("#next").click();
   await expect(page.locator('[data-stage="5"]')).toHaveAttribute(
     "aria-pressed",
@@ -174,13 +188,11 @@ test("Yiddish file uses language-aware labels, checkbox and RTL text", async ({
     },
   ];
   await page.goto("/src/reader/");
-  await page
-    .locator("#import-reader")
-    .setInputFiles({
-      name: "yiddish.reader.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(JSON.stringify(r)),
-    });
+  await page.locator("#import-reader").setInputFiles({
+    name: "yiddish.reader.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(r)),
+  });
   await expect(
     page.getByRole("button", { name: "Even more Yiddish", exact: true }),
   ).toBeVisible();
