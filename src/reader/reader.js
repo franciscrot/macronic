@@ -1,37 +1,71 @@
 import { renderPassage } from "./shared/render.js";
-import { validateReader } from "./shared/data.js";
-let data,
-  stage = 0,
-  page = 0;
-const pageSize = 4;
+import {
+  validateReader,
+  languageName,
+  languageDirection,
+  levelNames,
+} from "./shared/data.js";
+import {
+  newProgress,
+  chooseStage,
+  toggleProgress,
+  moveProgress,
+} from "./shared/progression.js";
 const $ = (id) => document.getElementById(id),
-  reading = $("reading"),
-  status = $("status");
+  reading = $("reading");
+let data,
+  state = newProgress();
+function install(bundle) {
+  data = validateReader(bundle);
+  state = newProgress();
+  data.languages ||= { base: "en", learning: "fr" };
+  if (data.schema_version === 1) state.automatic = false;
+  const labels =
+    data.schema_version === 2 ? levelNames(data.languages) : data.stages;
+  $("levels").replaceChildren();
+  labels.forEach((label, i) => {
+    const b = document.createElement("button");
+    b.textContent = label;
+    b.dataset.stage = i;
+    b.onclick = () => {
+      state = chooseStage(state, i);
+      render();
+    };
+    $("levels").append(b);
+  });
+  $("gradual").disabled = data.schema_version === 1;
+  $("gradual-label").textContent =
+    `Gradually add more ${languageName(data.languages.learning)} as you read more.`;
+  $("title").textContent = data.title || "Reader";
+  $("subtitle").textContent =
+    `${languageName(data.languages.base)} · ${languageName(data.languages.learning)}`;
+  $("status").classList.remove("error");
+  render();
+}
 function render() {
+  const p = { ...data.passages[state.index], languages: data.languages };
   reading.replaceChildren();
-  let paragraph,
-    id,
-    count = 0;
-  for (const p of data.passages.slice(page * pageSize, (page + 1) * pageSize)) {
-    if (id !== p.paragraph_id) {
-      paragraph = document.createElement("p");
-      reading.append(paragraph);
-      id = p.paragraph_id;
-    } else paragraph.append(document.createTextNode(" "));
-    renderPassage(paragraph, p, stage);
-    count += p.replacements.filter((r) => r.stage <= stage).length;
-  }
-  const pages = Math.ceil(data.passages.length / pageSize);
+  const paragraph = document.createElement("p");
+  paragraph.lang =
+    state.stage === 5 ? data.languages.learning : data.languages.base;
+  paragraph.dir = languageDirection(paragraph.lang);
+  reading.append(paragraph);
+  renderPassage(paragraph, p, state.stage);
   $("page-status").textContent =
-    `${data.chapter || "Reading"} · Page ${page + 1} of ${pages}`;
-  $("previous").disabled = page === 0;
-  $("next").disabled = page === pages - 1;
-  status.textContent = `${data.stages[stage]} · ${count} French words on this page · Tap a word for its English meaning.`;
-  document
-    .querySelectorAll("[data-stage]")
+    `Passage ${state.index + 1} of ${data.passages.length}`;
+  $("previous").disabled = state.index === 0;
+  $("next").disabled = state.index === data.passages.length - 1;
+  $("status").textContent =
+    `${data.chapter || ""} · ${(data.schema_version === 2 ? levelNames(data.languages) : data.stages)[state.stage]}${state.stage === 5 ? "" : " · Tap an insertion for its original meaning."}`;
+  $("levels")
+    .querySelectorAll("button")
     .forEach((b) =>
-      b.setAttribute("aria-pressed", String(Number(b.dataset.stage) === stage)),
+      b.setAttribute(
+        "aria-pressed",
+        String(Number(b.dataset.stage) === state.stage),
+      ),
     );
+  $("gradual").checked = state.automatic;
 }
 for (const [id, delta] of [
   ["previous", -1],
@@ -39,33 +73,27 @@ for (const [id, delta] of [
 ])
   $(id).onclick = () => {
     if (!data) return;
-    page = Math.max(
-      0,
-      Math.min(Math.ceil(data.passages.length / pageSize) - 1, page + delta),
+    state = moveProgress(
+      state,
+      Math.max(0, Math.min(data.passages.length - 1, state.index + delta)),
     );
     render();
     reading.scrollIntoView({ block: "start" });
   };
-document.querySelectorAll("[data-stage]").forEach(
-  (b) =>
-    (b.onclick = () => {
-      stage = Number(b.dataset.stage);
-      if (data) render();
-    }),
-);
+$("gradual").onchange = () => {
+  state = toggleProgress(state, $("gradual").checked);
+  render();
+};
 $("import-reader").onchange = async () => {
   try {
     const f = $("import-reader").files[0];
     if (!f) return;
     if (f.size > 10000000) throw Error("Reading file exceeds 10 MB");
-    const next = validateReader(JSON.parse(await f.text()));
-    data = next;
-    page = 0;
-    stage = 0;
-    status.classList.remove("error");
-    render();
+    install(JSON.parse(await f.text()));
     $("import-status").textContent =
-      "Reading file opened. It stays in this browser session.";
+      data.schema_version === 1
+        ? "Legacy reading file opened with its original three levels. Re-export in the editor for six levels."
+        : "Reading file opened. Progress and changes stay in this session.";
   } catch (e) {
     $("import-status").textContent = e.message;
   } finally {
@@ -75,10 +103,9 @@ $("import-reader").onchange = async () => {
 try {
   const response = await fetch("./reader.json");
   if (!response.ok) throw Error();
-  data = validateReader(await response.json());
-  render();
+  install(await response.json());
 } catch {
-  status.classList.add("error");
-  status.textContent =
+  $("status").classList.add("error");
+  $("status").textContent =
     "The reading data could not be loaded. Please reload the page or open a reading file.";
 }

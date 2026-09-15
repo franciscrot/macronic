@@ -170,6 +170,18 @@ export function validateCorrections(data, file) {
       fail(p, "Unknown passage");
       fail(typeof op.link?.id === "string", "Missing correction link ID");
       validateLink(p, op.link);
+      if (op.link.id === `${p.id}-editor-sentence`) {
+        fail(
+          p.en_sentence_ids.length === 1 &&
+            p.fr_sentence_ids.length === 1 &&
+            ["en", "fr"].every(
+              (l) =>
+                canonical(op.link[l]) ===
+                canonical(p[l].tokens.map((t) => t.id)),
+            ),
+          "Whole-sentence decision must cover the exact sentence pair",
+        );
+      }
       fail(
         !linked.has(op.link.id) || linked.get(op.link.id) === p.id,
         "Link ID belongs to another passage",
@@ -261,6 +273,7 @@ export function assess(p, link, dictionary, policy) {
     result.reasons.push("same_surface");
   const competitors = p.links.filter(
     (l) =>
+      l.id !== `${p.id}-editor-sentence` &&
       l.id !== link.id &&
       l.decision?.status !== "rejected" &&
       (l.en.some((id) => link.en.includes(id)) ||
@@ -282,9 +295,23 @@ export function assess(p, link, dictionary, policy) {
       safe_for_substitution:
         manual.safe_for_substitution && result.reasons.length === 0,
     };
-  if (!policy.allowed_upos.includes(en?.upos) || en?.upos !== fr?.upos)
+  const adjectiveEvidence = dictionary.entries.find(
+    (e) => e.link_id === link.id && e.kind === "adjective",
+  );
+  const checkedAdjective =
+    !!adjectiveEvidence &&
+    en?.upos === "ADJ" &&
+    fr?.upos === "ADJ" &&
+    en?.morph?.Degree === "Pos";
+  if (
+    (!policy.allowed_upos.includes(en?.upos) && !checkedAdjective) ||
+    en?.upos !== fr?.upos
+  )
     result.reasons.push("part_of_speech");
-  if (!en?.morph?.Number || en.morph.Number !== fr?.morph?.Number)
+  if (
+    !checkedAdjective &&
+    (!en?.morph?.Number || en.morph.Number !== fr?.morph?.Number)
+  )
     result.reasons.push("number");
   if (
     p.en.tokens.some((t) => t.dep === "compound" && t.head === en?.index) ||
@@ -303,14 +330,74 @@ export function assess(p, link, dictionary, policy) {
     result.dictionary_ids.includes(e.id),
   );
   result.evidence = evidence.filter((e) => e.link_id);
-  result.min_stage =
-    evidence.length && evidence.every((e) => e.min_stage === 2) ? 2 : 1;
+  result.min_stage = checkedAdjective
+    ? adjectiveEvidence.min_stage
+    : evidence.length
+      ? Math.min(...evidence.map((e) => e.min_stage || 1))
+      : 1;
   if (!result.dictionary_ids.length) result.reasons.push("dictionary_missing");
   if (!result.reasons.length) {
     result.status = "approved";
     result.safe_for_substitution = true;
   }
   return result;
+}
+export function languageName(code) {
+  try {
+    return new Intl.DisplayNames(["en"], { type: "language" }).of(code);
+  } catch {
+    return code;
+  }
+}
+export const languageDirection = (code) =>
+  /^(yi|he|ar|fa|ur)(-|$)/.test(code) ? "rtl" : "ltr";
+export function levelNames(languages) {
+  const name = languageName(languages.learning);
+  return [
+    languageName(languages.base),
+    `A little ${name}`,
+    `More ${name}`,
+    `Even more ${name}`,
+    `So much ${name}`,
+    name,
+  ];
+}
+export function sentenceChoice(p, dictionary, policy) {
+  const candidate = dictionary.supplement?.sentences?.find(
+    (s) => s.passage_id === p.id,
+  );
+  const manual = p.links.find(
+    (l) => l.id === `${p.id}-editor-sentence`,
+  )?.decision;
+  if (!candidate && !manual) return null;
+  if (
+    p.en_sentence_ids.length !== 1 ||
+    p.fr_sentence_ids.length !== 1 ||
+    p.diagnostics.length ||
+    p.passage_decision?.status === "rejected" ||
+    p.similarity < policy.passage_similarity_min
+  )
+    return null;
+  if (manual && (manual.status !== "approved" || !manual.safe_for_substitution))
+    return null;
+  return {
+    id: `${p.id}-sentence`,
+    start: 0,
+    end: Array.from(p.en.text).length,
+    english: p.en.text,
+    target: p.fr.text,
+    stage: 4,
+    kind: "sentence",
+    decision: manual
+      ? { ...manual, evidence: candidate ? [candidate] : [] }
+      : {
+          status: "approved",
+          safe_for_substitution: true,
+          decision_origin: "automatic",
+          policy_id: policy.id,
+          evidence: [candidate],
+        },
+  };
 }
 export function makeReader(
   data,
@@ -319,16 +406,15 @@ export function makeReader(
   policy,
   limit = Infinity,
 ) {
-  const passages = effectivePassages(data, corrections)
-    .filter((p) => p.en.text)
-    .slice(0, limit);
+  const passages = effectivePassages(data, corrections).slice(0, limit);
+  const languages = data.languages || { base: "en", learning: "fr" };
   let rank = 0;
   return {
-    schema_version: 1,
+    schema_version: 2,
     base_fingerprint: data.fingerprint,
     title: "Candide",
     chapter: "Chapter I",
-    languages: { base: "en", learning: "fr" },
+    languages,
     provenance: {
       policy_id: policy.id,
       corrections: corrections.operations.map((o) => ({
@@ -338,17 +424,24 @@ export function makeReader(
       })),
       supplement: dictionary.supplement || null,
     },
-    stages: ["English", "A little French", "More French"],
+    stages: levelNames(languages),
     passages: passages.map((p) => ({
       id: p.id,
       text: p.en.text,
+      translation: p.fr.text,
       paragraph_id: p.en.paragraph_id,
+      target_paragraph_id: p.fr.paragraph_id,
+      languages,
       replacements: p.links
-        .map((l) => ({ link: l, decision: assess(p, l, dictionary, policy) }))
+        .filter((l) => l.id !== `${p.id}-editor-sentence`)
+        .map((link) => ({
+          link,
+          decision: assess(p, link, dictionary, policy),
+        }))
         .filter(
           (x) =>
-            x.decision.safe_for_substitution &&
-            x.decision.status === "approved",
+            x.decision.status === "approved" &&
+            x.decision.safe_for_substitution,
         )
         .map(({ link: l, decision }) => {
           const en = p.en.tokens.find((t) => t.id === l.en[0]),
@@ -358,28 +451,45 @@ export function makeReader(
             start: en.start,
             end: en.end,
             english: en.surface,
-            french: fr.surface,
-            stage: decision.min_stage === 2 ? 2 : rank++ % 3 === 0 ? 1 : 2,
+            target: fr.surface,
+            stage:
+              decision.min_stage > 1
+                ? decision.min_stage
+                : rank++ % 3 === 0
+                  ? 1
+                  : 2,
+            kind: "word",
             decision,
           };
         })
         .sort((a, b) => a.start - b.start),
+      sentences: [sentenceChoice(p, dictionary, policy)].filter(Boolean),
     })),
   };
 }
 export function segments(p, stage) {
+  if (stage === 5 && typeof p.translation === "string")
+    return [{ text: p.translation, language: p.languages?.learning || "fr" }];
+  const selected = p.sentences?.filter((r) => r.stage <= stage) || [];
+  const replacements = [
+    ...selected,
+    ...p.replacements.filter(
+      (r) =>
+        r.stage <= stage &&
+        !selected.some((s) => r.start < s.end && r.end > s.start),
+    ),
+  ].sort((a, b) => a.start - b.start);
   const parts = [];
   let end = 0;
-  for (const r of p.replacements.filter((r) => r.stage <= stage)) {
-    if (r.start < end) throw new Error("Overlapping replacements");
+  for (const r of replacements) {
+    if (r.start < end) throw Error("Overlapping replacements");
     parts.push({ text: cpSlice(p.text, end, r.start) });
-    parts.push({ text: r.french, replacement: r });
+    parts.push({ text: r.target ?? r.french, replacement: r });
     end = r.end;
   }
   parts.push({ text: cpSlice(p.text, end) });
   return parts;
 }
-
 export function withSupplement(data, dictionary, supplement) {
   fail(
     supplement?.schema_version === 1 &&
@@ -387,18 +497,47 @@ export function withSupplement(data, dictionary, supplement) {
       Array.isArray(supplement.entries),
     "Stale or invalid supplemental evidence",
   );
+  const ids = new Set(dictionary.entries.map((e) => e.id));
   for (const e of supplement.entries) {
     fail(
-      e.min_stage === 2 &&
+      !ids.has(e.id) &&
+        [2, 3, 4].includes(e.min_stage) &&
         e.check_origin === "ai_context_check" &&
         typeof e.note === "string" &&
         e.note.length &&
-        typeof e.source === "string",
+        typeof e.source === "string" &&
+        Array.isArray(e.fr),
       "Invalid supplemental evidence",
     );
+    ids.add(e.id);
+    const p = data.passages.find((p) =>
+        p.links.some((l) => l.id === e.link_id),
+      ),
+      l = p?.links.find((l) => l.id === e.link_id);
     fail(
-      data.passages.some((p) => p.links.some((l) => l.id === e.link_id)),
+      l && l.en.length === 1 && l.fr.length === 1,
       "Unknown supplemental link",
+    );
+    fail(
+      p.en.tokens.find((t) => t.id === l.en[0]).lemma === e.en &&
+        e.fr.includes(p.fr.tokens.find((t) => t.id === l.fr[0]).lemma),
+      "Supplement does not match occurrence",
+    );
+  }
+  const sentences = supplement.sentences || [];
+  for (const s of sentences) {
+    const p = data.passages.find((p) => p.id === s.passage_id);
+    fail(
+      p &&
+        p.en_sentence_ids.length === 1 &&
+        p.fr_sentence_ids.length === 1 &&
+        s.min_stage === 4 &&
+        s.check_origin === "ai_context_check" &&
+        s.source_text === p.en.text &&
+        s.target_text === p.fr.text &&
+        canonical(s.en_sentence_ids) === canonical(p.en_sentence_ids) &&
+        canonical(s.fr_sentence_ids) === canonical(p.fr_sentence_ids),
+      "Invalid sentence evidence",
     );
   }
   return {
@@ -406,19 +545,29 @@ export function withSupplement(data, dictionary, supplement) {
     supplement: {
       base_fingerprint: supplement.base_fingerprint,
       entries: supplement.entries,
+      sentences,
     },
     entries: [...dictionary.entries, ...supplement.entries],
   };
 }
 export function validateReader(bundle) {
+  const legacy = bundle?.schema_version === 1;
   fail(
-    bundle?.schema_version === 1 &&
+    [1, 2].includes(bundle?.schema_version) &&
       Array.isArray(bundle.passages) &&
       bundle.passages.length > 0 &&
       Array.isArray(bundle.stages) &&
-      bundle.stages.length === 3,
+      bundle.stages.length === (legacy ? 3 : 6),
     "Invalid reading file",
   );
+  if (!legacy)
+    fail(
+      typeof bundle.languages?.base === "string" &&
+        typeof bundle.languages?.learning === "string" &&
+        /^[a-z]{2,3}(-[A-Za-z0-9]+)*$/.test(bundle.languages.base) &&
+        /^[a-z]{2,3}(-[A-Za-z0-9]+)*$/.test(bundle.languages.learning),
+      "Invalid language metadata",
+    );
   const ids = new Set();
   for (const p of bundle.passages) {
     fail(
@@ -429,26 +578,42 @@ export function validateReader(bundle) {
       "Invalid reading passage",
     );
     ids.add(p.id);
-    let end = 0;
-    for (const r of p.replacements) {
+    if (!legacy)
       fail(
-        Number.isInteger(r.start) &&
-          Number.isInteger(r.end) &&
-          r.start >= end &&
-          r.end > r.start &&
-          r.end <= Array.from(p.text).length &&
-          cpSlice(p.text, r.start, r.end) === r.english,
-        "Invalid replacement range",
+        typeof p.translation === "string" && Array.isArray(p.sentences),
+        "Missing translated text",
       );
-      fail(
-        typeof r.french === "string" &&
-          r.french.length > 0 &&
-          [1, 2].includes(r.stage) &&
-          r.decision?.status === "approved" &&
-          r.decision.safe_for_substitution === true,
-        "Unsafe reading replacement",
-      );
-      end = r.end;
+    for (const list of [p.replacements, p.sentences || []]) {
+      let end = 0;
+      for (const r of list) {
+        fail(
+          Number.isInteger(r.start) &&
+            Number.isInteger(r.end) &&
+            r.start >= end &&
+            r.end > r.start &&
+            r.end <= Array.from(p.text).length &&
+            cpSlice(p.text, r.start, r.end) === r.english,
+          "Invalid replacement range",
+        );
+        const target = legacy ? r.french : r.target;
+        fail(
+          typeof target === "string" &&
+            target.length > 0 &&
+            (legacy ? [1, 2] : [1, 2, 3, 4]).includes(r.stage) &&
+            r.decision?.status === "approved" &&
+            r.decision.safe_for_substitution === true,
+          "Unsafe reading replacement",
+        );
+        if (list === p.sentences)
+          fail(
+            r.stage === 4 &&
+              r.start === 0 &&
+              r.end === Array.from(p.text).length &&
+              r.target === p.translation,
+            "Invalid sentence replacement",
+          );
+        end = r.end;
+      }
     }
   }
   return bundle;

@@ -2,52 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
     <title>Candide · Macronic</title>
     <link rel="stylesheet" href="./shared/style.css" />
   </head>
-  <body>
+  <body class="reader">
     <main>
       <header>
         <div class="eyebrow">Macronic · A reading experiment</div>
-        <h1>Candide</h1>
-        <p class="muted">Voltaire · English, with a little French</p>
+        <h1 id="title">Candide</h1>
+        <p id="subtitle" class="muted">English · French</p>
       </header>
-      <nav aria-label="Reading stage">
-        <button data-stage="0" aria-pressed="true">English</button
-        ><button data-stage="1" aria-pressed="false">A little French</button
-        ><button data-stage="2" aria-pressed="false">More French</button>
-      </nav>
+      <nav id="levels" class="levels" aria-label="Reading level"></nav>
       <p id="status" class="status" role="status">Loading the text…</p>
-      <nav aria-label="Chapter navigation">
-        <button id="previous" disabled>← Previous</button
-        ><span id="page-status" aria-live="polite"></span
-        ><button id="next" disabled>Next →</button>
-      </nav>
       <article id="reading" class="reading" aria-label="Reading text"></article>
-      <details>
-        <summary>Open a reading file</summary>
-        <label
-          >Reading file
-          <input id="import-reader" type="file" accept=".json,application/json"
-        /></label>
-        <p id="import-status" role="status"></p>
-      </details>
       <footer>
-        <p>
-          Touch or focus a French word to see its English counterpart. The
-          amount of French depends on the available alignments.
-        </p>
-        <p>
-          Sources:
-          <a href="https://www.gutenberg.org/ebooks/19942"
-            >English edition, 1918</a
+        <label class="gradual"
+          ><input id="gradual" type="checkbox" checked /><span
+            id="gradual-label"
+            >Gradually add more French as you read more.</span
+          ></label
+        >
+        <p class="muted">
+          <small
+            >One level every three new passages, up to “So much”. The final
+            language-only level is always your choice.</small
           >
-          · <a href="https://www.gutenberg.org/ebooks/4650">French text</a>.
-          Prepared alignments; no model runs while you read.
+        </p>
+        <details>
+          <summary>Open a reading file</summary>
+          <label
+            >Reading file
+            <input
+              id="import-reader"
+              type="file"
+              accept=".json,application/json"
+          /></label>
+          <p id="import-status" role="status"></p>
+        </details>
+        <p>
+          <small
+            >Chapter I:
+            <a href="https://www.gutenberg.org/ebooks/19942">English source</a>
+            · <a href="https://www.gutenberg.org/ebooks/4650">French source</a>.
+            Prepared alignments; no model runs while you read.</small
+          >
         </p>
       </footer>
     </main>
+    <nav class="reader-navigation" aria-label="Chapter navigation">
+      <button id="previous" disabled>← Back</button
+      ><span id="page-status" aria-live="polite">Loading…</span
+      ><button id="next" disabled>Next →</button>
+    </nav>
     <script type="module" src="./reader.js"></script>
   </body>
 </html>

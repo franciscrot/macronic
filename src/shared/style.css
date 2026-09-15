@@ -235,3 +235,99 @@ pre {
     min-height: 40px;
   }
 }
+
+/* The controls remain reachable after passage scrolling and above phone safe areas. */
+.reader main {
+  padding-bottom: calc(130px + env(safe-area-inset-bottom));
+}
+.reader-navigation {
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(84px, 1fr) minmax(0, 2fr) minmax(84px, 1fr);
+  gap: 8px;
+  padding: 12px max(12px, env(safe-area-inset-right))
+    calc(12px + env(safe-area-inset-bottom))
+    max(12px, env(safe-area-inset-left));
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -3px 18px #233b3510;
+}
+.reader-navigation button {
+  min-height: 46px;
+}
+.reader-navigation span {
+  text-align: center;
+  font-size: 0.85rem;
+}
+.levels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.levels button {
+  min-height: 44px;
+  padding: 8px;
+}
+.gradual {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.gradual input {
+  flex: none;
+  margin-top: 5px;
+}
+.reader .reading {
+  min-height: 25vh;
+  scroll-margin-top: 18px;
+}
+.insertion .word {
+  unicode-bidi: isolate;
+}
+.insertion.sentence {
+  display: inline;
+}
+.insertion.sentence .word {
+  text-align: start;
+  white-space: normal;
+  line-height: inherit;
+}
+.insertion.sentence .gloss {
+  max-height: 45vh;
+  overflow: auto;
+}
+@media (max-width: 520px) {
+  .reader main {
+    padding: 18px 16px 140px;
+  }
+  .reader header {
+    padding-bottom: 12px;
+  }
+  .reader h1 {
+    font-size: 2.5rem;
+    margin: 8px 0;
+  }
+  .levels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .levels button {
+    font-size: 0.9rem;
+  }
+  .reader .status {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+  .reader-navigation {
+    padding-top: 8px;
+  }
+  .reader-navigation button {
+    padding: 8px;
+  }
+}

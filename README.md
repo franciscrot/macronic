@@ -1,6 +1,6 @@
 # Macronic: Bertalign-led reader prototype
 
-A precision-first English/French Candide reader with a local correction workshop. Bertalign establishes passage correspondences; SimAlign proposes occurrence-level word links. Conservative linguistic and dictionary checks select isolated noun substitutions. Unresolved links remain English. Models run offline during preparation; the browser serves static JSON and makes no model or API requests.
+A precision-first English/French Candide reader with a local correction workshop. Bertalign establishes passage correspondences; SimAlign proposes occurrence-level word links. Conservative linguistic and dictionary checks select isolated nouns and occurrence-checked adjectives. Unresolved links remain English. Models run offline during preparation; the browser serves static JSON and makes no model or API requests.
 
 ## Try it
 
@@ -14,11 +14,11 @@ npm run dev
 
 Open http://127.0.0.1:4173/src/reader/ or http://127.0.0.1:4173/src/review/ for the workshop. `npm run preview` serves the built project at http://127.0.0.1:4173/macronic/prototype/.
 
-The original app remains at the project root. The prototype has three nested stages, exact English source slices, and English glosses on hover, focus or tap; Escape closes a gloss.
+The original app remains at the project root. The prototype has six language-aware levels, exact English source slices, and English glosses on hover, focus or tap; Escape closes a gloss.
 
 ## Actual output and limits
 
-Chapter I produces 24 Bertalign passage groups and 746 SimAlign word links. The noun pilot admits 56 chapter insertions across all 24 passage groups, displayed on six pages. The policy requires compatible noun/number annotations, dictionary lemma support, distinct noncompeting occurrence links, simple nonidentical words, and an eligible passage. Phrase links remain inspectable but cannot become single-word replacements. Dictionary evidence corroborates model links; it never invents them or projects unmatched words.
+Chapter I produces 24 Bertalign passage groups and 746 SimAlign word links. The current pilot admits 67 word insertions and one checked whole-sentence replacement across all 24 passage groups, displayed one passage at a time. The baseline noun policy requires compatible noun/number annotations, dictionary lemma support, distinct noncompeting occurrence links, simple nonidentical words, and an eligible passage. Phrase links remain inspectable but cannot become single-word replacements. Dictionary evidence corroborates model links; it never invents them or projects unmatched words.
 
 `data/evidence/evaluation.json` compares the output against an AI-authored diagnostic reference: 24/24 passage groups and 36 selected word cases. This reference was written after inspecting model output. It is neither held out nor independent human evaluation; its scores do not establish corpus accuracy. The similarity threshold 0.70 is an uncalibrated pilot setting, not a probability. Human correction time and release review remain unmeasured/pending.
 
@@ -76,10 +76,16 @@ The relevant FreeDict English–French TEI entries and original header are prese
 
 ## Whole-chapter review and reading workflow
 
-The reader now includes all of Chapter I, with previous/next navigation across six pages. A little French uses the original sparse selection; More French includes all 50 baseline insertions plus six evidence-backed additions (12% more occurrences). The threshold, POS, number and conflict gates are unchanged. `data/evidence/supplement.json` records each added occurrence, source URL, contextual reason and AI check origin. These additions are bound to the exact dataset fingerprint and appear only at stage 2. Changed datasets require renewed supplemental checks; a stale supplement fails validation rather than silently moving to new occurrences.
+The reader includes all of Chapter I. Fixed bottom Back/Next controls remain available on phone screens. The six levels are English, A little French, More French, Even more French, So much French and French. Their word-insertion counts across the chapter are 0, 17, 56, 65, 67 and full French source text respectively. So much also replaces passage 18 with its complete French sentence. This deliberately starts with one checked sentence in the chapter, not an automatic sentence in every passage.
+
+The discreet gradual-progression checkbox is on by default. Starting in English, the level rises on passages 4, 7, 10 and 13, then stays at So much. Revisiting passages does not earn extra increments. Changing level or toggling progression starts a fresh three-new-passage interval. Full French is always an explicit choice. Progress currently lasts for the browser session.
+
+`data/evidence/supplement.json` records occurrence IDs, source URLs, contextual reasons and AI check origin. Nine explicitly checked positive-degree adjective occurrences enter at level 3, and two additional nouns at level 4; the original six supplemental nouns remain at level 2. The adjective exception does not globally enable adjectives or relax conflict, passage or exact-occurrence checks. English adjectives do not mark number; their French forms are checked in their particular context. The whole-sentence record requires exact text and a clean one-to-one sentence group. Changed datasets require renewed supplemental checks; stale evidence fails validation. These are AI context checks, not independent human evaluation.
 
 The workshop is the authoring app. Export corrections saves editable amendments. Export reading file produces the whole chapter with effective corrections and per-insertion provenance. Exporting the reader does not save the correction file, and browser edits remain in-session until exported. Import corrections via the CLI to preserve them in Git.
 
 The separate reader accepts that exported JSON through Open a reading file. It validates ranges, approval/safety fields and stages, and needs no raw alignment data or Python dependencies. Imported files are untrusted text, rendered with DOM text nodes, and remain in the browser session. Schema checks establish structural validity, not independent linguistic quality or authenticity.
 
-This reading-file contract is the boundary for a future phone-native consumer app. Keep authoring, model execution and evidence review in the developer tool; implement offline file storage, reading position, touch interaction and later phrase/sentence progression in the consumer app. No native phone app or automatic phrase substitutions are claimed in this phase.
+This reading-file contract is the boundary for a future phone-native consumer app. Keep authoring, model execution and evidence review in the developer tool; implement offline file storage, reading position, touch interaction and reading preferences in the consumer app. No native phone app or automatic phrase substitutions are claimed in this phase.
+
+See [AUTHORING_WORKFLOW.md](AUTHORING_WORKFLOW.md) for the proposed two-text import and corpus workflow.
