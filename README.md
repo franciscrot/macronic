@@ -1,6 +1,6 @@
 # Macronic: Bertalign-led reader prototype
 
-A precision-first English/French Candide reader with a local correction workshop. Bertalign establishes passage correspondences; SimAlign proposes occurrence-level word links. Conservative linguistic and dictionary checks select isolated nouns and occurrence-checked adjectives. Unresolved links remain English. Models run offline during preparation; the browser serves static JSON and makes no model or API requests.
+A precision-first English/French Candide reader with a local correction workshop. Bertalign establishes passage correspondences; SimAlign proposes occurrence-level word links. Conservative linguistic and dictionary checks select isolated nouns and occurrence-checked adjectives and simple infinitive verbs. Unresolved links remain English. Models run offline during preparation; the browser serves static JSON and makes no model or API requests.
 
 ## Try it
 
@@ -15,6 +15,8 @@ npm run dev
 Open http://127.0.0.1:4173/src/reader/ or http://127.0.0.1:4173/src/review/ for the workshop. `npm run preview` serves the built project at http://127.0.0.1:4173/macronic/prototype/.
 
 The original app remains at the project root. The prototype has six language-aware levels, exact English source slices, and English glosses on hover, focus or tap; Escape closes a gloss.
+
+The built reader now contains Chapters I–VI: about 4,500 English words in 25 contextual sections. Chapters V and VI add noun-led vocabulary, eight checked adjective occurrences, four checked infinitives, and two checked whole sentences. Use the chapter selector or continuous Back/Next navigation.
 
 ## Actual output and limits
 
@@ -39,12 +41,12 @@ Commit the correction file and generated reader in a PR. Boundary changes also r
 
 ## Reproduce model preparation
 
-Use Python 3.12 on a CPU machine with several GB of available memory and disk. Python inference dependencies are separate from the static reader and CI tests.
+Use Python 3.12 on a Linux CPU machine (or Windows WSL) with several GB of available memory and disk. Python inference dependencies are separate from the static reader and CI tests.
 
 ```sh
 python3.12 -m venv .venv
 . .venv/bin/activate
-pip install --extra-index-url https://download.pytorch.org/whl/cpu -r pipeline/requirements.lock.txt
+pip install --extra-index-url https://download.pytorch.org/whl/cpu -r pipeline/project-requirements.lock.txt
 export HF_HOME="$PWD/.cache/huggingface"
 python -m pipeline.download_models
 python -m pipeline.prepare
@@ -78,7 +80,7 @@ The relevant FreeDict English–French TEI entries and original header are prese
 
 The reader includes all of Chapter I in four reading sections of 176–216 English words, retaining paragraph breaks. The 24 alignment groups remain available independently in the workshop; they are not reader pages. Fixed bottom Back/Next controls remain available on phone screens. The six levels are English, A little French, More French, Even more French, So much French and French. Their word-insertion counts across the chapter are 0, 17, 56, 65, 67 and full French source text respectively. So much also replaces passage 18 with its complete French sentence. This deliberately starts with one checked sentence in the chapter, not an automatic sentence in every passage.
 
-The discreet gradual-progression checkbox is on by default. Starting in English, the level rises on reading sections 4, 7, 10 and 13, then stays at So much. Revisiting passages does not earn extra increments. Changing level or toggling progression starts a fresh three-new-section interval. Full French is always an explicit choice. Progress currently lasts for the browser session.
+The discreet gradual-progression checkbox is on by default. Starting at A little French, the level rises on sections 5, 10 and 16, then stays at So much. English lasts 3 sections, A little 4, More 5 and Even more 6. Revisiting passages does not earn extra increments. Changing level or toggling progression starts a fresh interval for the selected level. Full French is always an explicit choice. Progress currently lasts for the browser session.
 
 `data/evidence/supplement.json` records occurrence IDs, source URLs, contextual reasons and AI check origin. Nine explicitly checked positive-degree adjective occurrences enter at level 3, and two additional nouns at level 4; the original six supplemental nouns remain at level 2. The adjective exception does not globally enable adjectives or relax conflict, passage or exact-occurrence checks. English adjectives do not mark number; their French forms are checked in their particular context. The whole-sentence record requires exact text and a clean one-to-one sentence group. Changed datasets require renewed supplemental checks; stale evidence fails validation. These are AI context checks, not independent human evaluation.
 
@@ -107,3 +109,13 @@ Open http://127.0.0.1:8765/ on the computer running the worker to upload another
 New projects reuse the limited lexical dictionary, but never Candide's occurrence-specific supplements. New adjectives and whole sentences require their own evidence or explicit editor decisions. Current preparation supports English/French only. Completed projects cannot be overwritten; create a new project to rerun models. Browser edits still need exporting; project backups include saved disk state only. Generic-project boundary recomputation remains a follow-up.
 
 Current verification includes project import, failed-job recovery, local HTTP handler validation, chapter export/correction round trips and stale-source rejection. Full model execution requires a suitably installed environment and was not rerun during this change. Browser automation was blocked by this session's socket restrictions.
+
+## Expanding the corpus locally
+
+The built reader combines projects listed in `corpus/candide.json`; the development reader retains Chapter I as a regression fixture. Each chapter keeps its own source hashes, model output, lexical evidence and amendments. `npm run build` validates each project, then creates the combined reading file. Reader sections stay within a chapter and keep roughly 170 words of context (long alignment groups may be larger).
+
+To prepare further chapters from the committed editions, run `python scripts/extract-candide-chapters.py 7 8`, then `python -m pipeline.project run corpus/candide-07` and the equivalent for Chapter VIII. Inspect and amend the outputs before adding them to the manifest. Extraction records exact ranges and omitted editorial notes; it does not guess correspondences.
+
+For another book, use the two-file preparation command or local worker described in the in-app guide. `python -m pipeline.download_models` now also downloads the pinned FreeDict source. New projects then extract a dictionary subset for their own vocabulary. The approved adjectives/verbs in Candide are **occurrence-specific AI context checks**, not rules that automatically approve the same word everywhere. New projects need their own checks, or named workshop amendments.
+
+Bertalign chooses sentence groups using LaBSE embeddings and ordered alignment; SimAlign proposes word links inside each group. spaCy morphology, dictionary support and structural checks filter those links. Simple nouns are the baseline. Selected positive-degree adjectives and infinitives enter higher levels. Finite verbs, participles, auxiliaries and phrasal verbs are excluded from the automatic verb extension. Whole sentences require a separate exact-text check. No probability of correctness is claimed, and independent human release review remains pending.

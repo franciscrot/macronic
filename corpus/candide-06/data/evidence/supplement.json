@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "6bba66b67479f18f35c87c520d68b46e840a329cb9d3ec7380edac71c8a10f1a",
+  "entries": [
+    {
+      "id": "checked-6-p00001-l0053",
+      "link_id": "p00001-l0053",
+      "en": "great",
+      "fr": [
+        "grand"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4548-sense-1"
+      ],
+      "note": "Both qualify the ceremony as great/grand; the French feminine form agrees with cérémonie in its source."
+    },
+    {
+      "id": "checked-6-p00006-l0022",
+      "link_id": "p00006-l0022",
+      "en": "possible",
+      "fr": [
+        "possible"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-6443-sense-0"
+      ],
+      "note": "Both qualify worlds as possible. French plural possibles is kept from the source."
+    },
+    {
+      "id": "checked-6-p00007-l0015",
+      "link_id": "p00007-l0015",
+      "en": "dear",
+      "fr": [
+        "cher"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-3424-sense-0"
+      ],
+      "note": "Both directly address Pangloss as dear, with masculine cher in the source."
+    },
+    {
+      "id": "checked-6-p00009-l0002",
+      "link_id": "p00009-l0002",
+      "en": "dear",
+      "fr": [
+        "cher"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-3424-sense-0"
+      ],
+      "note": "Both directly address the Anabaptist as dear; this is a separate occurrence from Pangloss."
+    },
+    {
+      "id": "checked-6-p00001-l0019",
+      "link_id": "p00001-l0019",
+      "en": "prevent",
+      "fr": [
+        "prévenir"
+      ],
+      "kind": "verb",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-6514-sense-0"
+      ],
+      "note": "Both infinitives mean avert the total ruin following the earthquake; prévenir is not used in the warn sense here."
+    },
+    {
+      "id": "checked-6-p00001-l0023",
+      "link_id": "p00001-l0023",
+      "en": "give",
+      "fr": [
+        "donner"
+      ],
+      "kind": "verb",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4430-sense-1"
+      ],
+      "note": "Both infinitives describe giving the people an auto-da-fé. The same giver and recipients are understood."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "checked-6-p00004-sentence",
+      "passage_id": "p00004",
+      "en_sentence_ids": [
+        "en-s007"
+      ],
+      "fr_sentence_ids": [
+        "fr-s004"
+      ],
+      "source_text": "Candide was whipped in cadence\nwhile they were singing; the Biscayner, and the two men who had refused\nto eat bacon, were burnt; and Pangloss was hanged, though that was not\nthe custom.",
+      "target_text": "Candide fut\nfessé en cadence, pendant qu’on chantait; le Biscayen et les deux\nhommes qui n’avaient point voulu manger de lard furent brûlés, et\nPangloss fut pendu, quoique ce ne soit pas la coutume.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both report Candide being whipped during singing, the Biscayner and Portuguese men being burnt, and Pangloss being hanged contrary to custom."
+    }
+  ]
+}

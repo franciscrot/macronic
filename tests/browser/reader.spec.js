@@ -155,7 +155,7 @@ test("phone controls stay inside viewport after scrolling, progression caps and 
     "true",
   );
   await page.locator("#gradual").check();
-  for (let i = 0; i < 12; i++) await page.locator("#next").click();
+  for (let i = 0; i < 15; i++) await page.locator("#next").click();
   await expect(page.locator('[data-stage="4"]')).toHaveAttribute(
     "aria-pressed",
     "true",
@@ -235,4 +235,18 @@ test("guide is linked from reader and hosted preparation explains local worker",
     "This hosted page cannot run the Python models",
   );
   await expect(page.locator("#inputs")).toBeDisabled();
+});
+
+test("built six-chapter reader has compact dynamic heading and defaults to little French", async ({page}) => {
+  await page.setViewportSize({width:360,height:640});
+  await page.goto("http://127.0.0.1:4174/macronic/prototype/");
+  await expect(page.locator("#chapter-select option")).toHaveCount(6);
+  await expect(page.locator("h1")).toHaveText("Macronic · A reading experiment · Current text: Candide");
+  expect((await page.locator("h1").boundingBox()).height).toBeLessThan(75);
+  await expect(page.locator('[data-stage="1"]')).toHaveAttribute("aria-pressed","true");
+  await page.locator("#chapter-select").selectOption({label:"Chapter V"});
+  await expect(page.locator("#status")).toContainText("Chapter V");
+  await expect(page.locator('[data-stage="1"]')).toHaveAttribute("aria-pressed","true");
+  await page.locator("#previous").click();
+  await expect(page.locator("#status")).toContainText("Chapter IV");
 });

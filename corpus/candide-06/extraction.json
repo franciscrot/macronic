@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "language": "en",
+      "snapshot": "data/sources/pg19942.txt",
+      "snapshot_sha256": "fb3943df826f375c4ab78d21f2d30bc95a0b2cb448e8812447a807d678eb0b5c",
+      "source_ranges": [
+        {
+          "start": 36555,
+          "end": 36946
+        },
+        {
+          "start": 36948,
+          "end": 38058
+        },
+        {
+          "start": 38060,
+          "end": 38144
+        },
+        {
+          "start": 38146,
+          "end": 38628
+        },
+        {
+          "start": 38630,
+          "end": 38755
+        },
+        {
+          "start": 38757,
+          "end": 38794
+        }
+      ],
+      "omitted_note_ranges": [],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    },
+    {
+      "language": "fr",
+      "snapshot": "data/sources/pg4650.txt",
+      "snapshot_sha256": "1cc10ab3268a76aa01bd3f9722ae2ae0e5e36b869a18b0bb0832b75bc0327806",
+      "source_ranges": [
+        {
+          "start": 33006,
+          "end": 33409
+        },
+        {
+          "start": 33581,
+          "end": 34737
+        },
+        {
+          "start": 34739,
+          "end": 35266
+        },
+        {
+          "start": 35268,
+          "end": 35420
+        }
+      ],
+      "omitted_note_ranges": [
+        {
+          "start": 33411,
+          "end": 33578
+        }
+      ],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    }
+  ]
+}

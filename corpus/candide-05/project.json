@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "title": "Candide",
+  "chapter": "Chapter V",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "status": "prepared",
+  "error": null
+}

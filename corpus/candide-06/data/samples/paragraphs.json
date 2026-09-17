@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "languages": {
+    "en": [
+      {
+        "id": "en-p00001",
+        "text": "After the earthquake had destroyed three-fourths of Lisbon, the sages of\nthat country could think of no means more effectual to prevent utter\nruin than to give the people a beautiful _auto-da-fe_[6]; for it had\nbeen decided by the University of Coimbra, that the burning of a few\npeople alive by a slow fire, and with great ceremony, is an infallible\nsecret to hinder the earth from quaking.",
+        "source_start": 0,
+        "source_end": 391
+      },
+      {
+        "id": "en-p00002",
+        "text": "In consequence hereof, they had seized on a Biscayner, convicted of\nhaving married his godmother, and on two Portuguese, for rejecting the\nbacon which larded a chicken they were eating[7]; after dinner, they\ncame and secured Dr. Pangloss, and his disciple Candide, the one for\nspeaking his mind, the other for having listened with an air of\napprobation. They were conducted to separate apartments, extremely cold,\nas they were never incommoded by the sun. Eight days after they were\ndressed in _san-benitos_[8] and their heads ornamented with paper\nmitres. The mitre and _san-benito_ belonging to Candide were painted\nwith reversed flames and with devils that had neither tails nor claws;\nbut Pangloss's devils had claws and tails and the flames were upright.\nThey marched in procession thus habited and heard a very pathetic\nsermon, followed by fine church music. Candide was whipped in cadence\nwhile they were singing; the Biscayner, and the two men who had refused\nto eat bacon, were burnt; and Pangloss was hanged, though that was not\nthe custom. The same day the earth sustained a most violent concussion.",
+        "source_start": 393,
+        "source_end": 1503
+      },
+      {
+        "id": "en-p00003",
+        "text": "Candide, terrified, amazed, desperate, all bloody, all palpitating, said\nto himself:",
+        "source_start": 1505,
+        "source_end": 1589
+      },
+      {
+        "id": "en-p00004",
+        "text": "\"If this is the best of possible worlds, what then are the others? Well,\nif I had been only whipped I could put up with it, for I experienced\nthat among the Bulgarians; but oh, my dear Pangloss! thou greatest of\nphilosophers, that I should have seen you hanged, without knowing for\nwhat! Oh, my dear Anabaptist, thou best of men, that thou should'st have\nbeen drowned in the very harbour! Oh, Miss Cunegonde, thou pearl of\ngirls! that thou should'st have had thy belly ripped open!\"",
+        "source_start": 1591,
+        "source_end": 2073
+      },
+      {
+        "id": "en-p00005",
+        "text": "Thus he was musing, scarce able to stand, preached at, whipped,\nabsolved, and blessed, when an old woman accosted him saying:",
+        "source_start": 2075,
+        "source_end": 2200
+      },
+      {
+        "id": "en-p00006",
+        "text": "\"My son, take courage and follow me.\"",
+        "source_start": 2202,
+        "source_end": 2239
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-p00001",
+        "text": "Après le tremblement de terre qui avait détruit les trois quarts de\nLisbonne, les sages du pays n’avaient pas trouvé un moyen plus efficace\npour prévenir une ruine totale que de donner au peuple un bel\nauto-da-fé[1]; il était décidé par l’université de Coïmbre que le\nspectacle de quelques personnes brûlées à petit feu, en grande\ncérémonie, est un secret infaillible pour empêcher la terre de\ntrembler.",
+        "source_start": 0,
+        "source_end": 403
+      },
+      {
+        "id": "fr-p00002",
+        "text": "On avait en conséquence saisi un Biscayen convaincu d’avoir épousé sa\ncommère, et deux Portugais qui en mangeant un poulet en avaient arraché\nle lard: on vint lier après le dîner le docteur Pangloss et son\ndisciple Candide, l’un pour avoir parlé, et l’autre pour l’avoir écouté\navec un air d’approbation: tous deux furent menés séparément dans des\nappartements d’une extrême fraîcheur, dans lesquels on n’était jamais\nincommodé du soleil: huit jours après ils furent tous deux revêtus d’un\nsan-benito, et on orna leurs têtes de mitres de papier: la mitre et le\nsan-benito de Candide étaient peints de flammes renversées, et de\ndiables qui n’avaient ni queues ni griffes; mais les diables de\nPangloss portaient griffes et queues, et les flammes étaient droites.\nIls marchèrent en procession ainsi vêtus, et entendirent un sermon très\npathétique, suivi d’une belle musique en faux-bourdon. Candide fut\nfessé en cadence, pendant qu’on chantait; le Biscayen et les deux\nhommes qui n’avaient point voulu manger de lard furent brûlés, et\nPangloss fut pendu, quoique ce ne soit pas la coutume. Le même jour la\nterre trembla de nouveau avec un fracas épouvantable.",
+        "source_start": 405,
+        "source_end": 1561
+      },
+      {
+        "id": "fr-p00003",
+        "text": "Candide épouvanté, interdit, éperdu, tout sanglant, tout palpitant, se\ndisait à lui-même: Si c’est ici le meilleur des mondes possibles, que\nsont donc les autres? passe encore si je n’étais que fessé, je l’ai été\nchez les Bulgares; mais, ô mon cher Pangloss! le plus grand des\nphilosophes, faut-il vous avoir vu pendre, sans que je sache pourquoi!\nô mon cher anabaptiste! le meilleur des hommes, faut-il que vous ayez\nété noyé dans le port! ô mademoiselle Cunégonde! la perle des filles,\nfaut-il qu’on vous ait fendu le ventre!",
+        "source_start": 1563,
+        "source_end": 2090
+      },
+      {
+        "id": "fr-p00004",
+        "text": "Il s’en retournait, se soutenant à peine, prêché, fessé, absous, et\nbéni, lorsqu’une vieille l’aborda, et lui dit: Mon fils, prenez\ncourage, suivez-moi.",
+        "source_start": 2092,
+        "source_end": 2244
+      }
+    ]
+  }
+}
