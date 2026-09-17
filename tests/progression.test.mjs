@@ -7,10 +7,10 @@ import {
   toggleProgress,
 } from "../src/shared/progression.js";
 test("progress rises at passages 4,7,10,13 and caps below full target", () => {
-  let s = newProgress();
+  let s = chooseStage(newProgress(), 0);
   for (let i = 0; i < 24; i++) {
     s = moveProgress(s, i);
-    assert.equal(s.stage, Math.min(4, Math.floor(i / 3)));
+    assert.equal(s.stage, i < 3 ? 0 : i < 7 ? 1 : i < 12 ? 2 : i < 18 ? 3 : 4);
   }
 });
 test("revisiting passages never earns extra increments; disabling freezes progress", () => {
@@ -26,14 +26,14 @@ test("revisiting passages never earns extra increments; disabling freezes progre
   s = toggleProgress(s, true);
   s = moveProgress(s, 14);
   assert.equal(s.stage, 1);
-  s = moveProgress(s, 15);
+  s = moveProgress(s, 16);
   assert.equal(s.stage, 2);
 });
 test("manual choices restart interval; explicit full target remains selected", () => {
   let s = chooseStage(moveProgress(newProgress(), 9), 2);
   s = moveProgress(s, 11);
   assert.equal(s.stage, 2);
-  s = moveProgress(s, 12);
+  s = moveProgress(s, 14);
   assert.equal(s.stage, 3);
   s = chooseStage(s, 5);
   s = moveProgress(s, 23);

@@ -22,7 +22,12 @@ def infer(project, texts, max_align):
     for nlp in nlps.values():
         if nlp.meta['version']!='3.8.0': raise ValueError('Install pinned spaCy 3.8.0 language models')
         nlp.add_pipe('sentencizer',config={'overwrite':True},last=True)
-    sentences={l:segment(paragraphs(text,l),nlps[l],l) for l,text in texts.items()}
+    paras={l:paragraphs(text,l) for l,text in texts.items()}
+    sentences={l:segment(paras[l],nlps[l],l) for l in texts}
+    for l,text in texts.items():
+        if ''.join(text.split()) != ''.join(''.join(s['text'].split()) for s in sentences[l]):
+            raise ValueError('Sentence segmentation lost source text')
+    write_json(project/'data/samples/paragraphs.json',{'schema_version':1,'languages':paras})
     if any(not s for s in sentences.values()): raise ValueError('Both inputs must contain sentences')
     write_json(project/'data/samples/sentences.json',{'schema_version':1,'languages':sentences})
     revisions=read_json(ROOT/'pipeline/models.json')
@@ -57,7 +62,7 @@ def infer(project, texts, max_align):
                 edges=sorted(aligner.get_word_aligns(*words)['inter'])
                 p['links']=[{'id':f'{p["id"]}-l{j:04}','en':[p['en']['tokens'][a]['id']], 'fr':[p['fr']['tokens'][b]['id']], 'method':'simalign.inter'} for j,(a,b) in enumerate(edges)]
         passages.append(p);print(f'Aligned group {i+1}/{len(groups)}',flush=True)
-    adapter_hash=digest(b''.join((ROOT/f).read_bytes() for f in ['pipeline/project.py','pipeline/project_inference.py']))
+    adapter_hash=digest(b''.join((ROOT/f).read_bytes() for f in ['pipeline/project.py','pipeline/project_inference.py','pipeline/project-requirements.lock.txt']))
     provenance=read_json(project/'data/sources/provenance.json')
     dataset={'schema_version':1,'title':metadata['title'],'chapter':metadata['chapter'],'languages':metadata['languages'],
              'inference_fingerprint':inference_fingerprint(),'project_adapter_fingerprint':adapter_hash,

@@ -26,7 +26,7 @@ def write_json(path, value):
 def paragraphs(text, language):
     return [{'id': f'{language}-p{i+1:05}', 'text': m.group(),
              'source_start': m.start(), 'source_end': m.end()}
-            for i, m in enumerate(re.finditer(r'\S(?:.*?\S)?(?=\n\s*\n|\Z)', text, re.S))]
+            for i, m in enumerate(re.finditer(r'\S(?:.*?\S)?(?=\n\s*\n|\s*\Z)', text, re.S))]
 
 
 def create_project(english, translation, output, *, title, target_language='fr',
@@ -98,7 +98,7 @@ def run_project(project, max_align=5):
         infer(stage, texts, max_align)
         subprocess.run(['node', str(ROOT/'scripts/project.mjs'), 'export', str(stage)], check=True)
         # Commit completed outputs only after the shared JS validators/export succeed.
-        for name in ['data/candidates','data/reviewed','data/evidence','data/reader','src']:
+        for name in ['data/candidates','data/reviewed','data/evidence','data/reader','data/samples','src']:
             source=stage/name; target=project/name
             target.parent.mkdir(parents=True,exist_ok=True)
             shutil.copytree(source,target,dirs_exist_ok=True)
@@ -129,6 +129,6 @@ def main():
         else: project=Path(args.pop('project'));run_project(project,**args)
         print(f'Project saved: {project}')
     except (ValueError, OSError, ImportError, subprocess.CalledProcessError) as error:
-        parser.exit(1, f'Preparation stopped: {error}\nInstall pipeline/requirements.lock.txt and download the pinned models before running inference. Imported sources are retained.\n')
+        parser.exit(1, f'Preparation stopped: {error}\nInstall pipeline/project-requirements.lock.txt and download the pinned models before running inference. Imported sources are retained.\n')
 
 if __name__=='__main__': main()

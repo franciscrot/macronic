@@ -51,6 +51,8 @@ export async function exportProject(directory, correctionsFile) {
       canonical(sentences.languages[lang].map((s) => s.id))
     )
       throw Error("Lost or reordered sentence");
+    if (source.normalized_file && text.replace(/\s/g, "") !== sentences.languages[lang].map(s => s.text).join("").replace(/\s/g, ""))
+      throw Error("Sentence segmentation lost source text");
     for (const p of data.passages)
       if (
         p[lang].text &&
