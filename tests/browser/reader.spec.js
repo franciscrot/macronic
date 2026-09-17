@@ -250,3 +250,20 @@ test("built six-chapter reader has compact dynamic heading and defaults to littl
   await page.locator("#previous").click();
   await expect(page.locator("#status")).toContainText("Chapter IV");
 });
+
+test('Some words appears after about 1500 words without an extra page', async ({page}) => {
+  await page.goto('http://127.0.0.1:4174/macronic/prototype/');
+  await expect(page.locator('#word-recap')).toBeHidden();
+  for(let i=0;i<12;i++) {
+    if(await page.locator('#word-recap').isVisible()) break;
+    await page.locator('#next').click();
+  }
+  await expect(page.getByRole('heading',{name:'Some words',exact:true})).toBeVisible();
+  const count=await page.locator('#recap-words dt').count();
+  expect(count).toBeGreaterThanOrEqual(5);expect(count).toBeLessThanOrEqual(8);
+  await expect(page.locator('#recap-words dd').first()).toHaveAttribute('lang','fr');
+  const words=await page.locator('#recap-words').innerText();
+  await page.locator('#previous').click();
+  await page.locator('#next').click();
+  await expect(page.locator('#recap-words')).toHaveText(words);
+});

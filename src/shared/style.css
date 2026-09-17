@@ -353,3 +353,11 @@ pre {
 
 .reader-heading { font: inherit; font-size: 0.9rem; line-height: 1.5; margin: 0; }
 .reader-heading strong { color: var(--accent); }
+
+.word-recap { margin: 28px 0; padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--wash); }
+.word-recap[hidden] { display: none; }
+.word-recap h2 { margin: 0 0 12px; font-size: 1.35rem; }
+.word-recap dl { margin: 0; font-size: 1rem; }
+.word-recap dl > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 3px 0; }
+.word-recap dt, .word-recap dd { margin: 0; overflow-wrap: anywhere; }
+.word-recap dd { color: var(--accent); }
