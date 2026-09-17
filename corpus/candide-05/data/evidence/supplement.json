@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "33a1fe7eb4dab320147d23a0e859e5ba16a2771845ebfef98dad943445a2b85c",
+  "entries": [
+    {
+      "id": "checked-5-p00002-l0001",
+      "link_id": "p00002-l0001",
+      "en": "other",
+      "fr": [
+        "autre"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-6081-sense-0"
+      ],
+      "note": "Both qualify the other half of the passengers, contrasting with the first half."
+    },
+    {
+      "id": "checked-5-p00021-l0006",
+      "link_id": "p00021-l0006",
+      "en": "new",
+      "fr": [
+        "nouveau"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-5869-sense-0"
+      ],
+      "note": "Both qualify a thing as new; the negative remains in the surrounding English sentence."
+    },
+    {
+      "id": "checked-5-p00029-l0001",
+      "link_id": "p00029-l0001",
+      "en": "little",
+      "fr": [
+        "petit"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-5354-sense-0"
+      ],
+      "note": "Both describe the same little man, the Inquisition official."
+    },
+    {
+      "id": "checked-5-p00032-l0009",
+      "link_id": "p00032-l0009",
+      "en": "absolute",
+      "fr": [
+        "absolu"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-1243-sense-0"
+      ],
+      "note": "Both qualify necessity as absolute in Pangloss’s philosophical claim."
+    },
+    {
+      "id": "checked-5-p00005-l0030",
+      "link_id": "p00005-l0030",
+      "en": "perish",
+      "fr": [
+        "périr"
+      ],
+      "kind": "verb",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-6268-sense-0"
+      ],
+      "note": "Both are simple infinitives referring to Jacques being left to die; no tense, auxiliary or negation is replaced."
+    },
+    {
+      "id": "checked-5-p00016-l0006",
+      "link_id": "p00016-l0006",
+      "en": "find",
+      "fr": [
+        "trouver"
+      ],
+      "kind": "verb",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4124-sense-1"
+      ],
+      "note": "Both are infinitives of purpose: the sailor faces death in order to find money. The English to is retained."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "checked-5-p00025-sentence",
+      "passage_id": "p00025",
+      "en_sentence_ids": [
+        "en-s038"
+      ],
+      "fr_sentence_ids": [
+        "fr-s028"
+      ],
+      "source_text": "Candide fainted away, and Pangloss fetched him some water from a\nneighbouring fountain.",
+      "target_text": "Candide perdit\nconnaissance, et Pangloss lui apporta un peu d’eau d’une fontaine\nvoisine.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-17",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both report Candide losing consciousness and Pangloss obtaining water for him from a nearby fountain."
+    }
+  ]
+}

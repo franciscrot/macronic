@@ -5,6 +5,9 @@ import {
   effectivePassages,
   assess,
   makeReader,
+  levelNames,
+  sentenceChoice,
+  withSupplement,
 } from "../shared/data.js";
 import { renderPassage } from "../shared/render.js";
 const $ = (id) => document.getElementById(id);
@@ -132,6 +135,19 @@ function render() {
     row.append(b, badge);
     $("links").append(row);
   }
+  const sentence = sentenceChoice(p, dictionary, policy);
+  $("sentence-evidence").textContent = JSON.stringify(
+    sentence?.decision || {
+      status: "not included",
+      note: "Only a complete one-to-one sentence pair can be considered. Review both complete sentences before approval.",
+    },
+    null,
+    2,
+  );
+  $("sentence-approve").disabled =
+    p.en_sentence_ids.length !== 1 ||
+    p.fr_sentence_ids.length !== 1 ||
+    p.diagnostics.length > 0;
   const full = makeReader(data, corrections, dictionary, policy, Infinity);
   const preview = full.passages.find((x) => x.id === p.id);
   $("preview").replaceChildren();
@@ -286,6 +302,21 @@ try {
     }),
   );
   [data, dictionary, policy, corrections, sentences] = values;
+  dictionary = withSupplement(
+    data,
+    dictionary,
+    await (await fetch("../../data/evidence/supplement.json")).json(),
+  );
+  $("stage").replaceChildren();
+  levelNames(data.languages || { base: "en", learning: "fr" }).forEach(
+    (name, i) => {
+      const o = document.createElement("option");
+      o.value = i;
+      o.textContent = name;
+      $("stage").append(o);
+    },
+  );
+  $("stage").value = "4";
   validateDataset(data);
   validateCorrections(data, corrections);
   data.passages.forEach((p, i) => {
@@ -302,3 +333,48 @@ try {
   message(e.message, true);
   document.querySelectorAll("button").forEach((b) => (b.disabled = true));
 }
+
+$("export-reader").onclick = () => {
+  try {
+    const file = makeReader(data, corrections, dictionary, policy);
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(file, null, 2) + "\n"], {
+        type: "application/json",
+      }),
+    );
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "macronic.reader.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    message(
+      "Reading file exported. Export corrections separately to preserve your editable work.",
+    );
+  } catch (e) {
+    message(e.message, true);
+  }
+};
+
+for (const [id, status] of [
+  ["sentence-approve", "approved"],
+  ["sentence-reject", "rejected"],
+])
+  $(id).onclick = () => {
+    try {
+      const p = current();
+      append({
+        type: "link",
+        passage_id: p.id,
+        link: {
+          id: `${p.id}-editor-sentence`,
+          en: p.en.tokens.map((t) => t.id),
+          fr: p.fr.tokens.map((t) => t.id),
+          method: "editor",
+        },
+        status,
+        safe_for_substitution: status === "approved",
+      });
+    } catch (e) {
+      message(e.message, true);
+    }
+  };

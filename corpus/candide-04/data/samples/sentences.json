@@ -1,0 +1,765 @@
+{
+  "schema_version": 1,
+  "languages": {
+    "en": [
+      {
+        "id": "en-s001",
+        "paragraph_id": "en-p00001",
+        "text": "Candide, yet more moved with compassion than with horror, gave to this\nshocking beggar the two florins which he had received from the honest\nAnabaptist James.",
+        "source_start": 0,
+        "source_end": 158
+      },
+      {
+        "id": "en-s002",
+        "paragraph_id": "en-p00001",
+        "text": "The spectre looked at him very earnestly, dropped a\nfew tears, and fell upon his neck.",
+        "source_start": 159,
+        "source_end": 245
+      },
+      {
+        "id": "en-s003",
+        "paragraph_id": "en-p00001",
+        "text": "Candide recoiled in disgust.",
+        "source_start": 246,
+        "source_end": 274
+      },
+      {
+        "id": "en-s004",
+        "paragraph_id": "en-p00002",
+        "text": "\"Alas!\"",
+        "source_start": 276,
+        "source_end": 283
+      },
+      {
+        "id": "en-s005",
+        "paragraph_id": "en-p00002",
+        "text": "said one wretch to the other, \"do you no longer know your dear\nPangloss?\"",
+        "source_start": 284,
+        "source_end": 357
+      },
+      {
+        "id": "en-s006",
+        "paragraph_id": "en-p00003",
+        "text": "\"What do I hear?",
+        "source_start": 359,
+        "source_end": 375
+      },
+      {
+        "id": "en-s007",
+        "paragraph_id": "en-p00003",
+        "text": "You, my dear master!",
+        "source_start": 376,
+        "source_end": 396
+      },
+      {
+        "id": "en-s008",
+        "paragraph_id": "en-p00003",
+        "text": "you in this terrible plight!",
+        "source_start": 397,
+        "source_end": 425
+      },
+      {
+        "id": "en-s009",
+        "paragraph_id": "en-p00003",
+        "text": "What\nmisfortune has happened to you?",
+        "source_start": 426,
+        "source_end": 462
+      },
+      {
+        "id": "en-s010",
+        "paragraph_id": "en-p00003",
+        "text": "Why are you no longer in the most\nmagnificent of castles?",
+        "source_start": 463,
+        "source_end": 520
+      },
+      {
+        "id": "en-s011",
+        "paragraph_id": "en-p00003",
+        "text": "What has become of Miss Cunegonde, the pearl of\ngirls, and nature's masterpiece?\"",
+        "source_start": 521,
+        "source_end": 602
+      },
+      {
+        "id": "en-s012",
+        "paragraph_id": "en-p00004",
+        "text": "\"I am so weak that I cannot stand,\" said Pangloss.",
+        "source_start": 604,
+        "source_end": 654
+      },
+      {
+        "id": "en-s013",
+        "paragraph_id": "en-p00005",
+        "text": "Upon which Candide carried him to the Anabaptist's stable, and gave him\na crust of bread.",
+        "source_start": 656,
+        "source_end": 745
+      },
+      {
+        "id": "en-s014",
+        "paragraph_id": "en-p00005",
+        "text": "As soon as Pangloss had refreshed himself a little:",
+        "source_start": 746,
+        "source_end": 797
+      },
+      {
+        "id": "en-s015",
+        "paragraph_id": "en-p00006",
+        "text": "\"Well,\" said Candide, \"Cunegonde?\"",
+        "source_start": 799,
+        "source_end": 833
+      },
+      {
+        "id": "en-s016",
+        "paragraph_id": "en-p00007",
+        "text": "\"She is dead,\" replied the other.",
+        "source_start": 835,
+        "source_end": 868
+      },
+      {
+        "id": "en-s017",
+        "paragraph_id": "en-p00008",
+        "text": "Candide fainted at this word; his friend recalled his senses with a\nlittle bad vinegar which he found by chance in the stable.",
+        "source_start": 870,
+        "source_end": 996
+      },
+      {
+        "id": "en-s018",
+        "paragraph_id": "en-p00008",
+        "text": "Candide\nreopened his eyes.",
+        "source_start": 997,
+        "source_end": 1023
+      },
+      {
+        "id": "en-s019",
+        "paragraph_id": "en-p00009",
+        "text": "\"Cunegonde is dead!",
+        "source_start": 1025,
+        "source_end": 1044
+      },
+      {
+        "id": "en-s020",
+        "paragraph_id": "en-p00009",
+        "text": "Ah, best of worlds, where art thou?",
+        "source_start": 1045,
+        "source_end": 1080
+      },
+      {
+        "id": "en-s021",
+        "paragraph_id": "en-p00009",
+        "text": "But of what\nillness did she die?",
+        "source_start": 1081,
+        "source_end": 1113
+      },
+      {
+        "id": "en-s022",
+        "paragraph_id": "en-p00009",
+        "text": "Was it not for grief, upon seeing her father kick\nme out of his magnificent castle?\"",
+        "source_start": 1114,
+        "source_end": 1198
+      },
+      {
+        "id": "en-s023",
+        "paragraph_id": "en-p00010",
+        "text": "\"No,\" said Pangloss, \"she was ripped open by the Bulgarian soldiers,\nafter having been violated by many; they broke the Baron's head for\nattempting to defend her; my lady, her mother, was cut in pieces; my\npoor pupil was served just in the same manner as his sister; and as for\nthe castle, they have not left one stone upon another, not a barn, nor a\nsheep, nor a duck, nor a tree; but we have had our revenge, for the\nAbares have done the very same thing to a neighbouring barony, which\nbelonged to a Bulgarian lord.\"",
+        "source_start": 1200,
+        "source_end": 1718
+      },
+      {
+        "id": "en-s024",
+        "paragraph_id": "en-p00011",
+        "text": "At this discourse Candide fainted again; but coming to himself, and\nhaving said all that it became him to say, inquired into the cause and\neffect, as well as into the _sufficient reason_ that had reduced\nPangloss to so miserable a plight.",
+        "source_start": 1720,
+        "source_end": 1958
+      },
+      {
+        "id": "en-s025",
+        "paragraph_id": "en-p00012",
+        "text": "\"Alas!\"",
+        "source_start": 1960,
+        "source_end": 1967
+      },
+      {
+        "id": "en-s026",
+        "paragraph_id": "en-p00012",
+        "text": "said the other, \"it was love; love, the comfort of the human\nspecies, the preserver of the universe, the soul of all sensible beings,\nlove, tender love.\"",
+        "source_start": 1968,
+        "source_end": 2121
+      },
+      {
+        "id": "en-s027",
+        "paragraph_id": "en-p00013",
+        "text": "\"Alas!\"",
+        "source_start": 2123,
+        "source_end": 2130
+      },
+      {
+        "id": "en-s028",
+        "paragraph_id": "en-p00013",
+        "text": "said Candide, \"I know this love, that sovereign of hearts, that\nsoul of our souls; yet it never cost me more than a kiss and twenty\nkicks on the backside.",
+        "source_start": 2131,
+        "source_end": 2285
+      },
+      {
+        "id": "en-s029",
+        "paragraph_id": "en-p00013",
+        "text": "How could this beautiful cause produce in you an\neffect so abominable?\"",
+        "source_start": 2286,
+        "source_end": 2357
+      },
+      {
+        "id": "en-s030",
+        "paragraph_id": "en-p00014",
+        "text": "Pangloss made answer in these terms: \"Oh, my dear Candide, you remember\nPaquette, that pretty wench who waited on our noble Baroness; in her\narms I tasted the delights of paradise, which produced in me those hell\ntorments with which you see me devoured; she was infected with them, she\nis perhaps dead of them.",
+        "source_start": 2359,
+        "source_end": 2669
+      },
+      {
+        "id": "en-s031",
+        "paragraph_id": "en-p00014",
+        "text": "This present Paquette received of a learned\nGrey Friar, who had traced it to its source; he had had it of an old\ncountess, who had received it from a cavalry captain, who owed it to a\nmarchioness, who took it from a page, who had received it from a Jesuit,\nwho when a novice had it in a direct line from one of the companions of\nChristopher Columbus.[3] For my part I shall give it to nobody, I am\ndying.\"",
+        "source_start": 2670,
+        "source_end": 3075
+      },
+      {
+        "id": "en-s032",
+        "paragraph_id": "en-p00015",
+        "text": "\"Oh, Pangloss!\"",
+        "source_start": 3077,
+        "source_end": 3092
+      },
+      {
+        "id": "en-s033",
+        "paragraph_id": "en-p00015",
+        "text": "cried Candide, \"what a strange genealogy!",
+        "source_start": 3093,
+        "source_end": 3134
+      },
+      {
+        "id": "en-s034",
+        "paragraph_id": "en-p00015",
+        "text": "Is not the\nDevil the original stock of it?\"",
+        "source_start": 3135,
+        "source_end": 3178
+      },
+      {
+        "id": "en-s035",
+        "paragraph_id": "en-p00016",
+        "text": "\"Not at all,\" replied this great man, \"it was a thing unavoidable, a\nnecessary ingredient in the best of worlds; for if Columbus had not in\nan island of America caught this disease, which contaminates the source\nof life, frequently even hinders generation, and which is evidently\nopposed to the great end of nature, we should have neither chocolate nor\ncochineal.",
+        "source_start": 3180,
+        "source_end": 3543
+      },
+      {
+        "id": "en-s036",
+        "paragraph_id": "en-p00016",
+        "text": "We are also to observe that upon our continent, this\ndistemper is like religious controversy, confined to a particular spot.",
+        "source_start": 3544,
+        "source_end": 3668
+      },
+      {
+        "id": "en-s037",
+        "paragraph_id": "en-p00016",
+        "text": "The Turks, the Indians, the Persians, the Chinese, the Siamese, the\nJapanese, know nothing of it; but there is a sufficient reason for\nbelieving that they will know it in their turn in a few centuries.",
+        "source_start": 3669,
+        "source_end": 3870
+      },
+      {
+        "id": "en-s038",
+        "paragraph_id": "en-p00016",
+        "text": "In\nthe meantime, it has made marvellous progress among us, especially in\nthose great armies composed of honest well-disciplined hirelings, who\ndecide the destiny of states; for we may safely affirm that when an army\nof thirty thousand men fights another of an equal number, there are\nabout twenty thousand of them p-x-d on each side.\"",
+        "source_start": 3871,
+        "source_end": 4205
+      },
+      {
+        "id": "en-s039",
+        "paragraph_id": "en-p00017",
+        "text": "\"Well, this is wonderful!\"",
+        "source_start": 4207,
+        "source_end": 4233
+      },
+      {
+        "id": "en-s040",
+        "paragraph_id": "en-p00017",
+        "text": "said Candide, \"but you must get cured.\"",
+        "source_start": 4234,
+        "source_end": 4273
+      },
+      {
+        "id": "en-s041",
+        "paragraph_id": "en-p00018",
+        "text": "\"Alas!",
+        "source_start": 4275,
+        "source_end": 4281
+      },
+      {
+        "id": "en-s042",
+        "paragraph_id": "en-p00018",
+        "text": "how can I?\"",
+        "source_start": 4282,
+        "source_end": 4293
+      },
+      {
+        "id": "en-s043",
+        "paragraph_id": "en-p00018",
+        "text": "said Pangloss, \"I have not a farthing, my friend, and\nall over the globe there is no letting of blood or taking a glister,\nwithout paying, or somebody paying for you.\"",
+        "source_start": 4294,
+        "source_end": 4461
+      },
+      {
+        "id": "en-s044",
+        "paragraph_id": "en-p00019",
+        "text": "These last words determined Candide; he went and flung himself at the\nfeet of the charitable Anabaptist James, and gave him so touching a\npicture of the state to which his friend was reduced, that the good man\ndid not scruple to take Dr. Pangloss into his house, and had him cured\nat his expense.",
+        "source_start": 4463,
+        "source_end": 4759
+      },
+      {
+        "id": "en-s045",
+        "paragraph_id": "en-p00019",
+        "text": "In the cure Pangloss lost only an eye and an ear.",
+        "source_start": 4760,
+        "source_end": 4809
+      },
+      {
+        "id": "en-s046",
+        "paragraph_id": "en-p00019",
+        "text": "He\nwrote well, and knew arithmetic perfectly.",
+        "source_start": 4810,
+        "source_end": 4855
+      },
+      {
+        "id": "en-s047",
+        "paragraph_id": "en-p00019",
+        "text": "The Anabaptist James made him\nhis bookkeeper.",
+        "source_start": 4856,
+        "source_end": 4901
+      },
+      {
+        "id": "en-s048",
+        "paragraph_id": "en-p00019",
+        "text": "At the end of two months, being obliged to go to Lisbon\nabout some mercantile affairs, he took the two philosophers with him in\nhis ship.",
+        "source_start": 4902,
+        "source_end": 5039
+      },
+      {
+        "id": "en-s049",
+        "paragraph_id": "en-p00019",
+        "text": "Pangloss explained to him how everything was so constituted\nthat it could not be better.",
+        "source_start": 5040,
+        "source_end": 5128
+      },
+      {
+        "id": "en-s050",
+        "paragraph_id": "en-p00019",
+        "text": "James was not of this opinion.",
+        "source_start": 5129,
+        "source_end": 5159
+      },
+      {
+        "id": "en-s051",
+        "paragraph_id": "en-p00020",
+        "text": "\"It is more likely,\" said he, \"mankind have a little corrupted nature,\nfor they were not born wolves, and they have become wolves; God has\ngiven them neither cannon of four-and-twenty pounders, nor bayonets; and\nyet they have made cannon and bayonets to destroy one another.",
+        "source_start": 5161,
+        "source_end": 5435
+      },
+      {
+        "id": "en-s052",
+        "paragraph_id": "en-p00020",
+        "text": "Into this\naccount I might throw not only bankrupts, but Justice which seizes on\nthe effects of bankrupts to cheat the creditors.\"",
+        "source_start": 5436,
+        "source_end": 5565
+      },
+      {
+        "id": "en-s053",
+        "paragraph_id": "en-p00021",
+        "text": "\"All this was indispensable,\" replied the one-eyed doctor, \"for private\nmisfortunes make the general good, so that the more private misfortunes\nthere are the greater is the general good.\"",
+        "source_start": 5567,
+        "source_end": 5754
+      },
+      {
+        "id": "en-s054",
+        "paragraph_id": "en-p00022",
+        "text": "While he reasoned, the sky darkened, the winds blew from the four\nquarters, and the ship was assailed by a most terrible tempest within\nsight of the port of Lisbon.",
+        "source_start": 5756,
+        "source_end": 5920
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-s001",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide, plus ému encore de compassion que d’horreur, donna à cet\népouvantable gueux les deux florins qu’il avait reçus de son honnête\nanabaptiste Jacques.",
+        "source_start": 0,
+        "source_end": 155
+      },
+      {
+        "id": "fr-s002",
+        "paragraph_id": "fr-p00001",
+        "text": "Le fantôme le regarda fixement, versa des larmes,\net sauta à son cou.",
+        "source_start": 156,
+        "source_end": 225
+      },
+      {
+        "id": "fr-s003",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide effrayé recule.",
+        "source_start": 226,
+        "source_end": 249
+      },
+      {
+        "id": "fr-s004",
+        "paragraph_id": "fr-p00001",
+        "text": "Hélas!",
+        "source_start": 250,
+        "source_end": 256
+      },
+      {
+        "id": "fr-s005",
+        "paragraph_id": "fr-p00001",
+        "text": "dit le misérable à\nl’autre misérable, ne reconnaissez-vous plus votre cher Pangloss?",
+        "source_start": 257,
+        "source_end": 341
+      },
+      {
+        "id": "fr-s006",
+        "paragraph_id": "fr-p00001",
+        "text": "Qu’entends-je?",
+        "source_start": 342,
+        "source_end": 356
+      },
+      {
+        "id": "fr-s007",
+        "paragraph_id": "fr-p00001",
+        "text": "vous, mon cher maître!",
+        "source_start": 357,
+        "source_end": 379
+      },
+      {
+        "id": "fr-s008",
+        "paragraph_id": "fr-p00001",
+        "text": "vous, dans cet état horrible!",
+        "source_start": 380,
+        "source_end": 409
+      },
+      {
+        "id": "fr-s009",
+        "paragraph_id": "fr-p00001",
+        "text": "quel malheur vous est-il donc arrivé?",
+        "source_start": 410,
+        "source_end": 447
+      },
+      {
+        "id": "fr-s010",
+        "paragraph_id": "fr-p00001",
+        "text": "pourquoi n’êtes-vous plus dans le\nplus beau des châteaux?",
+        "source_start": 448,
+        "source_end": 505
+      },
+      {
+        "id": "fr-s011",
+        "paragraph_id": "fr-p00001",
+        "text": "qu’est devenue mademoiselle Cunégonde, la perle\ndes filles, le chef-d’oeuvre de la nature?",
+        "source_start": 506,
+        "source_end": 596
+      },
+      {
+        "id": "fr-s012",
+        "paragraph_id": "fr-p00001",
+        "text": "Je n’en peux plus, dit\nPangloss.",
+        "source_start": 597,
+        "source_end": 629
+      },
+      {
+        "id": "fr-s013",
+        "paragraph_id": "fr-p00001",
+        "text": "Aussitôt Candide le mena dans l’étable de l’anabaptiste, où\nil lui fit manger un peu de pain; et quand Pangloss fut refait: Eh\nbien!",
+        "source_start": 630,
+        "source_end": 762
+      },
+      {
+        "id": "fr-s014",
+        "paragraph_id": "fr-p00001",
+        "text": "lui dit-il, Cunégonde?",
+        "source_start": 763,
+        "source_end": 785
+      },
+      {
+        "id": "fr-s015",
+        "paragraph_id": "fr-p00001",
+        "text": "Elle est morte, reprit l’autre.",
+        "source_start": 786,
+        "source_end": 817
+      },
+      {
+        "id": "fr-s016",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide\ns’évanouit à ce mot: son ami rappela ses sens avec un peu de mauvais\nvinaigre qui se trouva par hasard dans l’étable.",
+        "source_start": 818,
+        "source_end": 943
+      },
+      {
+        "id": "fr-s017",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide rouvre les\nyeux.",
+        "source_start": 944,
+        "source_end": 968
+      },
+      {
+        "id": "fr-s018",
+        "paragraph_id": "fr-p00001",
+        "text": "Cunégonde est morte!",
+        "source_start": 969,
+        "source_end": 989
+      },
+      {
+        "id": "fr-s019",
+        "paragraph_id": "fr-p00001",
+        "text": "Ah!",
+        "source_start": 990,
+        "source_end": 993
+      },
+      {
+        "id": "fr-s020",
+        "paragraph_id": "fr-p00001",
+        "text": "meilleur des mondes, où êtes-vous?",
+        "source_start": 994,
+        "source_end": 1028
+      },
+      {
+        "id": "fr-s021",
+        "paragraph_id": "fr-p00001",
+        "text": "Mais\nde quelle maladie est-elle morte?",
+        "source_start": 1029,
+        "source_end": 1067
+      },
+      {
+        "id": "fr-s022",
+        "paragraph_id": "fr-p00001",
+        "text": "ne serait-ce point de m’avoir vu\nchasser du beau château de monsieur son père à grands coups de pied?",
+        "source_start": 1068,
+        "source_end": 1169
+      },
+      {
+        "id": "fr-s023",
+        "paragraph_id": "fr-p00001",
+        "text": "Non, dit Pangloss, elle a été éventrée par des soldats bulgares, après\navoir été violée autant qu’on peut l’être; ils ont cassé la tête à\nmonsieur le baron qui voulait la défendre; madame la baronne a été\ncoupée en morceaux; mon pauvre pupille traité précisément comme sa\nsoeur; et quant au château, il n’est pas resté pierre sur pierre, pas\nune grange, pas un mouton, pas un canard, pas un arbre; mais nous avons\nété bien vengés, car les Abares en ont fait autant dans une baronnie\nvoisine qui appartenait à un seigneur bulgare.",
+        "source_start": 1170,
+        "source_end": 1699
+      },
+      {
+        "id": "fr-s024",
+        "paragraph_id": "fr-p00002",
+        "text": "A ce discours, Candide s’évanouit encore; mais revenu à soi, et ayant\ndit tout ce qu’il devait dire, il s’enquit de la cause et de l’effet,\net de la raison suffisante qui avait mis Pangloss dans un si piteux\nétat.",
+        "source_start": 1701,
+        "source_end": 1914
+      },
+      {
+        "id": "fr-s025",
+        "paragraph_id": "fr-p00002",
+        "text": "Hélas!",
+        "source_start": 1915,
+        "source_end": 1921
+      },
+      {
+        "id": "fr-s026",
+        "paragraph_id": "fr-p00002",
+        "text": "dit l’autre, c’est l’amour: l’amour, le consolateur du\ngenre humain, le conservateur de l’univers, l’âme de tous les êtres\nsensibles, le tendre amour.",
+        "source_start": 1922,
+        "source_end": 2072
+      },
+      {
+        "id": "fr-s027",
+        "paragraph_id": "fr-p00002",
+        "text": "Hélas!",
+        "source_start": 2073,
+        "source_end": 2079
+      },
+      {
+        "id": "fr-s028",
+        "paragraph_id": "fr-p00002",
+        "text": "dit Candide, je l’ai connu cet\namour, ce souverain des coeurs, cette âme de notre âme; il ne m’a\njamais valu qu’un baiser et vingt coups de pied au cul.",
+        "source_start": 2080,
+        "source_end": 2232
+      },
+      {
+        "id": "fr-s029",
+        "paragraph_id": "fr-p00002",
+        "text": "Comment cette\nbelle cause a-t-elle pu produire en vous un effet si abominable?",
+        "source_start": 2233,
+        "source_end": 2311
+      },
+      {
+        "id": "fr-s030",
+        "paragraph_id": "fr-p00003",
+        "text": "Pangloss répondit en ces termes: O mon cher Candide!",
+        "source_start": 2313,
+        "source_end": 2365
+      },
+      {
+        "id": "fr-s031",
+        "paragraph_id": "fr-p00003",
+        "text": "vous avez connu\nPaquette, cette jolie suivante de notre auguste baronne: j’ai goûté\ndans ses bras les délices du paradis, qui ont produit ces tourments\nd’enfer dont vous me voyez dévoré; elle en était infectée, elle en est\npeut-être morte.",
+        "source_start": 2366,
+        "source_end": 2605
+      },
+      {
+        "id": "fr-s032",
+        "paragraph_id": "fr-p00003",
+        "text": "Paquette tenait ce présent d’un cordelier très savant\nqui avait remonté à la source, car il l’avait eu d’une vieille\ncomtesse, qui l’avait reçu d’un capitaine de cavalerie, qui le devait à\nune marquise, qui le tenait d’un page, qui l’avait reçu d’un jésuite,\nqui, étant novice, l’avait eu en droite ligne d’un des compagnons de\nChristophe Colomb.",
+        "source_start": 2606,
+        "source_end": 2952
+      },
+      {
+        "id": "fr-s033",
+        "paragraph_id": "fr-p00003",
+        "text": "Pour moi, je ne le donnerai à personne, car je me\nmeurs.",
+        "source_start": 2953,
+        "source_end": 3009
+      },
+      {
+        "id": "fr-s034",
+        "paragraph_id": "fr-p00004",
+        "text": "O Pangloss!",
+        "source_start": 3011,
+        "source_end": 3022
+      },
+      {
+        "id": "fr-s035",
+        "paragraph_id": "fr-p00004",
+        "text": "s’écria Candide, voilà une étrange généalogie!",
+        "source_start": 3023,
+        "source_end": 3069
+      },
+      {
+        "id": "fr-s036",
+        "paragraph_id": "fr-p00004",
+        "text": "n’est-ce pas\nle diable qui en fut la souche?",
+        "source_start": 3070,
+        "source_end": 3114
+      },
+      {
+        "id": "fr-s037",
+        "paragraph_id": "fr-p00004",
+        "text": "Point du tout, répliqua ce grand homme;\nc’était une chose indispensable dans le meilleur des mondes, un\ningrédient nécessaire; car si Colomb n’avait pas attrapé dans une île\nde l’Amérique cette maladie[1] qui empoisonne la source de la\ngénération, qui souvent même empêche la génération, et qui est\névidemment l’opposé du grand but de la nature, nous n’aurions ni le\nchocolat ni la cochenille; il faut encore observer que\njusqu’aujourd’hui, dans notre continent, cette maladie nous est\nparticulière, comme la controverse.",
+        "source_start": 3115,
+        "source_end": 3636
+      },
+      {
+        "id": "fr-s038",
+        "paragraph_id": "fr-p00004",
+        "text": "Les Turcs, les Indiens, les\nPersans, les Chinois, les Siamois, les Japonais, ne la connaissent pas\nencore; mais il y a une raison suffisante pour qu’ils la connaissent à\nleur tour dans quelques siècles.",
+        "source_start": 3637,
+        "source_end": 3839
+      },
+      {
+        "id": "fr-s039",
+        "paragraph_id": "fr-p00004",
+        "text": "En attendant elle a fait un\nmerveilleux progrès parmi nous, et surtout dans ces grandes armées\ncomposées d’honnêtes stipendiaires bien élevés, qui décident du destin\ndes états; on peut assurer que, quand trente mille hommes combattent en\nbataille rangée contre des troupes égales en nombre, il y a environ\nvingt mille vérolés de chaque côté.",
+        "source_start": 3840,
+        "source_end": 4181
+      },
+      {
+        "id": "fr-s040",
+        "paragraph_id": "fr-p00005",
+        "text": "Voilà qui est admirable, dit Candide; mais il faut vous faire guérir.",
+        "source_start": 4183,
+        "source_end": 4252
+      },
+      {
+        "id": "fr-s041",
+        "paragraph_id": "fr-p00005",
+        "text": "Et comment le puis-je?",
+        "source_start": 4253,
+        "source_end": 4275
+      },
+      {
+        "id": "fr-s042",
+        "paragraph_id": "fr-p00005",
+        "text": "dit Pangloss; je n’ai pas le sou, mon ami, et\ndans toute l’étendue de ce globe on ne peut ni se faire saigner, ni\nprendre un lavement sans payer, ou sans qu’il y ait quelqu’un qui paie\npour nous.",
+        "source_start": 4276,
+        "source_end": 4471
+      },
+      {
+        "id": "fr-s043",
+        "paragraph_id": "fr-p00006",
+        "text": "Ce dernier discours détermina Candide; il alla se jeter aux pieds de\nson charitable anabaptiste Jacques, et lui fit une peinture si\ntouchante de l’état où son ami était réduit, que le bon-homme n’hésita\npas à recueillir le docteur Pangloss; il le fit guérir à ses dépens.",
+        "source_start": 4473,
+        "source_end": 4744
+      },
+      {
+        "id": "fr-s044",
+        "paragraph_id": "fr-p00006",
+        "text": "Pangloss, dans la cure, ne perdit qu’un oeil et une oreille.",
+        "source_start": 4745,
+        "source_end": 4805
+      },
+      {
+        "id": "fr-s045",
+        "paragraph_id": "fr-p00006",
+        "text": "Il\nécrivait bien, et savait parfaitement l’arithmétique.",
+        "source_start": 4806,
+        "source_end": 4862
+      },
+      {
+        "id": "fr-s046",
+        "paragraph_id": "fr-p00006",
+        "text": "L’anabaptiste\nJacques en fit son teneur de livres.",
+        "source_start": 4863,
+        "source_end": 4913
+      },
+      {
+        "id": "fr-s047",
+        "paragraph_id": "fr-p00006",
+        "text": "Au bout de deux mois, étant obligé\nd’aller à Lisbonne pour les affaires de son commerce, il mena dans son\nvaisseau ses deux philosophes.",
+        "source_start": 4914,
+        "source_end": 5050
+      },
+      {
+        "id": "fr-s048",
+        "paragraph_id": "fr-p00006",
+        "text": "Pangloss lui expliqua comment tout était\non ne peut mieux.",
+        "source_start": 5051,
+        "source_end": 5109
+      },
+      {
+        "id": "fr-s049",
+        "paragraph_id": "fr-p00006",
+        "text": "Jacques n’était pas de cet avis.",
+        "source_start": 5110,
+        "source_end": 5142
+      },
+      {
+        "id": "fr-s050",
+        "paragraph_id": "fr-p00006",
+        "text": "Il faut bien,\ndisait-il, que les hommes aient un peu corrompu la nature, car ils ne\nsont point nés loups, et ils sont devenus loups.",
+        "source_start": 5143,
+        "source_end": 5275
+      },
+      {
+        "id": "fr-s051",
+        "paragraph_id": "fr-p00006",
+        "text": "Dieu ne leur a donné\nni canons de vingt-quatre, ni baïonnettes, et ils se sont fait des\nbaïonnettes et des canons pour se détruire.",
+        "source_start": 5276,
+        "source_end": 5407
+      },
+      {
+        "id": "fr-s052",
+        "paragraph_id": "fr-p00006",
+        "text": "Je pourrais mettre en ligne\nde compte les banqueroutes, et la justice qui s’empare des biens des\nbanqueroutiers pour en frustrer les créanciers.",
+        "source_start": 5408,
+        "source_end": 5552
+      },
+      {
+        "id": "fr-s053",
+        "paragraph_id": "fr-p00006",
+        "text": "Tout cela était\nindispensable, répliquait le docteur borgne, et les malheurs\nparticuliers font le bien général; de sorte que plus il y a de malheurs\nparticuliers, et plus tout est bien.",
+        "source_start": 5553,
+        "source_end": 5738
+      },
+      {
+        "id": "fr-s054",
+        "paragraph_id": "fr-p00006",
+        "text": "Tandis qu’il raisonnait, l’air\ns’obscurcit, les vents soufflèrent des quatre coins du monde, et le\nvaisseau fut assailli de la plus horrible tempête, à la vue du port de\nLisbonne.",
+        "source_start": 5739,
+        "source_end": 5918
+      }
+    ]
+  }
+}

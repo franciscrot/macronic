@@ -1,0 +1,920 @@
+{
+  "schema_version": 2,
+  "base_fingerprint": "6bba66b67479f18f35c87c520d68b46e840a329cb9d3ec7380edac71c8a10f1a",
+  "title": "Candide",
+  "chapter": "Chapter VI",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "six-level-infinitive-v4",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "6bba66b67479f18f35c87c520d68b46e840a329cb9d3ec7380edac71c8a10f1a",
+      "entries": [
+        {
+          "id": "checked-6-p00001-l0053",
+          "link_id": "p00001-l0053",
+          "en": "great",
+          "fr": [
+            "grand"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-4548-sense-1"
+          ],
+          "note": "Both qualify the ceremony as great/grand; the French feminine form agrees with cérémonie in its source."
+        },
+        {
+          "id": "checked-6-p00006-l0022",
+          "link_id": "p00006-l0022",
+          "en": "possible",
+          "fr": [
+            "possible"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-6443-sense-0"
+          ],
+          "note": "Both qualify worlds as possible. French plural possibles is kept from the source."
+        },
+        {
+          "id": "checked-6-p00007-l0015",
+          "link_id": "p00007-l0015",
+          "en": "dear",
+          "fr": [
+            "cher"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-3424-sense-0"
+          ],
+          "note": "Both directly address Pangloss as dear, with masculine cher in the source."
+        },
+        {
+          "id": "checked-6-p00009-l0002",
+          "link_id": "p00009-l0002",
+          "en": "dear",
+          "fr": [
+            "cher"
+          ],
+          "kind": "adjective",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-3424-sense-0"
+          ],
+          "note": "Both directly address the Anabaptist as dear; this is a separate occurrence from Pangloss."
+        },
+        {
+          "id": "checked-6-p00001-l0019",
+          "link_id": "p00001-l0019",
+          "en": "prevent",
+          "fr": [
+            "prévenir"
+          ],
+          "kind": "verb",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-6514-sense-0"
+          ],
+          "note": "Both infinitives mean avert the total ruin following the earthquake; prévenir is not used in the warn sense here."
+        },
+        {
+          "id": "checked-6-p00001-l0023",
+          "link_id": "p00001-l0023",
+          "en": "give",
+          "fr": [
+            "donner"
+          ],
+          "kind": "verb",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-4430-sense-1"
+          ],
+          "note": "Both infinitives describe giving the people an auto-da-fé. The same giver and recipients are understood."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "checked-6-p00004-sentence",
+          "passage_id": "p00004",
+          "en_sentence_ids": [
+            "en-s007"
+          ],
+          "fr_sentence_ids": [
+            "fr-s004"
+          ],
+          "source_text": "Candide was whipped in cadence\nwhile they were singing; the Biscayner, and the two men who had refused\nto eat bacon, were burnt; and Pangloss was hanged, though that was not\nthe custom.",
+          "target_text": "Candide fut\nfessé en cadence, pendant qu’on chantait; le Biscayen et les deux\nhommes qui n’avaient point voulu manger de lard furent brûlés, et\nPangloss fut pendu, quoique ce ne soit pas la coutume.",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://www.gutenberg.org/ebooks/4650",
+          "note": "Both report Candide being whipped during singing, the Biscayner and Portuguese men being burnt, and Pangloss being hanged contrary to custom."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "494c9885f45a71e280b187de12a91ff604f7be854012249869acbea3f9b07a54",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "494c9885f45a71e280b187de12a91ff604f7be854012249869acbea3f9b07a54",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "f1ebddfd2fd6b8c0675b305ededfae372a2ce3fe5dde2b45df7429d9cbc93c30",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "f1ebddfd2fd6b8c0675b305ededfae372a2ce3fe5dde2b45df7429d9cbc93c30",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "stages": [
+    "English",
+    "A little French",
+    "More French",
+    "Even more French",
+    "So much French",
+    "French"
+  ],
+  "passages": [
+    {
+      "id": "p00001",
+      "text": "After the earthquake had destroyed three-fourths of Lisbon, the sages of\nthat country could think of no means more effectual to prevent utter\nruin than to give the people a beautiful _auto-da-fe_[6]; for it had\nbeen decided by the University of Coimbra, that the burning of a few\npeople alive by a slow fire, and with great ceremony, is an infallible\nsecret to hinder the earth from quaking.",
+      "translation": "Après le tremblement de terre qui avait détruit les trois quarts de\nLisbonne, les sages du pays n’avaient pas trouvé un moyen plus efficace\npour prévenir une ruine totale que de donner au peuple un bel\nauto-da-fé[1]; il était décidé par l’université de Coïmbre que le\nspectacle de quelques personnes brûlées à petit feu, en grande\ncérémonie, est un secret infaillible pour empêcher la terre de\ntrembler.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00001-l0006",
+          "start": 41,
+          "end": 48,
+          "english": "fourths",
+          "target": "quarts",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4268-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00001-l0013",
+          "start": 78,
+          "end": 85,
+          "english": "country",
+          "target": "pays",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3270-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00001-l0019",
+          "start": 128,
+          "end": 135,
+          "english": "prevent",
+          "target": "prévenir",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6514-sense-0",
+              "checked-6-p00001-l0019"
+            ],
+            "evidence": [
+              {
+                "id": "checked-6-p00001-l0019",
+                "link_id": "p00001-l0019",
+                "en": "prevent",
+                "fr": [
+                  "prévenir"
+                ],
+                "kind": "verb",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-6514-sense-0"
+                ],
+                "note": "Both infinitives mean avert the total ruin following the earthquake; prévenir is not used in the warn sense here."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00001-l0020",
+          "start": 142,
+          "end": 146,
+          "english": "ruin",
+          "target": "ruine",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7078-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00001-l0023",
+          "start": 155,
+          "end": 159,
+          "english": "give",
+          "target": "donner",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4430-sense-1",
+              "checked-6-p00001-l0023"
+            ],
+            "evidence": [
+              {
+                "id": "checked-6-p00001-l0023",
+                "link_id": "p00001-l0023",
+                "en": "give",
+                "fr": [
+                  "donner"
+                ],
+                "kind": "verb",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-4430-sense-1"
+                ],
+                "note": "Both infinitives describe giving the people an auto-da-fé. The same giver and recipients are understood."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00001-l0050",
+          "start": 303,
+          "end": 307,
+          "english": "fire",
+          "target": "feu",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4133-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00001-l0053",
+          "start": 318,
+          "end": 323,
+          "english": "great",
+          "target": "grande",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4548-sense-1",
+              "checked-6-p00001-l0053"
+            ],
+            "evidence": [
+              {
+                "id": "checked-6-p00001-l0053",
+                "link_id": "p00001-l0053",
+                "en": "great",
+                "fr": [
+                  "grand"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-4548-sense-1"
+                ],
+                "note": "Both qualify the ceremony as great/grand; the French feminine form agrees with cérémonie in its source."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00001-l0054",
+          "start": 324,
+          "end": 332,
+          "english": "ceremony",
+          "target": "cérémonie",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2855-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00001-l0063",
+          "start": 372,
+          "end": 377,
+          "english": "earth",
+          "target": "terre",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3769-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00002",
+      "text": "In consequence hereof, they had seized on a Biscayner, convicted of\nhaving married his godmother, and on two Portuguese, for rejecting the\nbacon which larded a chicken they were eating[7]; after dinner, they\ncame and secured Dr. Pangloss, and his disciple Candide, the one for\nspeaking his mind, the other for having listened with an air of\napprobation. They were conducted to separate apartments, extremely cold,\nas they were never incommoded by the sun. Eight days after they were\ndressed in _san-benitos_[8] and their heads ornamented with paper\nmitres. The mitre and _san-benito_ belonging to Candide were painted\nwith reversed flames and with devils that had neither tails nor claws;\nbut Pangloss's devils had claws and tails and the flames were upright.",
+      "translation": "On avait en conséquence saisi un Biscayen convaincu d’avoir épousé sa\ncommère, et deux Portugais qui en mangeant un poulet en avaient arraché\nle lard: on vint lier après le dîner le docteur Pangloss et son\ndisciple Candide, l’un pour avoir parlé, et l’autre pour l’avoir écouté\navec un air d’approbation: tous deux furent menés séparément dans des\nappartements d’une extrême fraîcheur, dans lesquels on n’était jamais\nincommodé du soleil: huit jours après ils furent tous deux revêtus d’un\nsan-benito, et on orna leurs têtes de mitres de papier: la mitre et le\nsan-benito de Candide étaient peints de flammes renversées, et de\ndiables qui n’avaient ni queues ni griffes; mais les diables de\nPangloss portaient griffes et queues, et les flammes étaient droites.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00003",
+      "text": "They marched in procession thus habited and heard a very pathetic\nsermon, followed by fine church music.",
+      "translation": "Ils marchèrent en procession ainsi vêtus, et entendirent un sermon très\npathétique, suivi d’une belle musique en faux-bourdon.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00004",
+      "text": "Candide was whipped in cadence\nwhile they were singing; the Biscayner, and the two men who had refused\nto eat bacon, were burnt; and Pangloss was hanged, though that was not\nthe custom.",
+      "translation": "Candide fut\nfessé en cadence, pendant qu’on chantait; le Biscayen et les deux\nhommes qui n’avaient point voulu manger de lard furent brûlés, et\nPangloss fut pendu, quoique ce ne soit pas la coutume.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00004-l0015",
+          "start": 83,
+          "end": 86,
+          "english": "men",
+          "target": "hommes",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0021",
+          "start": 110,
+          "end": 115,
+          "english": "bacon",
+          "target": "lard",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2208-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0034",
+          "start": 178,
+          "end": 184,
+          "english": "custom",
+          "target": "coutume",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3370-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "id": "p00004-sentence",
+          "start": 0,
+          "end": 185,
+          "english": "Candide was whipped in cadence\nwhile they were singing; the Biscayner, and the two men who had refused\nto eat bacon, were burnt; and Pangloss was hanged, though that was not\nthe custom.",
+          "target": "Candide fut\nfessé en cadence, pendant qu’on chantait; le Biscayen et les deux\nhommes qui n’avaient point voulu manger de lard furent brûlés, et\nPangloss fut pendu, quoique ce ne soit pas la coutume.",
+          "stage": 4,
+          "kind": "sentence",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "evidence": [
+              {
+                "id": "checked-6-p00004-sentence",
+                "passage_id": "p00004",
+                "en_sentence_ids": [
+                  "en-s007"
+                ],
+                "fr_sentence_ids": [
+                  "fr-s004"
+                ],
+                "source_text": "Candide was whipped in cadence\nwhile they were singing; the Biscayner, and the two men who had refused\nto eat bacon, were burnt; and Pangloss was hanged, though that was not\nthe custom.",
+                "target_text": "Candide fut\nfessé en cadence, pendant qu’on chantait; le Biscayen et les deux\nhommes qui n’avaient point voulu manger de lard furent brûlés, et\nPangloss fut pendu, quoique ce ne soit pas la coutume.",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://www.gutenberg.org/ebooks/4650",
+                "note": "Both report Candide being whipped during singing, the Biscayner and Portuguese men being burnt, and Pangloss being hanged contrary to custom."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p00005",
+      "text": "The same day the earth sustained a most violent concussion.",
+      "translation": "Le même jour la\nterre trembla de nouveau avec un fracas épouvantable.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00005-l0002",
+          "start": 9,
+          "end": 12,
+          "english": "day",
+          "target": "jour",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3412-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00005-l0004",
+          "start": 17,
+          "end": 22,
+          "english": "earth",
+          "target": "terre",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3769-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00006",
+      "text": "Candide, terrified, amazed, desperate, all bloody, all palpitating, said\nto himself:\n\n\"If this is the best of possible worlds, what then are the others?",
+      "translation": "Candide épouvanté, interdit, éperdu, tout sanglant, tout palpitant, se\ndisait à lui-même: Si c’est ici le meilleur des mondes possibles, que\nsont donc les autres?",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00006-l0022",
+          "start": 110,
+          "end": 118,
+          "english": "possible",
+          "target": "possibles",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6443-sense-0",
+              "checked-6-p00006-l0022"
+            ],
+            "evidence": [
+              {
+                "id": "checked-6-p00006-l0022",
+                "link_id": "p00006-l0022",
+                "en": "possible",
+                "fr": [
+                  "possible"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-6443-sense-0"
+                ],
+                "note": "Both qualify worlds as possible. French plural possibles is kept from the source."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00006-l0023",
+          "start": 119,
+          "end": 125,
+          "english": "worlds",
+          "target": "mondes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00007",
+      "text": "Well,\nif I had been only whipped I could put up with it, for I experienced\nthat among the Bulgarians; but oh, my dear Pangloss!",
+      "translation": "passe encore si je n’étais que fessé, je l’ai été\nchez les Bulgares; mais, ô mon cher Pangloss!",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00007-l0015",
+          "start": 113,
+          "end": 117,
+          "english": "dear",
+          "target": "cher",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3424-sense-0",
+              "checked-6-p00007-l0015"
+            ],
+            "evidence": [
+              {
+                "id": "checked-6-p00007-l0015",
+                "link_id": "p00007-l0015",
+                "en": "dear",
+                "fr": [
+                  "cher"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-3424-sense-0"
+                ],
+                "note": "Both directly address Pangloss as dear, with masculine cher in the source."
+              }
+            ],
+            "min_stage": 3
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00008",
+      "text": "thou greatest of\nphilosophers, that I should have seen you hanged, without knowing for\nwhat!",
+      "translation": "le plus grand des\nphilosophes, faut-il vous avoir vu pendre, sans que je sache pourquoi!",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00009",
+      "text": "Oh, my dear Anabaptist, thou best of men, that thou should'st have\nbeen drowned in the very harbour!",
+      "translation": "ô mon cher anabaptiste! le meilleur des hommes, faut-il que vous ayez\nété noyé dans le port!",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00009-l0002",
+          "start": 7,
+          "end": 11,
+          "english": "dear",
+          "target": "cher",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3424-sense-0",
+              "checked-6-p00009-l0002"
+            ],
+            "evidence": [
+              {
+                "id": "checked-6-p00009-l0002",
+                "link_id": "p00009-l0002",
+                "en": "dear",
+                "fr": [
+                  "cher"
+                ],
+                "kind": "adjective",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-3424-sense-0"
+                ],
+                "note": "Both directly address the Anabaptist as dear; this is a separate occurrence from Pangloss."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00009-l0007",
+          "start": 37,
+          "end": 40,
+          "english": "men",
+          "target": "hommes",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00009-l0017",
+          "start": 92,
+          "end": 99,
+          "english": "harbour",
+          "target": "port",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4642-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00010",
+      "text": "Oh, Miss Cunegonde, thou pearl of\ngirls! that thou should'st have had thy belly ripped open!\"",
+      "translation": "ô mademoiselle Cunégonde! la perle des filles,\nfaut-il qu’on vous ait fendu le ventre!",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00011",
+      "text": "Thus he was musing, scarce able to stand, preached at, whipped,\nabsolved, and blessed, when an old woman accosted him saying:\n\n\"My son, take courage and follow me.\"",
+      "translation": "Il s’en retournait, se soutenant à peine, prêché, fessé, absous, et\nbéni, lorsqu’une vieille l’aborda, et lui dit: Mon fils, prenez\ncourage, suivez-moi.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00011-l0020",
+          "start": 131,
+          "end": 134,
+          "english": "son",
+          "target": "fils",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7519-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    }
+  ]
+}

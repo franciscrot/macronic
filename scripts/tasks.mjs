@@ -1,3 +1,4 @@
+import { candideBook } from "./candide-book.mjs";
 import { readFile, writeFile, mkdir, rm, cp, readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
@@ -7,6 +8,7 @@ import {
   validateCorrections,
   makeReader,
   canonical,
+  withSupplement,
 } from "../src/shared/data.js";
 export const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -43,7 +45,11 @@ export async function load() {
     throw new Error("Inference inputs changed; rerun preparation");
   const corrections = await json("data/reviewed/corrections.json");
   validateCorrections(data, corrections);
-  const dictionary = await json("data/evidence/dictionary.json"),
+  const dictionary = withSupplement(
+      data,
+      await json("data/evidence/dictionary.json"),
+      await json("data/evidence/supplement.json"),
+    ),
     policy = await json("data/evidence/policy.json");
   const sources = await json("data/sources/provenance.json");
   for (const s of sources.sources)
@@ -91,16 +97,22 @@ export async function releaseFingerprint(d) {
   const files = [
     "src/shared/data.js",
     "src/shared/render.js",
+    "src/shared/progression.js",
+    "src/shared/sections.js",
+    "src/shared/recaps.js",
     "src/shared/style.css",
     "src/reader/index.html",
     "src/reader/reader.js",
     "scripts/tasks.mjs",
+    "scripts/candide-book.mjs",
+    "scripts/project.mjs",
   ];
   const code = await Promise.all(
     files.map(async (p) => [p, hash(await readFile(path.join(root, p)))]),
   );
   return hash(
     canonical({
+      book: await candideBook(),
       data: d.data.fingerprint,
       corrections: d.corrections,
       dictionary: d.dictionary,
@@ -126,6 +138,7 @@ export async function releaseCheck() {
 }
 export async function build() {
   await generate();
+  await candideBook();
   await rm(path.join(root, "dist"), { recursive: true, force: true });
   await mkdir(path.join(root, "dist/prototype"), { recursive: true });
   for (const f of [
@@ -139,8 +152,11 @@ export async function build() {
   for (const [source, target] of [
     ["src/reader/index.html", "prototype/index.html"],
     ["src/reader/reader.js", "prototype/reader.js"],
+    ["src/guide/index.html", "prototype/guide.html"],
+    ["src/guide", "prototype/guide"],
+    ["src/prepare", "prototype/prepare"],
     ["src/shared", "prototype/shared"],
-    ["data/reader/reader.json", "prototype/reader.json"],
+    ["data/reader/book.json", "prototype/reader.json"],
   ])
     await cp(path.join(root, source), path.join(root, "dist", target), {
       recursive: true,

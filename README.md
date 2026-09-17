@@ -1,6 +1,6 @@
 # Macronic: Bertalign-led reader prototype
 
-A precision-first English/French Candide reader with a local correction workshop. Bertalign establishes passage correspondences; SimAlign proposes occurrence-level word links. Conservative linguistic and dictionary checks select isolated noun substitutions. Unresolved links remain English. Models run offline during preparation; the browser serves static JSON and makes no model or API requests.
+A precision-first English/French Candide reader with a local correction workshop. Bertalign establishes passage correspondences; SimAlign proposes occurrence-level word links. Conservative linguistic and dictionary checks select isolated nouns and occurrence-checked adjectives and simple infinitive verbs. Unresolved links remain English. Models run offline during preparation; the browser serves static JSON and makes no model or API requests.
 
 ## Try it
 
@@ -14,11 +14,13 @@ npm run dev
 
 Open http://127.0.0.1:4173/src/reader/ or http://127.0.0.1:4173/src/review/ for the workshop. `npm run preview` serves the built project at http://127.0.0.1:4173/macronic/prototype/.
 
-The original app remains at the project root. The prototype has three nested stages, exact English source slices, and English glosses on hover, focus or tap; Escape closes a gloss.
+The original app remains at the project root. The prototype has six language-aware levels, exact English source slices, and English glosses on hover, focus or tap; Escape closes a gloss.
+
+The built reader now contains Chapters I–VI: about 4,500 English words in 25 contextual sections. Chapters V and VI add noun-led vocabulary, eight checked adjective occurrences, four checked infinitives, and two checked whole sentences. Use the chapter selector or continuous Back/Next navigation.
 
 ## Actual output and limits
 
-Chapter I produces 24 Bertalign passage groups and 746 SimAlign word links. The noun pilot admits 50 chapter insertions and 15 across the first ten demo passages. The policy requires compatible noun/number annotations, dictionary lemma support, distinct noncompeting occurrence links, simple nonidentical words, and an eligible passage. Phrase links remain inspectable but cannot become single-word replacements. Dictionary evidence corroborates model links; it never invents them or projects unmatched words.
+Chapter I produces 24 Bertalign passage groups and 746 SimAlign word links. The current pilot admits 67 word insertions and one checked whole-sentence replacement across all 24 passage groups, displayed across four contextual reading sections. The baseline noun policy requires compatible noun/number annotations, dictionary lemma support, distinct noncompeting occurrence links, simple nonidentical words, and an eligible passage. Phrase links remain inspectable but cannot become single-word replacements. Dictionary evidence corroborates model links; it never invents them or projects unmatched words.
 
 `data/evidence/evaluation.json` compares the output against an AI-authored diagnostic reference: 24/24 passage groups and 36 selected word cases. This reference was written after inspecting model output. It is neither held out nor independent human evaluation; its scores do not establish corpus accuracy. The similarity threshold 0.70 is an uncalibrated pilot setting, not a probability. Human correction time and release review remain unmeasured/pending.
 
@@ -39,12 +41,12 @@ Commit the correction file and generated reader in a PR. Boundary changes also r
 
 ## Reproduce model preparation
 
-Use Python 3.12 on a CPU machine with several GB of available memory and disk. Python inference dependencies are separate from the static reader and CI tests.
+Use Python 3.12 on a Linux CPU machine (or Windows WSL) with several GB of available memory and disk. Python inference dependencies are separate from the static reader and CI tests.
 
 ```sh
 python3.12 -m venv .venv
 . .venv/bin/activate
-pip install --extra-index-url https://download.pytorch.org/whl/cpu -r pipeline/requirements.lock.txt
+pip install --extra-index-url https://download.pytorch.org/whl/cpu -r pipeline/project-requirements.lock.txt
 export HF_HOME="$PWD/.cache/huggingface"
 python -m pipeline.download_models
 python -m pipeline.prepare
@@ -73,3 +75,47 @@ Pages uploads only `dist`, containing the legacy app and the generated reader. T
 English: Project Gutenberg 19942, Boni and Liveright 1918, introduction Philip Littell; translator unspecified in the ebook. French: Gutenberg 4650. Full downloaded notices and source hashes are retained. Narrative extraction normalizes line endings and omits standalone editorial-note paragraphs while retaining wording and embedded note markers.
 
 The relevant FreeDict English–French TEI entries and original header are preserved in `data/evidence/freedict-subset.tei`; evidence records source commit/version/license. FreeDict is GPL-2.0-or-later. Bertalign and its Python integration are GPL-3.0 (see `pipeline/vendor/BERTALIGN_LICENSE`). New browser/build/test code is MIT under `LICENSE-PROTOTYPE`; no relicensing of legacy files or third-party models/data is implied. Model usage remains subject to each model's own license.
+
+## Whole-chapter review and reading workflow
+
+The reader includes all of Chapter I in four reading sections of 176–216 English words, retaining paragraph breaks. The 24 alignment groups remain available independently in the workshop; they are not reader pages. Fixed bottom Back/Next controls remain available on phone screens. The six levels are English, A little French, More French, Even more French, So much French and French. Their word-insertion counts across the chapter are 0, 17, 56, 65, 67 and full French source text respectively. So much also replaces passage 18 with its complete French sentence. This deliberately starts with one checked sentence in the chapter, not an automatic sentence in every passage.
+
+The discreet gradual-progression checkbox is on by default. Starting at A little French, the level rises on sections 5, 10 and 16, then stays at So much. English lasts 3 sections, A little 4, More 5 and Even more 6. Revisiting passages does not earn extra increments. Changing level or toggling progression starts a fresh interval for the selected level. Full French is always an explicit choice. Progress currently lasts for the browser session.
+
+`data/evidence/supplement.json` records occurrence IDs, source URLs, contextual reasons and AI check origin. Nine explicitly checked positive-degree adjective occurrences enter at level 3, and two additional nouns at level 4; the original six supplemental nouns remain at level 2. The adjective exception does not globally enable adjectives or relax conflict, passage or exact-occurrence checks. English adjectives do not mark number; their French forms are checked in their particular context. The whole-sentence record requires exact text and a clean one-to-one sentence group. Changed datasets require renewed supplemental checks; stale evidence fails validation. These are AI context checks, not independent human evaluation.
+
+The workshop is the authoring app. Export corrections saves editable amendments. Export reading file produces the whole chapter with effective corrections and per-insertion provenance. Exporting the reader does not save the correction file, and browser edits remain in-session until exported. Import corrections via the CLI to preserve them in Git.
+
+The separate reader accepts that exported JSON through Open a reading file. It validates ranges, approval/safety fields and stages, and needs no raw alignment data or Python dependencies. Imported files are untrusted text, rendered with DOM text nodes, and remain in the browser session. Schema checks establish structural validity, not independent linguistic quality or authenticity.
+
+This reading-file contract is the boundary for a future phone-native consumer app. Keep authoring, model execution and evidence review in the developer tool; implement offline file storage, reading position, touch interaction and reading preferences in the consumer app. No native phone app or automatic phrase substitutions are claimed in this phase.
+
+See [AUTHORING_WORKFLOW.md](AUTHORING_WORKFLOW.md) for the proposed two-text import and corpus workflow.
+
+
+## Prepare another text pair
+
+The reader links to a beginner's guide explaining hosting, local preparation, browser corrections and saving. Its maintained source is `src/guide/index.html`.
+
+After installing the Python model environment above:
+
+```sh
+python -m pipeline.project create english.txt french.txt --output corpus/my-book --title "My book" --english-edition "Unknown" --target-edition "Unknown" --target-language fr
+python -m pipeline.worker --projects corpus
+```
+
+Open http://127.0.0.1:8765/ on the computer running the worker to upload another pair, view job status, open completed projects and download backups. Files stay on that computer. The equivalent hosted page explains local setup; it cannot run Python. Add `--sources-only` to the create command to import without models, then use `python -m pipeline.project run corpus/my-book` later. Run `node scripts/project.mjs export corpus/my-book downloaded-corrections.json` to validate and persist exported workshop amendments and rebuild that project's reader. Original and normalized source hashes, ordered sentence coverage and correction fingerprints are checked.
+
+New projects reuse the limited lexical dictionary, but never Candide's occurrence-specific supplements. New adjectives and whole sentences require their own evidence or explicit editor decisions. Current preparation supports English/French only. Completed projects cannot be overwritten; create a new project to rerun models. Browser edits still need exporting; project backups include saved disk state only. Generic-project boundary recomputation remains a follow-up.
+
+Current verification includes project import, failed-job recovery, local HTTP handler validation, chapter export/correction round trips and stale-source rejection. Full model execution requires a suitably installed environment and was not rerun during this change. Browser automation was blocked by this session's socket restrictions.
+
+## Expanding the corpus locally
+
+The built reader combines projects listed in `corpus/candide.json`; the development reader retains Chapter I as a regression fixture. Each chapter keeps its own source hashes, model output, lexical evidence and amendments. `npm run build` validates each project, then creates the combined reading file. Reader sections stay within a chapter and keep roughly 170 words of context (long alignment groups may be larger).
+
+To prepare further chapters from the committed editions, run `python scripts/extract-candide-chapters.py 7 8`, then `python -m pipeline.project run corpus/candide-07` and the equivalent for Chapter VIII. Inspect and amend the outputs before adding them to the manifest. Extraction records exact ranges and omitted editorial notes; it does not guess correspondences.
+
+For another book, use the two-file preparation command or local worker described in the in-app guide. `python -m pipeline.download_models` now also downloads the pinned FreeDict source. New projects then extract a dictionary subset for their own vocabulary. The approved adjectives/verbs in Candide are **occurrence-specific AI context checks**, not rules that automatically approve the same word everywhere. New projects need their own checks, or named workshop amendments.
+
+Bertalign chooses sentence groups using LaBSE embeddings and ordered alignment; SimAlign proposes word links inside each group. spaCy morphology, dictionary support and structural checks filter those links. Simple nouns are the baseline. Selected positive-degree adjectives and infinitives enter higher levels. Finite verbs, participles, auxiliaries and phrasal verbs are excluded from the automatic verb extension. Whole sentences require a separate exact-text check. No probability of correctness is claimed, and independent human release review remains pending.
