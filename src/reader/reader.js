@@ -1,3 +1,4 @@
+import { WordRecaps } from "./shared/recaps.js";
 import { readingSections } from "./shared/sections.js";
 import { renderPassage } from "./shared/render.js";
 import {
@@ -16,7 +17,8 @@ const $ = (id) => document.getElementById(id),
   reading = $("reading");
 let data,
   sections,
-  state = newProgress();
+  state = newProgress(),
+  recaps = new WordRecaps();
 function install(bundle) {
   data = validateReader(bundle);
   sections = readingSections(data.passages);
@@ -34,6 +36,7 @@ function install(bundle) {
   });
   $("chapter-control").hidden = chapters.length < 2;
   state = newProgress();
+  recaps = new WordRecaps();
   data.languages ||= { base: "en", learning: "fr" };
   if (data.schema_version === 1) state.automatic = false;
   const labels =
@@ -74,6 +77,21 @@ function render() {
     } else paragraph.append(document.createTextNode(" "));
     renderPassage(paragraph, p, state.stage);
     previousParagraph = key;
+  }
+  const words = recaps.record(state.index, sections[state.index], state.stage);
+  $("word-recap").hidden = words.length === 0;
+  $("recap-words").replaceChildren();
+  for (const word of words) {
+    const row = document.createElement("div");
+    const english = document.createElement("dt"), target = document.createElement("dd");
+    english.textContent = word.english;
+    english.lang = data.languages.base;
+    english.dir = languageDirection(english.lang);
+    target.textContent = word.target;
+    target.lang = data.languages.learning;
+    target.dir = languageDirection(target.lang);
+    row.append(english, target);
+    $("recap-words").append(row);
   }
   const currentChapter = sections[state.index][0].chapter_id;
   const first = sections.findIndex((s) => s[0].chapter_id === currentChapter);
