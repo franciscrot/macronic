@@ -6,3 +6,7 @@ __pycache__/
 *.pyc
 playwright-report/
 test-results/
+
+corpus/*/src/
+corpus/*/preparation.log
+corpus/.macronic-*

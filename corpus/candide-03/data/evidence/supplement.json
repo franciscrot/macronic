@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "6fc8a26bdc3e3a2c15f414dd8cf27e7868cd3de70e31276c1d0ab3c50aa18d07",
+  "entries": [
+    {
+      "id": "checked-3-p00006-l0016",
+      "link_id": "p00006-l0016",
+      "en": "heroic",
+      "fr": [
+        "héroïque"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4729-sense-0"
+      ],
+      "note": "Both ironically describe the same butchery."
+    },
+    {
+      "id": "checked-3-p00013-l0017",
+      "link_id": "p00013-l0017",
+      "en": "rich",
+      "fr": [
+        "riche"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-6994-sense-0"
+      ],
+      "note": "Both are predicative descriptions of everybody in Holland."
+    },
+    {
+      "id": "checked-3-p00015-l0009",
+      "link_id": "p00015-l0009",
+      "en": "large",
+      "fr": [
+        "grand"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-5242-sense-0"
+      ],
+      "note": "Both describe the size of the assembly; grande agrees with assemblée."
+    },
+    {
+      "id": "checked-3-p00025-l0009",
+      "link_id": "p00025-l0009",
+      "en": "good",
+      "fr": [
+        "bon"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4479-sense-0"
+      ],
+      "note": "Both describe the Anabaptist James/Jacques."
+    },
+    {
+      "id": "checked-3-p00025-l0017",
+      "link_id": "p00025-l0017",
+      "en": "cruel",
+      "fr": [
+        "cruel"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-3329-sense-0"
+      ],
+      "note": "Both describe the treatment of Candide; cruelle agrees with manière."
+    },
+    {
+      "id": "checked-3-p00026-l0031",
+      "link_id": "p00026-l0031",
+      "en": "extreme",
+      "fr": [
+        "extrême"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-3997-sense-0"
+      ],
+      "note": "Both intensify the same generosity."
+    },
+    {
+      "id": "checked-3-p00026-l0041",
+      "link_id": "p00026-l0041",
+      "en": "black",
+      "fr": [
+        "noir"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-2508-sense-0"
+      ],
+      "note": "Both describe the same coat/manteau."
+    },
+    {
+      "id": "checked-3-p00027-l0025",
+      "link_id": "p00027-l0025",
+      "en": "black",
+      "fr": [
+        "noir"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-2508-sense-0"
+      ],
+      "note": "Both describe the beggar’s teeth; noires agrees with dents."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "checked-3-p00011-sentence",
+      "passage_id": "p00011",
+      "en_sentence_ids": [
+        "en-s011"
+      ],
+      "fr_sentence_ids": [
+        "fr-s011"
+      ],
+      "source_text": "Candide fled quickly to another village; it belonged to the Bulgarians;\nand the Abarian heroes had treated it in the same way.",
+      "target_text": "Candide s’enfuit au plus vite dans un autre village: il appartenait à\ndes Bulgares, et les héros abares l’avaient traité de même.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both describe flight to another village, its Bulgarian ownership and the same treatment by Abarian soldiers."
+    }
+  ]
+}

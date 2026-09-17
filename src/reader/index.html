@@ -12,10 +12,13 @@
   <body class="reader">
     <main>
       <header>
-        <div class="eyebrow">Macronic · A reading experiment</div>
-        <h1 id="title">Candide</h1>
+        <h1 class="reader-heading"><strong>Macronic · A reading experiment</strong> <span class="muted">· Current text: <span id="title">Candide</span></span></h1>
         <p id="subtitle" class="muted">English · French</p>
       </header>
+      <label id="chapter-control" hidden
+        >Chapter
+        <select id="chapter-select" aria-label="Chapter"></select
+      ></label>
       <nav id="levels" class="levels" aria-label="Reading level"></nav>
       <p id="status" class="status" role="status">Loading the text…</p>
       <article id="reading" class="reading" aria-label="Reading text"></article>
@@ -29,7 +32,8 @@
         >
         <p class="muted">
           <small
-            >One level every three new reading sections, up to “So much”. The
+            >Advance after 3 sections in English, 4 in “A little”, 5 in “More”,
+            and 6 in “Even more”, stopping at “So much”. The
             final language-only level is always your choice.</small
           >
         </p>

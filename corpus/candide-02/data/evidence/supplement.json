@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "0aaf0466c299d0d68e36c13430070bef46d1d0edd4d2b41edf7f60e333943530",
+  "entries": [
+    {
+      "id": "checked-2-p00021-l0015",
+      "link_id": "p00021-l0015",
+      "en": "great",
+      "fr": [
+        "grand"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4548-sense-1"
+      ],
+      "note": "Great talent and grand génie describe the same intellectual ability."
+    },
+    {
+      "id": "checked-2-p00021-l0030",
+      "link_id": "p00021-l0030",
+      "en": "young",
+      "fr": [
+        "jeune"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-8781-sense-0"
+      ],
+      "note": "Both modify the same young metaphysician, Candide."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "checked-2-p00014-sentence",
+      "passage_id": "p00014",
+      "en_sentence_ids": [
+        "en-s030"
+      ],
+      "fr_sentence_ids": [
+        "fr-s016"
+      ],
+      "source_text": "Candide, all stupefied, could not yet very well realise how he was a\nhero.",
+      "target_text": "Candide, tout stupéfait, ne démêlait pas encore trop bien comment il\nétait un héros.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both say that bewildered Candide cannot understand how he is a hero."
+    }
+  ]
+}

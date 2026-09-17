@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "languages": {
+    "en": [
+      {
+        "id": "en-s001",
+        "paragraph_id": "en-p00001",
+        "text": "There was never anything so gallant, so spruce, so brilliant, and so\nwell disposed as the two armies.",
+        "source_start": 0,
+        "source_end": 101
+      },
+      {
+        "id": "en-s002",
+        "paragraph_id": "en-p00001",
+        "text": "Trumpets, fifes, hautboys, drums, and\ncannon made music such as Hell itself had never heard.",
+        "source_start": 102,
+        "source_end": 194
+      },
+      {
+        "id": "en-s003",
+        "paragraph_id": "en-p00001",
+        "text": "The cannons first\nof all laid flat about six thousand men on each side; the muskets swept\naway from this best of worlds nine or ten thousand ruffians who infested\nits surface.",
+        "source_start": 195,
+        "source_end": 370
+      },
+      {
+        "id": "en-s004",
+        "paragraph_id": "en-p00001",
+        "text": "The bayonet was also a _sufficient reason_ for the death of\nseveral thousands.",
+        "source_start": 371,
+        "source_end": 449
+      },
+      {
+        "id": "en-s005",
+        "paragraph_id": "en-p00001",
+        "text": "The whole might amount to thirty thousand souls.",
+        "source_start": 450,
+        "source_end": 498
+      },
+      {
+        "id": "en-s006",
+        "paragraph_id": "en-p00001",
+        "text": "Candide, who trembled like a philosopher, hid himself as well as he\ncould during this heroic butchery.",
+        "source_start": 499,
+        "source_end": 601
+      },
+      {
+        "id": "en-s007",
+        "paragraph_id": "en-p00002",
+        "text": "At length, while the two kings were causing Te Deum to be sung each in\nhis own camp, Candide resolved to go and reason elsewhere on effects and\ncauses.",
+        "source_start": 603,
+        "source_end": 754
+      },
+      {
+        "id": "en-s008",
+        "paragraph_id": "en-p00002",
+        "text": "He passed over heaps of dead and dying, and first reached a\nneighbouring village; it was in cinders, it was an Abare village which\nthe Bulgarians had burnt according to the laws of war.",
+        "source_start": 755,
+        "source_end": 940
+      },
+      {
+        "id": "en-s009",
+        "paragraph_id": "en-p00002",
+        "text": "Here, old men\ncovered with wounds, beheld their wives, hugging their children to their\nbloody breasts, massacred before their faces; there, their daughters,\ndisembowelled and breathing their last after having satisfied the\nnatural wants of Bulgarian heroes; while others, half burnt in the\nflames, begged to be despatched.",
+        "source_start": 941,
+        "source_end": 1263
+      },
+      {
+        "id": "en-s010",
+        "paragraph_id": "en-p00002",
+        "text": "The earth was strewed with brains,\narms, and legs.",
+        "source_start": 1264,
+        "source_end": 1314
+      },
+      {
+        "id": "en-s011",
+        "paragraph_id": "en-p00003",
+        "text": "Candide fled quickly to another village; it belonged to the Bulgarians;\nand the Abarian heroes had treated it in the same way.",
+        "source_start": 1316,
+        "source_end": 1442
+      },
+      {
+        "id": "en-s012",
+        "paragraph_id": "en-p00003",
+        "text": "Candide, walking\nalways over palpitating limbs or across ruins, arrived at last beyond\nthe seat of war, with a few provisions in his knapsack, and Miss\nCunegonde always in his heart.",
+        "source_start": 1443,
+        "source_end": 1625
+      },
+      {
+        "id": "en-s013",
+        "paragraph_id": "en-p00003",
+        "text": "His provisions failed him when he arrived\nin Holland; but having heard that everybody was rich in that country,\nand that they were Christians, he did not doubt but he should meet with\nthe same treatment from them as he had met with in the Baron's castle,\nbefore Miss Cunegonde's bright eyes were the cause of his expulsion\nthence.",
+        "source_start": 1626,
+        "source_end": 1956
+      },
+      {
+        "id": "en-s014",
+        "paragraph_id": "en-p00004",
+        "text": "He asked alms of several grave-looking people, who all answered him,\nthat if he continued to follow this trade they would confine him to the\nhouse of correction, where he should be taught to get a living.",
+        "source_start": 1958,
+        "source_end": 2162
+      },
+      {
+        "id": "en-s015",
+        "paragraph_id": "en-p00005",
+        "text": "The next he addressed was a man who had been haranguing a large assembly\nfor a whole hour on the subject of charity.",
+        "source_start": 2164,
+        "source_end": 2280
+      },
+      {
+        "id": "en-s016",
+        "paragraph_id": "en-p00005",
+        "text": "But the orator, looking\naskew, said:",
+        "source_start": 2281,
+        "source_end": 2317
+      },
+      {
+        "id": "en-s017",
+        "paragraph_id": "en-p00006",
+        "text": "\"What are you doing here?",
+        "source_start": 2319,
+        "source_end": 2344
+      },
+      {
+        "id": "en-s018",
+        "paragraph_id": "en-p00006",
+        "text": "Are you for the good cause?\"",
+        "source_start": 2345,
+        "source_end": 2373
+      },
+      {
+        "id": "en-s019",
+        "paragraph_id": "en-p00007",
+        "text": "\"There can be no effect without a cause,\" modestly answered Candide;\n\"the whole is necessarily concatenated and arranged for the best.",
+        "source_start": 2375,
+        "source_end": 2509
+      },
+      {
+        "id": "en-s020",
+        "paragraph_id": "en-p00007",
+        "text": "It was\nnecessary for me to have been banished from the presence of Miss\nCunegonde, to have afterwards run the gauntlet, and now it is necessary\nI should beg my bread until I learn to earn it; all this cannot be\notherwise.\"",
+        "source_start": 2510,
+        "source_end": 2732
+      },
+      {
+        "id": "en-s021",
+        "paragraph_id": "en-p00008",
+        "text": "\"My friend,\" said the orator to him, \"do you believe the Pope to be\nAnti-Christ?\"",
+        "source_start": 2734,
+        "source_end": 2815
+      },
+      {
+        "id": "en-s022",
+        "paragraph_id": "en-p00009",
+        "text": "\"I have not heard it,\" answered Candide; \"but whether he be, or whether\nhe be not, I want bread.\"",
+        "source_start": 2817,
+        "source_end": 2914
+      },
+      {
+        "id": "en-s023",
+        "paragraph_id": "en-p00010",
+        "text": "\"Thou dost not deserve to eat,\" said the other. \"",
+        "source_start": 2916,
+        "source_end": 2965
+      },
+      {
+        "id": "en-s024",
+        "paragraph_id": "en-p00010",
+        "text": "Begone, rogue; begone,\nwretch; do not come near me again.\"",
+        "source_start": 2965,
+        "source_end": 3023
+      },
+      {
+        "id": "en-s025",
+        "paragraph_id": "en-p00011",
+        "text": "The orator's wife, putting her head out of the window, and spying a man\nthat doubted whether the Pope was Anti-Christ, poured over him a\nfull.... Oh, heavens!",
+        "source_start": 3025,
+        "source_end": 3183
+      },
+      {
+        "id": "en-s026",
+        "paragraph_id": "en-p00011",
+        "text": "to what excess does religious zeal carry the\nladies.",
+        "source_start": 3184,
+        "source_end": 3236
+      },
+      {
+        "id": "en-s027",
+        "paragraph_id": "en-p00012",
+        "text": "A man who had never been christened, a good Anabaptist, named James,\nbeheld the cruel and ignominious treatment shown to one of his\nbrethren, an unfeathered biped with a rational soul, he took him home,\ncleaned him, gave him bread and beer, presented him with two florins,\nand even wished to teach him the manufacture of Persian stuffs which\nthey make in Holland.",
+        "source_start": 3238,
+        "source_end": 3601
+      },
+      {
+        "id": "en-s028",
+        "paragraph_id": "en-p00012",
+        "text": "Candide, almost prostrating himself before him,\ncried:",
+        "source_start": 3602,
+        "source_end": 3656
+      },
+      {
+        "id": "en-s029",
+        "paragraph_id": "en-p00013",
+        "text": "\"Master Pangloss has well said that all is for the best in this world,\nfor I am infinitely more touched by your extreme generosity than with\nthe inhumanity of that gentleman in the black coat and his lady.\"",
+        "source_start": 3658,
+        "source_end": 3864
+      },
+      {
+        "id": "en-s030",
+        "paragraph_id": "en-p00014",
+        "text": "The next day, as he took a walk, he met a beggar all covered with scabs,\nhis eyes diseased, the end of his nose eaten away, his mouth distorted,\nhis teeth black, choking in his throat, tormented with a violent cough,\nand spitting out a tooth at each effort.",
+        "source_start": 3866,
+        "source_end": 4123
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-s001",
+        "paragraph_id": "fr-p00001",
+        "text": "Rien n’était si beau, si leste, si brillant, si bien ordonné que les\ndeux armées.",
+        "source_start": 0,
+        "source_end": 81
+      },
+      {
+        "id": "fr-s002",
+        "paragraph_id": "fr-p00001",
+        "text": "Les trompettes, les fifres, les hautbois, les tambours,\nles canons; formaient une harmonie telle qu’il n’y en eut jamais en\nenfer.",
+        "source_start": 82,
+        "source_end": 212
+      },
+      {
+        "id": "fr-s003",
+        "paragraph_id": "fr-p00001",
+        "text": "Les canons renversèrent d’abord à peu près six mille hommes de\nchaque côté; ensuite la mousqueterie ôta du meilleur des mondes environ\nneuf à dix mille coquins qui en infectaient la surface.",
+        "source_start": 213,
+        "source_end": 403
+      },
+      {
+        "id": "fr-s004",
+        "paragraph_id": "fr-p00001",
+        "text": "La baïonnette\nfut aussi la raison suffisante de la mort de quelques milliers\nd’hommes.",
+        "source_start": 404,
+        "source_end": 490
+      },
+      {
+        "id": "fr-s005",
+        "paragraph_id": "fr-p00001",
+        "text": "Le tout pouvait bien se monter à une trentaine de mille âmes.",
+        "source_start": 491,
+        "source_end": 552
+      },
+      {
+        "id": "fr-s006",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide, qui tremblait comme un philosophe, se cacha du mieux qu’il put\npendant cette boucherie héroïque.",
+        "source_start": 553,
+        "source_end": 658
+      },
+      {
+        "id": "fr-s007",
+        "paragraph_id": "fr-p00002",
+        "text": "Enfin, tandis que les deux rois fesaient chanter des _Te Deum_, chacun\ndans son camp, il prit le parti d’aller raisonner ailleurs des effets\net des causes.",
+        "source_start": 660,
+        "source_end": 815
+      },
+      {
+        "id": "fr-s008",
+        "paragraph_id": "fr-p00002",
+        "text": "Il passa par-dessus des tas de morts et de mourants, et\ngagna d’abord un village voisin; il était en cendres: c’était un\nvillage abare que les Bulgares avaient brûlé, selon les lois du droit\npublic.",
+        "source_start": 816,
+        "source_end": 1014
+      },
+      {
+        "id": "fr-s009",
+        "paragraph_id": "fr-p00002",
+        "text": "Ici des vieillards criblés de coups regardaient mourir leurs\nfemmes égorgées, qui tenaient leurs enfants à leurs mamelles\nsanglantes; là des filles éventrées après avoir assouvi les besoins\nnaturels de quelques héros, rendaient les derniers soupirs; d’autres à\ndemi brûlées criaient qu’on achevât de leur donner la mort.",
+        "source_start": 1015,
+        "source_end": 1335
+      },
+      {
+        "id": "fr-s010",
+        "paragraph_id": "fr-p00002",
+        "text": "Des\ncervelles étaient répandues sur la terre à côté de bras et de jambes\ncoupés.",
+        "source_start": 1336,
+        "source_end": 1416
+      },
+      {
+        "id": "fr-s011",
+        "paragraph_id": "fr-p00003",
+        "text": "Candide s’enfuit au plus vite dans un autre village: il appartenait à\ndes Bulgares, et les héros abares l’avaient traité de même.",
+        "source_start": 1418,
+        "source_end": 1547
+      },
+      {
+        "id": "fr-s012",
+        "paragraph_id": "fr-p00003",
+        "text": "Candide,\ntoujours marchant sur des membres palpitants ou à travers des ruines,\narriva enfin hors du théâtre de la guerre, portant quelques petites\nprovisions dans son bissac, et n’oubliant jamais mademoiselle\nCunégonde.",
+        "source_start": 1548,
+        "source_end": 1767
+      },
+      {
+        "id": "fr-s013",
+        "paragraph_id": "fr-p00003",
+        "text": "Ses provisions lui manquèrent quand il fut en Hollande; mais\nayant entendu dire que tout le monde était riche dans ce pays-là, et\nqu’on y était chrétien, il ne douta pas qu’on ne le traitât aussi bien\nqu’il l’avait été dans le château de M. le baron, avant qu’il en eût\nété chassé pour les beaux yeux de mademoiselle Cunégonde.",
+        "source_start": 1768,
+        "source_end": 2095
+      },
+      {
+        "id": "fr-s014",
+        "paragraph_id": "fr-p00004",
+        "text": "Il demanda l’aumône à plusieurs graves personnages, qui lui répondirent\ntous que, s’il continuait à faire ce métier, on l’enfermerait dans une\nmaison de correction pour lui apprendre à vivre.",
+        "source_start": 2097,
+        "source_end": 2288
+      },
+      {
+        "id": "fr-s015",
+        "paragraph_id": "fr-p00005",
+        "text": "Il s’adressa ensuite à un homme qui venait de parler tout seul une\nheure de suite sur la charité dans une grande assemblée.",
+        "source_start": 2290,
+        "source_end": 2413
+      },
+      {
+        "id": "fr-s016",
+        "paragraph_id": "fr-p00005",
+        "text": "Cet orateur le\nregardant de travers lui dit: Que venez-vous faire ici?",
+        "source_start": 2414,
+        "source_end": 2484
+      },
+      {
+        "id": "fr-s017",
+        "paragraph_id": "fr-p00005",
+        "text": "y êtes-vous\npour la bonne cause?",
+        "source_start": 2485,
+        "source_end": 2517
+      },
+      {
+        "id": "fr-s018",
+        "paragraph_id": "fr-p00005",
+        "text": "Il n’y a point d’effet sans cause, répondit\nmodestement Candide; tout est enchaîné nécessairement et arrangé pour\nle mieux.",
+        "source_start": 2518,
+        "source_end": 2641
+      },
+      {
+        "id": "fr-s019",
+        "paragraph_id": "fr-p00005",
+        "text": "Il a fallu que je fusse chassé d’auprès de mademoiselle\nCunégonde, que j’aie passé par les baguettes, et il faut que je demande\nmon pain, jusqu’à ce que je puisse en gagner; tout cela ne pouvait être\nautrement.",
+        "source_start": 2642,
+        "source_end": 2852
+      },
+      {
+        "id": "fr-s020",
+        "paragraph_id": "fr-p00005",
+        "text": "Mon ami, lui dit l’orateur, croyez-vous que le pape soit\nl’antechrist?",
+        "source_start": 2853,
+        "source_end": 2923
+      },
+      {
+        "id": "fr-s021",
+        "paragraph_id": "fr-p00005",
+        "text": "Je ne l’avais pas encore entendu dire, répondit Candide:\nmais qu’il le soit, ou qu’il ne le soit pas, je manque de pain.",
+        "source_start": 2924,
+        "source_end": 3044
+      },
+      {
+        "id": "fr-s022",
+        "paragraph_id": "fr-p00005",
+        "text": "Tu ne\nmérites pas d’en manger, dit l’autre: va, coquin, va, misérable, ne\nm’approche de ta vie.",
+        "source_start": 3045,
+        "source_end": 3140
+      },
+      {
+        "id": "fr-s023",
+        "paragraph_id": "fr-p00005",
+        "text": "La femme de l’orateur ayant mis la tête à la\nfenêtre, et avisant un homme qui doutait que le pape fût antechrist,\nlui répandit sur le chef un plein….. O ciel!",
+        "source_start": 3141,
+        "source_end": 3299
+      },
+      {
+        "id": "fr-s024",
+        "paragraph_id": "fr-p00005",
+        "text": "à quel excès se porte le\nzèle de la religion dans les dames!",
+        "source_start": 3300,
+        "source_end": 3360
+      },
+      {
+        "id": "fr-s025",
+        "paragraph_id": "fr-p00006",
+        "text": "Un homme qui n’avait point été baptisé, un bon anabaptiste, nommé\nJacques, vit la manière cruelle et ignominieuse dont on traitait ainsi\nun de ses frères, un être à deux pieds sans plumes, qui avait une âme;\nil l’amena chez lui, le nettoya, lui donna du pain et de la bière, lui\nfit présent de deux florins, et voulut même lui apprendre à travailler\ndans ses manufactures aux étoffes de Perse qu’on fabrique en Hollande.",
+        "source_start": 3362,
+        "source_end": 3782
+      },
+      {
+        "id": "fr-s026",
+        "paragraph_id": "fr-p00006",
+        "text": "Candide se prosternant presque devant lui, s’écriait: Maître Pangloss\nme l’avait bien dit que tout est au mieux dans ce monde, car je suis\ninfiniment plus touché de votre extrême générosité que de la dureté de\nce monsieur à manteau noir, et de madame son épouse.",
+        "source_start": 3783,
+        "source_end": 4045
+      },
+      {
+        "id": "fr-s027",
+        "paragraph_id": "fr-p00007",
+        "text": "Le lendemain, en se promenant, il rencontra un gueux tout couvert de\npustules, les yeux morts, le bout du nez rongé, la bouche de travers,\nles dents noires, et parlant de la gorge, tourmenté d’une toux\nviolente, et crachant une dent à chaque effort.",
+        "source_start": 4047,
+        "source_end": 4296
+      }
+    ]
+  }
+}

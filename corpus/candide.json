@@ -1,0 +1,19 @@
+{
+  "chapters": [
+    {
+      "id": "ii",
+      "title": "Chapter II",
+      "project": "corpus/candide-02"
+    },
+    {
+      "id": "iii",
+      "title": "Chapter III",
+      "project": "corpus/candide-03"
+    },
+    {
+      "id": "iv",
+      "title": "Chapter IV",
+      "project": "corpus/candide-04"
+    }
+  ]
+}

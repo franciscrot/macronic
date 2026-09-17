@@ -1,3 +1,4 @@
+import { candideBook } from "./candide-book.mjs";
 import { readFile, writeFile, mkdir, rm, cp, readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
@@ -102,12 +103,15 @@ export async function releaseFingerprint(d) {
     "src/reader/index.html",
     "src/reader/reader.js",
     "scripts/tasks.mjs",
+    "scripts/candide-book.mjs",
+    "scripts/project.mjs",
   ];
   const code = await Promise.all(
     files.map(async (p) => [p, hash(await readFile(path.join(root, p)))]),
   );
   return hash(
     canonical({
+      book: await candideBook(),
       data: d.data.fingerprint,
       corrections: d.corrections,
       dictionary: d.dictionary,
@@ -133,6 +137,7 @@ export async function releaseCheck() {
 }
 export async function build() {
   await generate();
+  await candideBook();
   await rm(path.join(root, "dist"), { recursive: true, force: true });
   await mkdir(path.join(root, "dist/prototype"), { recursive: true });
   for (const f of [
@@ -150,7 +155,7 @@ export async function build() {
     ["src/guide", "prototype/guide"],
     ["src/prepare", "prototype/prepare"],
     ["src/shared", "prototype/shared"],
-    ["data/reader/reader.json", "prototype/reader.json"],
+    ["data/reader/book.json", "prototype/reader.json"],
   ])
     await cp(path.join(root, source), path.join(root, "dist", target), {
       recursive: true,

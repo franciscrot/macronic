@@ -20,6 +20,19 @@ let data,
 function install(bundle) {
   data = validateReader(bundle);
   sections = readingSections(data.passages);
+  const chapters = sections.flatMap((s, i) =>
+    i === 0 || s[0].chapter_id !== sections[i - 1][0].chapter_id
+      ? [{ index: i, title: s[0].chapter_title || data.chapter }]
+      : [],
+  );
+  $("chapter-select").replaceChildren();
+  chapters.forEach((c) => {
+    const o = document.createElement("option");
+    o.value = c.index;
+    o.textContent = c.title;
+    $("chapter-select").append(o);
+  });
+  $("chapter-control").hidden = chapters.length < 2;
   state = newProgress();
   data.languages ||= { base: "en", learning: "fr" };
   if (data.schema_version === 1) state.automatic = false;
@@ -39,7 +52,8 @@ function install(bundle) {
   $("gradual").disabled = data.schema_version === 1;
   $("gradual-label").textContent =
     `Gradually add more ${languageName(data.languages.learning)} as you read more.`;
-  $("title").textContent = data.title || "Reader";
+  $("title").textContent = data.title || "Untitled";
+  document.title = `${data.title || "Reader"} · Macronic`;
   $("subtitle").textContent =
     `${languageName(data.languages.base)} · ${languageName(data.languages.learning)}`;
   $("status").classList.remove("error");
@@ -61,12 +75,18 @@ function render() {
     renderPassage(paragraph, p, state.stage);
     previousParagraph = key;
   }
+  const currentChapter = sections[state.index][0].chapter_id;
+  const first = sections.findIndex((s) => s[0].chapter_id === currentChapter);
+  const total = sections.filter(
+    (s) => s[0].chapter_id === currentChapter,
+  ).length;
+  $("chapter-select").value = String(first);
   $("page-status").textContent =
-    `Section ${state.index + 1} of ${sections.length}`;
+    `Section ${state.index - first + 1} of ${total}`;
   $("previous").disabled = state.index === 0;
   $("next").disabled = state.index === sections.length - 1;
   $("status").textContent =
-    `${data.chapter || ""} · ${(data.schema_version === 2 ? levelNames(data.languages) : data.stages)[state.stage]}${state.stage === 5 ? "" : " · Tap an insertion for its original meaning."}`;
+    `${sections[state.index][0].chapter_title || data.chapter || ""} · ${(data.schema_version === 2 ? levelNames(data.languages) : data.stages)[state.stage]}${state.stage === 5 ? "" : " · Tap an insertion for its original meaning."}`;
   $("levels")
     .querySelectorAll("button")
     .forEach((b) =>
@@ -90,6 +110,13 @@ for (const [id, delta] of [
     render();
     reading.scrollIntoView({ block: "start" });
   };
+$("chapter-select").onchange = () => {
+  const index = Number($("chapter-select").value);
+  state = { ...state, index, furthest: Math.max(state.furthest, index) };
+  state = chooseStage(state, state.stage);
+  render();
+  reading.scrollIntoView({ block: "start" });
+};
 $("gradual").onchange = () => {
   state = toggleProgress(state, $("gradual").checked);
   render();
