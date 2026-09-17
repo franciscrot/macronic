@@ -20,6 +20,7 @@ class ProjectTests(unittest.TestCase):
     def test_import_preserves_bytes_and_exact_normalized_offsets(self):
         p=self.create();self.assertEqual((p/'data/sources/en.original.txt').read_bytes(),self.en.read_bytes())
         text=verify_sources(p)['en'];self.assertEqual(text,'A sentence.\n\nAnother sentence.\n')
+        self.assertEqual(len(read_json(p/'data/samples/paragraphs.json')['languages']['en']),2)
         for paragraph in read_json(p/'data/samples/paragraphs.json')['languages']['en']:
             self.assertEqual(text[paragraph['source_start']:paragraph['source_end']],paragraph['text'])
         self.assertFalse((p/'data/candidates/dataset.json').exists())

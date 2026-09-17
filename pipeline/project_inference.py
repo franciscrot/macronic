@@ -79,4 +79,7 @@ def infer(project, texts, max_align):
     import shutil
     for f in ['dictionary.json','freedict-subset.tei','policy.json']:
         target=project/'data/evidence'/f;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/'data/evidence'/f,target)
+    if (ROOT/'.cache/eng-fra.tei').exists():
+        from .project_dictionary import extract
+        extract(project,ROOT/'.cache/eng-fra.tei')
     write_json(project/'data/evidence/supplement.json',{'schema_version':1,'base_fingerprint':dataset['fingerprint'],'entries':[],'sentences':[]})

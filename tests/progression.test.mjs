@@ -6,7 +6,7 @@ import {
   chooseStage,
   toggleProgress,
 } from "../src/shared/progression.js";
-test("progress rises at passages 4,7,10,13 and caps below full target", () => {
+test("English advances after 3, 4, 5 and 6 sections and caps below full target", () => {
   let s = chooseStage(newProgress(), 0);
   for (let i = 0; i < 24; i++) {
     s = moveProgress(s, i);
@@ -38,4 +38,12 @@ test("manual choices restart interval; explicit full target remains selected", (
   s = chooseStage(s, 5);
   s = moveProgress(s, 23);
   assert.equal(s.stage, 5);
+});
+
+test("default little French lasts four sections, then five and six", () => {
+  let s = newProgress();
+  for(let i=0;i<30;i++) {
+    s=moveProgress(s,i);
+    assert.equal(s.stage,i<4?1:i<9?2:i<15?3:4);
+  }
 });

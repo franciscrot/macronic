@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "pipeline_hash": "3608924d6d935b41cbc0d9c994fbc9db521521ea153a4016ac270104d7e6a21a",
+  "project_adapter_hash": "d49b8fd73c35d3b57405923b0c16e1387000a8fe10e26284cb19afcd75e3af52",
+  "models": {
+    "sentence-transformers/LaBSE": "836121a0533e5664b21c7aacc5d22951f2b8b25b",
+    "google-bert/bert-base-multilingual-cased": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8"
+  },
+  "spacy_models": {
+    "en": "en_core_web_sm",
+    "fr": "fr_core_news_sm"
+  },
+  "spacy_model_version": "3.8.0",
+  "max_align": 5,
+  "device": "cpu",
+  "threads": 4,
+  "simalign": {
+    "method": "inter",
+    "layer": 8,
+    "token_type": "bpe"
+  },
+  "source_provenance": {
+    "schema_version": 1,
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "494c9885f45a71e280b187de12a91ff604f7be854012249869acbea3f9b07a54",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "494c9885f45a71e280b187de12a91ff604f7be854012249869acbea3f9b07a54",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "f1ebddfd2fd6b8c0675b305ededfae372a2ce3fe5dde2b45df7429d9cbc93c30",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "f1ebddfd2fd6b8c0675b305ededfae372a2ce3fe5dde2b45df7429d9cbc93c30",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "seconds": 17.72
+}

@@ -14,6 +14,16 @@
       "id": "iv",
       "title": "Chapter IV",
       "project": "corpus/candide-04"
+    },
+    {
+      "id": "v",
+      "title": "Chapter V",
+      "project": "corpus/candide-05"
+    },
+    {
+      "id": "vi",
+      "title": "Chapter VI",
+      "project": "corpus/candide-06"
     }
   ]
 }

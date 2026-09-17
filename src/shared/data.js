@@ -303,13 +303,26 @@ export function assess(p, link, dictionary, policy) {
     en?.upos === "ADJ" &&
     fr?.upos === "ADJ" &&
     en?.morph?.Degree === "Pos";
+  // Begin with occurrence-checked infinitives. Finite verbs, auxiliaries,
+  // participles and phrasal verbs need a richer grammatical adapter.
+  const verbEvidence = dictionary.entries.find(
+    (e) => e.link_id === link.id && e.kind === "verb",
+  );
+  const checkedVerb = !!verbEvidence && verbEvidence.min_stage >= 3 &&
+    verbEvidence.dictionary_refs?.some(id => dictionary.entries.some(e =>
+      !e.link_id && e.id === id && e.en === en?.lemma && e.fr.includes(fr?.lemma))) &&
+    en?.upos === "VERB" && fr?.upos === "VERB" &&
+    en?.morph?.VerbForm === "Inf" && fr?.morph?.VerbForm === "Inf" &&
+    ![ [p.en.tokens, en], [p.fr.tokens, fr] ].some(([tokens, verb]) =>
+      tokens.some(t => t.head === verb.index &&
+        ((/^aux/.test(t.dep) && !(tokens === p.en.tokens && t.upos === "PART" && t.lemma === "to")) || ["prt", "compound:prt", "neg"].includes(t.dep) || t.morph?.Polarity === "Neg")));
   if (
-    (!policy.allowed_upos.includes(en?.upos) && !checkedAdjective) ||
+    (!policy.allowed_upos.includes(en?.upos) && !checkedAdjective && !checkedVerb) ||
     en?.upos !== fr?.upos
   )
     result.reasons.push("part_of_speech");
   if (
-    !checkedAdjective &&
+    !checkedAdjective && !checkedVerb &&
     (!en?.morph?.Number || en.morph.Number !== fr?.morph?.Number)
   )
     result.reasons.push("number");
@@ -332,6 +345,7 @@ export function assess(p, link, dictionary, policy) {
   result.evidence = evidence.filter((e) => e.link_id);
   result.min_stage = checkedAdjective
     ? adjectiveEvidence.min_stage
+    : checkedVerb ? verbEvidence.min_stage
     : evidence.length
       ? Math.min(...evidence.map((e) => e.min_stage || 1))
       : 1;

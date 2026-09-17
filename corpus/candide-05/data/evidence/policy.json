@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "six-level-infinitive-v4",
+  "calibration": "pilot; independent human evaluation pending",
+  "passage_similarity_min": 0.7,
+  "allowed_upos": [
+    "NOUN"
+  ],
+  "dictionary_required": true,
+  "max_stage": 5,
+  "note": "Baseline nouns at levels 1–2. Occurrence-checked positive adjectives and simple infinitives at levels 3–4 require contextual evidence. Verbs additionally require a referenced dictionary sense and matching infinitive annotations; finite verbs, participles, auxiliaries and phrasal constructions remain blocked. Checked full sentences at level 4; full target source at level 5, always manual.",
+  "automatic_stage_cap": 4
+}
