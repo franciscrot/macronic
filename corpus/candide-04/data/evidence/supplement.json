@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "6e80b1cfdffa833e1e522755f7e2230afa7f334849b3e39e3ae305cca8f11723",
+  "entries": [
+    {
+      "id": "checked-4-p00005-l0012",
+      "link_id": "p00005-l0012",
+      "en": "dear",
+      "fr": [
+        "cher"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-3424-sense-0"
+      ],
+      "note": "Both address Pangloss affectionately."
+    },
+    {
+      "id": "checked-4-p00007-l0003",
+      "link_id": "p00007-l0003",
+      "en": "dear",
+      "fr": [
+        "cher"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-3424-sense-0"
+      ],
+      "note": "Both modify master/maître in the same address."
+    },
+    {
+      "id": "checked-4-p00016-l0014",
+      "link_id": "p00016-l0014",
+      "en": "bad",
+      "fr": [
+        "mauvais"
+      ],
+      "kind": "adjective",
+      "min_stage": 3,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-2210-sense-0"
+      ],
+      "note": "Both describe the vinegar used to revive Candide."
+    },
+    {
+      "id": "checked-4-p00036-l0013",
+      "link_id": "p00036-l0013",
+      "en": "great",
+      "fr": [
+        "grand"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4548-sense-1"
+      ],
+      "note": "Both describe the size of the armies; grandes agrees with armées."
+    },
+    {
+      "id": "checked-4-p00036-l0017",
+      "link_id": "p00036-l0017",
+      "en": "honest",
+      "fr": [
+        "honnête"
+      ],
+      "kind": "adjective",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+      "dictionary_refs": [
+        "freedict-eng-fra-entry-4778-sense-0"
+      ],
+      "note": "Both describe the same hirelings/stipendiaires with the same irony."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "checked-4-p00041-sentence",
+      "passage_id": "p00041",
+      "en_sentence_ids": [
+        "en-s045"
+      ],
+      "fr_sentence_ids": [
+        "fr-s044"
+      ],
+      "source_text": "In the cure Pangloss lost only an eye and an ear.",
+      "target_text": "Pangloss, dans la cure, ne perdit qu’un oeil et une oreille.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-09-16",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both say that Pangloss lost only an eye and an ear during his cure; the qualification and both losses match."
+    }
+  ]
+}

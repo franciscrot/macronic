@@ -1,0 +1,1707 @@
+{
+  "schema_version": 2,
+  "base_fingerprint": "33a1fe7eb4dab320147d23a0e859e5ba16a2771845ebfef98dad943445a2b85c",
+  "title": "Candide",
+  "chapter": "Chapter V",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "six-level-infinitive-v4",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "33a1fe7eb4dab320147d23a0e859e5ba16a2771845ebfef98dad943445a2b85c",
+      "entries": [
+        {
+          "id": "checked-5-p00002-l0001",
+          "link_id": "p00002-l0001",
+          "en": "other",
+          "fr": [
+            "autre"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-6081-sense-0"
+          ],
+          "note": "Both qualify the other half of the passengers, contrasting with the first half."
+        },
+        {
+          "id": "checked-5-p00021-l0006",
+          "link_id": "p00021-l0006",
+          "en": "new",
+          "fr": [
+            "nouveau"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-5869-sense-0"
+          ],
+          "note": "Both qualify a thing as new; the negative remains in the surrounding English sentence."
+        },
+        {
+          "id": "checked-5-p00029-l0001",
+          "link_id": "p00029-l0001",
+          "en": "little",
+          "fr": [
+            "petit"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-5354-sense-0"
+          ],
+          "note": "Both describe the same little man, the Inquisition official."
+        },
+        {
+          "id": "checked-5-p00032-l0009",
+          "link_id": "p00032-l0009",
+          "en": "absolute",
+          "fr": [
+            "absolu"
+          ],
+          "kind": "adjective",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-1243-sense-0"
+          ],
+          "note": "Both qualify necessity as absolute in Pangloss’s philosophical claim."
+        },
+        {
+          "id": "checked-5-p00005-l0030",
+          "link_id": "p00005-l0030",
+          "en": "perish",
+          "fr": [
+            "périr"
+          ],
+          "kind": "verb",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-6268-sense-0"
+          ],
+          "note": "Both are simple infinitives referring to Jacques being left to die; no tense, auxiliary or negation is replaced."
+        },
+        {
+          "id": "checked-5-p00016-l0006",
+          "link_id": "p00016-l0006",
+          "en": "find",
+          "fr": [
+            "trouver"
+          ],
+          "kind": "verb",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-4124-sense-1"
+          ],
+          "note": "Both are infinitives of purpose: the sailor faces death in order to find money. The English to is retained."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "checked-5-p00025-sentence",
+          "passage_id": "p00025",
+          "en_sentence_ids": [
+            "en-s038"
+          ],
+          "fr_sentence_ids": [
+            "fr-s028"
+          ],
+          "source_text": "Candide fainted away, and Pangloss fetched him some water from a\nneighbouring fountain.",
+          "target_text": "Candide perdit\nconnaissance, et Pangloss lui apporta un peu d’eau d’une fontaine\nvoisine.",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-17",
+          "source": "https://www.gutenberg.org/ebooks/4650",
+          "note": "Both report Candide losing consciousness and Pangloss obtaining water for him from a nearby fountain."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "2e58f635eb1deef3ab71dca8aa7beb8693741c3c5cad47fba8ce0902377809b8",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "2e58f635eb1deef3ab71dca8aa7beb8693741c3c5cad47fba8ce0902377809b8",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "032f3fc011b0804c1d8801e6fe8a8a205d7ab4bf502c7698a78fef3405c17a7f",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "032f3fc011b0804c1d8801e6fe8a8a205d7ab4bf502c7698a78fef3405c17a7f",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "stages": [
+    "English",
+    "A little French",
+    "More French",
+    "Even more French",
+    "So much French",
+    "French"
+  ],
+  "passages": [
+    {
+      "id": "p00001",
+      "text": "Half dead of that inconceivable anguish which the rolling of a ship\nproduces, one-half of the passengers were not even sensible of the\ndanger.",
+      "translation": "La moitié des passagers affaiblis, expirants de ces angoisses\ninconcevables que le roulis d’un vaisseau porte dans les nerfs et dans\ntoutes les humeurs du corps agitées en sens contraires, n’avait pas\nmême la force de s’inquiéter du danger.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00002",
+      "text": "The other half shrieked and prayed. The sheets were rent, the\nmasts broken, the vessel gaped.",
+      "translation": "L’autre moitié jetait des cris\net fesait des prières; les voiles étaient déchirées, les mâts brisés,\nle vaisseau entr’ouvert.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00002-l0001",
+          "start": 4,
+          "end": 9,
+          "english": "other",
+          "target": "autre",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6081-sense-0",
+              "checked-5-p00002-l0001"
+            ],
+            "evidence": [
+              {
+                "id": "checked-5-p00002-l0001",
+                "link_id": "p00002-l0001",
+                "en": "other",
+                "fr": [
+                  "autre"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-6081-sense-0"
+                ],
+                "note": "Both qualify the other half of the passengers, contrasting with the first half."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00002-l0002",
+          "start": 10,
+          "end": 14,
+          "english": "half",
+          "target": "moitié",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4620-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00003",
+      "text": "Work who would, no one heard, no one\ncommanded.",
+      "translation": "Travaillait qui pouvait, personne ne\ns’entendait, personne ne commandait.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00004",
+      "text": "The Anabaptist being upon deck bore a hand; when a brutish\nsailor struck him roughly and laid him sprawling; but with the violence\nof the blow he himself tumbled head foremost overboard, and stuck upon a\npiece of the broken mast.",
+      "translation": "L’anabaptiste aidait un peu à la\nmanoeuvre; il était sur le tillac; un matelot furieux le frappe\nrudement et l’étend sur les planches; mais du coup qu’il lui donna, il\neut lui-même une si violente secousse, qu’il tomba hors du vaisseau, la\ntête la première. Il restait suspendu et accroché à une partie de mât\nrompu.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00004-l0021",
+          "start": 162,
+          "end": 166,
+          "english": "head",
+          "target": "tête",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4683-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0029",
+          "start": 204,
+          "end": 209,
+          "english": "piece",
+          "target": "partie",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6319-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0032",
+          "start": 224,
+          "end": 228,
+          "english": "mast",
+          "target": "mât",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5540-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00005",
+      "text": "Honest James ran to his assistance, hauled him\nup, and from the effort he made was precipitated into the sea in sight\nof the sailor, who left him to perish, without deigning to look at him.",
+      "translation": "Le bon Jacques court à son secours, l’aide à remonter, et de\nl’effort qu’il fait, il est précipité dans la mer à la vue du matelot,\nqui le laissa périr sans daigner seulement le regarder.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00005-l0023",
+          "start": 112,
+          "end": 117,
+          "english": "sight",
+          "target": "vue",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7368-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00005-l0030",
+          "start": 149,
+          "end": 155,
+          "english": "perish",
+          "target": "périr",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6268-sense-0",
+              "checked-5-p00005-l0030"
+            ],
+            "evidence": [
+              {
+                "id": "checked-5-p00005-l0030",
+                "link_id": "p00005-l0030",
+                "en": "perish",
+                "fr": [
+                  "périr"
+                ],
+                "kind": "verb",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-6268-sense-0"
+                ],
+                "note": "Both are simple infinitives referring to Jacques being left to die; no tense, auxiliary or negation is replaced."
+              }
+            ],
+            "min_stage": 3
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00006",
+      "text": "Candide drew near and saw his benefactor, who rose above the water one\nmoment and was then swallowed up for ever.",
+      "translation": "Candide\napproche, voit son bienfaiteur qui reparaît un moment, et qui est\nenglouti pour jamais.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00007",
+      "text": "He was just going to jump\nafter him, but was prevented by the philosopher Pangloss, who\ndemonstrated to him that the Bay of Lisbon had been made on purpose for\nthe Anabaptist to be drowned.",
+      "translation": "Il veut se jeter après lui dans la mer: le\nphilosophe Pangloss l’en empêche, en lui prouvant que la rade de\nLisbonne avait été formée exprès pour que cet anabaptiste s’y noyât.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00008",
+      "text": "While he was proving this _a priori_, the\nship foundered; all perished except Pangloss, Candide, and that brutal\nsailor who had drowned the good Anabaptist. The villain swam safely to\nthe shore, while Pangloss and Candide were borne thither upon a plank.",
+      "translation": "Tandis qu’il le prouvait _à priori_, le vaisseau s’entr’ouvre, tout\npérit à la réserve de Pangloss, de Candide, et de ce brutal de matelot\nqui avait noyé le vertueux anabaptiste; le coquin nagea heureusement\njusqu’au rivage, où Pangloss et Candide furent portés sur une planche.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00008-l0043",
+          "start": 248,
+          "end": 253,
+          "english": "plank",
+          "target": "planche",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6364-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00009",
+      "text": "As soon as they recovered themselves a little they walked toward Lisbon.\nThey had some money left, with which they hoped to save themselves from\nstarving, after they had escaped drowning.",
+      "translation": "Quand ils furent revenus un peu à eux, ils marchèrent vers Lisbonne; il\nleur restait quelque argent, avec lequel ils espéraient se sauver de la\nfaim après avoir échappé à la tempête.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00009-l0012",
+          "start": 87,
+          "end": 92,
+          "english": "money",
+          "target": "argent",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5684-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00010",
+      "text": "Scarcely had they reached the\ncity, lamenting the death of their benefactor, when they felt the earth\ntremble under their feet. The sea swelled and foamed in the harbour, and\nbeat to pieces the vessels riding at anchor.",
+      "translation": "A peine ont-ils mis le pied dans la ville, en pleurant la mort de leur\nbienfaiteur, qu’ils sentent la terre trembler sous leurs pas[1]; la mer\ns’élève en bouillonnant dans le port, et brise les vaisseaux qui sont à\nl’ancre.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00010-l0003",
+          "start": 30,
+          "end": 34,
+          "english": "city",
+          "target": "ville",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2968-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00010-l0007",
+          "start": 50,
+          "end": 55,
+          "english": "death",
+          "target": "mort",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3425-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00010-l0026",
+          "start": 162,
+          "end": 169,
+          "english": "harbour",
+          "target": "port",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4642-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00011",
+      "text": "Whirlwinds of fire and\nashes covered the streets and public places; houses fell, roofs were\nflung upon the pavements, and the pavements were scattered. Thirty\nthousand inhabitants of all ages and sexes were crushed under the\nruins.[4] The sailor, whistling and swearing, said there was booty to be\ngained here.",
+      "translation": "Des tourbillons de flammes et de cendres couvrent les rues et\nles places publiques; les maisons s’écroulent, les toits sont renversés\nsur les fondements, et les fondements se dispersent; trente mille\nhabitants de tout âge et de tout sexe sont écrasés sous des ruines. Le\nmatelot disait en sifflant et en jurant: il y aura quelque chose à\ngagner ici.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00012",
+      "text": "\"What can be the _sufficient reason_ of this phenomenon?\"",
+      "translation": "Quelle peut être la raison suffisante de ce phénomène?",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00012-l0004",
+          "start": 29,
+          "end": 35,
+          "english": "reason",
+          "target": "raison",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6786-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00012-l0007",
+          "start": 45,
+          "end": 55,
+          "english": "phenomenon",
+          "target": "phénomène",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6298-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00013",
+      "text": "said Pangloss.",
+      "translation": "disait Pangloss.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00014",
+      "text": "\"This is the Last Day!\"",
+      "translation": "Voici le dernier jour du monde!",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00014-l0004",
+          "start": 18,
+          "end": 21,
+          "english": "Day",
+          "target": "jour",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3412-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00015",
+      "text": "cried Candide.",
+      "translation": "s’écriait Candide.",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00016",
+      "text": "The sailor ran among the ruins, facing death to find money; finding it,\nhe took it, got drunk, and having slept himself sober, purchased the\nfavours of the first good-natured wench whom he met on the ruins of the\ndestroyed houses, and in the midst of the dying and the dead.",
+      "translation": "Le\nmatelot court incontinent au milieu des débris, affronte la mort pour\ntrouver de l’argent, en trouve, s’en empare, s’enivre, et ayant cuvé\nson vin, achète les faveurs de la première fille de bonne volonté qu’il\nrencontre sur les ruines des maisons détruites, et au milieu des\nmourants et des morts.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00016-l0004",
+          "start": 39,
+          "end": 44,
+          "english": "death",
+          "target": "mort",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3425-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00016-l0006",
+          "start": 48,
+          "end": 52,
+          "english": "find",
+          "target": "trouver",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4124-sense-1",
+              "checked-5-p00016-l0006"
+            ],
+            "evidence": [
+              {
+                "id": "checked-5-p00016-l0006",
+                "link_id": "p00016-l0006",
+                "en": "find",
+                "fr": [
+                  "trouver"
+                ],
+                "kind": "verb",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-4124-sense-1"
+                ],
+                "note": "Both are infinitives of purpose: the sailor faces death in order to find money. The English to is retained."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00016-l0007",
+          "start": 53,
+          "end": 58,
+          "english": "money",
+          "target": "argent",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5684-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00016-l0030",
+          "start": 200,
+          "end": 205,
+          "english": "ruins",
+          "target": "ruines",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7078-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00016-l0033",
+          "start": 223,
+          "end": 229,
+          "english": "houses",
+          "target": "maisons",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4816-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00017",
+      "text": "Pangloss\npulled him by the sleeve.\n\n\"My friend,\" said he, \"this is not right. You sin against the _universal\nreason_; you choose your time badly.\"",
+      "translation": "Pangloss le tirait cependant par la manche: Mon\nami, lui disait-il, cela n’est pas bien, vous manquez à la raison\nuniverselle, vous prenez mal votre temps.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00018",
+      "text": "\"S'blood and fury!\" answered the other; \"I am a sailor and born at\nBatavia. Four times have I trampled upon the crucifix in four voyages to\nJapan[5]; a fig for thy universal reason.\"",
+      "translation": "Tête et sang, répondit\nl’autre, je suis matelot et né à Batavia; j’ai marché quatre fois sur\nle crucifix dans quatre voyages au Japon[2]; tu as bien trouvé ton\nhomme avec ta raison universelle!",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00019",
+      "text": "Some falling stones had wounded Candide. He lay stretched in the street\ncovered with rubbish.",
+      "translation": "Quelques éclats de pierre avaient blessé Candide; il était étendu dans\nla rue et couvert de débris.",
+      "paragraph_id": "en-p00008",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00019-l0010",
+          "start": 65,
+          "end": 71,
+          "english": "street",
+          "target": "rue",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7738-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0013",
+          "start": 85,
+          "end": 92,
+          "english": "rubbish",
+          "target": "débris",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7071-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00020",
+      "text": "\"Alas!\" said he to Pangloss, \"get me a little wine and oil; I am dying.\"",
+      "translation": "Il disait à Pangloss: Hélas! procure-moi\nun peu de vin et d’huile; je me meurs.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00021",
+      "text": "\"This concussion of the earth is no new thing,\" answered Pangloss. \"The\ncity of Lima, in America, experienced the same convulsions last year;\nthe same cause, the same effects; there is certainly a train of sulphur\nunder ground from Lima to Lisbon.\"",
+      "translation": "Ce tremblement de terre n’est\npas une chose nouvelle, répondit Pangloss; la ville de Lima éprouva les\nmêmes secousses en Amérique l’année passée; mêmes causes, mêmes effets;\nil y a certainement une traînée de soufre sous terre depuis Lima\njusqu’à Lisbonne.",
+      "paragraph_id": "en-p00010",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00021-l0003",
+          "start": 24,
+          "end": 29,
+          "english": "earth",
+          "target": "terre",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3769-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0006",
+          "start": 36,
+          "end": 39,
+          "english": "new",
+          "target": "nouvelle",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5869-sense-0",
+              "checked-5-p00021-l0006"
+            ],
+            "evidence": [
+              {
+                "id": "checked-5-p00021-l0006",
+                "link_id": "p00021-l0006",
+                "en": "new",
+                "fr": [
+                  "nouveau"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-5869-sense-0"
+                ],
+                "note": "Both qualify a thing as new; the negative remains in the surrounding English sentence."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00021-l0007",
+          "start": 40,
+          "end": 45,
+          "english": "thing",
+          "target": "chose",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8070-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0012",
+          "start": 72,
+          "end": 76,
+          "english": "city",
+          "target": "ville",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2968-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0022",
+          "start": 136,
+          "end": 140,
+          "english": "year",
+          "target": "année",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8764-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0028",
+          "start": 167,
+          "end": 174,
+          "english": "effects",
+          "target": "effets",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3792-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0038",
+          "start": 220,
+          "end": 226,
+          "english": "ground",
+          "target": "terre",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4571-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00022",
+      "text": "\"Nothing more probable,\" said Candide; \"but for the love of God a little\noil and wine.\"",
+      "translation": "Rien n’est plus probable, dit Candide; mais, pour\nDieu, un peu d’huile et de vin.",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00022-l0012",
+          "start": 73,
+          "end": 76,
+          "english": "oil",
+          "target": "huile",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6003-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00022-l0014",
+          "start": 81,
+          "end": 85,
+          "english": "wine",
+          "target": "vin",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8674-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00023",
+      "text": "\"How, probable?\"",
+      "translation": "Comment probable?",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00024",
+      "text": "replied the philosopher. \"I maintain that the point is\ncapable of being demonstrated.\"",
+      "translation": "répliqua le\nphilosophe, je soutiens que la chose est démontrée.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00025",
+      "text": "Candide fainted away, and Pangloss fetched him some water from a\nneighbouring fountain.",
+      "translation": "Candide perdit\nconnaissance, et Pangloss lui apporta un peu d’eau d’une fontaine\nvoisine.",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00025-l0008",
+          "start": 52,
+          "end": 57,
+          "english": "water",
+          "target": "eau",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8564-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "id": "p00025-sentence",
+          "start": 0,
+          "end": 87,
+          "english": "Candide fainted away, and Pangloss fetched him some water from a\nneighbouring fountain.",
+          "target": "Candide perdit\nconnaissance, et Pangloss lui apporta un peu d’eau d’une fontaine\nvoisine.",
+          "stage": 4,
+          "kind": "sentence",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "evidence": [
+              {
+                "id": "checked-5-p00025-sentence",
+                "passage_id": "p00025",
+                "en_sentence_ids": [
+                  "en-s038"
+                ],
+                "fr_sentence_ids": [
+                  "fr-s028"
+                ],
+                "source_text": "Candide fainted away, and Pangloss fetched him some water from a\nneighbouring fountain.",
+                "target_text": "Candide perdit\nconnaissance, et Pangloss lui apporta un peu d’eau d’une fontaine\nvoisine.",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://www.gutenberg.org/ebooks/4650",
+                "note": "Both report Candide losing consciousness and Pangloss obtaining water for him from a nearby fountain."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p00026",
+      "text": "The following day they rummaged among the ruins\nand found provisions, with which they repaired their exhausted strength.",
+      "translation": "Le lendemain, ayant trouvé quelques provisions de bouche en se glissant\nà travers des décombres, ils réparèrent un peu leurs forces.",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00027",
+      "text": "After this they joined with others in relieving those inhabitants who\nhad escaped death.",
+      "translation": "Ensuite\nils travaillèrent comme les autres à soulager les habitants échappés à\nla mort.",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00027-l0009",
+          "start": 54,
+          "end": 65,
+          "english": "inhabitants",
+          "target": "habitants",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4973-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00027-l0011",
+          "start": 82,
+          "end": 87,
+          "english": "death",
+          "target": "mort",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3425-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00028",
+      "text": "Some, whom they had succoured, gave them as good a\ndinner as they could in such disastrous circumstances; true, the repast\nwas mournful, and the company moistened their bread with tears; but\nPangloss consoled them, assuring them that things could not be\notherwise.\n\n\"For,\" said he, \"all that is is for the best. If there is a volcano at\nLisbon it cannot be elsewhere. It is impossible that things should be\nother than they are; for everything is right.\"",
+      "translation": "Quelques citoyens, secourus par eux, leur donnèrent un aussi\nbon dîner qu’on le pouvait dans un tel désastre: il est vrai que le\nrepas était triste; les convives arrosaient leur pain de leurs larmes;\nmais Pangloss les consola, en les assurant que les choses ne pouvaient\nêtre autrement: Car, dit-il, tout ceci est ce qu’il y a de mieux; car\ns’il y a un volcan à Lisbonne, il ne pouvait être ailleurs; car il est\nimpossible que les choses ne soient pas où elles sont, car tout est\nbien.",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00029",
+      "text": "A little man dressed in black, Familiar of the Inquisition, who sat by\nhim, politely took up his word and said:\n\n\"Apparently, then, sir, you do not believe in original sin; for if all\nis for the best there has then been neither Fall nor punishment.\"",
+      "translation": "Un petit homme noir, familier de l’inquisition, lequel était à côté de\nlui, prit poliment la parole et dit: Apparemment que monsieur ne croit\npas au péché originel; car si tout est au mieux, il n’y a donc eu ni\nchute ni punition.",
+      "paragraph_id": "en-p00015",
+      "target_paragraph_id": "fr-p00006",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00029-l0001",
+          "start": 2,
+          "end": 8,
+          "english": "little",
+          "target": "petit",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5354-sense-0",
+              "checked-5-p00029-l0001"
+            ],
+            "evidence": [
+              {
+                "id": "checked-5-p00029-l0001",
+                "link_id": "p00029-l0001",
+                "en": "little",
+                "fr": [
+                  "petit"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-5354-sense-0"
+                ],
+                "note": "Both describe the same little man, the Inquisition official."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00029-l0002",
+          "start": 9,
+          "end": 12,
+          "english": "man",
+          "target": "homme",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00029-l0039",
+          "start": 228,
+          "end": 232,
+          "english": "Fall",
+          "target": "chute",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4022-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00029-l0041",
+          "start": 237,
+          "end": 247,
+          "english": "punishment",
+          "target": "punition",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6645-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00030",
+      "text": "\"I humbly ask your Excellency's pardon,\" answered Pangloss, still more\npolitely; \"for the Fall and curse of man necessarily entered into the\nsystem of the best of worlds.\"",
+      "translation": "Je demande très humblement pardon à votre excellence, répondit Pangloss\nencore plus poliment, car la chute de l’homme et la malédiction\nentraient nécessairement dans le meilleur des mondes possibles.",
+      "paragraph_id": "en-p00017",
+      "target_paragraph_id": "fr-p00007",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00030-l0019",
+          "start": 108,
+          "end": 111,
+          "english": "man",
+          "target": "homme",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00030-l0026",
+          "start": 163,
+          "end": 169,
+          "english": "worlds",
+          "target": "mondes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00031",
+      "text": "\"Sir,\" said the Familiar, \"you do not then believe in liberty?\"",
+      "translation": "Monsieur ne croit donc pas à la liberté? dit le familier.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00007",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00032",
+      "text": "\"Your Excellency will excuse me,\" said Pangloss; \"liberty is consistent\nwith absolute necessity, for it was necessary we should be free; for, in\nshort, the determinate will----\"\n\nPangloss was in the middle of his sentence, when the Familiar beckoned\nto his footman, who gave him a glass of wine from Porto or Opporto.",
+      "translation": "Votre\nexcellence m’excusera, dit Pangloss; la liberté peut subsister avec la\nnécessité absolue; car il était nécessaire que nous fussions libres;\ncar enfin la volonté déterminée…… Pangloss était au milieu de sa\nphrase, quand le familier fit un signe de tête à son estafier qui lui\nservait à boire du vin de Porto ou d’Oporto.",
+      "paragraph_id": "en-p00019",
+      "target_paragraph_id": "fr-p00007",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00032-l0009",
+          "start": 77,
+          "end": 85,
+          "english": "absolute",
+          "target": "absolue",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1243-sense-0",
+              "checked-5-p00032-l0009"
+            ],
+            "evidence": [
+              {
+                "id": "checked-5-p00032-l0009",
+                "link_id": "p00032-l0009",
+                "en": "absolute",
+                "fr": [
+                  "absolu"
+                ],
+                "kind": "adjective",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-17",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-1243-sense-0"
+                ],
+                "note": "Both qualify necessity as absolute in Pangloss’s philosophical claim."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00032-l0010",
+          "start": 86,
+          "end": 95,
+          "english": "necessity",
+          "target": "nécessité",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5840-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00032-l0025",
+          "start": 199,
+          "end": 205,
+          "english": "middle",
+          "target": "milieu",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5620-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00032-l0028",
+          "start": 213,
+          "end": 221,
+          "english": "sentence",
+          "target": "phrase",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7235-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00032-l0040",
+          "start": 290,
+          "end": 294,
+          "english": "wine",
+          "target": "vin",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-infinitive-v4",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8674-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    }
+  ]
+}

@@ -1,0 +1,1233 @@
+{
+  "schema_version": 2,
+  "base_fingerprint": "0aaf0466c299d0d68e36c13430070bef46d1d0edd4d2b41edf7f60e333943530",
+  "title": "Candide",
+  "chapter": "Chapter II",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "six-level-pilot-v3",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "0aaf0466c299d0d68e36c13430070bef46d1d0edd4d2b41edf7f60e333943530",
+      "entries": [
+        {
+          "id": "checked-2-p00021-l0015",
+          "link_id": "p00021-l0015",
+          "en": "great",
+          "fr": [
+            "grand"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-4548-sense-1"
+          ],
+          "note": "Great talent and grand génie describe the same intellectual ability."
+        },
+        {
+          "id": "checked-2-p00021-l0030",
+          "link_id": "p00021-l0030",
+          "en": "young",
+          "fr": [
+            "jeune"
+          ],
+          "kind": "adjective",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-8781-sense-0"
+          ],
+          "note": "Both modify the same young metaphysician, Candide."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "checked-2-p00014-sentence",
+          "passage_id": "p00014",
+          "en_sentence_ids": [
+            "en-s030"
+          ],
+          "fr_sentence_ids": [
+            "fr-s016"
+          ],
+          "source_text": "Candide, all stupefied, could not yet very well realise how he was a\nhero.",
+          "target_text": "Candide, tout stupéfait, ne démêlait pas encore trop bien comment il\nétait un héros.",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://www.gutenberg.org/ebooks/4650",
+          "note": "Both say that bewildered Candide cannot understand how he is a hero."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "94a38d02ea74fd0eda2460ef0461afd5070533f43cdec72941adeb7546942bb0",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "94a38d02ea74fd0eda2460ef0461afd5070533f43cdec72941adeb7546942bb0",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "aba2b204898796c450ad7ea4223dd4757d8203ba9d92074847ffdf094c65d0cf",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "aba2b204898796c450ad7ea4223dd4757d8203ba9d92074847ffdf094c65d0cf",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "stages": [
+    "English",
+    "A little French",
+    "More French",
+    "Even more French",
+    "So much French",
+    "French"
+  ],
+  "passages": [
+    {
+      "id": "p00001",
+      "text": "Candide, driven from terrestrial paradise, walked a long while without\nknowing where, weeping, raising his eyes to heaven, turning them often\ntowards the most magnificent of castles which imprisoned the purest of\nnoble young ladies. He lay down to sleep without supper, in the middle\nof a field between two furrows. The snow fell in large flakes.",
+      "translation": "Candide, chassé du paradis terrestre, marcha longtemps sans savoir où,\npleurant, levant les yeux au ciel, les tournant souvent vers le plus\nbeau des châteaux qui renfermait la plus belle des baronnettes; il se\ncoucha sans souper au milieu des champs entre deux sillons; la neige\ntombait à gros flocons.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00002",
+      "text": "Next day\nCandide, all benumbed, dragged himself towards the neighbouring town\nwhich was called Waldberghofftrarbk-dikdorff, having no money, dying of\nhunger and fatigue, he stopped sorrowfully at the door of an inn.",
+      "translation": "Candide, tout transi, se traîna le lendemain\nvers la ville voisine, qui s’appelle _Valdberghoff-trarbk-dikdorff_,\nn’ayant point d’argent, mourant de faim et de lassitude. Il s’arrêta\ntristement à la porte d’un cabaret.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00002-l0011",
+          "start": 73,
+          "end": 77,
+          "english": "town",
+          "target": "ville",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8199-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00002-l0020",
+          "start": 134,
+          "end": 139,
+          "english": "money",
+          "target": "argent",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5684-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00002-l0033",
+          "start": 200,
+          "end": 204,
+          "english": "door",
+          "target": "porte",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3671-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00003",
+      "text": "Two\nmen dressed in blue observed him.\n\n\"Comrade,\" said one, \"here is a well-built young fellow, and of proper\nheight.\"\n\nThey went up to Candide and very civilly invited him to dinner.\n\n\"Gentlemen,\" replied Candide, with a most engaging modesty, \"you do me\ngreat honour, but I have not wherewithal to pay my share.\"",
+      "translation": "Deux hommes habillés de bleu le\nremarquèrent: Camarade, dit l’un, voilà un jeune homme très bien fait,\net qui a la taille requise; ils s’avancèrent vers Candide et le\nprièrent à dîner très civilement.—Messieurs, leur dit Candide avec une\nmodestie charmante, vous me faites beaucoup d’honneur, mais je n’ai pas\nde quoi payer mon écot.—Ah!",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00004",
+      "text": "\"Oh, sir,\" said one of the blues to him, \"people of your appearance and\nof your merit never pay anything: are you not five feet five inches\nhigh?\"\n\n\"Yes, sir, that is my height,\" answered he, making a low bow.",
+      "translation": "monsieur, lui dit un des bleus, les\npersonnes de votre figure et de votre mérite ne paient jamais rien:\nn’avez-vous pas cinq pieds cinq pouces de haut?—Oui, messieurs, c’est\nma taille, dit-il en fesant la révérence.—Ah!",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00004-l0005",
+          "start": 27,
+          "end": 32,
+          "english": "blues",
+          "target": "bleus",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2536-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0015",
+          "start": 80,
+          "end": 85,
+          "english": "merit",
+          "target": "mérite",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5603-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00005",
+      "text": "\"Come, sir, seat yourself; not only will we pay your reckoning, but we\nwill never suffer such a man as you to want money; men are only born to\nassist one another.\"\n\n\"You are right,\" said Candide; \"this is what I was always taught by Mr.\nPangloss, and I see plainly that all is for the best.\"",
+      "translation": "monsieur, mettez-vous à\ntable; non seulement nous vous défraierons, mais nous ne souffrirons\njamais qu’un homme comme vous manque d’argent; les hommes ne sont faits\nque pour se secourir les uns les autres.—Vous avez raison, dit Candide;\nc’est ce que M. Pangloss m’a toujours dit, et je vois bien que tout est\nau mieux.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00005-l0000",
+          "start": 7,
+          "end": 10,
+          "english": "sir",
+          "target": "monsieur",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7395-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00005-l0015",
+          "start": 96,
+          "end": 99,
+          "english": "man",
+          "target": "homme",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00005-l0019",
+          "start": 115,
+          "end": 120,
+          "english": "money",
+          "target": "argent",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5684-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00005-l0021",
+          "start": 122,
+          "end": 125,
+          "english": "men",
+          "target": "hommes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00006",
+      "text": "They begged of him to accept a few crowns. He took them, and wished to\ngive them his note; they refused; they seated themselves at table.",
+      "translation": "On le prie d’accepter quelques écus, il les prend et veut\nfaire son billet; on n’en veut point, on se met à table.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00006-l0013",
+          "start": 85,
+          "end": 89,
+          "english": "note",
+          "target": "billet",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5910-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00007",
+      "text": "\"Love you not deeply?\"",
+      "translation": "N’aimez-vous\npas tendrement?….—Oh!",
+      "paragraph_id": "en-p00010",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00008",
+      "text": "\"Oh yes,\" answered he; \"I deeply love Miss Cunegonde.\"\n\n\"No,\" said one of the gentlemen, \"we ask you if you do not deeply love\nthe King of the Bulgarians?\"\n\n\"Not at all,\" said he; \"for I have never seen him.\"",
+      "translation": "oui, répond-il, j’aime tendrement mademoiselle\nCunégonde.—Non, dit l’un de ces messieurs, nous vous demandons si vous\nn’aimez pas tendrement le roi des Bulgares?—Point du tout, dit-il, car\nje ne l’ai jamais vu.—Comment!",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00009",
+      "text": "\"What! he is the best of kings, and we must drink his health.\"\n\n\"Oh!",
+      "translation": "c’est le plus charmant des rois, et il\nfaut boire à sa santé.—Oh!",
+      "paragraph_id": "en-p00014",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00010",
+      "text": "very willingly, gentlemen,\" and he drank.",
+      "translation": "très volontiers, messieurs. Et il boit.",
+      "paragraph_id": "en-p00015",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00010-l0003",
+          "start": 16,
+          "end": 25,
+          "english": "gentlemen",
+          "target": "messieurs",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4388-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00011",
+      "text": "\"That is enough,\" they tell him. \"Now you are the help, the support,\nthe defender, the hero of the Bulgarians. Your fortune is made, and your\nglory is assured.\"",
+      "translation": "C’en\nest assez, lui dit-on, vous voilà l’appui, le soutien, le défenseur, le\nhéros des Bulgares; votre fortune est faite, et votre gloire est\nassurée.",
+      "paragraph_id": "en-p00016",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00012",
+      "text": "Instantly they fettered him, and carried him away to the regiment.",
+      "translation": "On lui met sur-le-champ les fers aux pieds, et on le mène au\nrégiment.",
+      "paragraph_id": "en-p00017",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00013",
+      "text": "There\nhe was made to wheel about to the right, and to the left, to draw his\nrammer, to return his rammer, to present, to fire, to march, and they\ngave him thirty blows with a cudgel. The next day he did his exercise a\nlittle less badly, and he received but twenty blows. The day following\nthey gave him only ten, and he was regarded by his comrades as a\nprodigy.",
+      "translation": "On le fait tourner à droite, à gauche, hausser la baguette,\nremettre la baguette, coucher en joue, tirer, doubler le pas, et on lui\ndonne trente coups de bâton; le lendemain, il fait l’exercice un peu\nmoins mal, et il ne reçoit que vingt coups; le surlendemain, on ne lui\nen donne que dix, et il est regardé par ses camarades comme un prodige.",
+      "paragraph_id": "en-p00017",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00014",
+      "text": "Candide, all stupefied, could not yet very well realise how he was a\nhero.",
+      "translation": "Candide, tout stupéfait, ne démêlait pas encore trop bien comment il\nétait un héros.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00014-l0014",
+          "start": 69,
+          "end": 73,
+          "english": "hero",
+          "target": "héros",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4728-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "id": "p00014-sentence",
+          "start": 0,
+          "end": 74,
+          "english": "Candide, all stupefied, could not yet very well realise how he was a\nhero.",
+          "target": "Candide, tout stupéfait, ne démêlait pas encore trop bien comment il\nétait un héros.",
+          "stage": 4,
+          "kind": "sentence",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "evidence": [
+              {
+                "id": "checked-2-p00014-sentence",
+                "passage_id": "p00014",
+                "en_sentence_ids": [
+                  "en-s030"
+                ],
+                "fr_sentence_ids": [
+                  "fr-s016"
+                ],
+                "source_text": "Candide, all stupefied, could not yet very well realise how he was a\nhero.",
+                "target_text": "Candide, tout stupéfait, ne démêlait pas encore trop bien comment il\nétait un héros.",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://www.gutenberg.org/ebooks/4650",
+                "note": "Both say that bewildered Candide cannot understand how he is a hero."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p00015",
+      "text": "He resolved one fine day in spring to go for a walk, marching\nstraight before him, believing that it was a privilege of the human as\nwell as of the animal species to make use of their legs as they pleased.",
+      "translation": "Il s’avisa un beau jour de printemps de s’aller\npromener, marchant tout droit devant lui, croyant que c’était un\nprivilège de l’espèce humaine, comme de l’espèce animale, de se servir\nde ses jambes à son plaisir.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00015-l0006",
+          "start": 28,
+          "end": 34,
+          "english": "spring",
+          "target": "printemps",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7603-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00015-l0018",
+          "start": 107,
+          "end": 116,
+          "english": "privilege",
+          "target": "privilège",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6537-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00015-l0030",
+          "start": 184,
+          "end": 188,
+          "english": "legs",
+          "target": "jambes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5289-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00016",
+      "text": "He had advanced two leagues when he was overtaken by four others, heroes\nof six feet, who bound him and carried him to a dungeon.",
+      "translation": "Il n’eut pas fait deux lieues que voilà\nquatre autres héros de six pieds qui l’atteignent, qui le lient, qui le\nmènent dans un cachot.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00016-l0004",
+          "start": 20,
+          "end": 27,
+          "english": "leagues",
+          "target": "lieues",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5270-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00016-l0009",
+          "start": 66,
+          "end": 72,
+          "english": "heroes",
+          "target": "héros",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4728-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00017",
+      "text": "He was asked\nwhich he would like the best, to be whipped six-and-thirty times through\nall the regiment, or to receive at once twelve balls of lead in his\nbrain.",
+      "translation": "On lui demanda juridiquement ce qu’il aimait le\nmieux d’être fustigé trente-six fois par tout le régiment, ou de\nrecevoir à-la-fois douze balles de plomb dans la cervelle.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00017-l0011",
+          "start": 72,
+          "end": 77,
+          "english": "times",
+          "target": "fois",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8133-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00017-l0015",
+          "start": 94,
+          "end": 102,
+          "english": "regiment",
+          "target": "régiment",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6849-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00017-l0028",
+          "start": 154,
+          "end": 159,
+          "english": "brain",
+          "target": "cervelle",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2602-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00018",
+      "text": "He vainly said that human will is free, and that he chose neither\nthe one nor the other. He was forced to make a choice; he determined, in\nvirtue of that gift of God called liberty, to run the gauntlet\nsix-and-thirty times. He bore this twice.",
+      "translation": "Il eut beau\ndire que les volontés sont libres, et qu’il ne voulait ni l’un ni\nl’autre, il fallut faire un choix; il se détermina, en vertu du don de\nDieu qu’on nomme _liberté_, à passer trente-six fois par les baguettes;\nil essuya deux promenades.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00019",
+      "text": "The regiment was composed of\ntwo thousand men; that composed for him four thousand strokes, which\nlaid bare all his muscles and nerves, from the nape of his neck quite\ndown to his rump.",
+      "translation": "Le régiment était composé de deux mille\nhommes; cela lui composa quatre mille coups de baguette, qui, depuis la\nnuque du cou jusqu’au cul, lui découvrirent les muscles et les nerfs.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00019-l0001",
+          "start": 4,
+          "end": 12,
+          "english": "regiment",
+          "target": "régiment",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6849-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0007",
+          "start": 42,
+          "end": 45,
+          "english": "men",
+          "target": "hommes",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0020",
+          "start": 128,
+          "end": 134,
+          "english": "nerves",
+          "target": "nerfs",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5859-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0024",
+          "start": 145,
+          "end": 149,
+          "english": "nape",
+          "target": "nuque",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5811-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0026",
+          "start": 157,
+          "end": 161,
+          "english": "neck",
+          "target": "cou",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5841-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00020",
+      "text": "As they were going to proceed to a third whipping,\nCandide, able to bear no more, begged as a favour that they would be so\ngood as to shoot him. He obtained this favour; they bandaged his eyes,\nand bade him kneel down.",
+      "translation": "Comme on allait procéder à la troisième course, Candide, n’en pouvant\nplus, demanda en grâce qu’on voulût bien avoir la bonté de lui casser\nla tête; il obtint cette faveur; on lui bande les yeux; on le fait\nmettre à genoux.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00020-l0016",
+          "start": 94,
+          "end": 100,
+          "english": "favour",
+          "target": "grâce",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4055-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00021",
+      "text": "The King of the Bulgarians passed at this\nmoment and ascertained the nature of the crime. As he had great talent,\nhe understood from all that he learnt of Candide that he was a young\nmetaphysician, extremely ignorant of the things of this world, and he\naccorded him his pardon with a clemency which will bring him praise in\nall the journals, and throughout all ages.",
+      "translation": "Le roi des Bulgares passe dans ce moment, s’informe du\ncrime du patient; et comme ce roi avait un grand génie, il comprit, par\ntout ce qu’il apprit de Candide, que c’était un jeune métaphysicien\nfort ignorant des choses de ce monde, et il lui accorda sa grâce avec\nune clémence qui sera louée dans tous les journaux et dans tous les\nsiècles.",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00021-l0015",
+          "start": 100,
+          "end": 105,
+          "english": "great",
+          "target": "grand",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4548-sense-1",
+              "checked-2-p00021-l0015"
+            ],
+            "evidence": [
+              {
+                "id": "checked-2-p00021-l0015",
+                "link_id": "p00021-l0015",
+                "en": "great",
+                "fr": [
+                  "grand"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-4548-sense-1"
+                ],
+                "note": "Great talent and grand génie describe the same intellectual ability."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00021-l0030",
+          "start": 177,
+          "end": 182,
+          "english": "young",
+          "target": "jeune",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8781-sense-0",
+              "checked-2-p00021-l0030"
+            ],
+            "evidence": [
+              {
+                "id": "checked-2-p00021-l0030",
+                "link_id": "p00021-l0030",
+                "en": "young",
+                "fr": [
+                  "jeune"
+                ],
+                "kind": "adjective",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-8781-sense-0"
+                ],
+                "note": "Both modify the same young metaphysician, Candide."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00021-l0035",
+          "start": 224,
+          "end": 230,
+          "english": "things",
+          "target": "choses",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8070-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0038",
+          "start": 239,
+          "end": 244,
+          "english": "world",
+          "target": "monde",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00021-l0055",
+          "start": 332,
+          "end": 340,
+          "english": "journals",
+          "target": "journaux",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5147-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00022",
+      "text": "An able surgeon cured Candide in three weeks by means of emollients\ntaught by Dioscorides.",
+      "translation": "Un brave chirurgien guérit Candide en trois semaines avec les\némollients enseignés par Dioscoride.",
+      "paragraph_id": "en-p00019",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00022-l0002",
+          "start": 8,
+          "end": 15,
+          "english": "surgeon",
+          "target": "chirurgien",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7851-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00022-l0007",
+          "start": 39,
+          "end": 44,
+          "english": "weeks",
+          "target": "semaines",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8592-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00023",
+      "text": "He had already a little skin, and was able to\nmarch when the King of the Bulgarians gave battle to the King of the\nAbares.[2]",
+      "translation": "Il avait déjà un peu de peau et\npouvait marcher, quand le roi des Bulgares livra bataille au roi des\nAbares.",
+      "paragraph_id": "en-p00019",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00023-l0005",
+          "start": 24,
+          "end": 28,
+          "english": "skin",
+          "target": "peau",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7418-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00023-l0016",
+          "start": 89,
+          "end": 95,
+          "english": "battle",
+          "target": "bataille",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2326-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    }
+  ]
+}

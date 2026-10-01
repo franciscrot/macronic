@@ -1,0 +1,39 @@
+{
+  "chapters": [
+    {
+      "id": "ii",
+      "title": "Chapter II",
+      "project": "corpus/candide-02"
+    },
+    {
+      "id": "iii",
+      "title": "Chapter III",
+      "project": "corpus/candide-03"
+    },
+    {
+      "id": "iv",
+      "title": "Chapter IV",
+      "project": "corpus/candide-04"
+    },
+    {
+      "id": "v",
+      "title": "Chapter V",
+      "project": "corpus/candide-05"
+    },
+    {
+      "id": "vi",
+      "title": "Chapter VI",
+      "project": "corpus/candide-06"
+    },
+    {
+      "id": "vii",
+      "title": "Chapter VII",
+      "project": "corpus/candide-07"
+    },
+    {
+      "id": "viii",
+      "title": "Chapter VIII",
+      "project": "corpus/candide-08"
+    }
+  ]
+}

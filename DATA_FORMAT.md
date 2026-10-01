@@ -1,4 +1,4 @@
-# Prototype data contract (schema version 1)
+# Prototype data contracts
 
 All JSON is UTF-8. Ranges are half-open Unicode code-point offsets, not JavaScript UTF-16 offsets. CRLF is normalized to LF for source addressing. Preserve original source bytes in the snapshots.
 
@@ -21,4 +21,15 @@ Each passage contains ordered English/French sentence IDs, source parts grouped 
 
 Raw links cannot contain editorial decisions. `link` operations record status (`proposed`, `needs_review`, `approved`, `rejected`) plus an independent `safe_for_substitution` flag. `passage` operations approve or reject a sentence pairing. `regroup` operations replace adjacent sentence groups while preserving each sentence once and in order. Every operation has an ID, editor and reason. Corrections are applied in sequence, with later decisions replacing earlier decisions on the same link/passage. Boundary changes block substitution until recomputation.
 
-Reader replacements store exact English ranges, French surface, English gloss, stage and decision evidence. Only approved, safe, structurally noncompeting single-word links appear. Stages are deterministic and nested; uncovered text is copied exactly.
+Candidate and correction schemas remain version 1. Reader output is version 2. Word replacements retain exact base-text ranges, target-language surface (`target`), original gloss (`english`, retained for compatibility), stage and decision evidence. Only approved, safe, structurally noncompeting word links appear. Uncovered text is copied exactly.
+
+## Reading-file handoff
+
+The current `schema_version: 2` reader export includes all Chapter I passage groups, chapter/language metadata, the source dataset fingerprint, policy ID, amendment attribution and per-insertion decisions/evidence. The workshop exports this contract; the reader imports it. Consumers should reject unsupported versions and invalid ranges rather than silently interpret them. Navigation is consumer state, not alignment metadata.
+
+`evidence/supplement.json` is an occurrence-specific evidence layer. It is bound to a dataset fingerprint, keeps URLs and AI context-check notes, and is combined with the unchanged FreeDict evidence. It does not create model links. Supplemental words specify their minimum level (2, 3 or 4). Only individually checked positive-degree adjectives can bypass the noun POS/number gate; structural checks still apply. Human corrections remain distinct and take precedence.
+
+
+Version 2 uses `languages: {base: "en", learning: "fr"}` and six levels (0–5). Labels are generated from language codes, and target spans support right-to-left languages including `yi`. Each passage contains exact `text` and `translation`, word `replacements`, and `sentences`. The `sentences` array contains at most one whole-passage replacement at level 4, allowed only for a checked one-to-one sentence group. The sentence suppresses overlapping word replacements when rendered. Level 5 renders the exact translation, including groups unsuitable for isolated substitution. The workshop can approve or exclude a whole sentence through a named, reasoned `link` operation with reserved ID `<passage-id>-editor-sentence`; validation requires all tokens on both sides, in order. This decision is separate from ordinary word links.
+
+Readers still accept version 1 files with their original three levels and `french` field, with gradual progression disabled. Re-exporting from the workshop generates version 2. Language-aware reader output is not a claim that the preparation pipeline supports every language; current raw candidate fields and inference adapters remain English/French.

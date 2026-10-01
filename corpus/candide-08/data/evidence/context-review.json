@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "check_origin": "ai_context_check",
+  "checked_by": "Codex",
+  "checked_on": "2026-10-01",
+  "base_fingerprint": "82f2e8498d2084fe2ae936bb6e43bbcc21faf3058e46ae7c43775c3ab4f28b52",
+  "reviewed_word_insertions": 53,
+  "note": "Every generated noun insertion was read against the paired source context. No known meaning error found in admitted insertions. This is AI review, not an independent or held-out accuracy evaluation.",
+  "alignment_notes": [
+    "Clause boundaries around p00033–p00034 differ between editions; no whole-sentence insertion is admitted there. All source text remains present."
+  ]
+}

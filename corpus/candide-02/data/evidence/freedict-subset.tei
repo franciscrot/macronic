@@ -1,0 +1,5452 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns:ns0="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"><ns0:teiHeader>
+      <ns0:fileDesc>
+         <ns0:titleStmt>
+            <ns0:title>English-French FreeDict Dictionary</ns0:title>
+            <ns0:respStmt>
+               <ns0:resp>Maintainer</ns0:resp>
+               <ns0:name>[up for grabs]</ns0:name>
+            </ns0:respStmt>
+         </ns0:titleStmt>
+         <ns0:editionStmt>
+            <ns0:edition>0.1.6</ns0:edition>
+         </ns0:editionStmt>
+         <ns0:extent>8799 headwords</ns0:extent>
+         <ns0:publicationStmt>
+            <ns0:publisher>FreeDict</ns0:publisher>
+            <ns0:availability status="free">
+               <ns0:p>Copyright (C) 1999-2017 by various authors listed below.</ns0:p>
+               <ns0:p>Available under the terms of the <ns0:ref target="https://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License ver. 2.0 and any later version</ns0:ref>.</ns0:p>
+            </ns0:availability>
+            <ns0:pubPlace>
+               <ns0:ref target="http://freedict.org/">http://freedict.org/</ns0:ref>
+            </ns0:pubPlace>
+         </ns0:publicationStmt>
+         <ns0:notesStmt>
+            <ns0:note type="status">small</ns0:note>
+         </ns0:notesStmt>
+         <ns0:sourceDesc>
+            <ns0:p>Home: <ns0:ref target="http://freedict.org/">http://freedict.org/</ns0:ref></ns0:p>
+            <ns0:p>This Database was originally generated from ergane, <ns0:ref target="http://www.travlang.com">http://www.travlang.com</ns0:ref>.</ns0:p>
+         </ns0:sourceDesc>
+      </ns0:fileDesc>
+      <ns0:encodingDesc>
+         <ns0:projectDesc>
+            <ns0:p>This dictionary comes to you through nice people making it available for free and for
+        good. It is part of the FreeDict project, <ns0:ref target="http://freedict.org/">http://freedict.org/</ns0:ref>. This project aims to make translating
+        dictionaries available for free. Your contributions are welcome!</ns0:p>
+         </ns0:projectDesc>
+      </ns0:encodingDesc>
+      <ns0:revisionDesc>
+         <ns0:change when="2019-01-25"> 
+            <ns0:name>Sylvain Leroux</ns0:name>
+            Add missing spaces, fix typo in a translation
+         </ns0:change>
+         <ns0:change when="2017-11-30" who="#humenda" n="0.1.6">
+            <ns0:name>Sebastian Humenda</ns0:name>
+            <ns0:list>
+               <ns0:item>add unified licence stanza</ns0:item>
+               <ns0:item>remove duplicated translations</ns0:item>
+            </ns0:list>
+         </ns0:change>
+         <ns0:change when="2017-10-24" who="#humenda">
+            <ns0:date>2017-10-24</ns0:date>
+            <ns0:name>Sebastian Humenda</ns0:name>: Valentino (GitHub) fixed some parsing errors in a few entries. I fixed some more.
+         </ns0:change>
+         <ns0:change when="2010-10-25">
+            <ns0:date>2010-10-25</ns0:date>
+            <ns0:name>Piotr Bański</ns0:name>: Conversion of TEI P4 source into P5 via
+            tools/freedict_P4toP5.xsl; manual clean-up. We are back to version from before Michael
+            Bunk's re-import from Ergane of 2006-12-19 that was rolled back due to Ergane's cryptic
+            change of database licensing.</ns0:change>
+         <ns0:change>
+            <ns0:date>2004-06-26</ns0:date>
+            <ns0:name>Michael Bunk</ns0:name>Converted file to TEI P4</ns0:change>
+         <ns0:change>
+            <ns0:date>2000-04-26</ns0:date>
+            <ns0:name>Horst Eyermann</ns0:name>Database was converted to TEI format and checked into CVS</ns0:change>
+         <ns0:change>
+            <ns0:date>2000-01-09</ns0:date>
+            <ns0:name>Horst Eyermann</ns0:name>Phonetics added - machine generated from MBRODICT</ns0:change>
+         <ns0:change>
+            <ns0:date>2000-01-01</ns0:date>
+            <ns0:name>Horst Eyermann</ns0:name>This Database was  generated from ergane (http://www.travlang.com) - Thanks!</ns0:change>
+      </ns0:revisionDesc>
+   </ns0:teiHeader>
+   <text><body><ns0:entry>
+            <ns0:form>
+               <ns0:orth>Fortune</ns0:orth>
+               <ns0:pron>fɔːtʃuːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>Fortune</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>God</ns0:orth>
+               <ns0:pron>gɔd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>Dieu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>March</ns0:orth>
+               <ns0:pron>mɑːtʃ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>mars</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>Miss</ns0:orth>
+               <ns0:pron>mis</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>demoiselle</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mademoiselle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>Mr.</ns0:orth>
+               <ns0:pron>mr</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>monsieur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>a</ns0:orth>
+               <ns0:pron>ə</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>au milie de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>en</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>dans</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parmi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>un</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>quelqu'un</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>àraisonde</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>par</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>une</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>able</ns0:orth>
+               <ns0:pron>eibl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>apte à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>capable</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>compétent</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>qualifié</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>about</ns0:orth>
+               <ns0:pron>əbaut</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>concernant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>quant à</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>au sujet de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>à peu près</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>aux bords de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>environ</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>autour de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parages</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>accept</ns0:orth>
+               <ns0:pron>æksept</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>accepter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>accueillir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>admettre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>agréer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recevoir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recueiller</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>accord</ns0:orth>
+               <ns0:pron>əkɔːd</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>être d'accord</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>s'harmoniser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>s'accorder</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>accord</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>concordance</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>convention</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>entente</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>accommodement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pacte</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>permettre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>advance</ns0:orth>
+               <ns0:pron>ədvɑːns</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'approcher</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>avancer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>hâter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>accélérer</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>progresser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>age</ns0:orth>
+               <ns0:pron>eidʒ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>âge</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>époque</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>all</ns0:orth>
+               <ns0:pron>l</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>toute espèce de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>toute sorte de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>toutes les fois</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout le monde</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>already</ns0:orth>
+               <ns0:pron>ɔːlrediː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>déjà</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>always</ns0:orth>
+               <ns0:pron>ɔːlweiz</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>en tous temps</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>toujours</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>an</ns0:orth>
+               <ns0:pron>æn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>un</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>une</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>and</ns0:orth>
+               <ns0:pron>ænd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>et</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>animal</ns0:orth>
+               <ns0:pron>æniməl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>animal</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>bête</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>another</ns0:orth>
+               <ns0:pron>ənʌðər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>autre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>autrui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>supplémentaire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>answer</ns0:orth>
+               <ns0:pron>ænsər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>correspondre à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>respondre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>réponse</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>anything</ns0:orth>
+               <ns0:pron>eniθiŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quelque chose</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>appearance</ns0:orth>
+               <ns0:pron>əpiərəns</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>air</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>allure</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>apparence</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>aspect</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>spectacle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>as</ns0:orth>
+               <ns0:pron>əz</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>d'après</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>selon</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>si</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>aussi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>attendu que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>car</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parce que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>puisque</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vu que</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>ascertain</ns0:orth>
+               <ns0:pron>æsətein</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>constater</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>ask</ns0:orth>
+               <ns0:pron>əsk</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>demander</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>poser une question</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>prier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>assist</ns0:orth>
+               <ns0:pron>əsist</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>aider</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>assister</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>secourir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>assure</ns0:orth>
+               <ns0:pron>æʃər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>assurer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>certifier</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>garantir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>at</ns0:orth>
+               <ns0:pron>eit</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>en</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vers</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>près de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>de</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>àraisonde</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>par</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>au bord de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>chez</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parmi</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>sur</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tous près de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>away</ns0:orth>
+               <ns0:pron>ɔːwei</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>loin</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>badly</ns0:orth>
+               <ns0:pron>bædliː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>mal</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>ball</ns0:orth>
+               <ns0:pron>bɔːl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>bal</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>globe</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>balle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>sphère</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bandage</ns0:orth>
+               <ns0:pron>bændidʒ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>bandage</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>emmailloter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bare</ns0:orth>
+               <ns0:pron>bɛər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>nu</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>dénudé</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>battle</ns0:orth>
+               <ns0:pron>bætl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>bataille</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>combat</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bear</ns0:orth>
+               <ns0:pron>bɛər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>faire naître</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mettre au monde</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>produire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>endurer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souffrir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>subir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>ours</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>before</ns0:orth>
+               <ns0:pron>bfɔːr</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>avant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>devant</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>beg</ns0:orth>
+               <ns0:pron>beg</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>mendier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>demander</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>prier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>believe</ns0:orth>
+               <ns0:pron>biliːv</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>croire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>between</ns0:orth>
+               <ns0:pron>bitwiːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>au milieu de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>entre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parmi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bid</ns0:orth>
+               <ns0:pron>baid</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>offrir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>demander</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>prier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bind</ns0:orth>
+               <ns0:pron>baind</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>relier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>attacher</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>nouer</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>blow</ns0:orth>
+               <ns0:pron>blou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>bataille</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>coup</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>souffler sur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>souffler</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>blue</ns0:orth>
+               <ns0:pron>bluː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>bleu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bow</ns0:orth>
+               <ns0:pron>bou</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>arc</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>brain</ns0:orth>
+               <ns0:pron>brein</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>cerveau</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>cervelle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>bring</ns0:orth>
+               <ns0:pron>briŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>amener</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>apporter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>build</ns0:orth>
+               <ns0:pron>bild</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>bâtir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>construire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>poser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>maçonner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>charpenter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>but</ns0:orth>
+               <ns0:pron>bʌt</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>mais</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>cependant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>néanmoins</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pourtant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout de même</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>by</ns0:orth>
+               <ns0:pron>biː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>près de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>par</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>en</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>d'après</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>selon</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>au moyen de</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            <ns0:sense n="6">
+               <ns0:cit type="trans">
+                  <ns0:quote>au‐delà de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>call</ns0:orth>
+               <ns0:pron>kɔːl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>nommer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>appeler</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>carry</ns0:orth>
+               <ns0:pron>kæriː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>porter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>castle</ns0:orth>
+               <ns0:pron>kɑːsl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>château</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>tour</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>choice</ns0:orth>
+               <ns0:pron>tʃɔis</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>choix</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>choose</ns0:orth>
+               <ns0:pron>tʃuːz</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>adopter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>choisir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>désigner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>opter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>come</ns0:orth>
+               <ns0:pron>kʌm</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>provenir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'abouler</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>venir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>compose</ns0:orth>
+               <ns0:pron>kəmpouz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>se résoudre à</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>composer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>écrire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>comrade</ns0:orth>
+               <ns0:pron>kɔmreid</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>camarade</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>crime</ns0:orth>
+               <ns0:pron>kraim</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>crime</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>crown</ns0:orth>
+               <ns0:pron>kraun</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>couronner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>cure</ns0:orth>
+               <ns0:pron>kjeər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>guérir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>soigner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>assainir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>day</ns0:orth>
+               <ns0:pron>dei</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>jour</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>journée</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>determine</ns0:orth>
+               <ns0:pron>ditəːmin</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>déterminer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>définer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fixer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>attacher</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>die</ns0:orth>
+               <ns0:pron>diː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>décéder</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mourir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>dinner</ns0:orth>
+               <ns0:pron>dinər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>déjeuner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>dîner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>do</ns0:orth>
+               <ns0:pron>dou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>construire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fabriquer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>faire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>opérer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>poser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>coiffer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>friser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>door</ns0:orth>
+               <ns0:pron>dɔːr</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>porte</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>down</ns0:orth>
+               <ns0:pron>daun</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>duvet</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>drag</ns0:orth>
+               <ns0:pron>dræg</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>tirer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>traîner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>draw</ns0:orth>
+               <ns0:pron>drɔː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>allécher</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>appâter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>solliciter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>dessiner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>abaisser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tirer un trait</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>tirer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>puiser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>dress</ns0:orth>
+               <ns0:pron>dres</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>panser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>robe</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>habiller</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vêtir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>revêtir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'habiller</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>drink</ns0:orth>
+               <ns0:pron>driŋk</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'enivrer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>boisson</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>consommation</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>boire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>drive</ns0:orth>
+               <ns0:pron>draiv</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>amener à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>faire avancer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pourchasser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>poursuivre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pousser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>actionner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>prise</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>enough</ns0:orth>
+               <ns0:pron>inʌf</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>suffisant</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>assez</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>passablement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>plutôt</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>suffisamment</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>exercise</ns0:orth>
+               <ns0:pron>eksəsaiz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>exercer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>instruire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>exercice</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>extremely</ns0:orth>
+               <ns0:pron>ikstremliː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>extrêmement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>eye</ns0:orth>
+               <ns0:pron>iː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>œil</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>fall</ns0:orth>
+               <ns0:pron>fɔːl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'abattre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tomber</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>chute</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'abaisser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>s'amoindrir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>favour</ns0:orth>
+               <ns0:pron>feivər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>grâce</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>complaisance</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>service</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>fellow</ns0:orth>
+               <ns0:pron>felou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ensemble</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>individu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>homme</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mâle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>fetter</ns0:orth>
+               <ns0:pron>fetər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>chaîne</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>field</ns0:orth>
+               <ns0:pron>fiːld</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>champ</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>fine</ns0:orth>
+               <ns0:pron>fain</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>beau</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>accompli</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>excellent</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>éminent</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>délicat</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tendre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>à merveille</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>amende</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>procès‐verbal</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>fire</ns0:orth>
+               <ns0:pron>faiər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>partir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>licencier</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>renvoyer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>suspendre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>feu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>incendie</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>tirer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>five</ns0:orth>
+               <ns0:pron>faiv</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>cinq</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>follow</ns0:orth>
+               <ns0:pron>fɔlou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>agir selon</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>respecter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>suivre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>foot</ns0:orth>
+               <ns0:pron>fut</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>patte</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pied</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>for</ns0:orth>
+               <ns0:pron>fər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>durant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>lors</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pendant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pendant que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tandis que</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>afin de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pour</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>à cause de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>attendu que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>car</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parce que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>puisque</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vu que</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>force</ns0:orth>
+               <ns0:pron>fɔːs</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>faire accepter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>imposer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>obliger</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>obliger à</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>force</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>puissance</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>violer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>contraindre</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>fortune</ns0:orth>
+               <ns0:pron>fɔːtʃuːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>fortune</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>destinée</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>sort</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>four</ns0:orth>
+               <ns0:pron>fɔːr</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quatre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>from</ns0:orth>
+               <ns0:pron>frɔm</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>à partir de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>depuis</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>dès</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>hors de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>furrow</ns0:orth>
+               <ns0:pron>fʌrou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>rider</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>ride</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>sillon</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>gentleman</ns0:orth>
+               <ns0:pron>dʒentlmən</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>monsieur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>gift</ns0:orth>
+               <ns0:pron>gift</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>cadeau</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>don</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>give</ns0:orth>
+               <ns0:pron>giv</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>faire cadeau</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>offrir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>abouler</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>bailler</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>donner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>passer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>présenter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>glory</ns0:orth>
+               <ns0:pron>glɔːriː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>gloire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>renommée</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>réputation</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>go</ns0:orth>
+               <ns0:pron>gou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>aller</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>se déplacer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>aller en véhicule</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>god</ns0:orth>
+               <ns0:pron>gɔd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>dieu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>good</ns0:orth>
+               <ns0:pron>gud</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>bon</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>intérêt</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>great</ns0:orth>
+               <ns0:pron>greit</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>accompli</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>excellent</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>éminent</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>grand</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>have</ns0:orth>
+               <ns0:pron>hæv</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>avoir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>accueillir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recevoir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>he</ns0:orth>
+               <ns0:pron>h</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>il</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>lui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>health</ns0:orth>
+               <ns0:pron>helθ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>santé</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>heaven</ns0:orth>
+               <ns0:pron>hevn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>ciel</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>height</ns0:orth>
+               <ns0:pron>hait</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>altitude</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>hauteur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>help</ns0:orth>
+               <ns0:pron>help</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>aider</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>assister</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>secourir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>aide</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>hero</ns0:orth>
+               <ns0:pron>hiərou</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>héros</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>high</ns0:orth>
+               <ns0:pron>hai</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>haut</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>himself</ns0:orth>
+               <ns0:pron>himself</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>même</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>his</ns0:orth>
+               <ns0:pron>haiz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>sa</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>son</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>leur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>honour</ns0:orth>
+               <ns0:pron>ɔnər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>honorer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>honneur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>how</ns0:orth>
+               <ns0:pron>hau</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>comment</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>de quelle manière</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>hunger</ns0:orth>
+               <ns0:pron>hʌŋgər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>faim</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>if</ns0:orth>
+               <ns0:pron>aif</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>à condition que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>si</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>in</ns0:orth>
+               <ns0:pron>in</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>au milie de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>en</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>dans</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parmi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>inn</ns0:orth>
+               <ns0:pron>in</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>auberge</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>instantly</ns0:orth>
+               <ns0:pron>instəntliː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>aussitôt</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>directement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>d'abord</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout d'abord</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>invite</ns0:orth>
+               <ns0:pron>invait</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>inviter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>it</ns0:orth>
+               <ns0:pron>it</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à lui</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>lui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>elle</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>il</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>la</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>le</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>l'</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>journal</ns0:orth>
+               <ns0:pron>dʒəːnl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>journal</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>quotidien</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>king</ns0:orth>
+               <ns0:pron>kiŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>dame</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>roi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>kneel</ns0:orth>
+               <ns0:pron>niːl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>s'agenouiller</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>know</ns0:orth>
+               <ns0:pron>nou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>connaître</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>savoir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>lady</ns0:orth>
+               <ns0:pron>leidiː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>demoiselle noble</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>dame</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>madame</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>large</ns0:orth>
+               <ns0:pron>lɑːdʒ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>grand</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>lay</ns0:orth>
+               <ns0:pron>lei</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>coucher</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>laïque</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>lead</ns0:orth>
+               <ns0:pron>led</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>guider</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>régler</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>aboutir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>conduire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>diriger</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mener</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>plomb</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>league</ns0:orth>
+               <ns0:pron>liːg</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>lieue</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>ligue</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>learn</ns0:orth>
+               <ns0:pron>ləːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>apprendre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>left</ns0:orth>
+               <ns0:pron>left</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>gauche</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>leg</ns0:orth>
+               <ns0:pron>leg</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>jambe</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>patte</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>lie</ns0:orth>
+               <ns0:pron>liː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>être couché</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>mentir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>mensonge</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>like</ns0:orth>
+               <ns0:pron>laik</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>comme</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>pareil</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>semblable</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>aimer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>apprécier</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>estimer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>little</ns0:orth>
+               <ns0:pron>litl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>petit</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>peu de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>long</ns0:orth>
+               <ns0:pron>lɔŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>long</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>longtemps</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>longuement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>love</ns0:orth>
+               <ns0:pron>lʌv</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>aimer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>amour</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>amour charnel</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>bagatelle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>low</ns0:orth>
+               <ns0:pron>lou</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>abject</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>lâche</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>magnificent</ns0:orth>
+               <ns0:pron>mægnifisnt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>grandiose</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>magnifique</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>make</ns0:orth>
+               <ns0:pron>meik</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>construire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fabriquer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>faire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>opérer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>poser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>rendre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>man</ns0:orth>
+               <ns0:pron>mein</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>être humain</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>homme</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>mâle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>march</ns0:orth>
+               <ns0:pron>mɑːtʃ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>marcher</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>mean</ns0:orth>
+               <ns0:pron>miːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>intermédiaire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>moyenne</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>centre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>milieu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>signifier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>merit</ns0:orth>
+               <ns0:pron>merit</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>mériter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>gloire</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mérite</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>middle</ns0:orth>
+               <ns0:pron>midl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>intermédiaire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>centre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>milieu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>miss</ns0:orth>
+               <ns0:pron>mis</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>manquer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>rater</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>modesty</ns0:orth>
+               <ns0:pron>mɔdistiː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>modestie</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>moment</ns0:orth>
+               <ns0:pron>moumənt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>instant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>moment</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>money</ns0:orth>
+               <ns0:pron>mʌniː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>argent</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>monnaie</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>more</ns0:orth>
+               <ns0:pron>mɔːr</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>davantage</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>plus</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>most</ns0:orth>
+               <ns0:pron>moust</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>extrêmement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>le plus</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>muscle</ns0:orth>
+               <ns0:pron>mʌsl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>muscle</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>must</ns0:orth>
+               <ns0:pron>mʌst</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>devoir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>être obligé</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>my</ns0:orth>
+               <ns0:pron>miː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ma</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>mon</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>mes</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>nape</ns0:orth>
+               <ns0:pron>neip</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>nuque</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>nature</ns0:orth>
+               <ns0:pron>neitʃər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>caractère</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>nature</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>neck</ns0:orth>
+               <ns0:pron>nek</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>col</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>cou</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>neighbouring</ns0:orth>
+               <ns0:pron>neibəriŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>adjacent</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>neither</ns0:orth>
+               <ns0:pron>naiðər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>nul</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>personne</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>nerve</ns0:orth>
+               <ns0:pron>nəːv</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>nerf</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>never</ns0:orth>
+               <ns0:pron>nevər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>jamais</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ne ... jamais</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>next</ns0:orth>
+               <ns0:pron>nekst</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>après</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ensuite</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>puis</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>prochaine</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>proche</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>suivant</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>prochain</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>no</ns0:orth>
+               <ns0:pron>nou</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>non</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>noble</ns0:orth>
+               <ns0:pron>noubl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>élevé</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>noble</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>not</ns0:orth>
+               <ns0:pron>nout</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>ne ... pas</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pas</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>note</ns0:orth>
+               <ns0:pron>nout</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>billet</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ticket</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>noter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>note</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>now</ns0:orth>
+               <ns0:pron>nau</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>eh bien</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>maintenant</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>observe</ns0:orth>
+               <ns0:pron>əbzəːv</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>agir selon</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>respecter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>suivre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>observer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>accomplir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>assurer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>réaliser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>remplir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>obtain</ns0:orth>
+               <ns0:pron>əbtein</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>acquérir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>of</ns0:orth>
+               <ns0:pron>ɔf</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>often</ns0:orth>
+               <ns0:pron>ɔfn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>beaucoup</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fréquemment</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souvent</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>oh</ns0:orth>
+               <ns0:pron>ɔ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ah</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>oh</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>one</ns0:orth>
+               <ns0:pron>wʌn</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>un</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>quelqu'un</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>on</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>une</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>only</ns0:orth>
+               <ns0:pron>ounliː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ne ... que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>seulement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>seul</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>or</ns0:orth>
+               <ns0:pron>ər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>ou</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ou bien</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>other</ns0:orth>
+               <ns0:pron>ʌðər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>autre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>overtake</ns0:orth>
+               <ns0:pron>ouvəteik</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>passer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>dépasser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>doubler</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>paradise</ns0:orth>
+               <ns0:pron>pærədais</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>paradis</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>pardon</ns0:orth>
+               <ns0:pron>pɑːdn</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>excuser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pardonner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>pardon</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>pass</ns0:orth>
+               <ns0:pron>pɑːs</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>permission</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>col</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>passer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>donner</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>dépasser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="6">
+               <ns0:cit type="trans">
+                  <ns0:quote>doubler</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>pay</ns0:orth>
+               <ns0:pron>pei</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>payer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>people</ns0:orth>
+               <ns0:pron>piːpl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>gens</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>peuple</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>please</ns0:orth>
+               <ns0:pron>pliːs</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'il vous plaît</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>s.v.p.</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>plaire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>praise</ns0:orth>
+               <ns0:pron>preiz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>glorifier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>louange</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>present</ns0:orth>
+               <ns0:pron>prizent</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>actuel</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>cadeau</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>don</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>présenter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>présent</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>privilege</ns0:orth>
+               <ns0:pron>privəlidʒ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>privilège</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>proceed</ns0:orth>
+               <ns0:pron>prəsiːd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>procéder</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>proper</ns0:orth>
+               <ns0:pron>prɔpər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>convenable</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>exact</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>juste</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>quite</ns0:orth>
+               <ns0:pron>kwait</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>assez</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>passablement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>plutôt</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>suffisamment</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>bien</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fort</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>très</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>complètement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>entièrement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>totalement</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>raise</ns0:orth>
+               <ns0:pron>reiz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>élever</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>éduquer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>entonner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>lever</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>soulever</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>receive</ns0:orth>
+               <ns0:pron>risiːv</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>accepter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>accueillir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>admettre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>agréer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recevoir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recueiller</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>recevoir des visiteurs</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>refuse</ns0:orth>
+               <ns0:pron>rifjuːz</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>refuser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>rejeter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>repousser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>regard</ns0:orth>
+               <ns0:pron>rigɑːd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>estime</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>considérer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>contempler</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>regarder</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>regiment</ns0:orth>
+               <ns0:pron>redʒimənt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>régiment</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>reply</ns0:orth>
+               <ns0:pron>riplai</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>correspondre à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>respondre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>réponse</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>return</ns0:orth>
+               <ns0:pron>ritəːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>rente</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>revenu</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>revenir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>rentrée</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>retour</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>right</ns0:orth>
+               <ns0:pron>rait</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>droit</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>vrai</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>qui a raison</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>exact</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>juste</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>proprement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>rump</ns0:orth>
+               <ns0:pron>rʌmp</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>derrière</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>run</ns0:orth>
+               <ns0:pron>rʌn</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>fonctionner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>fuite</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'élancer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>se précipiter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>courir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>say</ns0:orth>
+               <ns0:pron>sei</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>dire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>seat</ns0:orth>
+               <ns0:pron>siːt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>siège</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>see</ns0:orth>
+               <ns0:pron>siː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>rencontrer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>voir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>visiter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>avoir soin de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>se soucier de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>s'occuper</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>veiller à</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>share</ns0:orth>
+               <ns0:pron>ʃɛər</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>action</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>débiter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>diviser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>partager</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>part</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>partie</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>participer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>prendre part</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>contingent</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>portion</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="6">
+               <ns0:cit type="trans">
+                  <ns0:quote>ration</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="7">
+               <ns0:cit type="trans">
+                  <ns0:quote>parti aux bénéfices</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>participation aux bénéfices</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>shoot</ns0:orth>
+               <ns0:pron>ʃuːt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>tirer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>sir</ns0:orth>
+               <ns0:pron>saiər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>monsieur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>six</ns0:orth>
+               <ns0:pron>siks</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>six</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>skin</ns0:orth>
+               <ns0:pron>skin</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>fourrure</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>peau</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pelage</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>poil d'animal</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>dépouiller</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>sleep</ns0:orth>
+               <ns0:pron>sliːp</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>dormir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>sommeil</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>snow</ns0:orth>
+               <ns0:pron>snou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>neiger</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>neige</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>so</ns0:orth>
+               <ns0:pron>sou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>afin de pour</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>afin que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pour que</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>ensuite</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>ainsi</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme cela</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tellement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>si</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>aussi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>tant</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>spring</ns0:orth>
+               <ns0:pron>spriŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>émaner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>sortir de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>fontaine</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>source</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>printemps</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>ressort</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>sauter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>stop</ns0:orth>
+               <ns0:pron>stɔp</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>halte</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>s'arrêter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>gare</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>station</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>cesser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>arrêter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>faire cesser</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>interrompre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>terminer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>straight</ns0:orth>
+               <ns0:pron>streit</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>direct</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>droit</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>stroke</ns0:orth>
+               <ns0:pron>strouk</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>apoplexie</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>caresser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>caresse</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>raie</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>rayure</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>such</ns0:orth>
+               <ns0:pron>sʌtʃ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>autant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tel</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>ainsi</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>comme cela</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tellement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>suffer</ns0:orth>
+               <ns0:pron>sʌfər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>endurer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souffrir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>subir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>supper</ns0:orth>
+               <ns0:pron>sʌpər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>dîner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souper</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>support</ns0:orth>
+               <ns0:pron>suːpɔːt</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>accoter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>appuyer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>appui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>maintenir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>surgeon</ns0:orth>
+               <ns0:pron>səːdʒən</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>chirurgien</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>table</ns0:orth>
+               <ns0:pron>teibl</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>liste</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tableau</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>table</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>take</ns0:orth>
+               <ns0:pron>teik</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>accepter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>accueillir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>admettre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>agréer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recevoir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>recueiller</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>occuper</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>prendre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>talent</ns0:orth>
+               <ns0:pron>tælənt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>aptitude</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>don</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>talent</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>teach</ns0:orth>
+               <ns0:pron>tiːtʃ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>apprendre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>enseigner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>instruire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>tell</ns0:orth>
+               <ns0:pron>tel</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>dire</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>charger</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>confier une tâche</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>commander</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>enjoindre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ordonner</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>sommer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>conter</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>raconter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>ten</ns0:orth>
+               <ns0:pron>tn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>dix</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>terrestrial</ns0:orth>
+               <ns0:pron>tirestriəl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>terrestre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>that</ns0:orth>
+               <ns0:pron>ðæt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>que</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quoi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>qu'</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>qui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>si</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>aussi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>the</ns0:orth>
+               <ns0:pron>ð</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à l'</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>à la</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>au</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>aux</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>lui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>la</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>le</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>les</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>l'</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>their</ns0:orth>
+               <ns0:pron>ðɛər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>leur</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>there</ns0:orth>
+               <ns0:pron>ðər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>voici</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>voilà</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>là</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>y</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>they</ns0:orth>
+               <ns0:pron>ðei</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ils</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>elles</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>on</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>thing</ns0:orth>
+               <ns0:pron>θiŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>chose</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>produit</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>objet</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>third</ns0:orth>
+               <ns0:pron>θəːd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>tiers</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>thirty</ns0:orth>
+               <ns0:pron>θəːtiː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>trente</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>this</ns0:orth>
+               <ns0:pron>ðaiz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ceci</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>celle‐ci</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>celui‐ci</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>thousand</ns0:orth>
+               <ns0:pron>θauznd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>mille</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>three</ns0:orth>
+               <ns0:pron>θriː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>trois</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>through</ns0:orth>
+               <ns0:pron>θruː</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>complètement</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>entièrement</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>au moyen de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>par</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>prêt</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>à cause de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="5">
+               <ns0:cit type="trans">
+                  <ns0:quote>à travers</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>time</ns0:orth>
+               <ns0:pron>taim</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>fois</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>heure</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>durée</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>temps</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>to</ns0:orth>
+               <ns0:pron>tou</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>en</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vers</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>afin de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pour</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>towards</ns0:orth>
+               <ns0:pron>təwɔːdz</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>en</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vers</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>en relation avec</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vis‐à‐vis</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>autour de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parages</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>town</ns0:orth>
+               <ns0:pron>taun</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>localité</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>cité</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ville</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>turn</ns0:orth>
+               <ns0:pron>təːn</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>dévier</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>retourner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>renverser</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>tourner</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>serrer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>file</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>rang</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>rangée</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tour</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>twelve</ns0:orth>
+               <ns0:pron>twelv</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>douze</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>twenty</ns0:orth>
+               <ns0:pron>twentiː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>vingt</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>two</ns0:orth>
+               <ns0:pron>twou</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>deux</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>understand</ns0:orth>
+               <ns0:pron>ʌndəstænd</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>comprendre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>use</ns0:orth>
+               <ns0:pron>juːz</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>appliquer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>employer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>se servir de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>user de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>recours</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>very</ns0:orth>
+               <ns0:pron>veriː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>bien</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fort</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>très</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>walk</ns0:orth>
+               <ns0:pron>wɔːk</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>marcher</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>promenade</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>want</ns0:orth>
+               <ns0:pron>wɔnt</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>désir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souhait</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>vouloir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>we</ns0:orth>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>nous</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>week</ns0:orth>
+               <ns0:pron>wiːk</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>semaine</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>well</ns0:orth>
+               <ns0:pron>wel</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>bien</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>eh bien</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>puits</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>sain</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>what</ns0:orth>
+               <ns0:pron>wɔt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quoi</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>wheel</ns0:orth>
+               <ns0:pron>wiːl</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>roue</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>when</ns0:orth>
+               <ns0:pron>n</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>quand</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>lorsque</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>where</ns0:orth>
+               <ns0:pron>wɛər</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>où</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>which</ns0:orth>
+               <ns0:pron>witʃ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quelles</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>quels</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>qui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>qu'</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quel</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quelle</ns0:quote>
+               </ns0:cit>
+               </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>while</ns0:orth>
+               <ns0:pron>wail</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>durant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>lors</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pendant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pendant que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tandis que</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>durée</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>temps</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>whip</ns0:orth>
+               <ns0:pron>wip</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>battre</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>faire tournoyer</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>flageller</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>fouetter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>fouet</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>who</ns0:orth>
+               <ns0:pron>hou</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>que</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>qu'</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>qui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>quels</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>quelles</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>qu'est‐ce qui</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>will</ns0:orth>
+               <ns0:pron>wil</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>testament</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>gré</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>volonté</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>willingly</ns0:orth>
+               <ns0:pron>wiliŋliː</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>volontiers</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>wish</ns0:orth>
+               <ns0:pron>wiʃ</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>désirer</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souhaiter</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>désir</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>souhait</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>vouloir</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="4">
+               <ns0:cit type="trans">
+                  <ns0:quote>gré</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>volonté</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>with</ns0:orth>
+               <ns0:pron>wið</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>avec</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>au moyen de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>par</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>au bord de</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>chez</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>parmi</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>sur</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tous près de</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>without</ns0:orth>
+               <ns0:pron>wiθɔːt</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>sans</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>world</ns0:orth>
+               <ns0:pron>wəːld</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>monde</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>yes</ns0:orth>
+               <ns0:pron>jez</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>bien</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>oïl</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>oui</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>si</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>yet</ns0:orth>
+               <ns0:pron>jet</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>encore</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>déjà</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>cependant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>néanmoins</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>pourtant</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>tout de même</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>you</ns0:orth>
+               <ns0:pron>jau</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>à toi</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>te</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>t'</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>à vous</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>vous</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="3">
+               <ns0:cit type="trans">
+                  <ns0:quote>on</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>young</ns0:orth>
+               <ns0:pron>jʌŋ</ns0:pron>
+            </ns0:form>
+            <ns0:sense>
+               <ns0:cit type="trans">
+                  <ns0:quote>jeune</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         <ns0:entry>
+            <ns0:form>
+               <ns0:orth>your</ns0:orth>
+               <ns0:pron>jɔːr</ns0:pron>
+            </ns0:form>
+            <ns0:sense n="1">
+               <ns0:cit type="trans">
+                  <ns0:quote>ta</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>ton</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+            <ns0:sense n="2">
+               <ns0:cit type="trans">
+                  <ns0:quote>tien</ns0:quote>
+               </ns0:cit>
+               <ns0:cit type="trans">
+                  <ns0:quote>votre</ns0:quote>
+               </ns0:cit>
+            </ns0:sense>
+         </ns0:entry>
+         </body></text></TEI>
