@@ -3,7 +3,7 @@ import { segments } from "./data.js";
 const wordCount = (text) => (text.match(/\S+/gu) || []).length;
 const key = (text) => text.normalize("NFC").toLocaleLowerCase("en");
 
-// Session-only exposure history. Recaps use existing approved occurrences,
+// Exposure history, also serialised by the reader for device-local resumption. Recaps use existing approved occurrences,
 // never new translations, and never count a skipped or revisited section twice.
 export class WordRecaps {
   constructor(interval = 1500, window = 2000) {

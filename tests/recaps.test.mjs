@@ -43,7 +43,7 @@ test('whole French sentences and full French use only existing approved word evi
 });
 test('default six-chapter journey gives three succinct recaps near 1500-word milestones',async()=>{
   const book=JSON.parse(await readFile(new URL('../data/reader/book.json',import.meta.url),'utf8'));
-  const sections=readingSections(book.passages),r=new WordRecaps();let state=newProgress(),cards=[];
+  const sections=readingSections(book.passages.filter(p => ["i","ii","iii","iv","v","vi"].includes(p.chapter_id))),r=new WordRecaps();let state=newProgress(),cards=[];
   for(let i=0;i<sections.length;i++){
     state=moveProgress(state,i);const words=r.record(i,sections[i],state.stage);
     if(words.length)cards.push({total:r.total,words});

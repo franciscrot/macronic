@@ -1,3 +1,4 @@
+import { loadReading, saveReading, readingKey } from "./shared/storage.js";
 import { WordRecaps } from "./shared/recaps.js";
 import { readingSections } from "./shared/sections.js";
 import { renderPassage } from "./shared/render.js";
@@ -19,7 +20,8 @@ let data,
   sections,
   state = newProgress(),
   recaps = new WordRecaps();
-function install(bundle) {
+let storageKey;
+async function install(bundle) {
   data = validateReader(bundle);
   sections = readingSections(data.passages);
   const chapters = sections.flatMap((s, i) =>
@@ -60,6 +62,12 @@ function install(bundle) {
   $("subtitle").textContent =
     `${languageName(data.languages.base)} · ${languageName(data.languages.learning)}`;
   $("status").classList.remove("error");
+  storageKey = await readingKey(data);
+  const saved = loadReading(storageKey, sections.length);
+  if (saved) {
+    state = saved.state;
+    recaps = saved.recaps;
+  }
   render();
 }
 function render() {
@@ -114,6 +122,10 @@ function render() {
       ),
     );
   $("gradual").checked = state.automatic;
+  const saved = saveReading(storageKey, state, recaps);
+  $("save-status").textContent = saved
+    ? "Your place and reading preferences are saved on this device."
+    : "Saving is unavailable. Your progress will last until this page closes.";
 }
 for (const [id, delta] of [
   ["previous", -1],
@@ -144,11 +156,11 @@ $("import-reader").onchange = async () => {
     const f = $("import-reader").files[0];
     if (!f) return;
     if (f.size > 10000000) throw Error("Reading file exceeds 10 MB");
-    install(JSON.parse(await f.text()));
+    await install(JSON.parse(await f.text()));
     $("import-status").textContent =
       data.schema_version === 1
         ? "Legacy reading file opened with its original three levels. Re-export in the editor for six levels."
-        : "Reading file opened. Progress and changes stay in this session.";
+        : "Reading file opened. Reopen this same file to resume your saved place.";
   } catch (e) {
     $("import-status").textContent = e.message;
   } finally {
@@ -158,9 +170,10 @@ $("import-reader").onchange = async () => {
 try {
   const response = await fetch("./reader.json");
   if (!response.ok) throw Error();
-  install(await response.json());
+  await install(await response.json());
 } catch {
   $("status").classList.add("error");
   $("status").textContent =
     "The reading data could not be loaded. Please reload the page or open a reading file.";
 }
+

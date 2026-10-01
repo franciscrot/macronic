@@ -16,7 +16,7 @@ Open http://127.0.0.1:4173/src/reader/ or http://127.0.0.1:4173/src/review/ for 
 
 The original app remains at the project root. The prototype has six language-aware levels, exact English source slices, and English glosses on hover, focus or tap; Escape closes a gloss.
 
-The built reader now contains Chapters I–VI: about 4,500 English words in 25 contextual sections. Chapters V and VI add noun-led vocabulary, eight checked adjective occurrences, four checked infinitives, and two checked whole sentences. Use the chapter selector or continuous Back/Next navigation.
+The built reader now contains Chapters I–VIII, with freshly prepared Chapters VII–VIII and checked whole-sentence options at So much French. Chapters V and VI add noun-led vocabulary, eight checked adjective occurrences, four checked infinitives, and two checked whole sentences. Use the chapter selector or continuous Back/Next navigation.
 
 ## Actual output and limits
 
@@ -80,7 +80,7 @@ The relevant FreeDict English–French TEI entries and original header are prese
 
 The reader includes all of Chapter I in four reading sections of 176–216 English words, retaining paragraph breaks. The 24 alignment groups remain available independently in the workshop; they are not reader pages. Fixed bottom Back/Next controls remain available on phone screens. The six levels are English, A little French, More French, Even more French, So much French and French. Their word-insertion counts across the chapter are 0, 17, 56, 65, 67 and full French source text respectively. So much also replaces passage 18 with its complete French sentence. This deliberately starts with one checked sentence in the chapter, not an automatic sentence in every passage.
 
-The discreet gradual-progression checkbox is on by default. Starting at A little French, the level rises on sections 5, 10 and 16, then stays at So much. English lasts 3 sections, A little 4, More 5 and Even more 6. Revisiting passages does not earn extra increments. Changing level or toggling progression starts a fresh interval for the selected level. Full French is always an explicit choice. Progress currently lasts for the browser session.
+The discreet gradual-progression checkbox is on by default. Starting at A little French, the level rises on sections 5, 10 and 16, then stays at So much. English lasts 3 sections, A little 4, More 5 and Even more 6. Revisiting passages does not earn extra increments. Changing level or toggling progression starts a fresh interval for the selected level. Full French is always an explicit choice. Position, language level, progression settings and vocabulary recap history are saved on this device. Saved state is tied to the exact reading-file contents; changed files start fresh. Imported books resume when the same file is reopened. Storage restrictions degrade to session-only reading.
 
 `data/evidence/supplement.json` records occurrence IDs, source URLs, contextual reasons and AI check origin. Nine explicitly checked positive-degree adjective occurrences enter at level 3, and two additional nouns at level 4; the original six supplemental nouns remain at level 2. The adjective exception does not globally enable adjectives or relax conflict, passage or exact-occurrence checks. English adjectives do not mark number; their French forms are checked in their particular context. The whole-sentence record requires exact text and a clean one-to-one sentence group. Changed datasets require renewed supplemental checks; stale evidence fails validation. These are AI context checks, not independent human evaluation.
 
@@ -119,3 +119,8 @@ To prepare further chapters from the committed editions, run `python scripts/ext
 For another book, use the two-file preparation command or local worker described in the in-app guide. `python -m pipeline.download_models` now also downloads the pinned FreeDict source. New projects then extract a dictionary subset for their own vocabulary. The approved adjectives/verbs in Candide are **occurrence-specific AI context checks**, not rules that automatically approve the same word everywhere. New projects need their own checks, or named workshop amendments.
 
 Bertalign chooses sentence groups using LaBSE embeddings and ordered alignment; SimAlign proposes word links inside each group. spaCy morphology, dictionary support and structural checks filter those links. Simple nouns are the baseline. Selected positive-degree adjectives and infinitives enter higher levels. Finite verbs, participles, auxiliaries and phrasal verbs are excluded from the automatic verb extension. Whole sentences require a separate exact-text check. No probability of correctness is claimed, and independent human release review remains pending.
+
+
+## Project direction
+
+The agreed goal is to complete all 30 chapters of Candide and then add new texts. Continue preparing consecutive chapters with the pinned Bertalign/SimAlign pipeline, exact edition snapshots and occurrence-specific evidence. Chapters VII–VIII have been prepared; continue with IX–X. Additional books should use isolated authoring projects and the shared reading-file contract; English/French preparation is supported, while the Yiddish preparation adapter still requires validation.

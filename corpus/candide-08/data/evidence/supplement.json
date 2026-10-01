@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "82f2e8498d2084fe2ae936bb6e43bbcc21faf3058e46ae7c43775c3ab4f28b52",
+  "entries": [],
+  "sentences": [
+    {
+      "id": "chapter8-sentence-p00028",
+      "passage_id": "p00028",
+      "en_sentence_ids": [
+        "en-s031"
+      ],
+      "fr_sentence_ids": [
+        "fr-s028"
+      ],
+      "source_text": "I\nrubbed my eyes, I looked at him attentively, I saw him hung; I fainted.",
+      "target_text": "Je me frottai les yeux, je regardai attentivement, je le vis\npendre; je tombai en faiblesse.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-10-01",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Exact complete paired sentence checked against both retained source spans. Meaning and clauses correspond; no claim of independent human review."
+    }
+  ]
+}

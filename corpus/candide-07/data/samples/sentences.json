@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "languages": {
+    "en": [
+      {
+        "id": "en-s001",
+        "paragraph_id": "en-p00001",
+        "text": "Candide did not take courage, but followed the old woman to a decayed\nhouse, where she gave him a pot of pomatum to anoint his sores, showed\nhim a very neat little bed, with a suit of clothes hanging up, and left\nhim something to eat and drink.",
+        "source_start": 0,
+        "source_end": 244
+      },
+      {
+        "id": "en-s002",
+        "paragraph_id": "en-p00002",
+        "text": "\"Eat, drink, sleep,\" said she, \"and may our lady of Atocha,[9] the great\nSt. Anthony of Padua, and the great St. James of Compostella, receive\nyou under their protection.",
+        "source_start": 246,
+        "source_end": 416
+      },
+      {
+        "id": "en-s003",
+        "paragraph_id": "en-p00002",
+        "text": "I shall be back to-morrow.\"",
+        "source_start": 417,
+        "source_end": 444
+      },
+      {
+        "id": "en-s004",
+        "paragraph_id": "en-p00003",
+        "text": "Candide, amazed at all he had suffered and still more with the charity\nof the old woman, wished to kiss her hand.",
+        "source_start": 446,
+        "source_end": 559
+      },
+      {
+        "id": "en-s005",
+        "paragraph_id": "en-p00004",
+        "text": "\"It is not my hand you must kiss,\" said the old woman; \"I shall be back\nto-morrow.",
+        "source_start": 561,
+        "source_end": 643
+      },
+      {
+        "id": "en-s006",
+        "paragraph_id": "en-p00004",
+        "text": "Anoint yourself with the pomatum, eat and sleep.\"",
+        "source_start": 644,
+        "source_end": 693
+      },
+      {
+        "id": "en-s007",
+        "paragraph_id": "en-p00005",
+        "text": "Candide, notwithstanding so many disasters, ate and slept.",
+        "source_start": 695,
+        "source_end": 753
+      },
+      {
+        "id": "en-s008",
+        "paragraph_id": "en-p00005",
+        "text": "The next\nmorning the old woman brought him his breakfast, looked at his back, and\nrubbed it herself with another ointment: in like manner she brought him\nhis dinner; and at night she returned with his supper.",
+        "source_start": 754,
+        "source_end": 962
+      },
+      {
+        "id": "en-s009",
+        "paragraph_id": "en-p00005",
+        "text": "The day following\nshe went through the very same ceremonies.",
+        "source_start": 963,
+        "source_end": 1023
+      },
+      {
+        "id": "en-s010",
+        "paragraph_id": "en-p00006",
+        "text": "\"Who are you?\"",
+        "source_start": 1025,
+        "source_end": 1039
+      },
+      {
+        "id": "en-s011",
+        "paragraph_id": "en-p00006",
+        "text": "said Candide; \"who has inspired you with so much\ngoodness?",
+        "source_start": 1040,
+        "source_end": 1098
+      },
+      {
+        "id": "en-s012",
+        "paragraph_id": "en-p00006",
+        "text": "What return can I make you?\"",
+        "source_start": 1099,
+        "source_end": 1127
+      },
+      {
+        "id": "en-s013",
+        "paragraph_id": "en-p00007",
+        "text": "The good woman made no answer; she returned in the evening, but brought\nno supper.",
+        "source_start": 1129,
+        "source_end": 1211
+      },
+      {
+        "id": "en-s014",
+        "paragraph_id": "en-p00008",
+        "text": "\"Come with me,\" she said, \"and say nothing.\"",
+        "source_start": 1213,
+        "source_end": 1257
+      },
+      {
+        "id": "en-s015",
+        "paragraph_id": "en-p00009",
+        "text": "She took him by the arm, and walked with him about a quarter of a mile\ninto the country; they arrived at a lonely house, surrounded with\ngardens and canals.",
+        "source_start": 1259,
+        "source_end": 1415
+      },
+      {
+        "id": "en-s016",
+        "paragraph_id": "en-p00009",
+        "text": "The old woman knocked at a little door, it opened,\nshe led Candide up a private staircase into a small apartment richly\nfurnished.",
+        "source_start": 1416,
+        "source_end": 1546
+      },
+      {
+        "id": "en-s017",
+        "paragraph_id": "en-p00009",
+        "text": "She left him on a brocaded sofa, shut the door and went away.",
+        "source_start": 1547,
+        "source_end": 1608
+      },
+      {
+        "id": "en-s018",
+        "paragraph_id": "en-p00009",
+        "text": "Candide thought himself in a dream; indeed, that he had been dreaming\nunluckily all his life, and that the present moment was the only\nagreeable part of it all.",
+        "source_start": 1609,
+        "source_end": 1769
+      },
+      {
+        "id": "en-s019",
+        "paragraph_id": "en-p00010",
+        "text": "The old woman returned very soon, supporting with difficulty a trembling\nwoman of a majestic figure, brilliant with jewels, and covered with a\nveil.",
+        "source_start": 1771,
+        "source_end": 1919
+      },
+      {
+        "id": "en-s020",
+        "paragraph_id": "en-p00011",
+        "text": "\"Take off that veil,\" said the old woman to Candide.",
+        "source_start": 1921,
+        "source_end": 1973
+      },
+      {
+        "id": "en-s021",
+        "paragraph_id": "en-p00012",
+        "text": "The young man approaches, he raises the veil with a timid hand.",
+        "source_start": 1975,
+        "source_end": 2038
+      },
+      {
+        "id": "en-s022",
+        "paragraph_id": "en-p00012",
+        "text": "Oh!",
+        "source_start": 2039,
+        "source_end": 2042
+      },
+      {
+        "id": "en-s023",
+        "paragraph_id": "en-p00012",
+        "text": "what a moment!",
+        "source_start": 2043,
+        "source_end": 2057
+      },
+      {
+        "id": "en-s024",
+        "paragraph_id": "en-p00012",
+        "text": "what surprise!",
+        "source_start": 2058,
+        "source_end": 2072
+      },
+      {
+        "id": "en-s025",
+        "paragraph_id": "en-p00012",
+        "text": "he believes he beholds Miss Cunegonde?",
+        "source_start": 2073,
+        "source_end": 2111
+      },
+      {
+        "id": "en-s026",
+        "paragraph_id": "en-p00012",
+        "text": "he\nreally sees her!",
+        "source_start": 2112,
+        "source_end": 2131
+      },
+      {
+        "id": "en-s027",
+        "paragraph_id": "en-p00012",
+        "text": "it is herself!",
+        "source_start": 2132,
+        "source_end": 2146
+      },
+      {
+        "id": "en-s028",
+        "paragraph_id": "en-p00012",
+        "text": "His strength fails him, he cannot utter\na word, but drops at her feet.",
+        "source_start": 2147,
+        "source_end": 2217
+      },
+      {
+        "id": "en-s029",
+        "paragraph_id": "en-p00012",
+        "text": "Cunegonde falls upon the sofa.",
+        "source_start": 2218,
+        "source_end": 2248
+      },
+      {
+        "id": "en-s030",
+        "paragraph_id": "en-p00012",
+        "text": "The old\nwoman supplies a smelling bottle; they come to themselves and recover\ntheir speech.",
+        "source_start": 2249,
+        "source_end": 2340
+      },
+      {
+        "id": "en-s031",
+        "paragraph_id": "en-p00012",
+        "text": "As they began with broken accents, with questions and\nanswers interchangeably interrupted with sighs, with tears, and cries.",
+        "source_start": 2341,
+        "source_end": 2465
+      },
+      {
+        "id": "en-s032",
+        "paragraph_id": "en-p00012",
+        "text": "The old woman desired they would make less noise and then she left them\nto themselves.",
+        "source_start": 2466,
+        "source_end": 2552
+      },
+      {
+        "id": "en-s033",
+        "paragraph_id": "en-p00013",
+        "text": "\"What, is it you?\"",
+        "source_start": 2554,
+        "source_end": 2572
+      },
+      {
+        "id": "en-s034",
+        "paragraph_id": "en-p00013",
+        "text": "said Candide, \"you live?",
+        "source_start": 2573,
+        "source_end": 2597
+      },
+      {
+        "id": "en-s035",
+        "paragraph_id": "en-p00013",
+        "text": "I find you again in\nPortugal?",
+        "source_start": 2598,
+        "source_end": 2627
+      },
+      {
+        "id": "en-s036",
+        "paragraph_id": "en-p00013",
+        "text": "then you have not been ravished?",
+        "source_start": 2628,
+        "source_end": 2660
+      },
+      {
+        "id": "en-s037",
+        "paragraph_id": "en-p00013",
+        "text": "then they did not rip open\nyour belly as Doctor Pangloss informed me?\"",
+        "source_start": 2661,
+        "source_end": 2731
+      },
+      {
+        "id": "en-s038",
+        "paragraph_id": "en-p00014",
+        "text": "\"Yes, they did,\" said the beautiful Cunegonde; \"but those two accidents\nare not always mortal.\"",
+        "source_start": 2733,
+        "source_end": 2828
+      },
+      {
+        "id": "en-s039",
+        "paragraph_id": "en-p00015",
+        "text": "\"But were your father and mother killed?\"",
+        "source_start": 2830,
+        "source_end": 2871
+      },
+      {
+        "id": "en-s040",
+        "paragraph_id": "en-p00016",
+        "text": "\"It is but too true,\" answered Cunegonde, in tears.",
+        "source_start": 2873,
+        "source_end": 2924
+      },
+      {
+        "id": "en-s041",
+        "paragraph_id": "en-p00017",
+        "text": "\"And your brother?\"",
+        "source_start": 2926,
+        "source_end": 2945
+      },
+      {
+        "id": "en-s042",
+        "paragraph_id": "en-p00018",
+        "text": "\"My brother also was killed.\"",
+        "source_start": 2947,
+        "source_end": 2976
+      },
+      {
+        "id": "en-s043",
+        "paragraph_id": "en-p00019",
+        "text": "\"And why are you in Portugal?",
+        "source_start": 2978,
+        "source_end": 3007
+      },
+      {
+        "id": "en-s044",
+        "paragraph_id": "en-p00019",
+        "text": "and how did you know of my being here?",
+        "source_start": 3008,
+        "source_end": 3046
+      },
+      {
+        "id": "en-s045",
+        "paragraph_id": "en-p00019",
+        "text": "and\nby what strange adventure did you contrive to bring me to this house?\"",
+        "source_start": 3047,
+        "source_end": 3121
+      },
+      {
+        "id": "en-s046",
+        "paragraph_id": "en-p00020",
+        "text": "\"I will tell you all that,\" replied the lady, \"but first of all let me\nknow your history, since the innocent kiss you gave me and the kicks\nwhich you received.\"",
+        "source_start": 3123,
+        "source_end": 3283
+      },
+      {
+        "id": "en-s047",
+        "paragraph_id": "en-p00021",
+        "text": "Candide respectfully obeyed her, and though he was still in a surprise,\nthough his voice was feeble and trembling, though his back still pained\nhim, yet he gave her a most ingenuous account of everything that had\nbefallen him since the moment of their separation.",
+        "source_start": 3285,
+        "source_end": 3548
+      },
+      {
+        "id": "en-s048",
+        "paragraph_id": "en-p00021",
+        "text": "Cunegonde lifted up\nher eyes to heaven; shed tears upon hearing of the death of the good\nAnabaptist and of Pangloss; after which she spoke as follows to Candide,\nwho did not lose a word and devoured her with his eyes.",
+        "source_start": 3549,
+        "source_end": 3766
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-s001",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide ne prit point courage, mais il suivit la vieille dans une\nmasure: elle lui donna un pot de pommade pour se frotter, lui laissa à\nmanger et à boire; elle lui montra un petit lit assez propre; il y\navait auprès du lit un habit complet.",
+        "source_start": 0,
+        "source_end": 241
+      },
+      {
+        "id": "fr-s002",
+        "paragraph_id": "fr-p00001",
+        "text": "Mangez, buvez, dormez, lui\ndit-elle, et que Notre-Dame d’Atocha[1], monseigneur saint Antoine de\nPadoue, et monseigneur saint Jacques de Compostelle prennent soin de\nvous!",
+        "source_start": 242,
+        "source_end": 413
+      },
+      {
+        "id": "fr-s003",
+        "paragraph_id": "fr-p00001",
+        "text": "je reviendrai demain.",
+        "source_start": 414,
+        "source_end": 435
+      },
+      {
+        "id": "fr-s004",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide, toujours étonné de tout ce qu’il\navait vu, de tout ce qu’il avait souffert, et encore plus de la charité\nde la vieille, voulut lui baiser la main.",
+        "source_start": 436,
+        "source_end": 591
+      },
+      {
+        "id": "fr-s005",
+        "paragraph_id": "fr-p00001",
+        "text": "Ce n’est pas ma main qu’il\nfaut baiser, dit la vieille; je reviendrai demain.",
+        "source_start": 592,
+        "source_end": 669
+      },
+      {
+        "id": "fr-s006",
+        "paragraph_id": "fr-p00001",
+        "text": "Frottez-vous de\npommade, mangez et dormez.",
+        "source_start": 670,
+        "source_end": 712
+      },
+      {
+        "id": "fr-s007",
+        "paragraph_id": "fr-p00002",
+        "text": "Candide, malgré tant de malheurs, mangea et dormit.",
+        "source_start": 714,
+        "source_end": 765
+      },
+      {
+        "id": "fr-s008",
+        "paragraph_id": "fr-p00002",
+        "text": "Le lendemain la\nvieille lui apporte à déjeuner, visite son dos, le frotte elle-même\nd’une autre pommade: elle lui apporte ensuite à dîner: elle revient sur\nle soir et apporte à souper.",
+        "source_start": 766,
+        "source_end": 950
+      },
+      {
+        "id": "fr-s009",
+        "paragraph_id": "fr-p00002",
+        "text": "Le surlendemain elle fit encore les mêmes\ncérémonies.",
+        "source_start": 951,
+        "source_end": 1004
+      },
+      {
+        "id": "fr-s010",
+        "paragraph_id": "fr-p00002",
+        "text": "Qui êtes-vous?",
+        "source_start": 1005,
+        "source_end": 1019
+      },
+      {
+        "id": "fr-s011",
+        "paragraph_id": "fr-p00002",
+        "text": "lui disait toujours Candide; qui vous a\ninspiré tant de bonté?",
+        "source_start": 1020,
+        "source_end": 1082
+      },
+      {
+        "id": "fr-s012",
+        "paragraph_id": "fr-p00002",
+        "text": "quelles grâces puis-je vous rendre?",
+        "source_start": 1083,
+        "source_end": 1118
+      },
+      {
+        "id": "fr-s013",
+        "paragraph_id": "fr-p00002",
+        "text": "La bonne\nfemme ne répondait jamais rien.",
+        "source_start": 1119,
+        "source_end": 1159
+      },
+      {
+        "id": "fr-s014",
+        "paragraph_id": "fr-p00002",
+        "text": "Elle revint sur le soir, et n’apporta\npoint à souper: Venez avec moi, dit-elle, et ne dites mot.",
+        "source_start": 1160,
+        "source_end": 1256
+      },
+      {
+        "id": "fr-s015",
+        "paragraph_id": "fr-p00002",
+        "text": "Elle le\nprend sous le bras, et marche avec lui dans la campagne environ un\nquart de mille: ils arrivent à une maison isolée, entourée de jardins\net de canaux.",
+        "source_start": 1257,
+        "source_end": 1415
+      },
+      {
+        "id": "fr-s016",
+        "paragraph_id": "fr-p00002",
+        "text": "La vieille frappe à une petite porte.",
+        "source_start": 1416,
+        "source_end": 1453
+      },
+      {
+        "id": "fr-s017",
+        "paragraph_id": "fr-p00002",
+        "text": "On ouvre; elle mène\nCandide, par un escalier dérobé, dans un cabinet doré, le laisse sur un\ncanapé de brocart, referme la porte, et s’en va.",
+        "source_start": 1454,
+        "source_end": 1594
+      },
+      {
+        "id": "fr-s018",
+        "paragraph_id": "fr-p00002",
+        "text": "Candide croyait rêver,\net regardait toute sa vie comme un songe funeste, et le moment présent\ncomme un songe agréable.",
+        "source_start": 1595,
+        "source_end": 1713
+      },
+      {
+        "id": "fr-s019",
+        "paragraph_id": "fr-p00003",
+        "text": "La vieille reparut bientôt; elle soutenait avec peine une femme\ntremblante, d’une taille majestueuse, brillante de pierreries, et\ncouverte d’un voile.",
+        "source_start": 1715,
+        "source_end": 1865
+      },
+      {
+        "id": "fr-s020",
+        "paragraph_id": "fr-p00003",
+        "text": "Otez ce voile, dit la vieille à Candide.",
+        "source_start": 1866,
+        "source_end": 1906
+      },
+      {
+        "id": "fr-s021",
+        "paragraph_id": "fr-p00003",
+        "text": "Le jeune\nhomme approche; il lève le voile d’une main timide.",
+        "source_start": 1907,
+        "source_end": 1967
+      },
+      {
+        "id": "fr-s022",
+        "paragraph_id": "fr-p00003",
+        "text": "Quel moment!",
+        "source_start": 1968,
+        "source_end": 1980
+      },
+      {
+        "id": "fr-s023",
+        "paragraph_id": "fr-p00003",
+        "text": "quelle\nsurprise!",
+        "source_start": 1981,
+        "source_end": 1997
+      },
+      {
+        "id": "fr-s024",
+        "paragraph_id": "fr-p00003",
+        "text": "il croit voir mademoiselle Cunégonde; il la voyait en effet,\nc’était elle-même.",
+        "source_start": 1998,
+        "source_end": 2077
+      },
+      {
+        "id": "fr-s025",
+        "paragraph_id": "fr-p00003",
+        "text": "La force lui manque, il ne peut proférer une parole,\nil tombe à ses pieds.",
+        "source_start": 2078,
+        "source_end": 2152
+      },
+      {
+        "id": "fr-s026",
+        "paragraph_id": "fr-p00003",
+        "text": "Cunégonde tombe sur le canapé.",
+        "source_start": 2153,
+        "source_end": 2183
+      },
+      {
+        "id": "fr-s027",
+        "paragraph_id": "fr-p00003",
+        "text": "La vieille les\naccable d’eaux spiritueuses, ils reprennent leurs sens, ils se parlent:\nce sont d’abord des mots entrecoupés, des demandes et des réponses qui\nse croisent, des soupirs, des larmes, des cris.",
+        "source_start": 2184,
+        "source_end": 2389
+      },
+      {
+        "id": "fr-s028",
+        "paragraph_id": "fr-p00003",
+        "text": "La vieille leur\nrecommande de faire moins de bruit, et les laisse en liberté.",
+        "source_start": 2390,
+        "source_end": 2467
+      },
+      {
+        "id": "fr-s029",
+        "paragraph_id": "fr-p00003",
+        "text": "Quoi!",
+        "source_start": 2468,
+        "source_end": 2473
+      },
+      {
+        "id": "fr-s030",
+        "paragraph_id": "fr-p00003",
+        "text": "c’est vous, lui dit Candide, vous vivez!",
+        "source_start": 2474,
+        "source_end": 2514
+      },
+      {
+        "id": "fr-s031",
+        "paragraph_id": "fr-p00003",
+        "text": "je vous retrouve en Portugal!",
+        "source_start": 2515,
+        "source_end": 2544
+      },
+      {
+        "id": "fr-s032",
+        "paragraph_id": "fr-p00003",
+        "text": "On ne vous a donc pas violée?",
+        "source_start": 2545,
+        "source_end": 2574
+      },
+      {
+        "id": "fr-s033",
+        "paragraph_id": "fr-p00003",
+        "text": "on ne vous a point fendu le ventre, comme\nle philosophe Pangloss me l’avait assuré?",
+        "source_start": 2575,
+        "source_end": 2658
+      },
+      {
+        "id": "fr-s034",
+        "paragraph_id": "fr-p00003",
+        "text": "Si fait, dit la belle\nCunégonde; mais on ne meurt pas toujours de ces deux accidents.—Mais\nvotre père et votre mère ont-ils été tués?—Il n’est que trop vrai, dit\nCunégonde en pleurant.—Et votre frère?—Mon frère a été tué aussi.—Et\npourquoi êtes-vous en Portugal?",
+        "source_start": 2659,
+        "source_end": 2921
+      },
+      {
+        "id": "fr-s035",
+        "paragraph_id": "fr-p00003",
+        "text": "et comment avez-vous su que j’y étais?",
+        "source_start": 2922,
+        "source_end": 2960
+      },
+      {
+        "id": "fr-s036",
+        "paragraph_id": "fr-p00003",
+        "text": "et par quelle étrange aventure m’avez-vous fait conduire dans cette\nmaison?—Je vous dirai tout cela, répliqua la dame; mais il faut\nauparavant que vous m’appreniez tout ce qui vous est arrivé depuis le\nbaiser innocent que vous me donnâtes, et les coups de pied que vous\nreçûtes.",
+        "source_start": 2961,
+        "source_end": 3239
+      },
+      {
+        "id": "fr-s037",
+        "paragraph_id": "fr-p00004",
+        "text": "Candide lui obéit avec un profond respect; et quoiqu’il fût interdit,\nquoique sa voix fût faible et tremblante, quoique l’échine lui fît\nencore un peu mal, il lui raconta de la manière la plus naïve tout ce\nqu’il avait éprouvé depuis le moment de leur séparation.",
+        "source_start": 3241,
+        "source_end": 3504
+      },
+      {
+        "id": "fr-s038",
+        "paragraph_id": "fr-p00004",
+        "text": "Cunégonde\nlevait les yeux au ciel: elle donna des larmes à la mort du bon\nanabaptiste et de Pangloss; après quoi elle parla en ces termes à\nCandide, qui ne perdait pas une parole, et qui la dévorait des yeux.",
+        "source_start": 3505,
+        "source_end": 3713
+      }
+    ]
+  }
+}

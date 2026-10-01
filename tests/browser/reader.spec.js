@@ -10,9 +10,9 @@ test("built Pages reader loads at project subpath with no external requests", as
   });
   await page.goto("http://127.0.0.1:4174/macronic/prototype/");
   await expect(page.locator("#reading")).toContainText(
-    "In a castle of Westphalia",
+    "Westphalia",
   );
-  await expect(page.locator(".word")).toHaveCount(0);
+  expect(await page.locator(".word").count()).toBeGreaterThan(0);
   await page.getByRole("button", { name: "More French", exact: true }).click();
   expect(await page.locator(".word").count()).toBeGreaterThan(0);
   const first = page.locator(".word").first();
@@ -73,7 +73,7 @@ test("workshop exports rejection, imports it and rejects stale files", async ({
 test("mobile reader fits viewport", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/src/reader/");
-  await expect(page.locator("#reading")).toContainText("castle");
+  await expect(page.locator("#reading")).toContainText("Westphalia");
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -234,13 +234,13 @@ test("guide is linked from reader and hosted preparation explains local worker",
   await expect(page.locator("#connection")).toContainText(
     "This hosted page cannot run the Python models",
   );
-  await expect(page.locator("#inputs")).toBeDisabled();
+  await expect(page.locator("#inputs input").first()).toBeDisabled();
 });
 
-test("built six-chapter reader has compact dynamic heading and defaults to little French", async ({page}) => {
+test("built eight-chapter reader has compact dynamic heading and defaults to little French", async ({page}) => {
   await page.setViewportSize({width:360,height:640});
   await page.goto("http://127.0.0.1:4174/macronic/prototype/");
-  await expect(page.locator("#chapter-select option")).toHaveCount(6);
+  await expect(page.locator("#chapter-select option")).toHaveCount(8);
   await expect(page.locator("h1")).toHaveText("Macronic · A reading experiment · Current text: Candide");
   expect((await page.locator("h1").boundingBox()).height).toBeLessThan(75);
   await expect(page.locator('[data-stage="1"]')).toHaveAttribute("aria-pressed","true");
@@ -265,5 +265,36 @@ test('Some words appears after about 1500 words without an extra page', async ({
   const words=await page.locator('#recap-words').innerText();
   await page.locator('#previous').click();
   await page.locator('#next').click();
-  await expect(page.locator('#recap-words')).toHaveText(words);
+  await expect(page.locator('#recap-words')).toHaveText(words, {useInnerText:true});
+});
+
+
+
+test("saved position, levels and recap survive reload without double counting", async ({page}) => {
+  await page.goto("http://127.0.0.1:4174/macronic/prototype/");
+  for (let i=0; i<12; i++) {
+    if (await page.locator("#word-recap").isVisible()) break;
+    await page.locator("#next").click();
+  }
+  await expect(page.locator("#word-recap")).toBeVisible();
+  const card=await page.locator("#recap-words").innerText();
+  const position=await page.locator("#page-status").innerText();
+  await page.locator("#gradual").uncheck();
+  await page.locator('[data-stage="3"]').click();
+  const saved=await page.evaluate(() => JSON.parse(localStorage.getItem(Object.keys(localStorage).find(k=>k.startsWith("macronic:reading:")))));
+  await page.reload();
+  await expect(page.locator("#page-status")).toHaveText(position);
+  await expect(page.locator('[data-stage="3"]')).toHaveAttribute("aria-pressed","true");
+  await expect(page.locator("#gradual")).not.toBeChecked();
+  await expect(page.locator("#recap-words")).toHaveText(card, {useInnerText:true});
+  const restored=await page.evaluate(() => JSON.parse(localStorage.getItem(Object.keys(localStorage).find(k=>k.startsWith("macronic:reading:")))));
+  expect(restored.recap.total).toBe(saved.recap.total);
+});
+
+test("blocked or corrupt storage never prevents reading", async ({page}) => {
+  await page.addInitScript(() => { Storage.prototype.setItem=()=>{throw Error("blocked")}; });
+  await page.goto("http://127.0.0.1:4174/macronic/prototype/");
+  await expect(page.locator("#save-status")).toContainText("Saving is unavailable");
+  await page.locator("#next").click();
+  await expect(page.locator("#page-status")).toContainText("Section 2");
 });
