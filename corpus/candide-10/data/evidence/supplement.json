@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "c83f7313bb4adc36f14afb2ffbb3ecc34925bad7fe8a7c7cf86892fb4454bdcf",
+  "entries": [],
+  "sentences": [
+    {
+      "id": "checked-10-p00020-sentence",
+      "passage_id": "p00020",
+      "en_sentence_ids": [
+        "en-s024"
+      ],
+      "fr_sentence_ids": [
+        "fr-s020"
+      ],
+      "source_text": "During their voyage they reasoned a good deal on the philosophy of poor\nPangloss.",
+      "target_text": "Pendant toute la traversée ils raisonnèrent beaucoup sur la philosophie\ndu pauvre Pangloss.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-10-18",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both describe the travellers discussing poor Pangloss’s philosophy during the voyage."
+    }
+  ]
+}

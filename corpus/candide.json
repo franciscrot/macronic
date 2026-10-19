@@ -34,6 +34,16 @@
       "id": "viii",
       "title": "Chapter VIII",
       "project": "corpus/candide-08"
+    },
+    {
+      "id": "ix",
+      "title": "Chapter IX",
+      "project": "corpus/candide-09"
+    },
+    {
+      "id": "x",
+      "title": "Chapter X",
+      "project": "corpus/candide-10"
     }
   ]
 }

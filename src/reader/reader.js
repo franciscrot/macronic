@@ -1,4 +1,4 @@
-import { loadReading, saveReading, readingKey } from "./shared/storage.js";
+import { restoreReading, saveReading } from "./shared/storage.js";
 import { WordRecaps } from "./shared/recaps.js";
 import { readingSections } from "./shared/sections.js";
 import { renderPassage } from "./shared/render.js";
@@ -62,8 +62,9 @@ async function install(bundle) {
   $("subtitle").textContent =
     `${languageName(data.languages.base)} · ${languageName(data.languages.learning)}`;
   $("status").classList.remove("error");
-  storageKey = await readingKey(data);
-  const saved = loadReading(storageKey, sections.length);
+  const restored = await restoreReading(data);
+  storageKey = restored.key;
+  const saved = restored.saved;
   if (saved) {
     state = saved.state;
     recaps = saved.recaps;
@@ -176,4 +177,3 @@ try {
   $("status").textContent =
     "The reading data could not be loaded. Please reload the page or open a reading file.";
 }
-

@@ -1,0 +1,1107 @@
+{
+  "schema_version": 2,
+  "base_fingerprint": "c83f7313bb4adc36f14afb2ffbb3ecc34925bad7fe8a7c7cf86892fb4454bdcf",
+  "title": "Candide",
+  "chapter": "Chapter X",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "six-level-pilot-v3",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "c83f7313bb4adc36f14afb2ffbb3ecc34925bad7fe8a7c7cf86892fb4454bdcf",
+      "entries": [],
+      "sentences": [
+        {
+          "id": "checked-10-p00020-sentence",
+          "passage_id": "p00020",
+          "en_sentence_ids": [
+            "en-s024"
+          ],
+          "fr_sentence_ids": [
+            "fr-s020"
+          ],
+          "source_text": "During their voyage they reasoned a good deal on the philosophy of poor\nPangloss.",
+          "target_text": "Pendant toute la traversée ils raisonnèrent beaucoup sur la philosophie\ndu pauvre Pangloss.",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-10-18",
+          "source": "https://www.gutenberg.org/ebooks/4650",
+          "note": "Both describe the travellers discussing poor Pangloss’s philosophy during the voyage."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "23cf97bb1de47f6fcde8999d8cc2930f30d86fec85ecf9333bb09eae3ad24456",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "23cf97bb1de47f6fcde8999d8cc2930f30d86fec85ecf9333bb09eae3ad24456",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "08a072f8c7b3015e76d43e879e7f407c896dbae7b935fa777db8e26d3a7a4c25",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "08a072f8c7b3015e76d43e879e7f407c896dbae7b935fa777db8e26d3a7a4c25",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "stages": [
+    "English",
+    "A little French",
+    "More French",
+    "Even more French",
+    "So much French",
+    "French"
+  ],
+  "passages": [
+    {
+      "id": "p00001",
+      "text": "\"Who was it that robbed me of my money and jewels?\"",
+      "translation": "Qui a donc pu me voler mes pistoles et mes diamants?",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00002",
+      "text": "said Cunegonde, all\nbathed in tears. \"How shall we live?",
+      "translation": "disait en pleurant\nCunégonde; de quoi vivrons-nous?",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00003",
+      "text": "What shall we do?",
+      "translation": "comment ferons-nous?",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00004",
+      "text": "Where find\nInquisitors or Jews who will give me more?\"",
+      "translation": "où trouver des\ninquisiteurs et des Juifs qui m’en donnent d’autres?",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00005",
+      "text": "\"Alas!\"",
+      "translation": "Hélas!",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00006",
+      "text": "said the old woman, \"I have a shrewd suspicion of a reverend\nGrey Friar, who stayed last night in the same inn with us at Badajos.",
+      "translation": "dit la\nvieille, je soupçonne fort un révérend père cordelier, qui coucha hier\ndans la même auberge que nous à Badajos; Dieu me garde de faire un\njugement téméraire!",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00006-l0018",
+          "start": 107,
+          "end": 110,
+          "english": "inn",
+          "target": "auberge",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4984-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00007",
+      "text": "God preserve me from judging rashly, but he came into our room twice,\nand he set out upon his journey long before us.\"",
+      "translation": "mais il entra deux fois dans notre chambre, et il\npartit long-temps avant nous.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00008",
+      "text": "\"Alas!\"",
+      "translation": "Hélas!",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00009",
+      "text": "said Candide, \"dear Pangloss has often demonstrated to me that\nthe goods of this world are common to all men, and that each has an\nequal right to them.",
+      "translation": "dit Candide, le bon Pangloss\nm’avait souvent prouvé que les biens de la terre sont communs à tous\nles hommes, que chacun y a un droit égal.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00009-l0018",
+          "start": 105,
+          "end": 108,
+          "english": "men",
+          "target": "hommes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00009-l0024",
+          "start": 137,
+          "end": 142,
+          "english": "right",
+          "target": "droit",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7002-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00010",
+      "text": "But according to these principles the Grey Friar\nought to have left us enough to carry us through our journey.",
+      "translation": "Ce cordelier devait bien,\nsuivant ces principes, nous laisser de quoi achever notre voyage.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00011",
+      "text": "Have you\nnothing at all left, my dear Cunegonde?\"",
+      "translation": "Il ne\nvous reste donc rien du tout, ma belle Cunégonde?",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00012",
+      "text": "\"Not a farthing,\" said she.",
+      "translation": "Pas un maravédis,\ndit-elle.",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00013",
+      "text": "\"What then must we do?\"",
+      "translation": "Quel parti prendre?",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00014",
+      "text": "said Candide.",
+      "translation": "dit Candide.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00015",
+      "text": "\"Sell one of the horses,\" replied the old woman. \"I will ride behind\nMiss Cunegonde, though I can hold myself only on one buttock, and we\nshall reach Cadiz.\"",
+      "translation": "Vendons un des chevaux, dit\nla vieille; je monterai en croupe derrière mademoiselle, quoique je ne\npuisse me tenir que sur une fesse, et nous arriverons à Cadix.",
+      "paragraph_id": "en-p00006",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00015-l0003",
+          "start": 17,
+          "end": 23,
+          "english": "horses",
+          "target": "chevaux",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4806-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00015-l0019",
+          "start": 122,
+          "end": 129,
+          "english": "buttock",
+          "target": "fesse",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2709-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00016",
+      "text": "In the same inn there was a Benedictine prior who bought the horse for a\ncheap price.",
+      "translation": "Il y avait dans la même hôtellerie un prieur de bénédictins; il acheta\nle cheval bon marché.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00016-l0012",
+          "start": 61,
+          "end": 66,
+          "english": "horse",
+          "target": "cheval",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4806-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00017",
+      "text": "Candide, Cunegonde, and the old woman, having passed\nthrough Lucena, Chillas, and Lebrixa, arrived at length at Cadiz.",
+      "translation": "Candide, Cunégonde, et la vieille, passèrent par\nLucena, par Chillas, par Lebrixa, et arrivèrent enfin à Cadix.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00018",
+      "text": "A\nfleet was there getting ready, and troops assembling to bring to reason\nthe reverend Jesuit Fathers of Paraguay, accused of having made one of\nthe native tribes in the neighborhood of San Sacrament revolt against\nthe Kings of Spain and Portugal. Candide having been in the Bulgarian\nservice, performed the military exercise before the general of this\nlittle army with so graceful an address, with so intrepid an air, and\nwith such agility and expedition, that he was given the command of a\ncompany of foot.",
+      "translation": "On y\néquipait une flotte, et on y assemblait des troupes pour mettre à la\nraison les révérends pères jésuites du Paraguai, qu’on accusait d’avoir\nfait révolter une de leurs hordes contre les rois d’Espagne et de\nPortugal, auprès de la ville du Saint-Sacrement[1]. Candide, ayant\nservi chez les Bulgares, fit l’exercice bulgarien devant le général de\nla petite armée avec tant de grâce, de célérité, d’adresse, de fierté,\nd’agilité, qu’on lui donna une compagnie d’infanterie à commander.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00018-l0001",
+          "start": 2,
+          "end": 7,
+          "english": "fleet",
+          "target": "flotte",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4171-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0006",
+          "start": 37,
+          "end": 43,
+          "english": "troops",
+          "target": "troupes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8269-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0011",
+          "start": 67,
+          "end": 73,
+          "english": "reason",
+          "target": "raison",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6786-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0032",
+          "start": 219,
+          "end": 224,
+          "english": "Kings",
+          "target": "rois",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5186-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0045",
+          "start": 317,
+          "end": 325,
+          "english": "exercise",
+          "target": "exercice",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3966-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0048",
+          "start": 337,
+          "end": 344,
+          "english": "general",
+          "target": "général",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4380-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0052",
+          "start": 360,
+          "end": 364,
+          "english": "army",
+          "target": "armée",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1970-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0055",
+          "start": 385,
+          "end": 392,
+          "english": "address",
+          "target": "adresse",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1429-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00018-l0064",
+          "start": 492,
+          "end": 499,
+          "english": "company",
+          "target": "compagnie",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3094-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00019",
+      "text": "Now, he was a captain! He set sail with Miss Cunegonde,\nthe old woman, two valets, and the two Andalusian horses, which had\nbelonged to the grand Inquisitor of Portugal.",
+      "translation": "Le\nvoilà capitaine; il s’embarque avec mademoiselle Cunégonde, la vieille,\ndeux valets, et les deux chevaux andalous qui avaient appartenu à M. le\ngrand-inquisiteur de Portugal.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00019-l0000",
+          "start": 14,
+          "end": 21,
+          "english": "captain",
+          "target": "capitaine",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2783-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0019",
+          "start": 106,
+          "end": 112,
+          "english": "horses",
+          "target": "chevaux",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4806-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00020",
+      "text": "During their voyage they reasoned a good deal on the philosophy of poor\nPangloss.",
+      "translation": "Pendant toute la traversée ils raisonnèrent beaucoup sur la philosophie\ndu pauvre Pangloss.",
+      "paragraph_id": "en-p00008",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00020-l0008",
+          "start": 53,
+          "end": 63,
+          "english": "philosophy",
+          "target": "philosophie",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6300-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "id": "p00020-sentence",
+          "start": 0,
+          "end": 81,
+          "english": "During their voyage they reasoned a good deal on the philosophy of poor\nPangloss.",
+          "target": "Pendant toute la traversée ils raisonnèrent beaucoup sur la philosophie\ndu pauvre Pangloss.",
+          "stage": 4,
+          "kind": "sentence",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "evidence": [
+              {
+                "id": "checked-10-p00020-sentence",
+                "passage_id": "p00020",
+                "en_sentence_ids": [
+                  "en-s024"
+                ],
+                "fr_sentence_ids": [
+                  "fr-s020"
+                ],
+                "source_text": "During their voyage they reasoned a good deal on the philosophy of poor\nPangloss.",
+                "target_text": "Pendant toute la traversée ils raisonnèrent beaucoup sur la philosophie\ndu pauvre Pangloss.",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-10-18",
+                "source": "https://www.gutenberg.org/ebooks/4650",
+                "note": "Both describe the travellers discussing poor Pangloss’s philosophy during the voyage."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p00021",
+      "text": "\"We are going into another world,\" said Candide; \"and surely it must be\nthere that all is for the best. For I must confess there is reason to\ncomplain a little of what passeth in our world in regard to both\nnatural and moral philosophy.\"",
+      "translation": "Nous allons dans un autre univers, disait Candide;\nc’est dans celui-là, sans doute, que tout est bien: car il faut avouer\nqu’on pourrait gémir un peu de ce qui se passe dans le nôtre en\nphysique et en morale.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00022",
+      "text": "\"I love you with all my heart,\" said Cunegonde; \"but my soul is still\nfull of fright at that which I have seen and experienced.\"",
+      "translation": "Je vous aime de tout mon coeur, disait\nCunégonde; mais j’ai encore l’âme tout effarouchée de ce que j’ai vu,\nde ce que j’ai éprouvé.",
+      "paragraph_id": "en-p00010",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00023",
+      "text": "\"All will be well,\" replied Candide; \"the sea of this new world is\nalready better than our European sea; it is calmer, the winds more\nregular.",
+      "translation": "Tout ira bien, répliquait Candide; la mer de ce\nnouveau monde vaut déjà mieux que les mers de notre Europe; elle est\nplus calme, les vents plus constants.",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00023-l0011",
+          "start": 58,
+          "end": 63,
+          "english": "world",
+          "target": "monde",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00023-l0024",
+          "start": 123,
+          "end": 128,
+          "english": "winds",
+          "target": "vents",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8670-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00024",
+      "text": "It is certainly the New World which is the best of all possible\nworlds.\"",
+      "translation": "C’est certainement le\nNouveau-Monde qui est le meilleur des univers possibles.",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00025",
+      "text": "\"God grant it,\" said Cunegonde; \"but I have been so horribly unhappy\nthere that my heart is almost closed to hope.\"",
+      "translation": "Dieu le\nveuille! disait Cunégonde: mais j’ai été si horriblement malheureuse\ndans le mien, que mon coeur est presque fermé à l’espérance.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00026",
+      "text": "\"You complain,\" said the old woman; \"alas!",
+      "translation": "Vous vous\nplaignez, leur dit la vieille; hélas!",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00027",
+      "text": "you have not known such\nmisfortunes as mine.\"",
+      "translation": "vous n’avez pas éprouvé des\ninfortunes telles que les miennes.",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00028",
+      "text": "Cunegonde almost broke out laughing, finding the good woman very\namusing, for pretending to have been as unfortunate as she.",
+      "translation": "Cunégonde se mit presque à rire, et\ntrouva cette bonne femme fort plaisante de prétendre être plus\nmalheureuse qu’elle.",
+      "paragraph_id": "en-p00014",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00028-l0007",
+          "start": 54,
+          "end": 59,
+          "english": "woman",
+          "target": "femme",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8710-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00029",
+      "text": "\"Alas!\"",
+      "translation": "Hélas!",
+      "paragraph_id": "en-p00015",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00030",
+      "text": "said Cunegonde, \"my good mother, unless you have been ravished\nby two Bulgarians, have received two deep wounds in your belly, have had\ntwo castles demolished, have had two mothers cut to pieces before your\neyes, and two of your lovers whipped at an _auto-da-fe_, I do not\nconceive how you could be more unfortunate than I. Add that I was born a\nbaroness of seventy-two quarterings--and have been a cook!\"",
+      "translation": "lui dit-elle, ma bonne, à moins que vous\nn’ayez été violée par deux Bulgares, que vous n’ayez reçu deux coups de\ncouteau dans le ventre, qu’on n’ait démoli deux de vos châteaux, qu’on\nn’ait égorgé à vos yeux deux mères et deux pères, et que vous n’ayez vu\ndeux de vos amants fouettés dans un auto-da-fé, je ne vois pas que vous\npuissiez l’emporter sur moi; ajoutez que je suis née baronne avec\nsoixante et douze quartiers, et que j’ai été cuisinière.",
+      "paragraph_id": "en-p00015",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00030-l0019",
+          "start": 120,
+          "end": 125,
+          "english": "belly",
+          "target": "ventre",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2395-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00030-l0023",
+          "start": 140,
+          "end": 147,
+          "english": "castles",
+          "target": "châteaux",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00030-l0038",
+          "start": 229,
+          "end": 235,
+          "english": "lovers",
+          "target": "amants",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5402-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00031",
+      "text": "\"Miss,\" replied the old woman, \"you do not know my birth; and were I to\nshow you my backside, you would not talk in that manner, but would\nsuspend your judgment.\"",
+      "translation": "Mademoiselle,\nrépondit la vieille, vous ne savez pas quelle est ma naissance; et si\nje vous montrais mon derrière, vous ne parleriez pas comme vous faites,\net vous suspendriez votre jugement.",
+      "paragraph_id": "en-p00016",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00031-l0009",
+          "start": 51,
+          "end": 56,
+          "english": "birth",
+          "target": "naissance",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2498-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00031-l0018",
+          "start": 84,
+          "end": 92,
+          "english": "backside",
+          "target": "derrière",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2206-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00032",
+      "text": "This speech having raised extreme curiosity in the minds of Cunegonde\nand Candide, the old woman spoke to them as follows.",
+      "translation": "Ce discours fit naître une extrême\ncuriosité dans l’esprit de Cunégonde et de Candide. La vieille leur\nparla en ces termes.",
+      "paragraph_id": "en-p00017",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00032-l0004",
+          "start": 34,
+          "end": 43,
+          "english": "curiosity",
+          "target": "curiosité",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3355-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    }
+  ]
+}

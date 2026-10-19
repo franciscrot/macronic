@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "language": "en",
+      "snapshot": "data/sources/pg19942.txt",
+      "snapshot_sha256": "fb3943df826f375c4ab78d21f2d30bc95a0b2cb448e8812447a807d678eb0b5c",
+      "source_ranges": [
+        {
+          "start": 51492,
+          "end": 51673
+        },
+        {
+          "start": 51675,
+          "end": 51932
+        },
+        {
+          "start": 51934,
+          "end": 52254
+        },
+        {
+          "start": 52256,
+          "end": 52283
+        },
+        {
+          "start": 52285,
+          "end": 52322
+        },
+        {
+          "start": 52324,
+          "end": 52481
+        },
+        {
+          "start": 52483,
+          "end": 53366
+        },
+        {
+          "start": 53368,
+          "end": 53449
+        },
+        {
+          "start": 53451,
+          "end": 53688
+        },
+        {
+          "start": 53690,
+          "end": 53818
+        },
+        {
+          "start": 53820,
+          "end": 54035
+        },
+        {
+          "start": 54037,
+          "end": 54152
+        },
+        {
+          "start": 54154,
+          "end": 54242
+        },
+        {
+          "start": 54244,
+          "end": 54368
+        },
+        {
+          "start": 54370,
+          "end": 54783
+        },
+        {
+          "start": 54785,
+          "end": 54947
+        },
+        {
+          "start": 54949,
+          "end": 55071
+        }
+      ],
+      "omitted_note_ranges": [],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    },
+    {
+      "language": "fr",
+      "snapshot": "data/sources/pg4650.txt",
+      "snapshot_sha256": "1cc10ab3268a76aa01bd3f9722ae2ae0e5e36b869a18b0bb0832b75bc0327806",
+      "source_ranges": [
+        {
+          "start": 48346,
+          "end": 49309
+        },
+        {
+          "start": 49311,
+          "end": 50181
+        },
+        {
+          "start": 50319,
+          "end": 52129
+        }
+      ],
+      "omitted_note_ranges": [
+        {
+          "start": 50183,
+          "end": 50316
+        }
+      ],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "language": "en",
+      "file": "en.original.txt",
+      "sha256": "23cf97bb1de47f6fcde8999d8cc2930f30d86fec85ecf9333bb09eae3ad24456",
+      "normalized_file": "en.txt",
+      "normalized_sha256": "23cf97bb1de47f6fcde8999d8cc2930f30d86fec85ecf9333bb09eae3ad24456",
+      "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+      "url": "https://www.gutenberg.org/ebooks/19942",
+      "rights": "Source snapshots and full notices retained in data/sources/",
+      "transforms": [
+        "UTF-8 BOM removed if present",
+        "CRLF and CR normalized to LF; no text omitted"
+      ]
+    },
+    {
+      "language": "fr",
+      "file": "fr.original.txt",
+      "sha256": "08a072f8c7b3015e76d43e879e7f407c896dbae7b935fa777db8e26d3a7a4c25",
+      "normalized_file": "fr.txt",
+      "normalized_sha256": "08a072f8c7b3015e76d43e879e7f407c896dbae7b935fa777db8e26d3a7a4c25",
+      "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+      "url": "https://www.gutenberg.org/ebooks/4650",
+      "rights": "Source snapshots and full notices retained in data/sources/",
+      "transforms": [
+        "UTF-8 BOM removed if present",
+        "CRLF and CR normalized to LF; no text omitted"
+      ]
+    }
+  ]
+}

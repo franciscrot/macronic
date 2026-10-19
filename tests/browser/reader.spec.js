@@ -240,7 +240,7 @@ test("guide is linked from reader and hosted preparation explains local worker",
 test("built eight-chapter reader has compact dynamic heading and defaults to little French", async ({page}) => {
   await page.setViewportSize({width:360,height:640});
   await page.goto("http://127.0.0.1:4174/macronic/prototype/");
-  await expect(page.locator("#chapter-select option")).toHaveCount(8);
+  await expect(page.locator("#chapter-select option")).toHaveCount(10);
   await expect(page.locator("h1")).toHaveText("Macronic · A reading experiment · Current text: Candide");
   expect((await page.locator("h1").boundingBox()).height).toBeLessThan(75);
   await expect(page.locator('[data-stage="1"]')).toHaveAttribute("aria-pressed","true");
@@ -297,4 +297,33 @@ test("blocked or corrupt storage never prevents reading", async ({page}) => {
   await expect(page.locator("#save-status")).toContainText("Saving is unavailable");
   await page.locator("#next").click();
   await expect(page.locator("#page-status")).toContainText("Section 2");
+});
+
+test('appending chapters preserves position, preferences and recap without double counting', async ({page}) => {
+  const {readFile}=await import('node:fs/promises');
+  const full=JSON.parse(await readFile(new URL('../../data/reader/book.json',import.meta.url),'utf8'));
+  const chapters=full.chapters.slice(0,8), ids=new Set(chapters.map(c=>c.id));
+  const earlier={...full,chapters,passages:full.passages.filter(p=>ids.has(p.chapter_id))};
+  let expanded=false;
+  await page.route('**/reader.json', route=>route.fulfill({json:expanded?full:earlier}));
+  await page.goto('http://127.0.0.1:4174/macronic/prototype/');
+  for(let i=0;i<12;i++){
+    if(await page.locator('#word-recap').isVisible())break;
+    await page.locator('#next').click();
+  }
+  await expect(page.locator('#word-recap')).toBeVisible();
+  const recap=await page.locator('#recap-words').innerText();
+  const position=(await page.locator('#page-status').innerText()).split(' of ')[0];
+  await page.locator('#gradual').uncheck();
+  await page.locator('[data-stage="3"]').click();
+  const total=await page.evaluate(()=>JSON.parse(localStorage.getItem(Object.keys(localStorage).find(k=>k.startsWith('macronic:reading:')))).recap.total);
+  expanded=true;
+  await page.reload();
+  await expect(page.locator('#chapter-select option')).toHaveCount(10);
+  await expect(page.locator('#page-status')).toContainText(position);
+  await expect(page.locator('[data-stage="3"]')).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('#gradual')).not.toBeChecked();
+  await expect(page.locator('#recap-words')).toHaveText(recap,{useInnerText:true});
+  const totals=await page.evaluate(()=>Object.keys(localStorage).filter(k=>k.startsWith('macronic:reading:')).map(k=>JSON.parse(localStorage.getItem(k)).recap.total));
+  expect(totals).toEqual([total,total]);
 });

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "check_origin": "ai_context_check",
+  "checked_by": "Codex",
+  "checked_on": "2026-10-18",
+  "base_fingerprint": "ce11c2f6e5e17f9ce7206ead96d101269ae8b3e369c6c1e45e757d17f0963150",
+  "reviewed_word_insertions": 17,
+  "note": "Every admitted noun was checked against the paired source context. This AI check is not an independent or held-out accuracy evaluation.",
+  "alignment_notes": [
+    "p00012 is below the similarity threshold and admits no substitution.",
+    "p00006 differs between editions (cushions versus carreau); no whole sentence is admitted there."
+  ]
+}

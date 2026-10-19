@@ -1,10 +1,34 @@
 import { WordRecaps } from "./recaps.js";
+import { readingSections } from "./sections.js";
 
 // Tie progress to the exact prepared reading file, never to a title alone.
 export async function readingKey(data) {
   const bytes = new TextEncoder().encode(JSON.stringify(data));
   const hash = await crypto.subtle.digest("SHA-256", bytes);
   return "macronic:reading:v1:" + Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2, "0")).join("");
+}
+
+// Recover only an exact previous chapter prefix, including its translations,
+// substitutions and provenance. Changed earlier content starts a fresh history.
+// This also migrates version-1 saves without enumerating localStorage.
+export async function restoreReading(data, storage) {
+  const key = await readingKey(data);
+  const exact = loadReading(key, readingSections(data.passages).length, storage);
+  if (exact) return { key, saved: exact };
+  const chapters = data.chapters;
+  if (Array.isArray(chapters) && chapters.length > 1 &&
+      new Set(chapters.map(c => c.id)).size === chapters.length) {
+    for (let n = chapters.length - 1; n > 0; n--) {
+      const kept = chapters.slice(0, n);
+      const ids = new Set(kept.map(c => c.id));
+      const prefix = { ...data, chapters: kept,
+        passages: data.passages.filter(p => ids.has(p.chapter_id)) };
+      const saved = loadReading(await readingKey(prefix),
+        readingSections(prefix.passages).length, storage);
+      if (saved) return { key, saved };
+    }
+  }
+  return { key, saved: null };
 }
 export function saveReading(key, state, recaps, storage) {
   try {
