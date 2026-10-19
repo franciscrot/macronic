@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Prepare texts · Macronic</title>
+    <link rel="stylesheet" href="../shared/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Macronic · Authoring</div>
+        <h1>Prepare two texts</h1>
+        <p>
+          Start with a chapter in English and its existing French translation.
+          Keep paragraph breaks. Use UTF-8 plain-text (.txt) files, up to 2 MB
+          each.
+        </p>
+        <p><a href="../guide/">Beginner’s guide</a></p>
+      </header>
+      <p id="connection" role="status">
+        Checking for the local preparation worker…
+      </p>
+      <form id="prepare">
+        <fieldset id="inputs" disabled>
+          <legend>New authoring project</legend>
+          <label>Work or chapter title <input name="title" required /></label>
+          <label
+            >English text
+            <input name="english" type="file" accept=".txt,text/plain" required
+          /></label>
+          <label
+            >English edition / translator
+            <input
+              name="english_edition"
+              required
+              placeholder="Edition details, or Unknown"
+          /></label>
+          <label
+            >English source URL (optional) <input name="english_url" type="url"
+          /></label>
+          <label
+            >Translation language
+            <select name="target_language">
+              <option value="fr">French</option>
+              <option value="yi" disabled>
+                Yiddish — preparation not yet supported
+              </option>
+            </select></label
+          >
+          <label
+            >Translated text
+            <input
+              name="translation"
+              type="file"
+              accept=".txt,text/plain"
+              required
+          /></label>
+          <label
+            >Translation edition / translator
+            <input
+              name="target_edition"
+              required
+              placeholder="Edition details, or Unknown"
+          /></label>
+          <label
+            >Translation source URL (optional)
+            <input name="target_url" type="url"
+          /></label>
+          <label
+            >Rights / permission note
+            <input
+              name="rights"
+              placeholder="For example: public-domain edition"
+          /></label>
+          <label
+            ><input name="sources_only" type="checkbox" /> Save sources only,
+            without running models yet</label
+          >
+          <button type="submit">Create project</button>
+        </fieldset>
+      </form>
+      <p id="message" role="status"></p>
+      <div id="result"></div>
+      <h2>Saved local projects</h2>
+      <div id="projects"></div>
+      <p class="muted">
+        These files are saved on the computer running the worker. They are not
+        automatically uploaded to GitHub. Export corrections from the workshop
+        before closing it.
+      </p>
+    </main>
+    <script type="module" src="./prepare.js"></script>
+  </body>
+</html>

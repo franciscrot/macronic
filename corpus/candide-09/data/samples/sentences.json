@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "languages": {
+    "en": [
+      {
+        "id": "en-s001",
+        "paragraph_id": "en-p00001",
+        "text": "This Issachar was the most choleric Hebrew that had ever been seen in\nIsrael since the Captivity in Babylon.",
+        "source_start": 0,
+        "source_end": 108
+      },
+      {
+        "id": "en-s002",
+        "paragraph_id": "en-p00002",
+        "text": "\"What!\"",
+        "source_start": 110,
+        "source_end": 117
+      },
+      {
+        "id": "en-s003",
+        "paragraph_id": "en-p00002",
+        "text": "said he, \"thou bitch of a Galilean, was not the Inquisitor\nenough for thee?",
+        "source_start": 118,
+        "source_end": 193
+      },
+      {
+        "id": "en-s004",
+        "paragraph_id": "en-p00002",
+        "text": "Must this rascal also share with me?\"",
+        "source_start": 194,
+        "source_end": 231
+      },
+      {
+        "id": "en-s005",
+        "paragraph_id": "en-p00003",
+        "text": "In saying this he drew a long poniard which he always carried about him;\nand not imagining that his adversary had any arms he threw himself upon\nCandide: but our honest Westphalian had received a handsome sword from\nthe old woman along with the suit of clothes.",
+        "source_start": 233,
+        "source_end": 494
+      },
+      {
+        "id": "en-s006",
+        "paragraph_id": "en-p00003",
+        "text": "He drew his rapier,\ndespite his gentleness, and laid the Israelite stone dead upon the\ncushions at Cunegonde's feet.",
+        "source_start": 495,
+        "source_end": 611
+      },
+      {
+        "id": "en-s007",
+        "paragraph_id": "en-p00004",
+        "text": "\"Holy Virgin!\"",
+        "source_start": 613,
+        "source_end": 627
+      },
+      {
+        "id": "en-s008",
+        "paragraph_id": "en-p00004",
+        "text": "cried she, \"what will become of us?",
+        "source_start": 628,
+        "source_end": 663
+      },
+      {
+        "id": "en-s009",
+        "paragraph_id": "en-p00004",
+        "text": "A man killed in my\napartment!",
+        "source_start": 664,
+        "source_end": 693
+      },
+      {
+        "id": "en-s010",
+        "paragraph_id": "en-p00004",
+        "text": "If the officers of justice come, we are lost!\"",
+        "source_start": 694,
+        "source_end": 740
+      },
+      {
+        "id": "en-s011",
+        "paragraph_id": "en-p00005",
+        "text": "\"Had not Pangloss been hanged,\" said Candide, \"he would give us good\ncounsel in this emergency, for he was a profound philosopher.",
+        "source_start": 742,
+        "source_end": 872
+      },
+      {
+        "id": "en-s012",
+        "paragraph_id": "en-p00005",
+        "text": "Failing\nhim let us consult the old woman.\"",
+        "source_start": 873,
+        "source_end": 915
+      },
+      {
+        "id": "en-s013",
+        "paragraph_id": "en-p00006",
+        "text": "She was very prudent and commenced to give her opinion when suddenly\nanother little door opened.",
+        "source_start": 917,
+        "source_end": 1013
+      },
+      {
+        "id": "en-s014",
+        "paragraph_id": "en-p00006",
+        "text": "It was an hour after midnight, it was the\nbeginning of Sunday.",
+        "source_start": 1014,
+        "source_end": 1076
+      },
+      {
+        "id": "en-s015",
+        "paragraph_id": "en-p00006",
+        "text": "This day belonged to my lord the Inquisitor.",
+        "source_start": 1077,
+        "source_end": 1121
+      },
+      {
+        "id": "en-s016",
+        "paragraph_id": "en-p00006",
+        "text": "He\nentered, and saw the whipped Candide, sword in hand, a dead man upon the\nfloor, Cunegonde aghast, and the old woman giving counsel.",
+        "source_start": 1122,
+        "source_end": 1256
+      },
+      {
+        "id": "en-s017",
+        "paragraph_id": "en-p00007",
+        "text": "At this moment, the following is what passed in the soul of Candide, and\nhow he reasoned:",
+        "source_start": 1258,
+        "source_end": 1347
+      },
+      {
+        "id": "en-s018",
+        "paragraph_id": "en-p00008",
+        "text": "If this holy man call in assistance, he will surely have me burnt; and\nCunegonde will perhaps be served in the same manner; he was the cause of\nmy being cruelly whipped; he is my rival; and, as I have now begun to\nkill, I will kill away, for there is no time to hesitate.",
+        "source_start": 1349,
+        "source_end": 1620
+      },
+      {
+        "id": "en-s019",
+        "paragraph_id": "en-p00008",
+        "text": "This reasoning\nwas clear and instantaneous; so that without giving time to the\nInquisitor to recover from his surprise, he pierced him through and\nthrough, and cast him beside the Jew.",
+        "source_start": 1621,
+        "source_end": 1805
+      },
+      {
+        "id": "en-s020",
+        "paragraph_id": "en-p00009",
+        "text": "\"Yet again!\"",
+        "source_start": 1807,
+        "source_end": 1819
+      },
+      {
+        "id": "en-s021",
+        "paragraph_id": "en-p00009",
+        "text": "said Cunegonde, \"now there is no mercy for us, we are\nexcommunicated, our last hour has come.",
+        "source_start": 1820,
+        "source_end": 1913
+      },
+      {
+        "id": "en-s022",
+        "paragraph_id": "en-p00009",
+        "text": "How could you do it?",
+        "source_start": 1914,
+        "source_end": 1934
+      },
+      {
+        "id": "en-s023",
+        "paragraph_id": "en-p00009",
+        "text": "you,\nnaturally so gentle, to slay a Jew and a prelate in two minutes!\"",
+        "source_start": 1935,
+        "source_end": 2005
+      },
+      {
+        "id": "en-s024",
+        "paragraph_id": "en-p00010",
+        "text": "\"My beautiful young lady,\" responded Candide, \"when one is a lover,\njealous and whipped by the Inquisition, one stops at nothing.\"",
+        "source_start": 2007,
+        "source_end": 2137
+      },
+      {
+        "id": "en-s025",
+        "paragraph_id": "en-p00011",
+        "text": "The old woman then put in her word, saying:",
+        "source_start": 2139,
+        "source_end": 2182
+      },
+      {
+        "id": "en-s026",
+        "paragraph_id": "en-p00012",
+        "text": "\"There are three Andalusian horses in the stable with bridles and\nsaddles, let the brave Candide get them ready; madame has money, jewels;\nlet us therefore mount quickly on horseback, though I can sit only on\none buttock; let us set out for Cadiz, it is the finest weather in the\nworld, and there is great pleasure in travelling in the cool of the\nnight.\"",
+        "source_start": 2184,
+        "source_end": 2539
+      },
+      {
+        "id": "en-s027",
+        "paragraph_id": "en-p00013",
+        "text": "Immediately Candide saddled the three horses, and Cunegonde, the old\nwoman and he, travelled thirty miles at a stretch.",
+        "source_start": 2541,
+        "source_end": 2660
+      },
+      {
+        "id": "en-s028",
+        "paragraph_id": "en-p00013",
+        "text": "While they were\njourneying, the Holy Brotherhood entered the house; my lord the\nInquisitor was interred in a handsome church, and Issachar's body was\nthrown upon a dunghill.",
+        "source_start": 2661,
+        "source_end": 2834
+      },
+      {
+        "id": "en-s029",
+        "paragraph_id": "en-p00014",
+        "text": "Candide, Cunegonde, and the old woman, had now reached the little town\nof Avacena in the midst of the mountains of the Sierra Morena, and were\nspeaking as follows in a public inn.",
+        "source_start": 2836,
+        "source_end": 3015
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-s001",
+        "paragraph_id": "fr-p00001",
+        "text": "Cet Issachar était le plus colérique Hébreu qu’on eût vu dans Israël,\ndepuis la captivité en Babylone.",
+        "source_start": 0,
+        "source_end": 102
+      },
+      {
+        "id": "fr-s002",
+        "paragraph_id": "fr-p00001",
+        "text": "Quoi!",
+        "source_start": 103,
+        "source_end": 108
+      },
+      {
+        "id": "fr-s003",
+        "paragraph_id": "fr-p00001",
+        "text": "dit-il, chienne de galiléenne,\nce n’est pas assez de monsieur l’inquisiteur?",
+        "source_start": 109,
+        "source_end": 185
+      },
+      {
+        "id": "fr-s004",
+        "paragraph_id": "fr-p00001",
+        "text": "il faut que ce coquin\npartage aussi avec moi?",
+        "source_start": 186,
+        "source_end": 231
+      },
+      {
+        "id": "fr-s005",
+        "paragraph_id": "fr-p00001",
+        "text": "En disant cela il tire un long poignard dont il\nétait toujours pourvu, et, ne croyant pas que son adverse partie eût\ndes armes, il se jette sur Candide; mais notre bon Vestphalien avait\nreçu une belle épée de la vieille avec l’habit complet.",
+        "source_start": 232,
+        "source_end": 473
+      },
+      {
+        "id": "fr-s006",
+        "paragraph_id": "fr-p00001",
+        "text": "Il tire son\népée, quoiqu’il eût les moeurs fort douces, et vous étend l’Israélite\nroide mort sur le carreau, aux pieds de la belle Cunégonde.",
+        "source_start": 474,
+        "source_end": 615
+      },
+      {
+        "id": "fr-s007",
+        "paragraph_id": "fr-p00002",
+        "text": "Sainte Vierge!",
+        "source_start": 617,
+        "source_end": 631
+      },
+      {
+        "id": "fr-s008",
+        "paragraph_id": "fr-p00002",
+        "text": "s’écria-t-elle, qu’allons-nous devenir?",
+        "source_start": 632,
+        "source_end": 671
+      },
+      {
+        "id": "fr-s009",
+        "paragraph_id": "fr-p00002",
+        "text": "un homme tué\nchez moi!",
+        "source_start": 672,
+        "source_end": 694
+      },
+      {
+        "id": "fr-s010",
+        "paragraph_id": "fr-p00002",
+        "text": "si la justice vient, nous sommes perdus.",
+        "source_start": 695,
+        "source_end": 735
+      },
+      {
+        "id": "fr-s011",
+        "paragraph_id": "fr-p00002",
+        "text": "Si Pangloss n’avait\npas été pendu, dit Candide, il nous donnerait un bon conseil dans cette\nextrémité, car c’était un grand philosophe.",
+        "source_start": 736,
+        "source_end": 871
+      },
+      {
+        "id": "fr-s012",
+        "paragraph_id": "fr-p00002",
+        "text": "A son défaut, consultons la\nvieille.",
+        "source_start": 872,
+        "source_end": 908
+      },
+      {
+        "id": "fr-s013",
+        "paragraph_id": "fr-p00002",
+        "text": "Elle était fort prudente, et commençait à dire son avis quand\nune autre petite porte s’ouvrit.",
+        "source_start": 909,
+        "source_end": 1003
+      },
+      {
+        "id": "fr-s014",
+        "paragraph_id": "fr-p00002",
+        "text": "Il était une heure après minuit,\nc’était le commencement du dimanche.",
+        "source_start": 1004,
+        "source_end": 1073
+      },
+      {
+        "id": "fr-s015",
+        "paragraph_id": "fr-p00002",
+        "text": "Ce jour appartenait à monseigneur\nl’inquisiteur.",
+        "source_start": 1074,
+        "source_end": 1122
+      },
+      {
+        "id": "fr-s016",
+        "paragraph_id": "fr-p00002",
+        "text": "Il entre et voit le fessé Candide, l’épée à la main, un\nmort étendu par terre, Cunégonde effarée, et la vieille donnant des\nconseils.",
+        "source_start": 1123,
+        "source_end": 1256
+      },
+      {
+        "id": "fr-s017",
+        "paragraph_id": "fr-p00003",
+        "text": "Voici dans ce moment ce qui se passa dans l’âme de Candide, et comment\nil raisonna: Si ce saint homme appelle du secours, il me fera\ninfailliblement brûler, il pourra en faire autant de Cunégonde; il m’a\nfait fouetter impitoyablement; il est mon rival; je suis en train de\ntuer; il n’y a pas à balancer.",
+        "source_start": 1258,
+        "source_end": 1561
+      },
+      {
+        "id": "fr-s018",
+        "paragraph_id": "fr-p00003",
+        "text": "Ce raisonnement fut net et rapide; et,\nsans donner le temps à l’inquisiteur de revenir de sa surprise, il le\nperce d’outre en outre, et le jette à côté du Juif.",
+        "source_start": 1562,
+        "source_end": 1722
+      },
+      {
+        "id": "fr-s019",
+        "paragraph_id": "fr-p00003",
+        "text": "En voici bien d’une\nautre, dit Cunégonde; il n’y a plus de rémission; nous sommes\nexcommuniés, notre dernière heure est venue!",
+        "source_start": 1723,
+        "source_end": 1849
+      },
+      {
+        "id": "fr-s020",
+        "paragraph_id": "fr-p00003",
+        "text": "Comment avez-vous fait,\nvous qui êtes né si doux, pour tuer en deux minutes un Juif et un\nprélat?",
+        "source_start": 1850,
+        "source_end": 1947
+      },
+      {
+        "id": "fr-s021",
+        "paragraph_id": "fr-p00003",
+        "text": "Ma belle demoiselle, répondit Candide, quand on est amoureux,\njaloux, et fouetté par l’inquisition, on ne se connaît plus.",
+        "source_start": 1948,
+        "source_end": 2070
+      },
+      {
+        "id": "fr-s022",
+        "paragraph_id": "fr-p00004",
+        "text": "La vieille prit alors la parole, et dit: Il y a trois chevaux andalous\ndans l’écurie, avec leurs selles et leurs brides, que le brave Candide\nles prépare; madame a des moyadors et des diamants, montons vite à\ncheval, quoique je ne puisse me tenir que sur une fesse, et allons à\nCadix; il fait le plus beau temps du monde, et c’est un grand plaisir\nde voyager pendant la fraîcheur de la nuit.",
+        "source_start": 2072,
+        "source_end": 2463
+      },
+      {
+        "id": "fr-s023",
+        "paragraph_id": "fr-p00005",
+        "text": "Aussitôt Candide selle les trois chevaux; Cunégonde, la vieille, et\nlui, font trente milles d’une traite.",
+        "source_start": 2465,
+        "source_end": 2570
+      },
+      {
+        "id": "fr-s024",
+        "paragraph_id": "fr-p00005",
+        "text": "Pendant qu’ils s’éloignaient, la\nsainte hermandad arrive dans la maison, on enterre monseigneur dans une\nbelle église, on jette Issachar à la voirie.",
+        "source_start": 2571,
+        "source_end": 2720
+      },
+      {
+        "id": "fr-s025",
+        "paragraph_id": "fr-p00006",
+        "text": "Candide, Cunégonde, et la vieille, étaient déjà dans la petite ville\nd’Avacéna, au milieu des montagnes de la Sierra-Morena; et ils\nparlaient ainsi dans un cabaret.",
+        "source_start": 2722,
+        "source_end": 2886
+      }
+    ]
+  }
+}

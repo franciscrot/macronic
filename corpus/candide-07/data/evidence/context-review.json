@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "check_origin": "ai_context_check",
+  "checked_by": "Codex",
+  "checked_on": "2026-10-01",
+  "base_fingerprint": "3c467c1cbe17788853bdea58894a8269d7ab9e6f768e290e4ec97aa95e8bd3c6",
+  "reviewed_word_insertions": 26,
+  "note": "Every generated noun insertion was read against the paired source context. No known meaning error found in admitted insertions. This is AI review, not an independent or held-out accuracy evaluation.",
+  "alignment_notes": [
+    "Dialogue in Chapter VII has a French group covering subsequent unmatched English fragments (p00031–p00033); these fragments carry no word or sentence insertions. Raw segmentation and complete source coverage are retained. Generic boundary recomputation remains outstanding."
+  ]
+}

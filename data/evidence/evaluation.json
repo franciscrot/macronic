@@ -375,9 +375,9 @@
   "automatic": {
     "raw_word_links": 746,
     "passage_groups": 24,
-    "chapter_eligible_insertions": 50,
-    "demo_insertions": 15,
-    "corrected_demo_insertions": 15,
+    "chapter_eligible_insertions": 67,
+    "demo_insertions": 67,
+    "corrected_demo_insertions": 67,
     "demo_distribution": [
       {
         "id": "p001",
@@ -406,11 +406,19 @@
       },
       {
         "id": "p004",
-        "count": 4,
+        "count": 6,
         "insertions": [
           [
             "son",
             "fils"
+          ],
+          [
+            "sister",
+            "soeur"
+          ],
+          [
+            "good",
+            "bon"
           ],
           [
             "rest",
@@ -442,8 +450,12 @@
       },
       {
         "id": "p006",
-        "count": 1,
+        "count": 2,
         "insertions": [
+          [
+            "great",
+            "grande"
+          ],
           [
             "tapestry",
             "tapisserie"
@@ -452,11 +464,15 @@
       },
       {
         "id": "p007",
-        "count": 1,
+        "count": 2,
         "insertions": [
           [
             "dogs",
             "chiens"
+          ],
+          [
+            "grooms",
+            "palefreniers"
           ]
         ]
       },
@@ -496,12 +512,284 @@
             "ans"
           ]
         ]
+      },
+      {
+        "id": "p011",
+        "count": 2,
+        "insertions": [
+          [
+            "son",
+            "fils"
+          ],
+          [
+            "father",
+            "père"
+          ]
+        ]
+      },
+      {
+        "id": "p012",
+        "count": 5,
+        "insertions": [
+          [
+            "little",
+            "petit"
+          ],
+          [
+            "lessons",
+            "leçons"
+          ],
+          [
+            "faith",
+            "foi"
+          ],
+          [
+            "age",
+            "âge"
+          ],
+          [
+            "character",
+            "caractère"
+          ]
+        ]
+      },
+      {
+        "id": "p013",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p014",
+        "count": 7,
+        "insertions": [
+          [
+            "effect",
+            "effet"
+          ],
+          [
+            "possible",
+            "possibles"
+          ],
+          [
+            "worlds",
+            "mondes"
+          ],
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "castles",
+            "châteaux"
+          ],
+          [
+            "possible",
+            "possibles"
+          ],
+          [
+            "Baronesses",
+            "baronnes"
+          ]
+        ]
+      },
+      {
+        "id": "p015",
+        "count": 3,
+        "insertions": [
+          [
+            "things",
+            "choses"
+          ],
+          [
+            "end",
+            "fin"
+          ],
+          [
+            "end",
+            "fin"
+          ]
+        ]
+      },
+      {
+        "id": "p016",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p017",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p018",
+        "count": 0,
+        "insertions": []
+      },
+      {
+        "id": "p019",
+        "count": 3,
+        "insertions": [
+          [
+            "happiness",
+            "bonheur"
+          ],
+          [
+            "happiness",
+            "bonheur"
+          ],
+          [
+            "philosopher",
+            "philosophe"
+          ]
+        ]
+      },
+      {
+        "id": "p020",
+        "count": 7,
+        "insertions": [
+          [
+            "day",
+            "jour"
+          ],
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "little",
+            "petit"
+          ],
+          [
+            "wood",
+            "bois"
+          ],
+          [
+            "park",
+            "parc"
+          ],
+          [
+            "lesson",
+            "leçon"
+          ],
+          [
+            "mother",
+            "mère"
+          ]
+        ]
+      },
+      {
+        "id": "p021",
+        "count": 6,
+        "insertions": [
+          [
+            "experiments",
+            "expériences"
+          ],
+          [
+            "witness",
+            "témoin"
+          ],
+          [
+            "effects",
+            "effets"
+          ],
+          [
+            "desire",
+            "désir"
+          ],
+          [
+            "reason",
+            "raison"
+          ],
+          [
+            "young",
+            "jeune"
+          ]
+        ]
+      },
+      {
+        "id": "p022",
+        "count": 1,
+        "insertions": [
+          [
+            "castle",
+            "château"
+          ]
+        ]
+      },
+      {
+        "id": "p023",
+        "count": 8,
+        "insertions": [
+          [
+            "dinner",
+            "dîner"
+          ],
+          [
+            "screen",
+            "paravent"
+          ],
+          [
+            "handkerchief",
+            "mouchoir"
+          ],
+          [
+            "hand",
+            "main"
+          ],
+          [
+            "young",
+            "jeune"
+          ],
+          [
+            "hand",
+            "main"
+          ],
+          [
+            "eyes",
+            "yeux"
+          ],
+          [
+            "hands",
+            "mains"
+          ]
+        ]
+      },
+      {
+        "id": "p024",
+        "count": 6,
+        "insertions": [
+          [
+            "screen",
+            "paravent"
+          ],
+          [
+            "effect",
+            "effet"
+          ],
+          [
+            "castle",
+            "château"
+          ],
+          [
+            "backside",
+            "derrière"
+          ],
+          [
+            "possible",
+            "possibles"
+          ],
+          [
+            "castles",
+            "châteaux"
+          ]
+        ]
       }
     ],
     "exclusion_reasons": {
-      "part_of_speech": 631,
-      "number": 517,
-      "dictionary_missing": 405,
+      "part_of_speech": 622,
+      "number": 508,
+      "dictionary_missing": 397,
       "not_simple_words": 121,
       "same_surface": 122,
       "compound": 30,
@@ -509,7 +797,51 @@
       "low_passage_similarity": 6,
       "passage_not_eligible": 67,
       "large_group": 61
-    }
+    },
+    "levels": [
+      {
+        "label": "English",
+        "stage": 0,
+        "word_insertions": 0,
+        "sentence_insertions": 0,
+        "full_target_text": false
+      },
+      {
+        "label": "A little French",
+        "stage": 1,
+        "word_insertions": 17,
+        "sentence_insertions": 0,
+        "full_target_text": false
+      },
+      {
+        "label": "More French",
+        "stage": 2,
+        "word_insertions": 56,
+        "sentence_insertions": 0,
+        "full_target_text": false
+      },
+      {
+        "label": "Even more French",
+        "stage": 3,
+        "word_insertions": 65,
+        "sentence_insertions": 0,
+        "full_target_text": false
+      },
+      {
+        "label": "So much French",
+        "stage": 4,
+        "word_insertions": 67,
+        "sentence_insertions": 1,
+        "full_target_text": false
+      },
+      {
+        "label": "French",
+        "stage": 5,
+        "word_insertions": 0,
+        "sentence_insertions": 0,
+        "full_target_text": true
+      }
+    ]
   },
   "correction_time_per_passage": null,
   "limitation": "Reference is AI-authored after inspecting the output; not independent, not held out. No human accuracy claim or release approval is implied."

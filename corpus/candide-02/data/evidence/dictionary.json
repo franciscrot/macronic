@@ -1,0 +1,5210 @@
+{
+  "schema_version": 1,
+  "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+  "release": "0.1.6 + pinned repository changes",
+  "sha256": "5b7e1f657c5902f10ace0a31a6ffa3702ac0b5a49dfcc66883040c2a5e05a9a6",
+  "license": "GPL-2.0-or-later; original TEI header retained",
+  "entries": [
+    {
+      "id": "freedict-eng-fra-entry-421-sense-0",
+      "en": "fortune",
+      "fr": [
+        "Fortune"
+      ],
+      "entry_index": 421,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-460-sense-0",
+      "en": "god",
+      "fr": [
+        "Dieu"
+      ],
+      "entry_index": 460,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-683-sense-0",
+      "en": "march",
+      "fr": [
+        "mars"
+      ],
+      "entry_index": 683,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-720-sense-0",
+      "en": "miss",
+      "fr": [
+        "demoiselle",
+        "mademoiselle"
+      ],
+      "entry_index": 720,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-745-sense-0",
+      "en": "mr.",
+      "fr": [
+        "monsieur"
+      ],
+      "entry_index": 745,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1163-sense-0",
+      "en": "a",
+      "fr": [
+        "à",
+        "au milie de",
+        "en",
+        "dans",
+        "parmi"
+      ],
+      "entry_index": 1163,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1163-sense-1",
+      "en": "a",
+      "fr": [
+        "un",
+        "quelqu'un"
+      ],
+      "entry_index": 1163,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1163-sense-2",
+      "en": "a",
+      "fr": [
+        "àraisonde",
+        "par"
+      ],
+      "entry_index": 1163,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-1163-sense-3",
+      "en": "a",
+      "fr": [
+        "une"
+      ],
+      "entry_index": 1163,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-1203-sense-0",
+      "en": "able",
+      "fr": [
+        "apte à",
+        "capable"
+      ],
+      "entry_index": 1203,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1203-sense-1",
+      "en": "able",
+      "fr": [
+        "compétent",
+        "qualifié"
+      ],
+      "entry_index": 1203,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1221-sense-0",
+      "en": "about",
+      "fr": [
+        "concernant",
+        "quant à"
+      ],
+      "entry_index": 1221,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1221-sense-1",
+      "en": "about",
+      "fr": [
+        "au sujet de"
+      ],
+      "entry_index": 1221,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1221-sense-2",
+      "en": "about",
+      "fr": [
+        "à peu près",
+        "aux bords de",
+        "environ"
+      ],
+      "entry_index": 1221,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-1221-sense-3",
+      "en": "about",
+      "fr": [
+        "autour de",
+        "parages"
+      ],
+      "entry_index": 1221,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-1287-sense-0",
+      "en": "accept",
+      "fr": [
+        "accepter",
+        "accueillir",
+        "admettre",
+        "agréer",
+        "recevoir",
+        "recueiller"
+      ],
+      "entry_index": 1287,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1318-sense-0",
+      "en": "accord",
+      "fr": [
+        "être d'accord",
+        "s'harmoniser",
+        "s'accorder"
+      ],
+      "entry_index": 1318,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1318-sense-1",
+      "en": "accord",
+      "fr": [
+        "accord",
+        "concordance",
+        "convention",
+        "entente"
+      ],
+      "entry_index": 1318,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1318-sense-2",
+      "en": "accord",
+      "fr": [
+        "accommodement",
+        "pacte"
+      ],
+      "entry_index": 1318,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-1318-sense-3",
+      "en": "accord",
+      "fr": [
+        "permettre"
+      ],
+      "entry_index": 1318,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-1494-sense-0",
+      "en": "advance",
+      "fr": [
+        "s'approcher"
+      ],
+      "entry_index": 1494,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1494-sense-1",
+      "en": "advance",
+      "fr": [
+        "avancer"
+      ],
+      "entry_index": 1494,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1494-sense-2",
+      "en": "advance",
+      "fr": [
+        "hâter"
+      ],
+      "entry_index": 1494,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-1494-sense-3",
+      "en": "advance",
+      "fr": [
+        "accélérer"
+      ],
+      "entry_index": 1494,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-1494-sense-4",
+      "en": "advance",
+      "fr": [
+        "progresser"
+      ],
+      "entry_index": 1494,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-1563-sense-0",
+      "en": "age",
+      "fr": [
+        "âge"
+      ],
+      "entry_index": 1563,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1563-sense-1",
+      "en": "age",
+      "fr": [
+        "époque"
+      ],
+      "entry_index": 1563,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1676-sense-0",
+      "en": "all",
+      "fr": [
+        "tout",
+        "toute espèce de",
+        "toute sorte de"
+      ],
+      "entry_index": 1676,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1676-sense-1",
+      "en": "all",
+      "fr": [
+        "toutes les fois"
+      ],
+      "entry_index": 1676,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1676-sense-2",
+      "en": "all",
+      "fr": [
+        "tout le monde"
+      ],
+      "entry_index": 1676,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-1707-sense-0",
+      "en": "already",
+      "fr": [
+        "déjà"
+      ],
+      "entry_index": 1707,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1722-sense-0",
+      "en": "always",
+      "fr": [
+        "en tous temps",
+        "toujours"
+      ],
+      "entry_index": 1722,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1762-sense-0",
+      "en": "an",
+      "fr": [
+        "un",
+        "une"
+      ],
+      "entry_index": 1762,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1791-sense-0",
+      "en": "and",
+      "fr": [
+        "et"
+      ],
+      "entry_index": 1791,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1807-sense-0",
+      "en": "animal",
+      "fr": [
+        "animal"
+      ],
+      "entry_index": 1807,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1807-sense-1",
+      "en": "animal",
+      "fr": [
+        "bête"
+      ],
+      "entry_index": 1807,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1824-sense-0",
+      "en": "another",
+      "fr": [
+        "autre"
+      ],
+      "entry_index": 1824,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1824-sense-1",
+      "en": "another",
+      "fr": [
+        "autrui"
+      ],
+      "entry_index": 1824,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1824-sense-2",
+      "en": "another",
+      "fr": [
+        "supplémentaire"
+      ],
+      "entry_index": 1824,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-1826-sense-0",
+      "en": "answer",
+      "fr": [
+        "correspondre à",
+        "respondre"
+      ],
+      "entry_index": 1826,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1826-sense-1",
+      "en": "answer",
+      "fr": [
+        "réponse"
+      ],
+      "entry_index": 1826,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-1861-sense-0",
+      "en": "anything",
+      "fr": [
+        "quelque chose"
+      ],
+      "entry_index": 1861,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-1896-sense-0",
+      "en": "appearance",
+      "fr": [
+        "air",
+        "allure",
+        "apparence",
+        "aspect",
+        "spectacle"
+      ],
+      "entry_index": 1896,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2003-sense-0",
+      "en": "as",
+      "fr": [
+        "comme"
+      ],
+      "entry_index": 2003,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2003-sense-1",
+      "en": "as",
+      "fr": [
+        "d'après",
+        "selon"
+      ],
+      "entry_index": 2003,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2003-sense-2",
+      "en": "as",
+      "fr": [
+        "si",
+        "aussi"
+      ],
+      "entry_index": 2003,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2003-sense-3",
+      "en": "as",
+      "fr": [
+        "attendu que",
+        "car",
+        "parce que",
+        "puisque",
+        "vu que"
+      ],
+      "entry_index": 2003,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-2006-sense-0",
+      "en": "ascertain",
+      "fr": [
+        "constater"
+      ],
+      "entry_index": 2006,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2009-sense-0",
+      "en": "ask",
+      "fr": [
+        "demander",
+        "poser une question"
+      ],
+      "entry_index": 2009,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2009-sense-1",
+      "en": "ask",
+      "fr": [
+        "prier"
+      ],
+      "entry_index": 2009,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2039-sense-0",
+      "en": "assist",
+      "fr": [
+        "aider",
+        "assister",
+        "secourir"
+      ],
+      "entry_index": 2039,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2043-sense-0",
+      "en": "assure",
+      "fr": [
+        "assurer",
+        "certifier",
+        "garantir"
+      ],
+      "entry_index": 2043,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2070-sense-0",
+      "en": "at",
+      "fr": [
+        "à",
+        "en",
+        "vers"
+      ],
+      "entry_index": 2070,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2070-sense-1",
+      "en": "at",
+      "fr": [
+        "près de"
+      ],
+      "entry_index": 2070,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2070-sense-2",
+      "en": "at",
+      "fr": [
+        "de"
+      ],
+      "entry_index": 2070,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2070-sense-3",
+      "en": "at",
+      "fr": [
+        "àraisonde",
+        "par"
+      ],
+      "entry_index": 2070,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-2070-sense-4",
+      "en": "at",
+      "fr": [
+        "au bord de",
+        "chez",
+        "parmi",
+        "sur",
+        "tous près de"
+      ],
+      "entry_index": 2070,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-2182-sense-0",
+      "en": "away",
+      "fr": [
+        "loin"
+      ],
+      "entry_index": 2182,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2212-sense-0",
+      "en": "badly",
+      "fr": [
+        "mal"
+      ],
+      "entry_index": 2212,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2228-sense-0",
+      "en": "ball",
+      "fr": [
+        "bal"
+      ],
+      "entry_index": 2228,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2228-sense-1",
+      "en": "ball",
+      "fr": [
+        "globe"
+      ],
+      "entry_index": 2228,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2228-sense-2",
+      "en": "ball",
+      "fr": [
+        "balle"
+      ],
+      "entry_index": 2228,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2228-sense-3",
+      "en": "ball",
+      "fr": [
+        "sphère"
+      ],
+      "entry_index": 2228,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-2249-sense-0",
+      "en": "bandage",
+      "fr": [
+        "bandage"
+      ],
+      "entry_index": 2249,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2249-sense-1",
+      "en": "bandage",
+      "fr": [
+        "emmailloter"
+      ],
+      "entry_index": 2249,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2276-sense-0",
+      "en": "bare",
+      "fr": [
+        "nu",
+        "dénudé"
+      ],
+      "entry_index": 2276,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2326-sense-0",
+      "en": "battle",
+      "fr": [
+        "bataille",
+        "combat"
+      ],
+      "entry_index": 2326,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2339-sense-0",
+      "en": "bear",
+      "fr": [
+        "faire naître",
+        "mettre au monde"
+      ],
+      "entry_index": 2339,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2339-sense-1",
+      "en": "bear",
+      "fr": [
+        "produire"
+      ],
+      "entry_index": 2339,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2339-sense-2",
+      "en": "bear",
+      "fr": [
+        "endurer",
+        "souffrir",
+        "subir"
+      ],
+      "entry_index": 2339,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2339-sense-3",
+      "en": "bear",
+      "fr": [
+        "ours"
+      ],
+      "entry_index": 2339,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-2373-sense-0",
+      "en": "before",
+      "fr": [
+        "avant",
+        "devant"
+      ],
+      "entry_index": 2373,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2374-sense-0",
+      "en": "beg",
+      "fr": [
+        "mendier"
+      ],
+      "entry_index": 2374,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2374-sense-1",
+      "en": "beg",
+      "fr": [
+        "demander",
+        "prier"
+      ],
+      "entry_index": 2374,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2391-sense-0",
+      "en": "believe",
+      "fr": [
+        "croire"
+      ],
+      "entry_index": 2391,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2415-sense-0",
+      "en": "between",
+      "fr": [
+        "au milieu de",
+        "entre",
+        "parmi"
+      ],
+      "entry_index": 2415,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2483-sense-0",
+      "en": "bid",
+      "fr": [
+        "offrir"
+      ],
+      "entry_index": 2483,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2483-sense-1",
+      "en": "bid",
+      "fr": [
+        "demander",
+        "prier"
+      ],
+      "entry_index": 2483,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2491-sense-0",
+      "en": "bind",
+      "fr": [
+        "relier"
+      ],
+      "entry_index": 2491,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2491-sense-1",
+      "en": "bind",
+      "fr": [
+        "attacher",
+        "nouer"
+      ],
+      "entry_index": 2491,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2534-sense-0",
+      "en": "blow",
+      "fr": [
+        "bataille",
+        "coup"
+      ],
+      "entry_index": 2534,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2534-sense-1",
+      "en": "blow",
+      "fr": [
+        "souffler sur"
+      ],
+      "entry_index": 2534,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2534-sense-2",
+      "en": "blow",
+      "fr": [
+        "souffler"
+      ],
+      "entry_index": 2534,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2536-sense-0",
+      "en": "blue",
+      "fr": [
+        "bleu"
+      ],
+      "entry_index": 2536,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2589-sense-0",
+      "en": "bow",
+      "fr": [
+        "arc"
+      ],
+      "entry_index": 2589,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2602-sense-0",
+      "en": "brain",
+      "fr": [
+        "cerveau",
+        "cervelle"
+      ],
+      "entry_index": 2602,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2636-sense-0",
+      "en": "bring",
+      "fr": [
+        "amener",
+        "apporter"
+      ],
+      "entry_index": 2636,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2672-sense-0",
+      "en": "build",
+      "fr": [
+        "bâtir",
+        "construire",
+        "poser"
+      ],
+      "entry_index": 2672,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2672-sense-1",
+      "en": "build",
+      "fr": [
+        "maçonner"
+      ],
+      "entry_index": 2672,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2672-sense-2",
+      "en": "build",
+      "fr": [
+        "charpenter"
+      ],
+      "entry_index": 2672,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2704-sense-0",
+      "en": "but",
+      "fr": [
+        "mais"
+      ],
+      "entry_index": 2704,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2704-sense-1",
+      "en": "but",
+      "fr": [
+        "cependant",
+        "néanmoins",
+        "pourtant",
+        "tout de même"
+      ],
+      "entry_index": 2704,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2716-sense-0",
+      "en": "by",
+      "fr": [
+        "à",
+        "près de"
+      ],
+      "entry_index": 2716,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2716-sense-1",
+      "en": "by",
+      "fr": [
+        "par"
+      ],
+      "entry_index": 2716,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2716-sense-2",
+      "en": "by",
+      "fr": [
+        "de",
+        "en"
+      ],
+      "entry_index": 2716,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-2716-sense-3",
+      "en": "by",
+      "fr": [
+        "d'après",
+        "selon"
+      ],
+      "entry_index": 2716,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-2716-sense-4",
+      "en": "by",
+      "fr": [
+        "au moyen de"
+      ],
+      "entry_index": 2716,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-2716-sense-5",
+      "en": "by",
+      "fr": [
+        "au‐delà de"
+      ],
+      "entry_index": 2716,
+      "sense_index": 5
+    },
+    {
+      "id": "freedict-eng-fra-entry-2750-sense-0",
+      "en": "call",
+      "fr": [
+        "nommer"
+      ],
+      "entry_index": 2750,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2750-sense-1",
+      "en": "call",
+      "fr": [
+        "appeler"
+      ],
+      "entry_index": 2750,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2804-sense-0",
+      "en": "carry",
+      "fr": [
+        "porter"
+      ],
+      "entry_index": 2804,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2814-sense-0",
+      "en": "castle",
+      "fr": [
+        "château"
+      ],
+      "entry_index": 2814,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2814-sense-1",
+      "en": "castle",
+      "fr": [
+        "tour"
+      ],
+      "entry_index": 2814,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-2932-sense-0",
+      "en": "choice",
+      "fr": [
+        "choix"
+      ],
+      "entry_index": 2932,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-2935-sense-0",
+      "en": "choose",
+      "fr": [
+        "adopter",
+        "choisir",
+        "désigner",
+        "opter"
+      ],
+      "entry_index": 2935,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3051-sense-0",
+      "en": "come",
+      "fr": [
+        "provenir"
+      ],
+      "entry_index": 3051,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3051-sense-1",
+      "en": "come",
+      "fr": [
+        "s'abouler",
+        "venir"
+      ],
+      "entry_index": 3051,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3113-sense-0",
+      "en": "compose",
+      "fr": [
+        "se résoudre à"
+      ],
+      "entry_index": 3113,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3113-sense-1",
+      "en": "compose",
+      "fr": [
+        "composer"
+      ],
+      "entry_index": 3113,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3113-sense-2",
+      "en": "compose",
+      "fr": [
+        "écrire"
+      ],
+      "entry_index": 3113,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-3120-sense-0",
+      "en": "comrade",
+      "fr": [
+        "camarade"
+      ],
+      "entry_index": 3120,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3312-sense-0",
+      "en": "crime",
+      "fr": [
+        "crime"
+      ],
+      "entry_index": 3312,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3326-sense-0",
+      "en": "crown",
+      "fr": [
+        "couronner"
+      ],
+      "entry_index": 3326,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3354-sense-0",
+      "en": "cure",
+      "fr": [
+        "guérir",
+        "soigner"
+      ],
+      "entry_index": 3354,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3354-sense-1",
+      "en": "cure",
+      "fr": [
+        "assainir"
+      ],
+      "entry_index": 3354,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3412-sense-0",
+      "en": "day",
+      "fr": [
+        "jour",
+        "journée"
+      ],
+      "entry_index": 3412,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3538-sense-0",
+      "en": "determine",
+      "fr": [
+        "déterminer"
+      ],
+      "entry_index": 3538,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3538-sense-1",
+      "en": "determine",
+      "fr": [
+        "définer",
+        "fixer"
+      ],
+      "entry_index": 3538,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3538-sense-2",
+      "en": "determine",
+      "fr": [
+        "attacher"
+      ],
+      "entry_index": 3538,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-3555-sense-0",
+      "en": "die",
+      "fr": [
+        "décéder",
+        "mourir"
+      ],
+      "entry_index": 3555,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3575-sense-0",
+      "en": "dinner",
+      "fr": [
+        "déjeuner",
+        "dîner"
+      ],
+      "entry_index": 3575,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3655-sense-0",
+      "en": "do",
+      "fr": [
+        "construire",
+        "fabriquer",
+        "faire",
+        "opérer",
+        "poser"
+      ],
+      "entry_index": 3655,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3655-sense-1",
+      "en": "do",
+      "fr": [
+        "coiffer",
+        "friser"
+      ],
+      "entry_index": 3655,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3671-sense-0",
+      "en": "door",
+      "fr": [
+        "porte"
+      ],
+      "entry_index": 3671,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3679-sense-0",
+      "en": "down",
+      "fr": [
+        "duvet"
+      ],
+      "entry_index": 3679,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3687-sense-0",
+      "en": "drag",
+      "fr": [
+        "tirer"
+      ],
+      "entry_index": 3687,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3687-sense-1",
+      "en": "drag",
+      "fr": [
+        "traîner"
+      ],
+      "entry_index": 3687,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3693-sense-0",
+      "en": "draw",
+      "fr": [
+        "allécher",
+        "appâter",
+        "solliciter"
+      ],
+      "entry_index": 3693,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3693-sense-1",
+      "en": "draw",
+      "fr": [
+        "dessiner"
+      ],
+      "entry_index": 3693,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3693-sense-2",
+      "en": "draw",
+      "fr": [
+        "abaisser",
+        "tirer un trait"
+      ],
+      "entry_index": 3693,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-3693-sense-3",
+      "en": "draw",
+      "fr": [
+        "tirer"
+      ],
+      "entry_index": 3693,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-3693-sense-4",
+      "en": "draw",
+      "fr": [
+        "puiser"
+      ],
+      "entry_index": 3693,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-3706-sense-0",
+      "en": "dress",
+      "fr": [
+        "panser"
+      ],
+      "entry_index": 3706,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3706-sense-1",
+      "en": "dress",
+      "fr": [
+        "robe"
+      ],
+      "entry_index": 3706,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3706-sense-2",
+      "en": "dress",
+      "fr": [
+        "habiller",
+        "vêtir",
+        "revêtir"
+      ],
+      "entry_index": 3706,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-3706-sense-3",
+      "en": "dress",
+      "fr": [
+        "s'habiller"
+      ],
+      "entry_index": 3706,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-3710-sense-0",
+      "en": "drink",
+      "fr": [
+        "s'enivrer"
+      ],
+      "entry_index": 3710,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3710-sense-1",
+      "en": "drink",
+      "fr": [
+        "boisson",
+        "consommation"
+      ],
+      "entry_index": 3710,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3710-sense-2",
+      "en": "drink",
+      "fr": [
+        "boire"
+      ],
+      "entry_index": 3710,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-3714-sense-0",
+      "en": "drive",
+      "fr": [
+        "amener à",
+        "faire avancer",
+        "pourchasser",
+        "poursuivre",
+        "pousser"
+      ],
+      "entry_index": 3714,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3714-sense-1",
+      "en": "drive",
+      "fr": [
+        "actionner"
+      ],
+      "entry_index": 3714,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3714-sense-2",
+      "en": "drive",
+      "fr": [
+        "prise"
+      ],
+      "entry_index": 3714,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-3870-sense-0",
+      "en": "enough",
+      "fr": [
+        "suffisant"
+      ],
+      "entry_index": 3870,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3870-sense-1",
+      "en": "enough",
+      "fr": [
+        "assez",
+        "passablement",
+        "plutôt",
+        "suffisamment"
+      ],
+      "entry_index": 3870,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3966-sense-0",
+      "en": "exercise",
+      "fr": [
+        "exercer",
+        "instruire"
+      ],
+      "entry_index": 3966,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3966-sense-1",
+      "en": "exercise",
+      "fr": [
+        "exercice"
+      ],
+      "entry_index": 3966,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-3998-sense-0",
+      "en": "extremely",
+      "fr": [
+        "extrêmement"
+      ],
+      "entry_index": 3998,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-3999-sense-0",
+      "en": "eye",
+      "fr": [
+        "œil"
+      ],
+      "entry_index": 3999,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4022-sense-0",
+      "en": "fall",
+      "fr": [
+        "s'abattre",
+        "tomber"
+      ],
+      "entry_index": 4022,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4022-sense-1",
+      "en": "fall",
+      "fr": [
+        "chute"
+      ],
+      "entry_index": 4022,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4022-sense-2",
+      "en": "fall",
+      "fr": [
+        "s'abaisser",
+        "s'amoindrir"
+      ],
+      "entry_index": 4022,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4055-sense-0",
+      "en": "favour",
+      "fr": [
+        "grâce"
+      ],
+      "entry_index": 4055,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4055-sense-1",
+      "en": "favour",
+      "fr": [
+        "complaisance",
+        "service"
+      ],
+      "entry_index": 4055,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4072-sense-0",
+      "en": "fellow",
+      "fr": [
+        "ensemble"
+      ],
+      "entry_index": 4072,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4072-sense-1",
+      "en": "fellow",
+      "fr": [
+        "individu"
+      ],
+      "entry_index": 4072,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4072-sense-2",
+      "en": "fellow",
+      "fr": [
+        "homme",
+        "mâle"
+      ],
+      "entry_index": 4072,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4097-sense-0",
+      "en": "fetter",
+      "fr": [
+        "chaîne"
+      ],
+      "entry_index": 4097,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4103-sense-0",
+      "en": "field",
+      "fr": [
+        "champ"
+      ],
+      "entry_index": 4103,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4127-sense-0",
+      "en": "fine",
+      "fr": [
+        "beau"
+      ],
+      "entry_index": 4127,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4127-sense-1",
+      "en": "fine",
+      "fr": [
+        "accompli",
+        "excellent",
+        "éminent"
+      ],
+      "entry_index": 4127,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4127-sense-2",
+      "en": "fine",
+      "fr": [
+        "délicat",
+        "tendre"
+      ],
+      "entry_index": 4127,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4127-sense-3",
+      "en": "fine",
+      "fr": [
+        "à merveille"
+      ],
+      "entry_index": 4127,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-4127-sense-4",
+      "en": "fine",
+      "fr": [
+        "amende",
+        "procès‐verbal"
+      ],
+      "entry_index": 4127,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-4133-sense-0",
+      "en": "fire",
+      "fr": [
+        "partir"
+      ],
+      "entry_index": 4133,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4133-sense-1",
+      "en": "fire",
+      "fr": [
+        "licencier",
+        "renvoyer",
+        "suspendre"
+      ],
+      "entry_index": 4133,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4133-sense-2",
+      "en": "fire",
+      "fr": [
+        "feu"
+      ],
+      "entry_index": 4133,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4133-sense-3",
+      "en": "fire",
+      "fr": [
+        "incendie"
+      ],
+      "entry_index": 4133,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-4133-sense-4",
+      "en": "fire",
+      "fr": [
+        "tirer"
+      ],
+      "entry_index": 4133,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-4153-sense-0",
+      "en": "five",
+      "fr": [
+        "cinq"
+      ],
+      "entry_index": 4153,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4205-sense-0",
+      "en": "follow",
+      "fr": [
+        "agir selon",
+        "respecter",
+        "suivre"
+      ],
+      "entry_index": 4205,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4212-sense-0",
+      "en": "foot",
+      "fr": [
+        "patte",
+        "pied"
+      ],
+      "entry_index": 4212,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4214-sense-0",
+      "en": "for",
+      "fr": [
+        "durant",
+        "lors",
+        "pendant",
+        "pendant que",
+        "tandis que"
+      ],
+      "entry_index": 4214,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4214-sense-1",
+      "en": "for",
+      "fr": [
+        "à",
+        "afin de",
+        "pour"
+      ],
+      "entry_index": 4214,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4214-sense-2",
+      "en": "for",
+      "fr": [
+        "à cause de",
+        "de"
+      ],
+      "entry_index": 4214,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4214-sense-3",
+      "en": "for",
+      "fr": [
+        "attendu que",
+        "car",
+        "comme",
+        "parce que",
+        "puisque",
+        "vu que"
+      ],
+      "entry_index": 4214,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-4216-sense-0",
+      "en": "force",
+      "fr": [
+        "faire accepter"
+      ],
+      "entry_index": 4216,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4216-sense-1",
+      "en": "force",
+      "fr": [
+        "imposer"
+      ],
+      "entry_index": 4216,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4216-sense-2",
+      "en": "force",
+      "fr": [
+        "obliger",
+        "obliger à"
+      ],
+      "entry_index": 4216,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4216-sense-3",
+      "en": "force",
+      "fr": [
+        "force",
+        "puissance"
+      ],
+      "entry_index": 4216,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-4216-sense-4",
+      "en": "force",
+      "fr": [
+        "violer"
+      ],
+      "entry_index": 4216,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-4216-sense-5",
+      "en": "force",
+      "fr": [
+        "contraindre"
+      ],
+      "entry_index": 4216,
+      "sense_index": 5
+    },
+    {
+      "id": "freedict-eng-fra-entry-4245-sense-0",
+      "en": "fortune",
+      "fr": [
+        "fortune"
+      ],
+      "entry_index": 4245,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4245-sense-1",
+      "en": "fortune",
+      "fr": [
+        "destinée",
+        "sort"
+      ],
+      "entry_index": 4245,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4265-sense-0",
+      "en": "four",
+      "fr": [
+        "quatre"
+      ],
+      "entry_index": 4265,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4299-sense-0",
+      "en": "from",
+      "fr": [
+        "de"
+      ],
+      "entry_index": 4299,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4299-sense-1",
+      "en": "from",
+      "fr": [
+        "à partir de",
+        "depuis",
+        "dès"
+      ],
+      "entry_index": 4299,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4299-sense-2",
+      "en": "from",
+      "fr": [
+        "hors de"
+      ],
+      "entry_index": 4299,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4334-sense-0",
+      "en": "furrow",
+      "fr": [
+        "rider"
+      ],
+      "entry_index": 4334,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4334-sense-1",
+      "en": "furrow",
+      "fr": [
+        "ride",
+        "sillon"
+      ],
+      "entry_index": 4334,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4388-sense-0",
+      "en": "gentleman",
+      "fr": [
+        "monsieur"
+      ],
+      "entry_index": 4388,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4421-sense-0",
+      "en": "gift",
+      "fr": [
+        "cadeau",
+        "don"
+      ],
+      "entry_index": 4421,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4430-sense-0",
+      "en": "give",
+      "fr": [
+        "faire cadeau",
+        "offrir"
+      ],
+      "entry_index": 4430,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4430-sense-1",
+      "en": "give",
+      "fr": [
+        "abouler",
+        "bailler",
+        "donner",
+        "passer"
+      ],
+      "entry_index": 4430,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4430-sense-2",
+      "en": "give",
+      "fr": [
+        "présenter"
+      ],
+      "entry_index": 4430,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-4457-sense-0",
+      "en": "glory",
+      "fr": [
+        "gloire",
+        "renommée",
+        "réputation"
+      ],
+      "entry_index": 4457,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4466-sense-0",
+      "en": "go",
+      "fr": [
+        "aller",
+        "se déplacer"
+      ],
+      "entry_index": 4466,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4466-sense-1",
+      "en": "go",
+      "fr": [
+        "aller en véhicule"
+      ],
+      "entry_index": 4466,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4471-sense-0",
+      "en": "god",
+      "fr": [
+        "dieu"
+      ],
+      "entry_index": 4471,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4479-sense-0",
+      "en": "good",
+      "fr": [
+        "bon"
+      ],
+      "entry_index": 4479,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4479-sense-1",
+      "en": "good",
+      "fr": [
+        "intérêt"
+      ],
+      "entry_index": 4479,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4548-sense-0",
+      "en": "great",
+      "fr": [
+        "accompli",
+        "excellent",
+        "éminent"
+      ],
+      "entry_index": 4548,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4548-sense-1",
+      "en": "great",
+      "fr": [
+        "grand"
+      ],
+      "entry_index": 4548,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4661-sense-0",
+      "en": "have",
+      "fr": [
+        "avoir"
+      ],
+      "entry_index": 4661,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4661-sense-1",
+      "en": "have",
+      "fr": [
+        "accueillir",
+        "recevoir"
+      ],
+      "entry_index": 4661,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4682-sense-0",
+      "en": "he",
+      "fr": [
+        "il",
+        "lui"
+      ],
+      "entry_index": 4682,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4689-sense-0",
+      "en": "health",
+      "fr": [
+        "santé"
+      ],
+      "entry_index": 4689,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4701-sense-0",
+      "en": "heaven",
+      "fr": [
+        "ciel"
+      ],
+      "entry_index": 4701,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4710-sense-0",
+      "en": "height",
+      "fr": [
+        "altitude",
+        "hauteur"
+      ],
+      "entry_index": 4710,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4716-sense-0",
+      "en": "help",
+      "fr": [
+        "aider",
+        "assister",
+        "secourir"
+      ],
+      "entry_index": 4716,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4716-sense-1",
+      "en": "help",
+      "fr": [
+        "aide"
+      ],
+      "entry_index": 4716,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4728-sense-0",
+      "en": "hero",
+      "fr": [
+        "héros"
+      ],
+      "entry_index": 4728,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4741-sense-0",
+      "en": "high",
+      "fr": [
+        "haut"
+      ],
+      "entry_index": 4741,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4749-sense-0",
+      "en": "himself",
+      "fr": [
+        "même"
+      ],
+      "entry_index": 4749,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4760-sense-0",
+      "en": "his",
+      "fr": [
+        "sa",
+        "son"
+      ],
+      "entry_index": 4760,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4760-sense-1",
+      "en": "his",
+      "fr": [
+        "leur"
+      ],
+      "entry_index": 4760,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4782-sense-0",
+      "en": "honour",
+      "fr": [
+        "honorer"
+      ],
+      "entry_index": 4782,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4782-sense-1",
+      "en": "honour",
+      "fr": [
+        "honneur"
+      ],
+      "entry_index": 4782,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4821-sense-0",
+      "en": "how",
+      "fr": [
+        "comment",
+        "de quelle manière"
+      ],
+      "entry_index": 4821,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4821-sense-1",
+      "en": "how",
+      "fr": [
+        "comme"
+      ],
+      "entry_index": 4821,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-4846-sense-0",
+      "en": "hunger",
+      "fr": [
+        "faim"
+      ],
+      "entry_index": 4846,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4879-sense-0",
+      "en": "if",
+      "fr": [
+        "à condition que",
+        "si"
+      ],
+      "entry_index": 4879,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4918-sense-0",
+      "en": "in",
+      "fr": [
+        "à",
+        "au milie de",
+        "en",
+        "dans",
+        "parmi"
+      ],
+      "entry_index": 4918,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-4984-sense-0",
+      "en": "inn",
+      "fr": [
+        "auberge"
+      ],
+      "entry_index": 4984,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5009-sense-0",
+      "en": "instantly",
+      "fr": [
+        "aussitôt",
+        "directement",
+        "d'abord",
+        "tout d'abord"
+      ],
+      "entry_index": 5009,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5070-sense-0",
+      "en": "invite",
+      "fr": [
+        "inviter"
+      ],
+      "entry_index": 5070,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5114-sense-0",
+      "en": "it",
+      "fr": [
+        "à lui",
+        "lui"
+      ],
+      "entry_index": 5114,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5114-sense-1",
+      "en": "it",
+      "fr": [
+        "elle",
+        "il"
+      ],
+      "entry_index": 5114,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5114-sense-2",
+      "en": "it",
+      "fr": [
+        "la",
+        "le",
+        "l'"
+      ],
+      "entry_index": 5114,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5147-sense-0",
+      "en": "journal",
+      "fr": [
+        "journal",
+        "quotidien"
+      ],
+      "entry_index": 5147,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5186-sense-0",
+      "en": "king",
+      "fr": [
+        "dame"
+      ],
+      "entry_index": 5186,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5186-sense-1",
+      "en": "king",
+      "fr": [
+        "roi"
+      ],
+      "entry_index": 5186,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5197-sense-0",
+      "en": "kneel",
+      "fr": [
+        "s'agenouiller"
+      ],
+      "entry_index": 5197,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5204-sense-0",
+      "en": "know",
+      "fr": [
+        "connaître"
+      ],
+      "entry_index": 5204,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5204-sense-1",
+      "en": "know",
+      "fr": [
+        "savoir"
+      ],
+      "entry_index": 5204,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5220-sense-0",
+      "en": "lady",
+      "fr": [
+        "demoiselle noble"
+      ],
+      "entry_index": 5220,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5220-sense-1",
+      "en": "lady",
+      "fr": [
+        "dame",
+        "madame"
+      ],
+      "entry_index": 5220,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5242-sense-0",
+      "en": "large",
+      "fr": [
+        "grand"
+      ],
+      "entry_index": 5242,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5259-sense-0",
+      "en": "lay",
+      "fr": [
+        "coucher"
+      ],
+      "entry_index": 5259,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5259-sense-1",
+      "en": "lay",
+      "fr": [
+        "laïque"
+      ],
+      "entry_index": 5259,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5265-sense-0",
+      "en": "lead",
+      "fr": [
+        "guider",
+        "régler"
+      ],
+      "entry_index": 5265,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5265-sense-1",
+      "en": "lead",
+      "fr": [
+        "aboutir",
+        "conduire",
+        "diriger",
+        "mener"
+      ],
+      "entry_index": 5265,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5265-sense-2",
+      "en": "lead",
+      "fr": [
+        "plomb"
+      ],
+      "entry_index": 5265,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5270-sense-0",
+      "en": "league",
+      "fr": [
+        "lieue"
+      ],
+      "entry_index": 5270,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5270-sense-1",
+      "en": "league",
+      "fr": [
+        "ligue"
+      ],
+      "entry_index": 5270,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5273-sense-0",
+      "en": "learn",
+      "fr": [
+        "apprendre"
+      ],
+      "entry_index": 5273,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5288-sense-0",
+      "en": "left",
+      "fr": [
+        "gauche"
+      ],
+      "entry_index": 5288,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5289-sense-0",
+      "en": "leg",
+      "fr": [
+        "jambe",
+        "patte"
+      ],
+      "entry_index": 5289,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5316-sense-0",
+      "en": "lie",
+      "fr": [
+        "être couché"
+      ],
+      "entry_index": 5316,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5316-sense-1",
+      "en": "lie",
+      "fr": [
+        "mentir"
+      ],
+      "entry_index": 5316,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5316-sense-2",
+      "en": "lie",
+      "fr": [
+        "mensonge"
+      ],
+      "entry_index": 5316,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5324-sense-0",
+      "en": "like",
+      "fr": [
+        "comme"
+      ],
+      "entry_index": 5324,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5324-sense-1",
+      "en": "like",
+      "fr": [
+        "pareil",
+        "semblable"
+      ],
+      "entry_index": 5324,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5324-sense-2",
+      "en": "like",
+      "fr": [
+        "aimer",
+        "apprécier",
+        "estimer"
+      ],
+      "entry_index": 5324,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5354-sense-0",
+      "en": "little",
+      "fr": [
+        "petit"
+      ],
+      "entry_index": 5354,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5354-sense-1",
+      "en": "little",
+      "fr": [
+        "peu de"
+      ],
+      "entry_index": 5354,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5382-sense-0",
+      "en": "long",
+      "fr": [
+        "long"
+      ],
+      "entry_index": 5382,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5382-sense-1",
+      "en": "long",
+      "fr": [
+        "longtemps",
+        "longuement"
+      ],
+      "entry_index": 5382,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5400-sense-0",
+      "en": "love",
+      "fr": [
+        "aimer"
+      ],
+      "entry_index": 5400,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5400-sense-1",
+      "en": "love",
+      "fr": [
+        "amour"
+      ],
+      "entry_index": 5400,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5400-sense-2",
+      "en": "love",
+      "fr": [
+        "amour charnel",
+        "bagatelle"
+      ],
+      "entry_index": 5400,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5404-sense-0",
+      "en": "low",
+      "fr": [
+        "abject",
+        "lâche"
+      ],
+      "entry_index": 5404,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5445-sense-0",
+      "en": "magnificent",
+      "fr": [
+        "grandiose",
+        "magnifique"
+      ],
+      "entry_index": 5445,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5462-sense-0",
+      "en": "make",
+      "fr": [
+        "construire",
+        "fabriquer",
+        "faire",
+        "opérer",
+        "poser"
+      ],
+      "entry_index": 5462,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5462-sense-1",
+      "en": "make",
+      "fr": [
+        "rendre"
+      ],
+      "entry_index": 5462,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5490-sense-0",
+      "en": "man",
+      "fr": [
+        "être humain",
+        "homme"
+      ],
+      "entry_index": 5490,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5490-sense-1",
+      "en": "man",
+      "fr": [
+        "mâle"
+      ],
+      "entry_index": 5490,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5514-sense-0",
+      "en": "march",
+      "fr": [
+        "marcher"
+      ],
+      "entry_index": 5514,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5564-sense-0",
+      "en": "mean",
+      "fr": [
+        "intermédiaire"
+      ],
+      "entry_index": 5564,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5564-sense-1",
+      "en": "mean",
+      "fr": [
+        "moyenne"
+      ],
+      "entry_index": 5564,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5564-sense-2",
+      "en": "mean",
+      "fr": [
+        "centre",
+        "milieu"
+      ],
+      "entry_index": 5564,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5564-sense-3",
+      "en": "mean",
+      "fr": [
+        "signifier"
+      ],
+      "entry_index": 5564,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-5603-sense-0",
+      "en": "merit",
+      "fr": [
+        "mériter"
+      ],
+      "entry_index": 5603,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5603-sense-1",
+      "en": "merit",
+      "fr": [
+        "gloire",
+        "mérite"
+      ],
+      "entry_index": 5603,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5620-sense-0",
+      "en": "middle",
+      "fr": [
+        "intermédiaire"
+      ],
+      "entry_index": 5620,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5620-sense-1",
+      "en": "middle",
+      "fr": [
+        "centre",
+        "milieu"
+      ],
+      "entry_index": 5620,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5653-sense-0",
+      "en": "miss",
+      "fr": [
+        "manquer",
+        "rater"
+      ],
+      "entry_index": 5653,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5674-sense-0",
+      "en": "modesty",
+      "fr": [
+        "modestie"
+      ],
+      "entry_index": 5674,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5680-sense-0",
+      "en": "moment",
+      "fr": [
+        "instant",
+        "moment"
+      ],
+      "entry_index": 5680,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5684-sense-0",
+      "en": "money",
+      "fr": [
+        "argent",
+        "monnaie"
+      ],
+      "entry_index": 5684,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5706-sense-0",
+      "en": "more",
+      "fr": [
+        "davantage",
+        "plus"
+      ],
+      "entry_index": 5706,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5718-sense-0",
+      "en": "most",
+      "fr": [
+        "extrêmement",
+        "le plus"
+      ],
+      "entry_index": 5718,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5772-sense-0",
+      "en": "muscle",
+      "fr": [
+        "muscle"
+      ],
+      "entry_index": 5772,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5783-sense-0",
+      "en": "must",
+      "fr": [
+        "devoir",
+        "être obligé"
+      ],
+      "entry_index": 5783,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5793-sense-0",
+      "en": "my",
+      "fr": [
+        "ma",
+        "mon"
+      ],
+      "entry_index": 5793,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5793-sense-1",
+      "en": "my",
+      "fr": [
+        "mes"
+      ],
+      "entry_index": 5793,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5811-sense-0",
+      "en": "nape",
+      "fr": [
+        "nuque"
+      ],
+      "entry_index": 5811,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5824-sense-0",
+      "en": "nature",
+      "fr": [
+        "caractère"
+      ],
+      "entry_index": 5824,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5824-sense-1",
+      "en": "nature",
+      "fr": [
+        "nature"
+      ],
+      "entry_index": 5824,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5841-sense-0",
+      "en": "neck",
+      "fr": [
+        "col",
+        "cou"
+      ],
+      "entry_index": 5841,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5853-sense-0",
+      "en": "neighbouring",
+      "fr": [
+        "adjacent"
+      ],
+      "entry_index": 5853,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5854-sense-0",
+      "en": "neither",
+      "fr": [
+        "nul",
+        "personne"
+      ],
+      "entry_index": 5854,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5859-sense-0",
+      "en": "nerve",
+      "fr": [
+        "nerf"
+      ],
+      "entry_index": 5859,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5866-sense-0",
+      "en": "never",
+      "fr": [
+        "jamais",
+        "ne ... jamais"
+      ],
+      "entry_index": 5866,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5873-sense-0",
+      "en": "next",
+      "fr": [
+        "après",
+        "ensuite",
+        "puis"
+      ],
+      "entry_index": 5873,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5873-sense-1",
+      "en": "next",
+      "fr": [
+        "prochaine",
+        "proche"
+      ],
+      "entry_index": 5873,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5873-sense-2",
+      "en": "next",
+      "fr": [
+        "suivant"
+      ],
+      "entry_index": 5873,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5873-sense-3",
+      "en": "next",
+      "fr": [
+        "prochain"
+      ],
+      "entry_index": 5873,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-5891-sense-0",
+      "en": "no",
+      "fr": [
+        "non"
+      ],
+      "entry_index": 5891,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5892-sense-0",
+      "en": "noble",
+      "fr": [
+        "élevé",
+        "noble"
+      ],
+      "entry_index": 5892,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5907-sense-0",
+      "en": "not",
+      "fr": [
+        "ne ... pas",
+        "pas"
+      ],
+      "entry_index": 5907,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5910-sense-0",
+      "en": "note",
+      "fr": [
+        "billet",
+        "ticket"
+      ],
+      "entry_index": 5910,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5910-sense-1",
+      "en": "note",
+      "fr": [
+        "noter"
+      ],
+      "entry_index": 5910,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5910-sense-2",
+      "en": "note",
+      "fr": [
+        "note"
+      ],
+      "entry_index": 5910,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5926-sense-0",
+      "en": "now",
+      "fr": [
+        "eh bien"
+      ],
+      "entry_index": 5926,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5926-sense-1",
+      "en": "now",
+      "fr": [
+        "maintenant"
+      ],
+      "entry_index": 5926,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5957-sense-0",
+      "en": "observe",
+      "fr": [
+        "agir selon",
+        "respecter",
+        "suivre"
+      ],
+      "entry_index": 5957,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5957-sense-1",
+      "en": "observe",
+      "fr": [
+        "observer"
+      ],
+      "entry_index": 5957,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-5957-sense-2",
+      "en": "observe",
+      "fr": [
+        "accomplir",
+        "assurer",
+        "réaliser",
+        "remplir"
+      ],
+      "entry_index": 5957,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-5963-sense-0",
+      "en": "obtain",
+      "fr": [
+        "acquérir"
+      ],
+      "entry_index": 5963,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5978-sense-0",
+      "en": "of",
+      "fr": [
+        "de"
+      ],
+      "entry_index": 5978,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-5988-sense-0",
+      "en": "often",
+      "fr": [
+        "beaucoup",
+        "fréquemment",
+        "souvent"
+      ],
+      "entry_index": 5988,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6001-sense-0",
+      "en": "oh",
+      "fr": [
+        "ah"
+      ],
+      "entry_index": 6001,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6001-sense-1",
+      "en": "oh",
+      "fr": [
+        "oh"
+      ],
+      "entry_index": 6001,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6014-sense-0",
+      "en": "one",
+      "fr": [
+        "un",
+        "quelqu'un"
+      ],
+      "entry_index": 6014,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6014-sense-1",
+      "en": "one",
+      "fr": [
+        "on"
+      ],
+      "entry_index": 6014,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6014-sense-2",
+      "en": "one",
+      "fr": [
+        "une"
+      ],
+      "entry_index": 6014,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6020-sense-0",
+      "en": "only",
+      "fr": [
+        "ne ... que",
+        "seulement"
+      ],
+      "entry_index": 6020,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6020-sense-1",
+      "en": "only",
+      "fr": [
+        "seul"
+      ],
+      "entry_index": 6020,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6052-sense-0",
+      "en": "or",
+      "fr": [
+        "ou",
+        "ou bien"
+      ],
+      "entry_index": 6052,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6081-sense-0",
+      "en": "other",
+      "fr": [
+        "autre"
+      ],
+      "entry_index": 6081,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6104-sense-0",
+      "en": "overtake",
+      "fr": [
+        "passer",
+        "dépasser"
+      ],
+      "entry_index": 6104,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6104-sense-1",
+      "en": "overtake",
+      "fr": [
+        "doubler"
+      ],
+      "entry_index": 6104,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6159-sense-0",
+      "en": "paradise",
+      "fr": [
+        "paradis"
+      ],
+      "entry_index": 6159,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6168-sense-0",
+      "en": "pardon",
+      "fr": [
+        "excuser",
+        "pardonner"
+      ],
+      "entry_index": 6168,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6168-sense-1",
+      "en": "pardon",
+      "fr": [
+        "pardon"
+      ],
+      "entry_index": 6168,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6189-sense-0",
+      "en": "pass",
+      "fr": [
+        "permission"
+      ],
+      "entry_index": 6189,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6189-sense-1",
+      "en": "pass",
+      "fr": [
+        "col"
+      ],
+      "entry_index": 6189,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6189-sense-2",
+      "en": "pass",
+      "fr": [
+        "passer"
+      ],
+      "entry_index": 6189,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6189-sense-3",
+      "en": "pass",
+      "fr": [
+        "donner"
+      ],
+      "entry_index": 6189,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-6189-sense-4",
+      "en": "pass",
+      "fr": [
+        "dépasser"
+      ],
+      "entry_index": 6189,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-6189-sense-5",
+      "en": "pass",
+      "fr": [
+        "doubler"
+      ],
+      "entry_index": 6189,
+      "sense_index": 5
+    },
+    {
+      "id": "freedict-eng-fra-entry-6219-sense-0",
+      "en": "pay",
+      "fr": [
+        "payer"
+      ],
+      "entry_index": 6219,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6253-sense-0",
+      "en": "people",
+      "fr": [
+        "gens"
+      ],
+      "entry_index": 6253,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6253-sense-1",
+      "en": "people",
+      "fr": [
+        "peuple"
+      ],
+      "entry_index": 6253,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6382-sense-0",
+      "en": "please",
+      "fr": [
+        "s'il vous plaît"
+      ],
+      "entry_index": 6382,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6382-sense-1",
+      "en": "please",
+      "fr": [
+        "s.v.p."
+      ],
+      "entry_index": 6382,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6382-sense-2",
+      "en": "please",
+      "fr": [
+        "plaire"
+      ],
+      "entry_index": 6382,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6470-sense-0",
+      "en": "praise",
+      "fr": [
+        "glorifier"
+      ],
+      "entry_index": 6470,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6470-sense-1",
+      "en": "praise",
+      "fr": [
+        "louange"
+      ],
+      "entry_index": 6470,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6498-sense-0",
+      "en": "present",
+      "fr": [
+        "actuel"
+      ],
+      "entry_index": 6498,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6498-sense-1",
+      "en": "present",
+      "fr": [
+        "cadeau",
+        "don"
+      ],
+      "entry_index": 6498,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6498-sense-2",
+      "en": "present",
+      "fr": [
+        "présenter"
+      ],
+      "entry_index": 6498,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6498-sense-3",
+      "en": "present",
+      "fr": [
+        "présent"
+      ],
+      "entry_index": 6498,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-6537-sense-0",
+      "en": "privilege",
+      "fr": [
+        "privilège"
+      ],
+      "entry_index": 6537,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6545-sense-0",
+      "en": "proceed",
+      "fr": [
+        "procéder"
+      ],
+      "entry_index": 6545,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6580-sense-0",
+      "en": "proper",
+      "fr": [
+        "convenable"
+      ],
+      "entry_index": 6580,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6580-sense-1",
+      "en": "proper",
+      "fr": [
+        "exact",
+        "juste"
+      ],
+      "entry_index": 6580,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6709-sense-0",
+      "en": "quite",
+      "fr": [
+        "assez",
+        "passablement",
+        "plutôt",
+        "suffisamment"
+      ],
+      "entry_index": 6709,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6709-sense-1",
+      "en": "quite",
+      "fr": [
+        "bien",
+        "fort",
+        "tout",
+        "très"
+      ],
+      "entry_index": 6709,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6709-sense-2",
+      "en": "quite",
+      "fr": [
+        "complètement",
+        "entièrement",
+        "totalement"
+      ],
+      "entry_index": 6709,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6745-sense-0",
+      "en": "raise",
+      "fr": [
+        "élever"
+      ],
+      "entry_index": 6745,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6745-sense-1",
+      "en": "raise",
+      "fr": [
+        "éduquer"
+      ],
+      "entry_index": 6745,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6745-sense-2",
+      "en": "raise",
+      "fr": [
+        "entonner"
+      ],
+      "entry_index": 6745,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6745-sense-3",
+      "en": "raise",
+      "fr": [
+        "lever",
+        "soulever"
+      ],
+      "entry_index": 6745,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-6796-sense-0",
+      "en": "receive",
+      "fr": [
+        "accepter",
+        "accueillir",
+        "admettre",
+        "agréer",
+        "recevoir",
+        "recueiller"
+      ],
+      "entry_index": 6796,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6796-sense-1",
+      "en": "receive",
+      "fr": [
+        "recevoir des visiteurs"
+      ],
+      "entry_index": 6796,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6843-sense-0",
+      "en": "refuse",
+      "fr": [
+        "refuser",
+        "rejeter",
+        "repousser"
+      ],
+      "entry_index": 6843,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6847-sense-0",
+      "en": "regard",
+      "fr": [
+        "estime"
+      ],
+      "entry_index": 6847,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6847-sense-1",
+      "en": "regard",
+      "fr": [
+        "considérer"
+      ],
+      "entry_index": 6847,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6847-sense-2",
+      "en": "regard",
+      "fr": [
+        "contempler"
+      ],
+      "entry_index": 6847,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-6847-sense-3",
+      "en": "regard",
+      "fr": [
+        "regarder"
+      ],
+      "entry_index": 6847,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-6849-sense-0",
+      "en": "regiment",
+      "fr": [
+        "régiment"
+      ],
+      "entry_index": 6849,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6915-sense-0",
+      "en": "reply",
+      "fr": [
+        "correspondre à",
+        "respondre"
+      ],
+      "entry_index": 6915,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6915-sense-1",
+      "en": "reply",
+      "fr": [
+        "réponse"
+      ],
+      "entry_index": 6915,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6971-sense-0",
+      "en": "return",
+      "fr": [
+        "rente",
+        "revenu"
+      ],
+      "entry_index": 6971,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-6971-sense-1",
+      "en": "return",
+      "fr": [
+        "revenir"
+      ],
+      "entry_index": 6971,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-6971-sense-2",
+      "en": "return",
+      "fr": [
+        "rentrée",
+        "retour"
+      ],
+      "entry_index": 6971,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7002-sense-0",
+      "en": "right",
+      "fr": [
+        "droit"
+      ],
+      "entry_index": 7002,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7002-sense-1",
+      "en": "right",
+      "fr": [
+        "vrai",
+        "qui a raison"
+      ],
+      "entry_index": 7002,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7002-sense-2",
+      "en": "right",
+      "fr": [
+        "exact",
+        "juste"
+      ],
+      "entry_index": 7002,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7002-sense-3",
+      "en": "right",
+      "fr": [
+        "proprement"
+      ],
+      "entry_index": 7002,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7085-sense-0",
+      "en": "rump",
+      "fr": [
+        "derrière"
+      ],
+      "entry_index": 7085,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7086-sense-0",
+      "en": "run",
+      "fr": [
+        "fonctionner"
+      ],
+      "entry_index": 7086,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7086-sense-1",
+      "en": "run",
+      "fr": [
+        "fuite"
+      ],
+      "entry_index": 7086,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7086-sense-2",
+      "en": "run",
+      "fr": [
+        "s'élancer",
+        "se précipiter"
+      ],
+      "entry_index": 7086,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7086-sense-3",
+      "en": "run",
+      "fr": [
+        "courir"
+      ],
+      "entry_index": 7086,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7147-sense-0",
+      "en": "say",
+      "fr": [
+        "dire"
+      ],
+      "entry_index": 7147,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7197-sense-0",
+      "en": "seat",
+      "fr": [
+        "siège"
+      ],
+      "entry_index": 7197,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7211-sense-0",
+      "en": "see",
+      "fr": [
+        "rencontrer"
+      ],
+      "entry_index": 7211,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7211-sense-1",
+      "en": "see",
+      "fr": [
+        "voir"
+      ],
+      "entry_index": 7211,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7211-sense-2",
+      "en": "see",
+      "fr": [
+        "visiter"
+      ],
+      "entry_index": 7211,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7211-sense-3",
+      "en": "see",
+      "fr": [
+        "avoir soin de",
+        "se soucier de",
+        "s'occuper",
+        "veiller à"
+      ],
+      "entry_index": 7211,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-0",
+      "en": "share",
+      "fr": [
+        "action"
+      ],
+      "entry_index": 7286,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-1",
+      "en": "share",
+      "fr": [
+        "débiter",
+        "diviser",
+        "partager"
+      ],
+      "entry_index": 7286,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-2",
+      "en": "share",
+      "fr": [
+        "part",
+        "partie"
+      ],
+      "entry_index": 7286,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-3",
+      "en": "share",
+      "fr": [
+        "participer",
+        "prendre part"
+      ],
+      "entry_index": 7286,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-4",
+      "en": "share",
+      "fr": [
+        "contingent",
+        "portion"
+      ],
+      "entry_index": 7286,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-5",
+      "en": "share",
+      "fr": [
+        "ration"
+      ],
+      "entry_index": 7286,
+      "sense_index": 5
+    },
+    {
+      "id": "freedict-eng-fra-entry-7286-sense-6",
+      "en": "share",
+      "fr": [
+        "parti aux bénéfices",
+        "participation aux bénéfices"
+      ],
+      "entry_index": 7286,
+      "sense_index": 6
+    },
+    {
+      "id": "freedict-eng-fra-entry-7326-sense-0",
+      "en": "shoot",
+      "fr": [
+        "tirer"
+      ],
+      "entry_index": 7326,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7395-sense-0",
+      "en": "sir",
+      "fr": [
+        "monsieur"
+      ],
+      "entry_index": 7395,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7402-sense-0",
+      "en": "six",
+      "fr": [
+        "six"
+      ],
+      "entry_index": 7402,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7418-sense-0",
+      "en": "skin",
+      "fr": [
+        "fourrure",
+        "peau",
+        "pelage",
+        "poil d'animal"
+      ],
+      "entry_index": 7418,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7418-sense-1",
+      "en": "skin",
+      "fr": [
+        "dépouiller"
+      ],
+      "entry_index": 7418,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7433-sense-0",
+      "en": "sleep",
+      "fr": [
+        "dormir"
+      ],
+      "entry_index": 7433,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7433-sense-1",
+      "en": "sleep",
+      "fr": [
+        "sommeil"
+      ],
+      "entry_index": 7433,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7475-sense-0",
+      "en": "snow",
+      "fr": [
+        "neiger"
+      ],
+      "entry_index": 7475,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7475-sense-1",
+      "en": "snow",
+      "fr": [
+        "neige"
+      ],
+      "entry_index": 7475,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7478-sense-0",
+      "en": "so",
+      "fr": [
+        "afin de pour",
+        "afin que",
+        "pour que"
+      ],
+      "entry_index": 7478,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7478-sense-1",
+      "en": "so",
+      "fr": [
+        "ensuite"
+      ],
+      "entry_index": 7478,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7478-sense-2",
+      "en": "so",
+      "fr": [
+        "ainsi",
+        "comme",
+        "comme cela",
+        "tellement"
+      ],
+      "entry_index": 7478,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7478-sense-3",
+      "en": "so",
+      "fr": [
+        "si",
+        "aussi"
+      ],
+      "entry_index": 7478,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7478-sense-4",
+      "en": "so",
+      "fr": [
+        "tant"
+      ],
+      "entry_index": 7478,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-7603-sense-0",
+      "en": "spring",
+      "fr": [
+        "émaner",
+        "sortir de"
+      ],
+      "entry_index": 7603,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7603-sense-1",
+      "en": "spring",
+      "fr": [
+        "fontaine",
+        "source"
+      ],
+      "entry_index": 7603,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7603-sense-2",
+      "en": "spring",
+      "fr": [
+        "printemps"
+      ],
+      "entry_index": 7603,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7603-sense-3",
+      "en": "spring",
+      "fr": [
+        "ressort"
+      ],
+      "entry_index": 7603,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7603-sense-4",
+      "en": "spring",
+      "fr": [
+        "sauter"
+      ],
+      "entry_index": 7603,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-7708-sense-0",
+      "en": "stop",
+      "fr": [
+        "halte"
+      ],
+      "entry_index": 7708,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7708-sense-1",
+      "en": "stop",
+      "fr": [
+        "s'arrêter"
+      ],
+      "entry_index": 7708,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7708-sense-2",
+      "en": "stop",
+      "fr": [
+        "gare",
+        "station"
+      ],
+      "entry_index": 7708,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7708-sense-3",
+      "en": "stop",
+      "fr": [
+        "cesser"
+      ],
+      "entry_index": 7708,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7708-sense-4",
+      "en": "stop",
+      "fr": [
+        "arrêter",
+        "faire cesser",
+        "interrompre",
+        "terminer"
+      ],
+      "entry_index": 7708,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-7722-sense-0",
+      "en": "straight",
+      "fr": [
+        "direct",
+        "droit"
+      ],
+      "entry_index": 7722,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7754-sense-0",
+      "en": "stroke",
+      "fr": [
+        "apoplexie"
+      ],
+      "entry_index": 7754,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7754-sense-1",
+      "en": "stroke",
+      "fr": [
+        "caresser"
+      ],
+      "entry_index": 7754,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7754-sense-2",
+      "en": "stroke",
+      "fr": [
+        "caresse"
+      ],
+      "entry_index": 7754,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7754-sense-3",
+      "en": "stroke",
+      "fr": [
+        "raie",
+        "rayure"
+      ],
+      "entry_index": 7754,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7801-sense-0",
+      "en": "such",
+      "fr": [
+        "autant",
+        "tel"
+      ],
+      "entry_index": 7801,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7801-sense-1",
+      "en": "such",
+      "fr": [
+        "ainsi",
+        "comme",
+        "comme cela",
+        "tellement"
+      ],
+      "entry_index": 7801,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7808-sense-0",
+      "en": "suffer",
+      "fr": [
+        "endurer",
+        "souffrir",
+        "subir"
+      ],
+      "entry_index": 7808,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7839-sense-0",
+      "en": "supper",
+      "fr": [
+        "dîner",
+        "souper"
+      ],
+      "entry_index": 7839,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7841-sense-0",
+      "en": "support",
+      "fr": [
+        "accoter",
+        "appuyer"
+      ],
+      "entry_index": 7841,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7841-sense-1",
+      "en": "support",
+      "fr": [
+        "appui"
+      ],
+      "entry_index": 7841,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7841-sense-2",
+      "en": "support",
+      "fr": [
+        "maintenir"
+      ],
+      "entry_index": 7841,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7851-sense-0",
+      "en": "surgeon",
+      "fr": [
+        "chirurgien"
+      ],
+      "entry_index": 7851,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7901-sense-0",
+      "en": "table",
+      "fr": [
+        "liste",
+        "tableau"
+      ],
+      "entry_index": 7901,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7901-sense-1",
+      "en": "table",
+      "fr": [
+        "table"
+      ],
+      "entry_index": 7901,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7911-sense-0",
+      "en": "take",
+      "fr": [
+        "accepter",
+        "accueillir",
+        "admettre",
+        "agréer",
+        "recevoir",
+        "recueiller"
+      ],
+      "entry_index": 7911,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7911-sense-1",
+      "en": "take",
+      "fr": [
+        "occuper"
+      ],
+      "entry_index": 7911,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7911-sense-2",
+      "en": "take",
+      "fr": [
+        "prendre"
+      ],
+      "entry_index": 7911,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7938-sense-0",
+      "en": "talent",
+      "fr": [
+        "aptitude",
+        "don",
+        "talent"
+      ],
+      "entry_index": 7938,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7965-sense-0",
+      "en": "teach",
+      "fr": [
+        "apprendre",
+        "enseigner",
+        "instruire"
+      ],
+      "entry_index": 7965,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7983-sense-0",
+      "en": "tell",
+      "fr": [
+        "dire"
+      ],
+      "entry_index": 7983,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-7983-sense-1",
+      "en": "tell",
+      "fr": [
+        "charger",
+        "confier une tâche"
+      ],
+      "entry_index": 7983,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-7983-sense-2",
+      "en": "tell",
+      "fr": [
+        "commander",
+        "enjoindre",
+        "ordonner",
+        "sommer"
+      ],
+      "entry_index": 7983,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-7983-sense-3",
+      "en": "tell",
+      "fr": [
+        "conter",
+        "raconter"
+      ],
+      "entry_index": 7983,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-7995-sense-0",
+      "en": "ten",
+      "fr": [
+        "dix"
+      ],
+      "entry_index": 7995,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8009-sense-0",
+      "en": "terrestrial",
+      "fr": [
+        "terrestre"
+      ],
+      "entry_index": 8009,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8027-sense-0",
+      "en": "that",
+      "fr": [
+        "que"
+      ],
+      "entry_index": 8027,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8027-sense-1",
+      "en": "that",
+      "fr": [
+        "quoi"
+      ],
+      "entry_index": 8027,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8027-sense-2",
+      "en": "that",
+      "fr": [
+        "qu'"
+      ],
+      "entry_index": 8027,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8027-sense-3",
+      "en": "that",
+      "fr": [
+        "qui"
+      ],
+      "entry_index": 8027,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8027-sense-4",
+      "en": "that",
+      "fr": [
+        "si",
+        "aussi"
+      ],
+      "entry_index": 8027,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-8037-sense-0",
+      "en": "the",
+      "fr": [
+        "à l'",
+        "à la",
+        "au",
+        "aux",
+        "lui"
+      ],
+      "entry_index": 8037,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8037-sense-1",
+      "en": "the",
+      "fr": [
+        "la",
+        "le",
+        "les",
+        "l'"
+      ],
+      "entry_index": 8037,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8042-sense-0",
+      "en": "their",
+      "fr": [
+        "leur"
+      ],
+      "entry_index": 8042,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8048-sense-0",
+      "en": "there",
+      "fr": [
+        "voici",
+        "voilà"
+      ],
+      "entry_index": 8048,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8048-sense-1",
+      "en": "there",
+      "fr": [
+        "là",
+        "y"
+      ],
+      "entry_index": 8048,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8059-sense-0",
+      "en": "they",
+      "fr": [
+        "ils"
+      ],
+      "entry_index": 8059,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8059-sense-1",
+      "en": "they",
+      "fr": [
+        "elles"
+      ],
+      "entry_index": 8059,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8059-sense-2",
+      "en": "they",
+      "fr": [
+        "on"
+      ],
+      "entry_index": 8059,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8070-sense-0",
+      "en": "thing",
+      "fr": [
+        "chose",
+        "produit"
+      ],
+      "entry_index": 8070,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8070-sense-1",
+      "en": "thing",
+      "fr": [
+        "objet"
+      ],
+      "entry_index": 8070,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8077-sense-0",
+      "en": "third",
+      "fr": [
+        "tiers"
+      ],
+      "entry_index": 8077,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8081-sense-0",
+      "en": "thirty",
+      "fr": [
+        "trente"
+      ],
+      "entry_index": 8081,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8082-sense-0",
+      "en": "this",
+      "fr": [
+        "ceci"
+      ],
+      "entry_index": 8082,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8082-sense-1",
+      "en": "this",
+      "fr": [
+        "celle‐ci",
+        "celui‐ci"
+      ],
+      "entry_index": 8082,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8093-sense-0",
+      "en": "thousand",
+      "fr": [
+        "mille"
+      ],
+      "entry_index": 8093,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8098-sense-0",
+      "en": "three",
+      "fr": [
+        "trois"
+      ],
+      "entry_index": 8098,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8102-sense-0",
+      "en": "through",
+      "fr": [
+        "complètement",
+        "entièrement"
+      ],
+      "entry_index": 8102,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8102-sense-1",
+      "en": "through",
+      "fr": [
+        "au moyen de",
+        "par"
+      ],
+      "entry_index": 8102,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8102-sense-2",
+      "en": "through",
+      "fr": [
+        "prêt"
+      ],
+      "entry_index": 8102,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8102-sense-3",
+      "en": "through",
+      "fr": [
+        "à cause de",
+        "de"
+      ],
+      "entry_index": 8102,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8102-sense-4",
+      "en": "through",
+      "fr": [
+        "à travers"
+      ],
+      "entry_index": 8102,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-8133-sense-0",
+      "en": "time",
+      "fr": [
+        "fois"
+      ],
+      "entry_index": 8133,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8133-sense-1",
+      "en": "time",
+      "fr": [
+        "heure"
+      ],
+      "entry_index": 8133,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8133-sense-2",
+      "en": "time",
+      "fr": [
+        "durée",
+        "temps"
+      ],
+      "entry_index": 8133,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8148-sense-0",
+      "en": "to",
+      "fr": [
+        "à",
+        "en",
+        "vers"
+      ],
+      "entry_index": 8148,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8148-sense-1",
+      "en": "to",
+      "fr": [
+        "afin de",
+        "pour"
+      ],
+      "entry_index": 8148,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8195-sense-0",
+      "en": "towards",
+      "fr": [
+        "à",
+        "en",
+        "vers"
+      ],
+      "entry_index": 8195,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8195-sense-1",
+      "en": "towards",
+      "fr": [
+        "en relation avec",
+        "vis‐à‐vis"
+      ],
+      "entry_index": 8195,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8195-sense-2",
+      "en": "towards",
+      "fr": [
+        "autour de",
+        "parages"
+      ],
+      "entry_index": 8195,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8199-sense-0",
+      "en": "town",
+      "fr": [
+        "localité"
+      ],
+      "entry_index": 8199,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8199-sense-1",
+      "en": "town",
+      "fr": [
+        "cité",
+        "ville"
+      ],
+      "entry_index": 8199,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8302-sense-0",
+      "en": "turn",
+      "fr": [
+        "dévier"
+      ],
+      "entry_index": 8302,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8302-sense-1",
+      "en": "turn",
+      "fr": [
+        "retourner"
+      ],
+      "entry_index": 8302,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8302-sense-2",
+      "en": "turn",
+      "fr": [
+        "renverser"
+      ],
+      "entry_index": 8302,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8302-sense-3",
+      "en": "turn",
+      "fr": [
+        "tourner"
+      ],
+      "entry_index": 8302,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8302-sense-4",
+      "en": "turn",
+      "fr": [
+        "serrer"
+      ],
+      "entry_index": 8302,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-8302-sense-5",
+      "en": "turn",
+      "fr": [
+        "file",
+        "rang",
+        "rangée",
+        "tour"
+      ],
+      "entry_index": 8302,
+      "sense_index": 5
+    },
+    {
+      "id": "freedict-eng-fra-entry-8313-sense-0",
+      "en": "twelve",
+      "fr": [
+        "douze"
+      ],
+      "entry_index": 8313,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8315-sense-0",
+      "en": "twenty",
+      "fr": [
+        "vingt"
+      ],
+      "entry_index": 8315,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8322-sense-0",
+      "en": "two",
+      "fr": [
+        "deux"
+      ],
+      "entry_index": 8322,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8347-sense-0",
+      "en": "understand",
+      "fr": [
+        "comprendre"
+      ],
+      "entry_index": 8347,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8396-sense-0",
+      "en": "use",
+      "fr": [
+        "appliquer",
+        "employer",
+        "se servir de",
+        "user de"
+      ],
+      "entry_index": 8396,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8396-sense-1",
+      "en": "use",
+      "fr": [
+        "recours"
+      ],
+      "entry_index": 8396,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8454-sense-0",
+      "en": "very",
+      "fr": [
+        "bien",
+        "fort",
+        "tout",
+        "très"
+      ],
+      "entry_index": 8454,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8528-sense-0",
+      "en": "walk",
+      "fr": [
+        "marcher"
+      ],
+      "entry_index": 8528,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8528-sense-1",
+      "en": "walk",
+      "fr": [
+        "promenade"
+      ],
+      "entry_index": 8528,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8541-sense-0",
+      "en": "want",
+      "fr": [
+        "désir",
+        "souhait"
+      ],
+      "entry_index": 8541,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8541-sense-1",
+      "en": "want",
+      "fr": [
+        "vouloir"
+      ],
+      "entry_index": 8541,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8574-sense-0",
+      "en": "we",
+      "fr": [
+        "nous"
+      ],
+      "entry_index": 8574,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8592-sense-0",
+      "en": "week",
+      "fr": [
+        "semaine"
+      ],
+      "entry_index": 8592,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8606-sense-0",
+      "en": "well",
+      "fr": [
+        "bien"
+      ],
+      "entry_index": 8606,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8606-sense-1",
+      "en": "well",
+      "fr": [
+        "eh bien"
+      ],
+      "entry_index": 8606,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8606-sense-2",
+      "en": "well",
+      "fr": [
+        "puits"
+      ],
+      "entry_index": 8606,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8606-sense-3",
+      "en": "well",
+      "fr": [
+        "sain"
+      ],
+      "entry_index": 8606,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8614-sense-0",
+      "en": "what",
+      "fr": [
+        "quoi"
+      ],
+      "entry_index": 8614,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8623-sense-0",
+      "en": "wheel",
+      "fr": [
+        "roue"
+      ],
+      "entry_index": 8623,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8627-sense-0",
+      "en": "when",
+      "fr": [
+        "quand"
+      ],
+      "entry_index": 8627,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8627-sense-1",
+      "en": "when",
+      "fr": [
+        "lorsque"
+      ],
+      "entry_index": 8627,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8628-sense-0",
+      "en": "where",
+      "fr": [
+        "où"
+      ],
+      "entry_index": 8628,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8631-sense-0",
+      "en": "which",
+      "fr": [
+        "quelles",
+        "quels"
+      ],
+      "entry_index": 8631,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8631-sense-1",
+      "en": "which",
+      "fr": [
+        "qui"
+      ],
+      "entry_index": 8631,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8631-sense-2",
+      "en": "which",
+      "fr": [
+        "que",
+        "qu'"
+      ],
+      "entry_index": 8631,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8631-sense-3",
+      "en": "which",
+      "fr": [
+        "quel"
+      ],
+      "entry_index": 8631,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8631-sense-4",
+      "en": "which",
+      "fr": [
+        "quelle"
+      ],
+      "entry_index": 8631,
+      "sense_index": 4
+    },
+    {
+      "id": "freedict-eng-fra-entry-8632-sense-0",
+      "en": "while",
+      "fr": [
+        "durant",
+        "lors",
+        "pendant",
+        "pendant que",
+        "tandis que"
+      ],
+      "entry_index": 8632,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8632-sense-1",
+      "en": "while",
+      "fr": [
+        "durée",
+        "temps"
+      ],
+      "entry_index": 8632,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8637-sense-0",
+      "en": "whip",
+      "fr": [
+        "battre",
+        "faire tournoyer"
+      ],
+      "entry_index": 8637,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8637-sense-1",
+      "en": "whip",
+      "fr": [
+        "flageller",
+        "fouetter"
+      ],
+      "entry_index": 8637,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8637-sense-2",
+      "en": "whip",
+      "fr": [
+        "fouet"
+      ],
+      "entry_index": 8637,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8645-sense-0",
+      "en": "who",
+      "fr": [
+        "que",
+        "qu'"
+      ],
+      "entry_index": 8645,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8645-sense-1",
+      "en": "who",
+      "fr": [
+        "qui"
+      ],
+      "entry_index": 8645,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8645-sense-2",
+      "en": "who",
+      "fr": [
+        "quels",
+        "quelles"
+      ],
+      "entry_index": 8645,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8645-sense-3",
+      "en": "who",
+      "fr": [
+        "qu'est‐ce qui"
+      ],
+      "entry_index": 8645,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8664-sense-0",
+      "en": "will",
+      "fr": [
+        "testament"
+      ],
+      "entry_index": 8664,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8664-sense-1",
+      "en": "will",
+      "fr": [
+        "gré",
+        "volonté"
+      ],
+      "entry_index": 8664,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8666-sense-0",
+      "en": "willingly",
+      "fr": [
+        "volontiers"
+      ],
+      "entry_index": 8666,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8688-sense-0",
+      "en": "wish",
+      "fr": [
+        "désirer",
+        "souhaiter"
+      ],
+      "entry_index": 8688,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8688-sense-1",
+      "en": "wish",
+      "fr": [
+        "désir",
+        "souhait"
+      ],
+      "entry_index": 8688,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8688-sense-2",
+      "en": "wish",
+      "fr": [
+        "vouloir"
+      ],
+      "entry_index": 8688,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8688-sense-3",
+      "en": "wish",
+      "fr": [
+        "gré",
+        "volonté"
+      ],
+      "entry_index": 8688,
+      "sense_index": 3
+    },
+    {
+      "id": "freedict-eng-fra-entry-8690-sense-0",
+      "en": "with",
+      "fr": [
+        "à",
+        "avec"
+      ],
+      "entry_index": 8690,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8690-sense-1",
+      "en": "with",
+      "fr": [
+        "au moyen de",
+        "par"
+      ],
+      "entry_index": 8690,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8690-sense-2",
+      "en": "with",
+      "fr": [
+        "au bord de",
+        "chez",
+        "parmi",
+        "sur",
+        "tous près de"
+      ],
+      "entry_index": 8690,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8694-sense-0",
+      "en": "without",
+      "fr": [
+        "sans"
+      ],
+      "entry_index": 8694,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8730-sense-0",
+      "en": "world",
+      "fr": [
+        "monde"
+      ],
+      "entry_index": 8730,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8770-sense-0",
+      "en": "yes",
+      "fr": [
+        "bien",
+        "oïl",
+        "oui",
+        "si"
+      ],
+      "entry_index": 8770,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8772-sense-0",
+      "en": "yet",
+      "fr": [
+        "encore"
+      ],
+      "entry_index": 8772,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8772-sense-1",
+      "en": "yet",
+      "fr": [
+        "déjà"
+      ],
+      "entry_index": 8772,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8772-sense-2",
+      "en": "yet",
+      "fr": [
+        "cependant",
+        "néanmoins",
+        "pourtant",
+        "tout de même"
+      ],
+      "entry_index": 8772,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8780-sense-0",
+      "en": "you",
+      "fr": [
+        "à toi",
+        "te",
+        "t'"
+      ],
+      "entry_index": 8780,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8780-sense-1",
+      "en": "you",
+      "fr": [
+        "à vous",
+        "vous"
+      ],
+      "entry_index": 8780,
+      "sense_index": 1
+    },
+    {
+      "id": "freedict-eng-fra-entry-8780-sense-2",
+      "en": "you",
+      "fr": [
+        "on"
+      ],
+      "entry_index": 8780,
+      "sense_index": 2
+    },
+    {
+      "id": "freedict-eng-fra-entry-8781-sense-0",
+      "en": "young",
+      "fr": [
+        "jeune"
+      ],
+      "entry_index": 8781,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8783-sense-0",
+      "en": "your",
+      "fr": [
+        "ta",
+        "ton"
+      ],
+      "entry_index": 8783,
+      "sense_index": 0
+    },
+    {
+      "id": "freedict-eng-fra-entry-8783-sense-1",
+      "en": "your",
+      "fr": [
+        "tien",
+        "votre"
+      ],
+      "entry_index": 8783,
+      "sense_index": 1
+    }
+  ]
+}

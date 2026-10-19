@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "ce11c2f6e5e17f9ce7206ead96d101269ae8b3e369c6c1e45e757d17f0963150",
+  "entries": [],
+  "sentences": [
+    {
+      "id": "checked-9-p00023-sentence",
+      "passage_id": "p00023",
+      "en_sentence_ids": [
+        "en-s027"
+      ],
+      "fr_sentence_ids": [
+        "fr-s023"
+      ],
+      "source_text": "Immediately Candide saddled the three horses, and Cunegonde, the old\nwoman and he, travelled thirty miles at a stretch.",
+      "target_text": "Aussitôt Candide selle les trois chevaux; Cunégonde, la vieille, et\nlui, font trente milles d’une traite.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked": "2026-10-18",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Both describe Candide saddling the three horses and the three travellers covering thirty miles together."
+    }
+  ]
+}

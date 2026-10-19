@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "six-level-pilot-v3",
+  "calibration": "pilot; independent human evaluation pending",
+  "passage_similarity_min": 0.7,
+  "allowed_upos": [
+    "NOUN"
+  ],
+  "dictionary_required": true,
+  "max_stage": 5,
+  "note": "Baseline nouns at levels 1\u20132. Occurrence-checked positive-degree adjectives at level 3; extra checked nouns and one complete sentence at level 4. English adjective number is not inferred: each admitted adjective has an explicit contextual record. Full target-language source is level 5 and is never selected automatically.",
+  "automatic_stage_cap": 4
+}

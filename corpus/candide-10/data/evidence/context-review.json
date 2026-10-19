@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "check_origin": "ai_context_check",
+  "checked_by": "Codex",
+  "checked_on": "2026-10-18",
+  "base_fingerprint": "c83f7313bb4adc36f14afb2ffbb3ecc34925bad7fe8a7c7cf86892fb4454bdcf",
+  "reviewed_word_insertions": 27,
+  "note": "Every admitted noun was checked against the paired source context. This is AI review, not an independent accuracy evaluation.",
+  "alignment_notes": [
+    "p00006–p00007 place the judging-rashly clause in different groups; only the unambiguous inn/auberge noun is admitted there.",
+    "p00030 differs between editions about the parents; no whole sentence is admitted there.",
+    "Low-similarity groups remain excluded from substitution."
+  ]
+}

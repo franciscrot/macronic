@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "languages": {
+    "en": [
+      {
+        "id": "en-s001",
+        "paragraph_id": "en-p00001",
+        "text": "Candide, driven from terrestrial paradise, walked a long while without\nknowing where, weeping, raising his eyes to heaven, turning them often\ntowards the most magnificent of castles which imprisoned the purest of\nnoble young ladies.",
+        "source_start": 0,
+        "source_end": 232
+      },
+      {
+        "id": "en-s002",
+        "paragraph_id": "en-p00001",
+        "text": "He lay down to sleep without supper, in the middle\nof a field between two furrows.",
+        "source_start": 233,
+        "source_end": 315
+      },
+      {
+        "id": "en-s003",
+        "paragraph_id": "en-p00001",
+        "text": "The snow fell in large flakes.",
+        "source_start": 316,
+        "source_end": 346
+      },
+      {
+        "id": "en-s004",
+        "paragraph_id": "en-p00001",
+        "text": "Next day\nCandide, all benumbed, dragged himself towards the neighbouring town\nwhich was called Waldberghofftrarbk-dikdorff, having no money, dying of\nhunger and fatigue, he stopped sorrowfully at the door of an inn.",
+        "source_start": 347,
+        "source_end": 562
+      },
+      {
+        "id": "en-s005",
+        "paragraph_id": "en-p00001",
+        "text": "Two\nmen dressed in blue observed him.",
+        "source_start": 563,
+        "source_end": 600
+      },
+      {
+        "id": "en-s006",
+        "paragraph_id": "en-p00002",
+        "text": "\"Comrade,\" said one, \"here is a well-built young fellow, and of proper\nheight.\"",
+        "source_start": 602,
+        "source_end": 681
+      },
+      {
+        "id": "en-s007",
+        "paragraph_id": "en-p00003",
+        "text": "They went up to Candide and very civilly invited him to dinner.",
+        "source_start": 683,
+        "source_end": 746
+      },
+      {
+        "id": "en-s008",
+        "paragraph_id": "en-p00004",
+        "text": "\"Gentlemen,\" replied Candide, with a most engaging modesty, \"you do me\ngreat honour, but I have not wherewithal to pay my share.\"",
+        "source_start": 748,
+        "source_end": 877
+      },
+      {
+        "id": "en-s009",
+        "paragraph_id": "en-p00005",
+        "text": "\"Oh, sir,\" said one of the blues to him, \"people of your appearance and\nof your merit never pay anything: are you not five feet five inches\nhigh?\"",
+        "source_start": 879,
+        "source_end": 1025
+      },
+      {
+        "id": "en-s010",
+        "paragraph_id": "en-p00006",
+        "text": "\"Yes, sir, that is my height,\" answered he, making a low bow.",
+        "source_start": 1027,
+        "source_end": 1088
+      },
+      {
+        "id": "en-s011",
+        "paragraph_id": "en-p00007",
+        "text": "\"Come, sir, seat yourself; not only will we pay your reckoning, but we\nwill never suffer such a man as you to want money; men are only born to\nassist one another.\"",
+        "source_start": 1090,
+        "source_end": 1253
+      },
+      {
+        "id": "en-s012",
+        "paragraph_id": "en-p00008",
+        "text": "\"You are right,\" said Candide; \"this is what I was always taught by Mr.\nPangloss, and I see plainly that all is for the best.\"",
+        "source_start": 1255,
+        "source_end": 1381
+      },
+      {
+        "id": "en-s013",
+        "paragraph_id": "en-p00009",
+        "text": "They begged of him to accept a few crowns.",
+        "source_start": 1383,
+        "source_end": 1425
+      },
+      {
+        "id": "en-s014",
+        "paragraph_id": "en-p00009",
+        "text": "He took them, and wished to\ngive them his note; they refused; they seated themselves at table.",
+        "source_start": 1426,
+        "source_end": 1520
+      },
+      {
+        "id": "en-s015",
+        "paragraph_id": "en-p00010",
+        "text": "\"Love you not deeply?\"",
+        "source_start": 1522,
+        "source_end": 1544
+      },
+      {
+        "id": "en-s016",
+        "paragraph_id": "en-p00011",
+        "text": "\"Oh yes,\" answered he; \"I deeply love Miss Cunegonde.\"",
+        "source_start": 1546,
+        "source_end": 1600
+      },
+      {
+        "id": "en-s017",
+        "paragraph_id": "en-p00012",
+        "text": "\"No,\" said one of the gentlemen, \"we ask you if you do not deeply love\nthe King of the Bulgarians?\"",
+        "source_start": 1602,
+        "source_end": 1701
+      },
+      {
+        "id": "en-s018",
+        "paragraph_id": "en-p00013",
+        "text": "\"Not at all,\" said he; \"for I have never seen him.\"",
+        "source_start": 1703,
+        "source_end": 1754
+      },
+      {
+        "id": "en-s019",
+        "paragraph_id": "en-p00014",
+        "text": "\"What!",
+        "source_start": 1756,
+        "source_end": 1762
+      },
+      {
+        "id": "en-s020",
+        "paragraph_id": "en-p00014",
+        "text": "he is the best of kings, and we must drink his health.\"",
+        "source_start": 1763,
+        "source_end": 1818
+      },
+      {
+        "id": "en-s021",
+        "paragraph_id": "en-p00015",
+        "text": "\"Oh!",
+        "source_start": 1820,
+        "source_end": 1824
+      },
+      {
+        "id": "en-s022",
+        "paragraph_id": "en-p00015",
+        "text": "very willingly, gentlemen,\" and he drank.",
+        "source_start": 1825,
+        "source_end": 1866
+      },
+      {
+        "id": "en-s023",
+        "paragraph_id": "en-p00016",
+        "text": "\"That is enough,\" they tell him. \"",
+        "source_start": 1868,
+        "source_end": 1902
+      },
+      {
+        "id": "en-s024",
+        "paragraph_id": "en-p00016",
+        "text": "Now you are the help, the support,\nthe defender, the hero of the Bulgarians.",
+        "source_start": 1902,
+        "source_end": 1978
+      },
+      {
+        "id": "en-s025",
+        "paragraph_id": "en-p00016",
+        "text": "Your fortune is made, and your\nglory is assured.\"",
+        "source_start": 1979,
+        "source_end": 2028
+      },
+      {
+        "id": "en-s026",
+        "paragraph_id": "en-p00017",
+        "text": "Instantly they fettered him, and carried him away to the regiment.",
+        "source_start": 2030,
+        "source_end": 2096
+      },
+      {
+        "id": "en-s027",
+        "paragraph_id": "en-p00017",
+        "text": "There\nhe was made to wheel about to the right, and to the left, to draw his\nrammer, to return his rammer, to present, to fire, to march, and they\ngave him thirty blows with a cudgel.",
+        "source_start": 2097,
+        "source_end": 2279
+      },
+      {
+        "id": "en-s028",
+        "paragraph_id": "en-p00017",
+        "text": "The next day he did his exercise a\nlittle less badly, and he received but twenty blows.",
+        "source_start": 2280,
+        "source_end": 2367
+      },
+      {
+        "id": "en-s029",
+        "paragraph_id": "en-p00017",
+        "text": "The day following\nthey gave him only ten, and he was regarded by his comrades as a\nprodigy.",
+        "source_start": 2368,
+        "source_end": 2459
+      },
+      {
+        "id": "en-s030",
+        "paragraph_id": "en-p00018",
+        "text": "Candide, all stupefied, could not yet very well realise how he was a\nhero.",
+        "source_start": 2461,
+        "source_end": 2535
+      },
+      {
+        "id": "en-s031",
+        "paragraph_id": "en-p00018",
+        "text": "He resolved one fine day in spring to go for a walk, marching\nstraight before him, believing that it was a privilege of the human as\nwell as of the animal species to make use of their legs as they pleased.",
+        "source_start": 2536,
+        "source_end": 2741
+      },
+      {
+        "id": "en-s032",
+        "paragraph_id": "en-p00018",
+        "text": "He had advanced two leagues when he was overtaken by four others, heroes\nof six feet, who bound him and carried him to a dungeon.",
+        "source_start": 2742,
+        "source_end": 2871
+      },
+      {
+        "id": "en-s033",
+        "paragraph_id": "en-p00018",
+        "text": "He was asked\nwhich he would like the best, to be whipped six-and-thirty times through\nall the regiment, or to receive at once twelve balls of lead in his\nbrain.",
+        "source_start": 2872,
+        "source_end": 3032
+      },
+      {
+        "id": "en-s034",
+        "paragraph_id": "en-p00018",
+        "text": "He vainly said that human will is free, and that he chose neither\nthe one nor the other.",
+        "source_start": 3033,
+        "source_end": 3121
+      },
+      {
+        "id": "en-s035",
+        "paragraph_id": "en-p00018",
+        "text": "He was forced to make a choice; he determined, in\nvirtue of that gift of God called liberty, to run the gauntlet\nsix-and-thirty times.",
+        "source_start": 3122,
+        "source_end": 3256
+      },
+      {
+        "id": "en-s036",
+        "paragraph_id": "en-p00018",
+        "text": "He bore this twice.",
+        "source_start": 3257,
+        "source_end": 3276
+      },
+      {
+        "id": "en-s037",
+        "paragraph_id": "en-p00018",
+        "text": "The regiment was composed of\ntwo thousand men; that composed for him four thousand strokes, which\nlaid bare all his muscles and nerves, from the nape of his neck quite\ndown to his rump.",
+        "source_start": 3277,
+        "source_end": 3462
+      },
+      {
+        "id": "en-s038",
+        "paragraph_id": "en-p00018",
+        "text": "As they were going to proceed to a third whipping,\nCandide, able to bear no more, begged as a favour that they would be so\ngood as to shoot him.",
+        "source_start": 3463,
+        "source_end": 3607
+      },
+      {
+        "id": "en-s039",
+        "paragraph_id": "en-p00018",
+        "text": "He obtained this favour; they bandaged his eyes,\nand bade him kneel down.",
+        "source_start": 3608,
+        "source_end": 3681
+      },
+      {
+        "id": "en-s040",
+        "paragraph_id": "en-p00018",
+        "text": "The King of the Bulgarians passed at this\nmoment and ascertained the nature of the crime.",
+        "source_start": 3682,
+        "source_end": 3771
+      },
+      {
+        "id": "en-s041",
+        "paragraph_id": "en-p00018",
+        "text": "As he had great talent,\nhe understood from all that he learnt of Candide that he was a young\nmetaphysician, extremely ignorant of the things of this world, and he\naccorded him his pardon with a clemency which will bring him praise in\nall the journals, and throughout all ages.",
+        "source_start": 3772,
+        "source_end": 4048
+      },
+      {
+        "id": "en-s042",
+        "paragraph_id": "en-p00019",
+        "text": "An able surgeon cured Candide in three weeks by means of emollients\ntaught by Dioscorides.",
+        "source_start": 4050,
+        "source_end": 4140
+      },
+      {
+        "id": "en-s043",
+        "paragraph_id": "en-p00019",
+        "text": "He had already a little skin, and was able to\nmarch when the King of the Bulgarians gave battle to the King of the\nAbares.[2]",
+        "source_start": 4141,
+        "source_end": 4266
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-s001",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide, chassé du paradis terrestre, marcha longtemps sans savoir où,\npleurant, levant les yeux au ciel, les tournant souvent vers le plus\nbeau des châteaux qui renfermait la plus belle des baronnettes; il se\ncoucha sans souper au milieu des champs entre deux sillons; la neige\ntombait à gros flocons.",
+        "source_start": 0,
+        "source_end": 302
+      },
+      {
+        "id": "fr-s002",
+        "paragraph_id": "fr-p00001",
+        "text": "Candide, tout transi, se traîna le lendemain\nvers la ville voisine, qui s’appelle _Valdberghoff-trarbk-dikdorff_,\nn’ayant point d’argent, mourant de faim et de lassitude.",
+        "source_start": 303,
+        "source_end": 473
+      },
+      {
+        "id": "fr-s003",
+        "paragraph_id": "fr-p00001",
+        "text": "Il s’arrêta\ntristement à la porte d’un cabaret.",
+        "source_start": 474,
+        "source_end": 521
+      },
+      {
+        "id": "fr-s004",
+        "paragraph_id": "fr-p00001",
+        "text": "Deux hommes habillés de bleu le\nremarquèrent: Camarade, dit l’un, voilà un jeune homme très bien fait,\net qui a la taille requise; ils s’avancèrent vers Candide et le\nprièrent à dîner très civilement.—Messieurs, leur dit Candide avec une\nmodestie charmante, vous me faites beaucoup d’honneur, mais je n’ai pas\nde quoi payer mon écot.—Ah!",
+        "source_start": 522,
+        "source_end": 859
+      },
+      {
+        "id": "fr-s005",
+        "paragraph_id": "fr-p00001",
+        "text": "monsieur, lui dit un des bleus, les\npersonnes de votre figure et de votre mérite ne paient jamais rien:\nn’avez-vous pas cinq pieds cinq pouces de haut?—Oui, messieurs, c’est\nma taille, dit-il en fesant la révérence.—Ah!",
+        "source_start": 860,
+        "source_end": 1079
+      },
+      {
+        "id": "fr-s006",
+        "paragraph_id": "fr-p00001",
+        "text": "monsieur, mettez-vous à\ntable; non seulement nous vous défraierons, mais nous ne souffrirons\njamais qu’un homme comme vous manque d’argent; les hommes ne sont faits\nque pour se secourir les uns les autres.—Vous avez raison, dit Candide;\nc’est ce que M. Pangloss m’a toujours dit, et je vois bien que tout est\nau mieux.",
+        "source_start": 1080,
+        "source_end": 1398
+      },
+      {
+        "id": "fr-s007",
+        "paragraph_id": "fr-p00001",
+        "text": "On le prie d’accepter quelques écus, il les prend et veut\nfaire son billet; on n’en veut point, on se met à table.",
+        "source_start": 1399,
+        "source_end": 1513
+      },
+      {
+        "id": "fr-s008",
+        "paragraph_id": "fr-p00001",
+        "text": "N’aimez-vous\npas tendrement?….—Oh!",
+        "source_start": 1514,
+        "source_end": 1548
+      },
+      {
+        "id": "fr-s009",
+        "paragraph_id": "fr-p00001",
+        "text": "oui, répond-il, j’aime tendrement mademoiselle\nCunégonde.—Non, dit l’un de ces messieurs, nous vous demandons si vous\nn’aimez pas tendrement le roi des Bulgares?—Point du tout, dit-il, car\nje ne l’ai jamais vu.—Comment!",
+        "source_start": 1549,
+        "source_end": 1768
+      },
+      {
+        "id": "fr-s010",
+        "paragraph_id": "fr-p00001",
+        "text": "c’est le plus charmant des rois, et il\nfaut boire à sa santé.—Oh!",
+        "source_start": 1769,
+        "source_end": 1834
+      },
+      {
+        "id": "fr-s011",
+        "paragraph_id": "fr-p00001",
+        "text": "très volontiers, messieurs.",
+        "source_start": 1835,
+        "source_end": 1862
+      },
+      {
+        "id": "fr-s012",
+        "paragraph_id": "fr-p00001",
+        "text": "Et il boit.",
+        "source_start": 1863,
+        "source_end": 1874
+      },
+      {
+        "id": "fr-s013",
+        "paragraph_id": "fr-p00001",
+        "text": "C’en\nest assez, lui dit-on, vous voilà l’appui, le soutien, le défenseur, le\nhéros des Bulgares; votre fortune est faite, et votre gloire est\nassurée.",
+        "source_start": 1875,
+        "source_end": 2025
+      },
+      {
+        "id": "fr-s014",
+        "paragraph_id": "fr-p00001",
+        "text": "On lui met sur-le-champ les fers aux pieds, et on le mène au\nrégiment.",
+        "source_start": 2026,
+        "source_end": 2096
+      },
+      {
+        "id": "fr-s015",
+        "paragraph_id": "fr-p00001",
+        "text": "On le fait tourner à droite, à gauche, hausser la baguette,\nremettre la baguette, coucher en joue, tirer, doubler le pas, et on lui\ndonne trente coups de bâton; le lendemain, il fait l’exercice un peu\nmoins mal, et il ne reçoit que vingt coups; le surlendemain, on ne lui\nen donne que dix, et il est regardé par ses camarades comme un prodige.",
+        "source_start": 2097,
+        "source_end": 2440
+      },
+      {
+        "id": "fr-s016",
+        "paragraph_id": "fr-p00002",
+        "text": "Candide, tout stupéfait, ne démêlait pas encore trop bien comment il\nétait un héros.",
+        "source_start": 2442,
+        "source_end": 2526
+      },
+      {
+        "id": "fr-s017",
+        "paragraph_id": "fr-p00002",
+        "text": "Il s’avisa un beau jour de printemps de s’aller\npromener, marchant tout droit devant lui, croyant que c’était un\nprivilège de l’espèce humaine, comme de l’espèce animale, de se servir\nde ses jambes à son plaisir.",
+        "source_start": 2527,
+        "source_end": 2739
+      },
+      {
+        "id": "fr-s018",
+        "paragraph_id": "fr-p00002",
+        "text": "Il n’eut pas fait deux lieues que voilà\nquatre autres héros de six pieds qui l’atteignent, qui le lient, qui le\nmènent dans un cachot.",
+        "source_start": 2740,
+        "source_end": 2874
+      },
+      {
+        "id": "fr-s019",
+        "paragraph_id": "fr-p00002",
+        "text": "On lui demanda juridiquement ce qu’il aimait le\nmieux d’être fustigé trente-six fois par tout le régiment, ou de\nrecevoir à-la-fois douze balles de plomb dans la cervelle.",
+        "source_start": 2875,
+        "source_end": 3046
+      },
+      {
+        "id": "fr-s020",
+        "paragraph_id": "fr-p00002",
+        "text": "Il eut beau\ndire que les volontés sont libres, et qu’il ne voulait ni l’un ni\nl’autre, il fallut faire un choix; il se détermina, en vertu du don de\nDieu qu’on nomme _liberté_, à passer trente-six fois par les baguettes;\nil essuya deux promenades.",
+        "source_start": 3047,
+        "source_end": 3294
+      },
+      {
+        "id": "fr-s021",
+        "paragraph_id": "fr-p00002",
+        "text": "Le régiment était composé de deux mille\nhommes; cela lui composa quatre mille coups de baguette, qui, depuis la\nnuque du cou jusqu’au cul, lui découvrirent les muscles et les nerfs.",
+        "source_start": 3295,
+        "source_end": 3476
+      },
+      {
+        "id": "fr-s022",
+        "paragraph_id": "fr-p00002",
+        "text": "Comme on allait procéder à la troisième course, Candide, n’en pouvant\nplus, demanda en grâce qu’on voulût bien avoir la bonté de lui casser\nla tête; il obtint cette faveur; on lui bande les yeux; on le fait\nmettre à genoux.",
+        "source_start": 3477,
+        "source_end": 3700
+      },
+      {
+        "id": "fr-s023",
+        "paragraph_id": "fr-p00002",
+        "text": "Le roi des Bulgares passe dans ce moment, s’informe du\ncrime du patient; et comme ce roi avait un grand génie, il comprit, par\ntout ce qu’il apprit de Candide, que c’était un jeune métaphysicien\nfort ignorant des choses de ce monde, et il lui accorda sa grâce avec\nune clémence qui sera louée dans tous les journaux et dans tous les\nsiècles.",
+        "source_start": 3701,
+        "source_end": 4042
+      },
+      {
+        "id": "fr-s024",
+        "paragraph_id": "fr-p00002",
+        "text": "Un brave chirurgien guérit Candide en trois semaines avec les\némollients enseignés par Dioscoride.",
+        "source_start": 4043,
+        "source_end": 4141
+      },
+      {
+        "id": "fr-s025",
+        "paragraph_id": "fr-p00002",
+        "text": "Il avait déjà un peu de peau et\npouvait marcher, quand le roi des Bulgares livra bataille au roi des\nAbares.",
+        "source_start": 4142,
+        "source_end": 4250
+      }
+    ]
+  }
+}

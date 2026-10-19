@@ -3,7 +3,7 @@
 This revision implements the user's choice to build sentence alignment around Bertalign. The implementation and executable commands are described in README.md; schema details are in DATA_FORMAT.md.
 
 - Bertalign with pinned LaBSE establishes ordered passage groups, including unequal sentence counts and unmatched material. SimAlign intersection proposes occurrence-level word links inside those groups.
-- The first reader displays ten passage groups from Candide Chapter I. Three deterministic nested stages replace only conservative, independently eligible noun links; unresolved text stays English.
+- The reader displays the whole of Candide Chapter I with previous/next navigation. Three deterministic nested stages replace only conservative, independently eligible noun links; unresolved text stays English.
 - No positional projection, nearest-word fallback, coverage quota or sentence-length pairing heuristic may manufacture a link.
 - Raw outputs, source snapshots, annotations, lexical evidence, corrections and reader output remain separate. Every inserted word retains evidence and decision origin.
 - One-to-many and phrase relationships are retained for inspection but excluded from isolated substitutions. Approval of correspondence is distinct from substitution safety.

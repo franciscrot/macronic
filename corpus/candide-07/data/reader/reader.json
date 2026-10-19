@@ -1,0 +1,1157 @@
+{
+  "schema_version": 2,
+  "base_fingerprint": "3c467c1cbe17788853bdea58894a8269d7ab9e6f768e290e4ec97aa95e8bd3c6",
+  "title": "Candide",
+  "chapter": "Chapter VII",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "six-level-pilot-v3",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "3c467c1cbe17788853bdea58894a8269d7ab9e6f768e290e4ec97aa95e8bd3c6",
+      "entries": [],
+      "sentences": [
+        {
+          "id": "chapter7-sentence-p00007",
+          "passage_id": "p00007",
+          "en_sentence_ids": [
+            "en-s007"
+          ],
+          "fr_sentence_ids": [
+            "fr-s007"
+          ],
+          "source_text": "Candide, notwithstanding so many disasters, ate and slept.",
+          "target_text": "Candide, malgré tant de malheurs, mangea et dormit.",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked_by": "Codex",
+          "checked_on": "2026-10-01",
+          "source": "https://www.gutenberg.org/ebooks/4650",
+          "note": "Exact complete paired sentence checked against both retained source spans. Meaning and clauses correspond; no claim of independent human review."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "96feb38b1ff788072f62df6b3b3cadc7ceaae52416bc535ea50ae1dd62554222",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "96feb38b1ff788072f62df6b3b3cadc7ceaae52416bc535ea50ae1dd62554222",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "7224a24fb007d31c4964767d3cfcb8f2f5aaea00e087a797b5437faf5fba665c",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "7224a24fb007d31c4964767d3cfcb8f2f5aaea00e087a797b5437faf5fba665c",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "stages": [
+    "English",
+    "A little French",
+    "More French",
+    "Even more French",
+    "So much French",
+    "French"
+  ],
+  "passages": [
+    {
+      "id": "p00001",
+      "text": "Candide did not take courage, but followed the old woman to a decayed\nhouse, where she gave him a pot of pomatum to anoint his sores, showed\nhim a very neat little bed, with a suit of clothes hanging up, and left\nhim something to eat and drink.",
+      "translation": "Candide ne prit point courage, mais il suivit la vieille dans une\nmasure: elle lui donna un pot de pommade pour se frotter, lui laissa à\nmanger et à boire; elle lui montra un petit lit assez propre; il y\navait auprès du lit un habit complet.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00001-l0026",
+          "start": 164,
+          "end": 167,
+          "english": "bed",
+          "target": "lit",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2356-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00002",
+      "text": "\"Eat, drink, sleep,\" said she, \"and may our lady of Atocha,[9] the great\nSt. Anthony of Padua, and the great St. James of Compostella, receive\nyou under their protection.",
+      "translation": "Mangez, buvez, dormez, lui\ndit-elle, et que Notre-Dame d’Atocha[1], monseigneur saint Antoine de\nPadoue, et monseigneur saint Jacques de Compostelle prennent soin de\nvous!",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00003",
+      "text": "I shall be back to-morrow.\"",
+      "translation": "je reviendrai demain.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00004",
+      "text": "Candide, amazed at all he had suffered and still more with the charity\nof the old woman, wished to kiss her hand.",
+      "translation": "Candide, toujours étonné de tout ce qu’il\navait vu, de tout ce qu’il avait souffert, et encore plus de la charité\nde la vieille, voulut lui baiser la main.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00004-l0021",
+          "start": 108,
+          "end": 112,
+          "english": "hand",
+          "target": "main",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4626-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00005",
+      "text": "\"It is not my hand you must kiss,\" said the old woman; \"I shall be back\nto-morrow.",
+      "translation": "Ce n’est pas ma main qu’il\nfaut baiser, dit la vieille; je reviendrai demain.",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00005-l0004",
+          "start": 14,
+          "end": 18,
+          "english": "hand",
+          "target": "main",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4626-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00006",
+      "text": "Anoint yourself with the pomatum, eat and sleep.\"",
+      "translation": "Frottez-vous de\npommade, mangez et dormez.",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00007",
+      "text": "Candide, notwithstanding so many disasters, ate and slept.",
+      "translation": "Candide, malgré tant de malheurs, mangea et dormit.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": [
+        {
+          "id": "p00007-sentence",
+          "start": 0,
+          "end": 58,
+          "english": "Candide, notwithstanding so many disasters, ate and slept.",
+          "target": "Candide, malgré tant de malheurs, mangea et dormit.",
+          "stage": 4,
+          "kind": "sentence",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "evidence": [
+              {
+                "id": "chapter7-sentence-p00007",
+                "passage_id": "p00007",
+                "en_sentence_ids": [
+                  "en-s007"
+                ],
+                "fr_sentence_ids": [
+                  "fr-s007"
+                ],
+                "source_text": "Candide, notwithstanding so many disasters, ate and slept.",
+                "target_text": "Candide, malgré tant de malheurs, mangea et dormit.",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked_by": "Codex",
+                "checked_on": "2026-10-01",
+                "source": "https://www.gutenberg.org/ebooks/4650",
+                "note": "Exact complete paired sentence checked against both retained source spans. Meaning and clauses correspond; no claim of independent human review."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p00008",
+      "text": "The next\nmorning the old woman brought him his breakfast, looked at his back, and\nrubbed it herself with another ointment: in like manner she brought him\nhis dinner; and at night she returned with his supper.",
+      "translation": "Le lendemain la\nvieille lui apporte à déjeuner, visite son dos, le frotte elle-même\nd’une autre pommade: elle lui apporte ensuite à dîner: elle revient sur\nle soir et apporte à souper.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00008-l0011",
+          "start": 72,
+          "end": 76,
+          "english": "back",
+          "target": "dos",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2203-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00009",
+      "text": "The day following\nshe went through the very same ceremonies.",
+      "translation": "Le surlendemain elle fit encore les mêmes\ncérémonies.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00009-l0005",
+          "start": 49,
+          "end": 59,
+          "english": "ceremonies",
+          "target": "cérémonies",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2855-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00010",
+      "text": "\"Who are you?\"",
+      "translation": "Qui êtes-vous?",
+      "paragraph_id": "en-p00006",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00011",
+      "text": "said Candide; \"who has inspired you with so much\ngoodness?",
+      "translation": "lui disait toujours Candide; qui vous a\ninspiré tant de bonté?",
+      "paragraph_id": "en-p00006",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00012",
+      "text": "What return can I make you?\"",
+      "translation": "quelles grâces puis-je vous rendre?",
+      "paragraph_id": "en-p00006",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00013",
+      "text": "The good woman made no answer; she returned in the evening, but brought\nno supper.\n\n\"Come with me,\" she said, \"and say nothing.\"",
+      "translation": "La bonne\nfemme ne répondait jamais rien. Elle revint sur le soir, et n’apporta\npoint à souper: Venez avec moi, dit-elle, et ne dites mot.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00014",
+      "text": "She took him by the arm, and walked with him about a quarter of a mile\ninto the country; they arrived at a lonely house, surrounded with\ngardens and canals.",
+      "translation": "Elle le\nprend sous le bras, et marche avec lui dans la campagne environ un\nquart de mille: ils arrivent à une maison isolée, entourée de jardins\net de canaux.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00014-l0005",
+          "start": 20,
+          "end": 23,
+          "english": "arm",
+          "target": "bras",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1965-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00014-l0018",
+          "start": 80,
+          "end": 87,
+          "english": "country",
+          "target": "campagne",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3270-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00014-l0025",
+          "start": 114,
+          "end": 119,
+          "english": "house",
+          "target": "maison",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4816-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00014-l0029",
+          "start": 137,
+          "end": 144,
+          "english": "gardens",
+          "target": "jardins",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4358-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00014-l0031",
+          "start": 149,
+          "end": 155,
+          "english": "canals",
+          "target": "canaux",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2765-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00015",
+      "text": "The old woman knocked at a little door, it opened,\nshe led Candide up a private staircase into a small apartment richly\nfurnished. She left him on a brocaded sofa, shut the door and went away.",
+      "translation": "La vieille frappe à une petite porte. On ouvre; elle mène\nCandide, par un escalier dérobé, dans un cabinet doré, le laisse sur un\ncanapé de brocart, referme la porte, et s’en va.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00016",
+      "text": "Candide thought himself in a dream; indeed, that he had been dreaming\nunluckily all his life, and that the present moment was the only\nagreeable part of it all.",
+      "translation": "Candide croyait rêver,\net regardait toute sa vie comme un songe funeste, et le moment présent\ncomme un songe agréable.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00016-l0007",
+          "start": 88,
+          "end": 92,
+          "english": "life",
+          "target": "vie",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5319-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00017",
+      "text": "The old woman returned very soon, supporting with difficulty a trembling\nwoman of a majestic figure, brilliant with jewels, and covered with a\nveil.",
+      "translation": "La vieille reparut bientôt; elle soutenait avec peine une femme\ntremblante, d’une taille majestueuse, brillante de pierreries, et\ncouverte d’un voile.",
+      "paragraph_id": "en-p00010",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00017-l0009",
+          "start": 73,
+          "end": 78,
+          "english": "woman",
+          "target": "femme",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8710-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00017-l0022",
+          "start": 143,
+          "end": 147,
+          "english": "veil",
+          "target": "voile",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8437-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00018",
+      "text": "\"Take off that veil,\" said the old woman to Candide.",
+      "translation": "Otez ce voile, dit la vieille à Candide.",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00018-l0002",
+          "start": 15,
+          "end": 19,
+          "english": "veil",
+          "target": "voile",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8437-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00019",
+      "text": "The young man approaches, he raises the veil with a timid hand.",
+      "translation": "Le jeune\nhomme approche; il lève le voile d’une main timide.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00019-l0002",
+          "start": 10,
+          "end": 13,
+          "english": "man",
+          "target": "homme",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0008",
+          "start": 40,
+          "end": 44,
+          "english": "veil",
+          "target": "voile",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8437-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00019-l0011",
+          "start": 58,
+          "end": 62,
+          "english": "hand",
+          "target": "main",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4626-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00020",
+      "text": "Oh!\nwhat a moment!",
+      "translation": "Quel moment!",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00021",
+      "text": "what surprise!",
+      "translation": "quelle\nsurprise!",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00022",
+      "text": "he believes he beholds Miss Cunegonde? he\nreally sees her! it is herself!",
+      "translation": "il croit voir mademoiselle Cunégonde; il la voyait en effet,\nc’était elle-même.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00023",
+      "text": "His strength fails him, he cannot utter\na word, but drops at her feet.",
+      "translation": "La force lui manque, il ne peut proférer une parole,\nil tombe à ses pieds.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00023-l0001",
+          "start": 4,
+          "end": 12,
+          "english": "strength",
+          "target": "force",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7740-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00024",
+      "text": "Cunegonde falls upon the sofa.",
+      "translation": "Cunégonde tombe sur le canapé.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00024-l0004",
+          "start": 25,
+          "end": 29,
+          "english": "sofa",
+          "target": "canapé",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7489-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00025",
+      "text": "The old\nwoman supplies a smelling bottle; they come to themselves and recover\ntheir speech. As they began with broken accents, with questions and\nanswers interchangeably interrupted with sighs, with tears, and cries.",
+      "translation": "La vieille les\naccable d’eaux spiritueuses, ils reprennent leurs sens, ils se parlent:\nce sont d’abord des mots entrecoupés, des demandes et des réponses qui\nse croisent, des soupirs, des larmes, des cris.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00025-l0010",
+          "start": 146,
+          "end": 153,
+          "english": "answers",
+          "target": "réponses",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1826-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00025-l0014",
+          "start": 199,
+          "end": 204,
+          "english": "tears",
+          "target": "larmes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7969-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00025-l0015",
+          "start": 210,
+          "end": 215,
+          "english": "cries",
+          "target": "cris",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3334-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00026",
+      "text": "The old woman desired they would make less noise and then she left them\nto themselves.",
+      "translation": "La vieille leur\nrecommande de faire moins de bruit, et les laisse en liberté.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00027",
+      "text": "\"What, is it you?\" said Candide, \"you live?",
+      "translation": "Quoi!\nc’est vous, lui dit Candide, vous vivez!",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00028",
+      "text": "I find you again in\nPortugal?",
+      "translation": "je vous retrouve en Portugal!",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00029",
+      "text": "then you have not been ravished?",
+      "translation": "On ne vous a donc pas violée?",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00030",
+      "text": "then they did not rip open\nyour belly as Doctor Pangloss informed me?\"",
+      "translation": "on ne vous a point fendu le ventre, comme\nle philosophe Pangloss me l’avait assuré?",
+      "paragraph_id": "en-p00013",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00030-l0004",
+          "start": 32,
+          "end": 37,
+          "english": "belly",
+          "target": "ventre",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2395-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00031",
+      "text": "\"Yes, they did,\" said the beautiful Cunegonde; \"but those two accidents\nare not always mortal.\"\n\n\"But were your father and mother killed?\"\n\n\"It is but too true,\" answered Cunegonde, in tears.\n\n\"And your brother?\"",
+      "translation": "Si fait, dit la belle\nCunégonde; mais on ne meurt pas toujours de ces deux accidents.—Mais\nvotre père et votre mère ont-ils été tués?—Il n’est que trop vrai, dit\nCunégonde en pleurant.—Et votre frère?—Mon frère a été tué aussi.—Et\npourquoi êtes-vous en Portugal?",
+      "paragraph_id": "en-p00014",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00032",
+      "text": "\"My brother also was killed.\"",
+      "translation": "",
+      "paragraph_id": "en-p00018",
+      "target_paragraph_id": null,
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00033",
+      "text": "\"And why are you in Portugal?",
+      "translation": "",
+      "paragraph_id": "en-p00019",
+      "target_paragraph_id": null,
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00034",
+      "text": "and how did you know of my being here?",
+      "translation": "et comment avez-vous su que j’y étais?",
+      "paragraph_id": "en-p00019",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00035",
+      "text": "and\nby what strange adventure did you contrive to bring me to this house?\"\n\n\"I will tell you all that,\" replied the lady, \"but first of all let me\nknow your history, since the innocent kiss you gave me and the kicks\nwhich you received.\"",
+      "translation": "et par quelle étrange aventure m’avez-vous fait conduire dans cette\nmaison?—Je vous dirai tout cela, répliqua la dame; mais il faut\nauparavant que vous m’appreniez tout ce qui vous est arrivé depuis le\nbaiser innocent que vous me donnâtes, et les coups de pied que vous\nreçûtes.",
+      "paragraph_id": "en-p00019",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00035-l0019",
+          "start": 116,
+          "end": 120,
+          "english": "lady",
+          "target": "dame",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5220-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00036",
+      "text": "Candide respectfully obeyed her, and though he was still in a surprise,\nthough his voice was feeble and trembling, though his back still pained\nhim, yet he gave her a most ingenuous account of everything that had\nbefallen him since the moment of their separation.",
+      "translation": "Candide lui obéit avec un profond respect; et quoiqu’il fût interdit,\nquoique sa voix fût faible et tremblante, quoique l’échine lui fît\nencore un peu mal, il lui raconta de la manière la plus naïve tout ce\nqu’il avait éprouvé depuis le moment de leur séparation.",
+      "paragraph_id": "en-p00021",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00037",
+      "text": "Cunegonde lifted up\nher eyes to heaven; shed tears upon hearing of the death of the good\nAnabaptist and of Pangloss; after which she spoke as follows to Candide,\nwho did not lose a word and devoured her with his eyes.",
+      "translation": "Cunégonde\nlevait les yeux au ciel: elle donna des larmes à la mort du bon\nanabaptiste et de Pangloss; après quoi elle parla en ces termes à\nCandide, qui ne perdait pas une parole, et qui la dévorait des yeux.",
+      "paragraph_id": "en-p00021",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00037-l0006",
+          "start": 45,
+          "end": 50,
+          "english": "tears",
+          "target": "larmes",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7969-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00037-l0008",
+          "start": 71,
+          "end": 76,
+          "english": "death",
+          "target": "mort",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3425-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    }
+  ]
+}

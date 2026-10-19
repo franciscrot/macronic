@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "6bba66b67479f18f35c87c520d68b46e840a329cb9d3ec7380edac71c8a10f1a",
+  "check_origin": "ai_context_check",
+  "checked": "2026-09-17",
+  "scope": "Selected adjective/infinitive occurrences and one complete sentence; not an independent accuracy evaluation. Baseline noun candidates inspected in their paragraph context.",
+  "excluded_examples": [
+    {
+      "link_id": "p00006-l0002",
+      "reason": "amazed and desperate compete for éperdu; retain both in English."
+    },
+    {
+      "link_id": "p00008-l0001",
+      "reason": "greatest corresponds to plus grand; do not replace a superlative with a lone positive adjective."
+    },
+    {
+      "link_id": "p00004-l0020",
+      "reason": "eat/manger is plausible but has no matching entry in the extracted dictionary; leave English under the selected evidence rule."
+    }
+  ]
+}

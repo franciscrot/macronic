@@ -1,0 +1,49 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {
+  newProgress,
+  moveProgress,
+  chooseStage,
+  toggleProgress,
+} from "../src/shared/progression.js";
+test("English advances after 3, 4, 5 and 6 sections and caps below full target", () => {
+  let s = chooseStage(newProgress(), 0);
+  for (let i = 0; i < 24; i++) {
+    s = moveProgress(s, i);
+    assert.equal(s.stage, i < 3 ? 0 : i < 7 ? 1 : i < 12 ? 2 : i < 18 ? 3 : 4);
+  }
+});
+test("revisiting passages never earns extra increments; disabling freezes progress", () => {
+  let s = moveProgress(newProgress(), 3);
+  for (let i = 0; i < 20; i++) {
+    s = moveProgress(s, 2);
+    s = moveProgress(s, 3);
+  }
+  assert.equal(s.stage, 1);
+  s = toggleProgress(s, false);
+  s = moveProgress(s, 12);
+  assert.equal(s.stage, 1);
+  s = toggleProgress(s, true);
+  s = moveProgress(s, 14);
+  assert.equal(s.stage, 1);
+  s = moveProgress(s, 16);
+  assert.equal(s.stage, 2);
+});
+test("manual choices restart interval; explicit full target remains selected", () => {
+  let s = chooseStage(moveProgress(newProgress(), 9), 2);
+  s = moveProgress(s, 11);
+  assert.equal(s.stage, 2);
+  s = moveProgress(s, 14);
+  assert.equal(s.stage, 3);
+  s = chooseStage(s, 5);
+  s = moveProgress(s, 23);
+  assert.equal(s.stage, 5);
+});
+
+test("default little French lasts four sections, then five and six", () => {
+  let s = newProgress();
+  for(let i=0;i<30;i++) {
+    s=moveProgress(s,i);
+    assert.equal(s.stage,i<4?1:i<9?2:i<15?3:4);
+  }
+});

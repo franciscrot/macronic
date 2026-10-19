@@ -1,7 +1,12 @@
 import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { load, root } from "./tasks.mjs";
-import { assess, makeReader, emptyCorrections } from "../src/shared/data.js";
+import {
+  assess,
+  makeReader,
+  emptyCorrections,
+  segments,
+} from "../src/shared/data.js";
 const { data, dictionary, policy, corrections } = await load();
 const reasons = {};
 let approved = 0,
@@ -27,9 +32,20 @@ const result = {
   demo_distribution: r.passages.map((p) => ({
     id: p.id,
     count: p.replacements.length,
-    insertions: p.replacements.map((r) => [r.english, r.french]),
+    insertions: p.replacements.map((r) => [r.english, r.target ?? r.french]),
   })),
   exclusion_reasons: reasons,
+  levels: c.stages.map((label, stage) => ({
+    label,
+    stage,
+    word_insertions: c.passages
+      .flatMap((p) => segments(p, stage))
+      .filter((s) => s.replacement && s.replacement.kind !== "sentence").length,
+    sentence_insertions: c.passages
+      .flatMap((p) => segments(p, stage))
+      .filter((s) => s.replacement?.kind === "sentence").length,
+    full_target_text: stage === 5,
+  })),
 };
 await writeFile(
   path.join(root, "data/evidence/automatic-counts.json"),

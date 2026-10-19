@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "language": "en",
+      "snapshot": "data/sources/pg19942.txt",
+      "snapshot_sha256": "fb3943df826f375c4ab78d21f2d30bc95a0b2cb448e8812447a807d678eb0b5c",
+      "source_ranges": [
+        {
+          "start": 31544,
+          "end": 32807
+        },
+        {
+          "start": 32809,
+          "end": 33527
+        },
+        {
+          "start": 33529,
+          "end": 33601
+        },
+        {
+          "start": 33603,
+          "end": 33641
+        },
+        {
+          "start": 33643,
+          "end": 33952
+        },
+        {
+          "start": 33954,
+          "end": 34064
+        },
+        {
+          "start": 34066,
+          "end": 34248
+        },
+        {
+          "start": 34250,
+          "end": 34343
+        },
+        {
+          "start": 34345,
+          "end": 34417
+        },
+        {
+          "start": 34419,
+          "end": 34667
+        },
+        {
+          "start": 34669,
+          "end": 34756
+        },
+        {
+          "start": 34758,
+          "end": 34861
+        },
+        {
+          "start": 34863,
+          "end": 35425
+        },
+        {
+          "start": 35427,
+          "end": 35614
+        },
+        {
+          "start": 35616,
+          "end": 35727
+        },
+        {
+          "start": 35729,
+          "end": 35865
+        },
+        {
+          "start": 35867,
+          "end": 36038
+        },
+        {
+          "start": 36040,
+          "end": 36103
+        },
+        {
+          "start": 36105,
+          "end": 36282
+        },
+        {
+          "start": 36284,
+          "end": 36422
+        }
+      ],
+      "omitted_note_ranges": [],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    },
+    {
+      "language": "fr",
+      "snapshot": "data/sources/pg4650.txt",
+      "snapshot_sha256": "1cc10ab3268a76aa01bd3f9722ae2ae0e5e36b869a18b0bb0832b75bc0327806",
+      "source_ranges": [
+        {
+          "start": 27527,
+          "end": 29024
+        },
+        {
+          "start": 29026,
+          "end": 29208
+        },
+        {
+          "start": 29210,
+          "end": 30558
+        },
+        {
+          "start": 30668,
+          "end": 31358
+        },
+        {
+          "start": 31360,
+          "end": 32066
+        },
+        {
+          "start": 32068,
+          "end": 32297
+        },
+        {
+          "start": 32299,
+          "end": 32882
+        }
+      ],
+      "omitted_note_ranges": [
+        {
+          "start": 30560,
+          "end": 30628
+        },
+        {
+          "start": 30631,
+          "end": 30665
+        }
+      ],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1972 @@
+{
+  "schema_version": 2,
+  "base_fingerprint": "6fc8a26bdc3e3a2c15f414dd8cf27e7868cd3de70e31276c1d0ab3c50aa18d07",
+  "title": "Candide",
+  "chapter": "Chapter III",
+  "languages": {
+    "base": "en",
+    "learning": "fr"
+  },
+  "provenance": {
+    "policy_id": "six-level-pilot-v3",
+    "corrections": [],
+    "supplement": {
+      "base_fingerprint": "6fc8a26bdc3e3a2c15f414dd8cf27e7868cd3de70e31276c1d0ab3c50aa18d07",
+      "entries": [
+        {
+          "id": "checked-3-p00006-l0016",
+          "link_id": "p00006-l0016",
+          "en": "heroic",
+          "fr": [
+            "héroïque"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-4729-sense-0"
+          ],
+          "note": "Both ironically describe the same butchery."
+        },
+        {
+          "id": "checked-3-p00013-l0017",
+          "link_id": "p00013-l0017",
+          "en": "rich",
+          "fr": [
+            "riche"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-6994-sense-0"
+          ],
+          "note": "Both are predicative descriptions of everybody in Holland."
+        },
+        {
+          "id": "checked-3-p00015-l0009",
+          "link_id": "p00015-l0009",
+          "en": "large",
+          "fr": [
+            "grand"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-5242-sense-0"
+          ],
+          "note": "Both describe the size of the assembly; grande agrees with assemblée."
+        },
+        {
+          "id": "checked-3-p00025-l0009",
+          "link_id": "p00025-l0009",
+          "en": "good",
+          "fr": [
+            "bon"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-4479-sense-0"
+          ],
+          "note": "Both describe the Anabaptist James/Jacques."
+        },
+        {
+          "id": "checked-3-p00025-l0017",
+          "link_id": "p00025-l0017",
+          "en": "cruel",
+          "fr": [
+            "cruel"
+          ],
+          "kind": "adjective",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-3329-sense-0"
+          ],
+          "note": "Both describe the treatment of Candide; cruelle agrees with manière."
+        },
+        {
+          "id": "checked-3-p00026-l0031",
+          "link_id": "p00026-l0031",
+          "en": "extreme",
+          "fr": [
+            "extrême"
+          ],
+          "kind": "adjective",
+          "min_stage": 3,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-3997-sense-0"
+          ],
+          "note": "Both intensify the same generosity."
+        },
+        {
+          "id": "checked-3-p00026-l0041",
+          "link_id": "p00026-l0041",
+          "en": "black",
+          "fr": [
+            "noir"
+          ],
+          "kind": "adjective",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-2508-sense-0"
+          ],
+          "note": "Both describe the same coat/manteau."
+        },
+        {
+          "id": "checked-3-p00027-l0025",
+          "link_id": "p00027-l0025",
+          "en": "black",
+          "fr": [
+            "noir"
+          ],
+          "kind": "adjective",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+          "dictionary_refs": [
+            "freedict-eng-fra-entry-2508-sense-0"
+          ],
+          "note": "Both describe the beggar’s teeth; noires agrees with dents."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "checked-3-p00011-sentence",
+          "passage_id": "p00011",
+          "en_sentence_ids": [
+            "en-s011"
+          ],
+          "fr_sentence_ids": [
+            "fr-s011"
+          ],
+          "source_text": "Candide fled quickly to another village; it belonged to the Bulgarians;\nand the Abarian heroes had treated it in the same way.",
+          "target_text": "Candide s’enfuit au plus vite dans un autre village: il appartenait à\ndes Bulgares, et les héros abares l’avaient traité de même.",
+          "min_stage": 4,
+          "check_origin": "ai_context_check",
+          "checked": "2026-09-16",
+          "source": "https://www.gutenberg.org/ebooks/4650",
+          "note": "Both describe flight to another village, its Bulgarian ownership and the same treatment by Abarian soldiers."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "language": "en",
+        "file": "en.original.txt",
+        "sha256": "8c55ef392a360e4d1b5d8ef89a66c9990a7597ce888d3d30281b316f2f8c0a63",
+        "normalized_file": "en.txt",
+        "normalized_sha256": "8c55ef392a360e4d1b5d8ef89a66c9990a7597ce888d3d30281b316f2f8c0a63",
+        "edition": "Boni and Liveright, 1918; introduction Philip Littell; translator not identified in ebook",
+        "url": "https://www.gutenberg.org/ebooks/19942",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      },
+      {
+        "language": "fr",
+        "file": "fr.original.txt",
+        "sha256": "73d2421a682fc42cfee88441efd63a99c28d77ea176c98feb90c792d176e6dbd",
+        "normalized_file": "fr.txt",
+        "normalized_sha256": "73d2421a682fc42cfee88441efd63a99c28d77ea176c98feb90c792d176e6dbd",
+        "edition": "Gutenberg 4650, French collected-works transcription with editorial notes",
+        "url": "https://www.gutenberg.org/ebooks/4650",
+        "rights": "Source snapshots and full notices retained in data/sources/",
+        "transforms": [
+          "UTF-8 BOM removed if present",
+          "CRLF and CR normalized to LF; no text omitted"
+        ]
+      }
+    ]
+  },
+  "stages": [
+    "English",
+    "A little French",
+    "More French",
+    "Even more French",
+    "So much French",
+    "French"
+  ],
+  "passages": [
+    {
+      "id": "p00001",
+      "text": "There was never anything so gallant, so spruce, so brilliant, and so\nwell disposed as the two armies.",
+      "translation": "Rien n’était si beau, si leste, si brillant, si bien ordonné que les\ndeux armées.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00001-l0015",
+          "start": 94,
+          "end": 100,
+          "english": "armies",
+          "target": "armées",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-1970-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00002",
+      "text": "Trumpets, fifes, hautboys, drums, and\ncannon made music such as Hell itself had never heard.",
+      "translation": "Les trompettes, les fifres, les hautbois, les tambours,\nles canons; formaient une harmonie telle qu’il n’y en eut jamais en\nenfer.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00002-l0000",
+          "start": 0,
+          "end": 8,
+          "english": "Trumpets",
+          "target": "trompettes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8283-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00002-l0005",
+          "start": 27,
+          "end": 32,
+          "english": "drums",
+          "target": "tambours",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00003",
+      "text": "The cannons first\nof all laid flat about six thousand men on each side; the muskets swept\naway from this best of worlds nine or ten thousand ruffians who infested\nits surface.",
+      "translation": "Les canons renversèrent d’abord à peu près six mille hommes de\nchaque côté; ensuite la mousqueterie ôta du meilleur des mondes environ\nneuf à dix mille coquins qui en infectaient la surface.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00003-l0001",
+          "start": 4,
+          "end": 11,
+          "english": "cannons",
+          "target": "canons",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2774-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00003-l0007",
+          "start": 54,
+          "end": 57,
+          "english": "men",
+          "target": "hommes",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00003-l0010",
+          "start": 66,
+          "end": 70,
+          "english": "side",
+          "target": "côté",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7362-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00003-l0019",
+          "start": 113,
+          "end": 119,
+          "english": "worlds",
+          "target": "mondes",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00004",
+      "text": "The bayonet was also a _sufficient reason_ for the death of\nseveral thousands.",
+      "translation": "La baïonnette\nfut aussi la raison suffisante de la mort de quelques milliers\nd’hommes.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00004-l0001",
+          "start": 4,
+          "end": 11,
+          "english": "bayonet",
+          "target": "baïonnette",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2331-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0006",
+          "start": 35,
+          "end": 41,
+          "english": "reason",
+          "target": "raison",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6786-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00004-l0009",
+          "start": 51,
+          "end": 56,
+          "english": "death",
+          "target": "mort",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3425-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00005",
+      "text": "The whole might amount to thirty thousand souls.",
+      "translation": "Le tout pouvait bien se monter à une trentaine de mille âmes.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00006",
+      "text": "Candide, who trembled like a philosopher, hid himself as well as he\ncould during this heroic butchery.",
+      "translation": "Candide, qui tremblait comme un philosophe, se cacha du mieux qu’il put\npendant cette boucherie héroïque.",
+      "paragraph_id": "en-p00001",
+      "target_paragraph_id": "fr-p00001",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00006-l0016",
+          "start": 86,
+          "end": 92,
+          "english": "heroic",
+          "target": "héroïque",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4729-sense-0",
+              "checked-3-p00006-l0016"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00006-l0016",
+                "link_id": "p00006-l0016",
+                "en": "heroic",
+                "fr": [
+                  "héroïque"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-4729-sense-0"
+                ],
+                "note": "Both ironically describe the same butchery."
+              }
+            ],
+            "min_stage": 3
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00007",
+      "text": "At length, while the two kings were causing Te Deum to be sung each in\nhis own camp, Candide resolved to go and reason elsewhere on effects and\ncauses.",
+      "translation": "Enfin, tandis que les deux rois fesaient chanter des _Te Deum_, chacun\ndans son camp, il prit le parti d’aller raisonner ailleurs des effets\net des causes.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00007-l0005",
+          "start": 25,
+          "end": 30,
+          "english": "kings",
+          "target": "rois",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5186-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00007-l0020",
+          "start": 132,
+          "end": 139,
+          "english": "effects",
+          "target": "effets",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3792-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00008",
+      "text": "He passed over heaps of dead and dying, and first reached a\nneighbouring village; it was in cinders, it was an Abare village which\nthe Bulgarians had burnt according to the laws of war.",
+      "translation": "Il passa par-dessus des tas de morts et de mourants, et\ngagna d’abord un village voisin; il était en cendres: c’était un\nvillage abare que les Bulgares avaient brûlé, selon les lois du droit\npublic.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00008-l0003",
+          "start": 15,
+          "end": 20,
+          "english": "heaps",
+          "target": "tas",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4691-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00008-l0016",
+          "start": 92,
+          "end": 99,
+          "english": "cinders",
+          "target": "cendres",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2952-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00008-l0028",
+          "start": 173,
+          "end": 177,
+          "english": "laws",
+          "target": "lois",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5255-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00009",
+      "text": "Here, old men\ncovered with wounds, beheld their wives, hugging their children to their\nbloody breasts, massacred before their faces; there, their daughters,\ndisembowelled and breathing their last after having satisfied the\nnatural wants of Bulgarian heroes; while others, half burnt in the\nflames, begged to be despatched.",
+      "translation": "Ici des vieillards criblés de coups regardaient mourir leurs\nfemmes égorgées, qui tenaient leurs enfants à leurs mamelles\nsanglantes; là des filles éventrées après avoir assouvi les besoins\nnaturels de quelques héros, rendaient les derniers soupirs; d’autres à\ndemi brûlées criaient qu’on achevât de leur donner la mort.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00009-l0009",
+          "start": 69,
+          "end": 77,
+          "english": "children",
+          "target": "enfants",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2922-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00009-l0016",
+          "start": 146,
+          "end": 155,
+          "english": "daughters",
+          "target": "filles",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3410-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00009-l0026",
+          "start": 250,
+          "end": 256,
+          "english": "heroes",
+          "target": "héros",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4728-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00010",
+      "text": "The earth was strewed with brains,\narms, and legs.",
+      "translation": "Des\ncervelles étaient répandues sur la terre à côté de bras et de jambes\ncoupés.",
+      "paragraph_id": "en-p00002",
+      "target_paragraph_id": "fr-p00002",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00011",
+      "text": "Candide fled quickly to another village; it belonged to the Bulgarians;\nand the Abarian heroes had treated it in the same way.",
+      "translation": "Candide s’enfuit au plus vite dans un autre village: il appartenait à\ndes Bulgares, et les héros abares l’avaient traité de même.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00011-l0016",
+          "start": 88,
+          "end": 94,
+          "english": "heroes",
+          "target": "héros",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4728-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "id": "p00011-sentence",
+          "start": 0,
+          "end": 126,
+          "english": "Candide fled quickly to another village; it belonged to the Bulgarians;\nand the Abarian heroes had treated it in the same way.",
+          "target": "Candide s’enfuit au plus vite dans un autre village: il appartenait à\ndes Bulgares, et les héros abares l’avaient traité de même.",
+          "stage": 4,
+          "kind": "sentence",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "evidence": [
+              {
+                "id": "checked-3-p00011-sentence",
+                "passage_id": "p00011",
+                "en_sentence_ids": [
+                  "en-s011"
+                ],
+                "fr_sentence_ids": [
+                  "fr-s011"
+                ],
+                "source_text": "Candide fled quickly to another village; it belonged to the Bulgarians;\nand the Abarian heroes had treated it in the same way.",
+                "target_text": "Candide s’enfuit au plus vite dans un autre village: il appartenait à\ndes Bulgares, et les héros abares l’avaient traité de même.",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://www.gutenberg.org/ebooks/4650",
+                "note": "Both describe flight to another village, its Bulgarian ownership and the same treatment by Abarian soldiers."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p00012",
+      "text": "Candide, walking\nalways over palpitating limbs or across ruins, arrived at last beyond\nthe seat of war, with a few provisions in his knapsack, and Miss\nCunegonde always in his heart.",
+      "translation": "Candide,\ntoujours marchant sur des membres palpitants ou à travers des ruines,\narriva enfin hors du théâtre de la guerre, portant quelques petites\nprovisions dans son bissac, et n’oubliant jamais mademoiselle\nCunégonde.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00012-l0008",
+          "start": 57,
+          "end": 62,
+          "english": "ruins",
+          "target": "ruines",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7078-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00012-l0016",
+          "start": 99,
+          "end": 102,
+          "english": "war",
+          "target": "guerre",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8542-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00013",
+      "text": "His provisions failed him when he arrived\nin Holland; but having heard that everybody was rich in that country,\nand that they were Christians, he did not doubt but he should meet with\nthe same treatment from them as he had met with in the Baron's castle,\nbefore Miss Cunegonde's bright eyes were the cause of his expulsion\nthence.",
+      "translation": "Ses provisions lui manquèrent quand il fut en Hollande; mais\nayant entendu dire que tout le monde était riche dans ce pays-là, et\nqu’on y était chrétien, il ne douta pas qu’on ne le traitât aussi bien\nqu’il l’avait été dans le château de M. le baron, avant qu’il en eût\nété chassé pour les beaux yeux de mademoiselle Cunégonde.",
+      "paragraph_id": "en-p00003",
+      "target_paragraph_id": "fr-p00003",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00013-l0017",
+          "start": 90,
+          "end": 94,
+          "english": "rich",
+          "target": "riche",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6994-sense-0",
+              "checked-3-p00013-l0017"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00013-l0017",
+                "link_id": "p00013-l0017",
+                "en": "rich",
+                "fr": [
+                  "riche"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-6994-sense-0"
+                ],
+                "note": "Both are predicative descriptions of everybody in Holland."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00013-l0020",
+          "start": 103,
+          "end": 110,
+          "english": "country",
+          "target": "pays",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3270-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00013-l0040",
+          "start": 247,
+          "end": 253,
+          "english": "castle",
+          "target": "château",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2814-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00014",
+      "text": "He asked alms of several grave-looking people, who all answered him,\nthat if he continued to follow this trade they would confine him to the\nhouse of correction, where he should be taught to get a living.",
+      "translation": "Il demanda l’aumône à plusieurs graves personnages, qui lui répondirent\ntous que, s’il continuait à faire ce métier, on l’enfermerait dans une\nmaison de correction pour lui apprendre à vivre.",
+      "paragraph_id": "en-p00004",
+      "target_paragraph_id": "fr-p00004",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00014-l0018",
+          "start": 105,
+          "end": 110,
+          "english": "trade",
+          "target": "métier",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8219-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00014-l0021",
+          "start": 141,
+          "end": 146,
+          "english": "house",
+          "target": "maison",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4816-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00015",
+      "text": "The next he addressed was a man who had been haranguing a large assembly\nfor a whole hour on the subject of charity.",
+      "translation": "Il s’adressa ensuite à un homme qui venait de parler tout seul une\nheure de suite sur la charité dans une grande assemblée.",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00015-l0005",
+          "start": 28,
+          "end": 31,
+          "english": "man",
+          "target": "homme",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00015-l0009",
+          "start": 58,
+          "end": 63,
+          "english": "large",
+          "target": "grande",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5242-sense-0",
+              "checked-3-p00015-l0009"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00015-l0009",
+                "link_id": "p00015-l0009",
+                "en": "large",
+                "fr": [
+                  "grand"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-5242-sense-0"
+                ],
+                "note": "Both describe the size of the assembly; grande agrees with assemblée."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00015-l0010",
+          "start": 64,
+          "end": 72,
+          "english": "assembly",
+          "target": "assemblée",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2029-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00015-l0012",
+          "start": 85,
+          "end": 89,
+          "english": "hour",
+          "target": "heure",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4815-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00016",
+      "text": "But the orator, looking\naskew, said:\n\n\"What are you doing here?",
+      "translation": "Cet orateur le\nregardant de travers lui dit: Que venez-vous faire ici?",
+      "paragraph_id": "en-p00005",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00016-l0001",
+          "start": 8,
+          "end": 14,
+          "english": "orator",
+          "target": "orateur",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-6056-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00017",
+      "text": "Are you for the good cause?\"",
+      "translation": "y êtes-vous\npour la bonne cause?",
+      "paragraph_id": "en-p00006",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00018",
+      "text": "\"There can be no effect without a cause,\" modestly answered Candide;\n\"the whole is necessarily concatenated and arranged for the best.",
+      "translation": "Il n’y a point d’effet sans cause, répondit\nmodestement Candide; tout est enchaîné nécessairement et arrangé pour\nle mieux.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00018-l0002",
+          "start": 17,
+          "end": 23,
+          "english": "effect",
+          "target": "effet",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3792-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00019",
+      "text": "It was\nnecessary for me to have been banished from the presence of Miss\nCunegonde, to have afterwards run the gauntlet, and now it is necessary\nI should beg my bread until I learn to earn it; all this cannot be\notherwise.\"",
+      "translation": "Il a fallu que je fusse chassé d’auprès de mademoiselle\nCunégonde, que j’aie passé par les baguettes, et il faut que je demande\nmon pain, jusqu’à ce que je puisse en gagner; tout cela ne pouvait être\nautrement.",
+      "paragraph_id": "en-p00007",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00019-l0023",
+          "start": 160,
+          "end": 165,
+          "english": "bread",
+          "target": "pain",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2613-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00020",
+      "text": "\"My friend,\" said the orator to him, \"do you believe the Pope to be\nAnti-Christ?\"",
+      "translation": "Mon ami, lui dit l’orateur, croyez-vous que le pape soit\nl’antechrist?",
+      "paragraph_id": "en-p00008",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00020-l0001",
+          "start": 4,
+          "end": 10,
+          "english": "friend",
+          "target": "ami",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4287-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00021",
+      "text": "\"I have not heard it,\" answered Candide; \"but whether he be, or whether\nhe be not, I want bread.\"",
+      "translation": "Je ne l’avais pas encore entendu dire, répondit Candide:\nmais qu’il le soit, ou qu’il ne le soit pas, je manque de pain.",
+      "paragraph_id": "en-p00009",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00021-l0022",
+          "start": 90,
+          "end": 95,
+          "english": "bread",
+          "target": "pain",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2613-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00022",
+      "text": "\"Thou dost not deserve to eat,\" said the other. \"Begone, rogue; begone,\nwretch; do not come near me again.\"",
+      "translation": "Tu ne\nmérites pas d’en manger, dit l’autre: va, coquin, va, misérable, ne\nm’approche de ta vie.",
+      "paragraph_id": "en-p00010",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [],
+      "sentences": []
+    },
+    {
+      "id": "p00023",
+      "text": "The orator's wife, putting her head out of the window, and spying a man\nthat doubted whether the Pope was Anti-Christ, poured over him a\nfull.... Oh, heavens!",
+      "translation": "La femme de l’orateur ayant mis la tête à la\nfenêtre, et avisant un homme qui doutait que le pape fût antechrist,\nlui répandit sur le chef un plein….. O ciel!",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00023-l0003",
+          "start": 13,
+          "end": 17,
+          "english": "wife",
+          "target": "femme",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8659-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00023-l0006",
+          "start": 31,
+          "end": 35,
+          "english": "head",
+          "target": "tête",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4683-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00023-l0009",
+          "start": 47,
+          "end": 53,
+          "english": "window",
+          "target": "fenêtre",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8671-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00023-l0014",
+          "start": 68,
+          "end": 71,
+          "english": "man",
+          "target": "homme",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00024",
+      "text": "to what excess does religious zeal carry the\nladies.",
+      "translation": "à quel excès se porte le\nzèle de la religion dans les dames!",
+      "paragraph_id": "en-p00011",
+      "target_paragraph_id": "fr-p00005",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00024-l0004",
+          "start": 30,
+          "end": 34,
+          "english": "zeal",
+          "target": "zèle",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8788-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00024-l0007",
+          "start": 45,
+          "end": 51,
+          "english": "ladies",
+          "target": "dames",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5220-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00025",
+      "text": "A man who had never been christened, a good Anabaptist, named James,\nbeheld the cruel and ignominious treatment shown to one of his\nbrethren, an unfeathered biped with a rational soul, he took him home,\ncleaned him, gave him bread and beer, presented him with two florins,\nand even wished to teach him the manufacture of Persian stuffs which\nthey make in Holland.",
+      "translation": "Un homme qui n’avait point été baptisé, un bon anabaptiste, nommé\nJacques, vit la manière cruelle et ignominieuse dont on traitait ainsi\nun de ses frères, un être à deux pieds sans plumes, qui avait une âme;\nil l’amena chez lui, le nettoya, lui donna du pain et de la bière, lui\nfit présent de deux florins, et voulut même lui apprendre à travailler\ndans ses manufactures aux étoffes de Perse qu’on fabrique en Hollande.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00006",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00025-l0001",
+          "start": 2,
+          "end": 5,
+          "english": "man",
+          "target": "homme",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-5490-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00025-l0009",
+          "start": 39,
+          "end": 43,
+          "english": "good",
+          "target": "bon",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4479-sense-0",
+              "checked-3-p00025-l0009"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00025-l0009",
+                "link_id": "p00025-l0009",
+                "en": "good",
+                "fr": [
+                  "bon"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-4479-sense-0"
+                ],
+                "note": "Both describe the Anabaptist James/Jacques."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00025-l0017",
+          "start": 80,
+          "end": 85,
+          "english": "cruel",
+          "target": "cruelle",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3329-sense-0",
+              "checked-3-p00025-l0017"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00025-l0017",
+                "link_id": "p00025-l0017",
+                "en": "cruel",
+                "fr": [
+                  "cruel"
+                ],
+                "kind": "adjective",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-3329-sense-0"
+                ],
+                "note": "Both describe the treatment of Candide; cruelle agrees with manière."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00025-l0025",
+          "start": 132,
+          "end": 140,
+          "english": "brethren",
+          "target": "frères",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2654-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00025-l0030",
+          "start": 179,
+          "end": 183,
+          "english": "soul",
+          "target": "âme",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-7532-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00026",
+      "text": "Candide, almost prostrating himself before him,\ncried:\n\n\"Master Pangloss has well said that all is for the best in this world,\nfor I am infinitely more touched by your extreme generosity than with\nthe inhumanity of that gentleman in the black coat and his lady.\"",
+      "translation": "Candide se prosternant presque devant lui, s’écriait: Maître Pangloss\nme l’avait bien dit que tout est au mieux dans ce monde, car je suis\ninfiniment plus touché de votre extrême générosité que de la dureté de\nce monsieur à manteau noir, et de madame son épouse.",
+      "paragraph_id": "en-p00012",
+      "target_paragraph_id": "fr-p00006",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00026-l0021",
+          "start": 120,
+          "end": 125,
+          "english": "world",
+          "target": "monde",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8730-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00026-l0031",
+          "start": 168,
+          "end": 175,
+          "english": "extreme",
+          "target": "extrême",
+          "stage": 3,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3997-sense-0",
+              "checked-3-p00026-l0031"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00026-l0031",
+                "link_id": "p00026-l0031",
+                "en": "extreme",
+                "fr": [
+                  "extrême"
+                ],
+                "kind": "adjective",
+                "min_stage": 3,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-3997-sense-0"
+                ],
+                "note": "Both intensify the same generosity."
+              }
+            ],
+            "min_stage": 3
+          }
+        },
+        {
+          "id": "p00026-l0039",
+          "start": 220,
+          "end": 229,
+          "english": "gentleman",
+          "target": "monsieur",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-4388-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00026-l0041",
+          "start": 237,
+          "end": 242,
+          "english": "black",
+          "target": "noir",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2508-sense-0",
+              "checked-3-p00026-l0041"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00026-l0041",
+                "link_id": "p00026-l0041",
+                "en": "black",
+                "fr": [
+                  "noir"
+                ],
+                "kind": "adjective",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-2508-sense-0"
+                ],
+                "note": "Both describe the same coat/manteau."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00026-l0042",
+          "start": 243,
+          "end": 247,
+          "english": "coat",
+          "target": "manteau",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3018-sense-1"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    },
+    {
+      "id": "p00027",
+      "text": "The next day, as he took a walk, he met a beggar all covered with scabs,\nhis eyes diseased, the end of his nose eaten away, his mouth distorted,\nhis teeth black, choking in his throat, tormented with a violent cough,\nand spitting out a tooth at each effort.",
+      "translation": "Le lendemain, en se promenant, il rencontra un gueux tout couvert de\npustules, les yeux morts, le bout du nez rongé, la bouche de travers,\nles dents noires, et parlant de la gorge, tourmenté d’une toux\nviolente, et crachant une dent à chaque effort.",
+      "paragraph_id": "en-p00014",
+      "target_paragraph_id": "fr-p00007",
+      "languages": {
+        "base": "en",
+        "learning": "fr"
+      },
+      "replacements": [
+        {
+          "id": "p00027-l0020",
+          "start": 96,
+          "end": 99,
+          "english": "end",
+          "target": "bout",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-3849-sense-2"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00027-l0024",
+          "start": 149,
+          "end": 154,
+          "english": "teeth",
+          "target": "dents",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8172-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00027-l0025",
+          "start": 155,
+          "end": 160,
+          "english": "black",
+          "target": "noires",
+          "stage": 4,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-2508-sense-0",
+              "checked-3-p00027-l0025"
+            ],
+            "evidence": [
+              {
+                "id": "checked-3-p00027-l0025",
+                "link_id": "p00027-l0025",
+                "en": "black",
+                "fr": [
+                  "noir"
+                ],
+                "kind": "adjective",
+                "min_stage": 4,
+                "check_origin": "ai_context_check",
+                "checked": "2026-09-16",
+                "source": "https://github.com/freedict/fd-dictionaries/blob/5bdceeac8d0dba3298c1bebe734f60d54dad30f7/eng-fra/eng-fra.tei",
+                "dictionary_refs": [
+                  "freedict-eng-fra-entry-2508-sense-0"
+                ],
+                "note": "Both describe the beggar’s teeth; noires agrees with dents."
+              }
+            ],
+            "min_stage": 4
+          }
+        },
+        {
+          "id": "p00027-l0027",
+          "start": 177,
+          "end": 183,
+          "english": "throat",
+          "target": "gorge",
+          "stage": 2,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8101-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        },
+        {
+          "id": "p00027-l0037",
+          "start": 236,
+          "end": 241,
+          "english": "tooth",
+          "target": "dent",
+          "stage": 1,
+          "kind": "word",
+          "decision": {
+            "status": "approved",
+            "safe_for_substitution": true,
+            "decision_origin": "automatic",
+            "policy_id": "six-level-pilot-v3",
+            "reasons": [],
+            "dictionary_ids": [
+              "freedict-eng-fra-entry-8172-sense-0"
+            ],
+            "evidence": [],
+            "min_stage": 1
+          }
+        }
+      ],
+      "sentences": []
+    }
+  ]
+}

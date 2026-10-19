@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "language": "en",
+      "snapshot": "data/sources/pg19942.txt",
+      "snapshot_sha256": "fb3943df826f375c4ab78d21f2d30bc95a0b2cb448e8812447a807d678eb0b5c",
+      "source_ranges": [
+        {
+          "start": 42689,
+          "end": 43282
+        },
+        {
+          "start": 43284,
+          "end": 43333
+        },
+        {
+          "start": 43335,
+          "end": 43386
+        },
+        {
+          "start": 43388,
+          "end": 43413
+        },
+        {
+          "start": 43415,
+          "end": 43456
+        },
+        {
+          "start": 43458,
+          "end": 44632
+        },
+        {
+          "start": 44634,
+          "end": 45691
+        },
+        {
+          "start": 45693,
+          "end": 47127
+        },
+        {
+          "start": 47129,
+          "end": 48032
+        },
+        {
+          "start": 48034,
+          "end": 48287
+        }
+      ],
+      "omitted_note_ranges": [],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    },
+    {
+      "language": "fr",
+      "snapshot": "data/sources/pg4650.txt",
+      "snapshot_sha256": "1cc10ab3268a76aa01bd3f9722ae2ae0e5e36b869a18b0bb0832b75bc0327806",
+      "source_ranges": [
+        {
+          "start": 39436,
+          "end": 40208
+        },
+        {
+          "start": 40210,
+          "end": 41456
+        },
+        {
+          "start": 41458,
+          "end": 42499
+        },
+        {
+          "start": 42501,
+          "end": 43997
+        },
+        {
+          "start": 43999,
+          "end": 44953
+        },
+        {
+          "start": 44955,
+          "end": 45249
+        }
+      ],
+      "omitted_note_ranges": [],
+      "transforms": [
+        "Chapter heading excluded",
+        "Standalone numbered editorial notes excluded",
+        "Paragraphs joined by two newlines; final newline added; wording retained"
+      ]
+    }
+  ]
+}

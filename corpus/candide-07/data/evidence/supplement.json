@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "base_fingerprint": "3c467c1cbe17788853bdea58894a8269d7ab9e6f768e290e4ec97aa95e8bd3c6",
+  "entries": [],
+  "sentences": [
+    {
+      "id": "chapter7-sentence-p00007",
+      "passage_id": "p00007",
+      "en_sentence_ids": [
+        "en-s007"
+      ],
+      "fr_sentence_ids": [
+        "fr-s007"
+      ],
+      "source_text": "Candide, notwithstanding so many disasters, ate and slept.",
+      "target_text": "Candide, malgré tant de malheurs, mangea et dormit.",
+      "min_stage": 4,
+      "check_origin": "ai_context_check",
+      "checked_by": "Codex",
+      "checked_on": "2026-10-01",
+      "source": "https://www.gutenberg.org/ebooks/4650",
+      "note": "Exact complete paired sentence checked against both retained source spans. Meaning and clauses correspond; no claim of independent human review."
+    }
+  ]
+}
